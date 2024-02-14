@@ -19,15 +19,15 @@ theme:
     - content.tabs.link
     - content.tooltips
   language: en
-  logo: images/shift_iso_background.png
-  favicon: images/shift_iso_background.png
+  #logo: images/shift_icon_window.png
+  #favicon: images/shift_icon_window.png
   palette:
     scheme: slate
     primary: light blue
     accent: deep purple
 extra_css:
   - /stylesheets/extra.css
-use_directory_urls: false
+use_directory_urls: true
 
 extra:
   social:
@@ -78,8 +78,8 @@ markdown_extensions:
           case: lower
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.arithmatex:
       generic: true
 
@@ -92,18 +92,28 @@ copyright: |
 
 # Page tree
 nav:
-  - Introduction: index.md
-  - Terminology: terminology.md
+  - Home: 
+    - Index: index.md
+    - Getting Started:
+      - Introduction: intro.md
+      - UI Overview: intro/ui_overview.md
+      - Terminology: intro/terminology.md
+      - Workflow Authoring: intro/authoring.md
+      - Executing Your Workflow: intro/execute.md
+      - Prototype Your Workflow: intro/scriptable_nodes.md
+      - Nesting Workflows: intro/nesting_workflows.md
   - Installation: installation.md
   - Licensing: licensing.md
   - Requirements: requirements.md
   - Release Notes: release_notes.md
+  - FAQ: faq.md
   - Documentation:
     - documentation/index.md
+    - API: 
+      - documentation/api.md
     - Maya:
       - 1.0.0: 
         - documentation/maya/1.0.0/index.md
-        - UI Overview         : documentation/maya/1.0.0/ui_overview.md
         - A simple Setup      : documentation/maya/1.0.0/simple_setup.md
     - Houdini:
       - 1.0.0: 
