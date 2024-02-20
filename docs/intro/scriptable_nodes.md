@@ -1,6 +1,6 @@
 # Python Script Operator
 
-In order to prototype your workflow or perform specific operations that are not included in Shift's builtin catalogs, you can script your custom operator with Python.  
+In order to prototype your workflow or perform specific operations that are not included in Shift's built-in catalogs, you can script your custom operator with Python.  
 The **Python Script** operator offers the possibility to write your own code to tailor the processing of your data the way you want.  
 
 ![Python Script Operator](../images/pyscript_node.png)  

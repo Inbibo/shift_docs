@@ -12,7 +12,7 @@ Then you can choose the type of operator you want to create and double-click on 
 
 ## Creating Connections
 
-If you want a certain operator to pass information to another one, you can connect their plugs. To do that, you just need to `Left-Click and Drag` from the plug to the plug you want to connect to. This will propagate whatever data is produced by the first operator and pass it to the other one through the connected plug.  
+If you want a certain operator to pass information to another one, you can connect their plugs. To do that, you just need to `Left-Click and Drag` from one plug to the other plug you want to connect to. This will propagate whatever data is produced by the first operator and pass it to the connected plug.  
 
 ![Connected Nodes](../images/connected_nodes.png "Connected Nodes")  
 
@@ -24,8 +24,8 @@ Certain nodes in Shift allow the creation of new plugs. To do that you can `Righ
 
 ![New Plug](../images/new_plug.gif)
 
-You can also prompt the creation of a new plug while you are creating a connection. This will automatically fill in the name and type matching the plug that the connection is coming from.
-To do that simply release your mouse over the node when creating the connection.
+You can also prompt the creation of a new plug while creating a connection. This will automatically fill in the name and type, matching the plug that the connection is coming from.
+To do that simply release your `Left-Click` mouse button over the node when creating the connection.
 
 ![New Plug](../images/new_plug_drag_connection.gif)
 

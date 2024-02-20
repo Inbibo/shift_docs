@@ -10,7 +10,7 @@ First of all we need to tell Shift which are the *Inputs* and *Outputs* of the w
 
 ## Workflow Operator
 
-The `Workflow` operator allows to embed the execution of a workflow file inside an operator and use it in another workflow.
+The `Workflow` operator allows to embed the execution of a workflow file inside another workflow as an operator.
 When setting the file plug content to source a valid *.sft* file, the node will automatically update adding the input and output plugs corresponding to the workflow inputs and outputs.
 
 ![Nested Workflows](../images/nested_workflows.gif)
