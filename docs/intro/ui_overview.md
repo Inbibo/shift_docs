@@ -12,7 +12,7 @@ Here you have all the components that will be used to create, test and debug you
 
 ## Toolbar
 
-You can find the toolbar at the top-right of the window.
+You can find the toolbar at the top-left of the window.
 
 ![Toolbar](../images/toolbar.png)
 
@@ -46,7 +46,7 @@ You can open as many Shift boards as you want to work on different tasks at the 
 
 ## Inspector
 
-The inspector is a piece of the Shift window with location and size that can be customized. In our example figures it is located on the left of the main window.  
+The inspector is a piece of the Shift window with location and size that can be customized. In our example figures it is located on the right of the main window.  
 It is used to display and modify the properties of the operators in the workflow. If we select an operator, the inspector will react displaying its properties.
 
 ![Inspector](../images/inspector.png)
