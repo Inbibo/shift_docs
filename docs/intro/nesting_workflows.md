@@ -1,6 +1,6 @@
 # Nesting Workflows
 
-In Shift any workflow can be opened and executed as an operator.
+In Shift any workflow can be added and executed as an operator.
 
 ## Setting Workflow I/Os
 
