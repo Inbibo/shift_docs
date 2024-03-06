@@ -4,7 +4,7 @@ By opening Shift you will be prompted to an empty board.
 
 ## Creating Your First Node
 
-To create a new operator, you can either press the `Tab Key` or `Double Left-Click` with your mouse.  
+To create a new [operator](intro/terminology.md/#operator), you can either press the `Tab Key` or `Double Left-Click` with your mouse.  
 
 ![Create Node Dialog](../images/node_creation_dialog.png "Create Node Dialog")  
 
