@@ -12,7 +12,7 @@ Then you can choose the type of operator you want to create and double-click on 
 
 ## Creating Connections
 
-If you want a certain operator to pass information to another one, you can connect their plugs. To do that, you just need to `Left-Click and Drag` from one plug to the other plug you want to connect to. This will propagate whatever data is produced by the first operator and pass it to the connected plug.  
+If you want a certain operator to pass information to another one, you can connect their [plugs](intro/terminology.md/#plug). To do that, you just need to `Left-Click and Drag` from one plug to the other plug you want to connect to. This will propagate whatever data is produced by the first operator and pass it to the connected plug.  
 
 ![Connected Nodes](../images/connected_nodes.png "Connected Nodes")  
 
