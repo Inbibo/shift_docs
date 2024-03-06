@@ -10,7 +10,7 @@ An operator is an execution block that is delegated of performing a specific act
 
 ## Plug
 
-A plug is a Shift object containing the data that is passed to or from a certain operator. An operator could have input plugs on its left-side and output on its right-side.
+A plug is a Shift object containing the data that is passed to or from a certain operator. An operator has input plugs on its left-side and output on its right-side.
 
 ## Workflow
 
