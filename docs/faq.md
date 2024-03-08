@@ -2,7 +2,7 @@
 
 **Is Shift Available on all Operating Systems?**
 
-Shift is available for all major 64-bit operating systems including Windows and Linux. MacOS compatability testing is currently in progress.
+Shift is available for all major 64-bit operating systems including Windows and Linux. MacOS compatibility testing is currently in progress.
 
 **How many licenses do I need?**
 

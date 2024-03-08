@@ -46,8 +46,8 @@ You can open as many Shift boards as you want to work on different tasks at the 
 
 ## Inspector
 
-The inspector is a piece of the Shift window with location and size that can be customized. In our example figures it is located on the right of the main window.  
 It is used to display and modify the properties of the operators in the workflow. If we select an operator, the inspector will react displaying its properties.
+The inspector is a component of the Shift window whose location and size can be customized. In our example figures it is located on the right of the main window.
 
 ![Inspector](../images/inspector.png)
 

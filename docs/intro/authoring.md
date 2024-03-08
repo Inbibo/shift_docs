@@ -4,7 +4,7 @@ By opening Shift you will be prompted to an empty board.
 
 ## Creating Your First Node
 
-To create a new [operator](intro/terminology.md/#operator), you can either press the `Tab Key` or `Double Left-Click` with your mouse.  
+To create a new [operator](../intro/terminology.md/#operator), you can either press the `Tab Key` or `Double Left-Click` with your mouse.  
 
 ![Create Node Dialog](../images/node_creation_dialog.png "Create Node Dialog")  
 
@@ -12,7 +12,7 @@ Then you can choose the type of operator you want to create and double-click on 
 
 ## Creating Connections
 
-If you want a certain operator to pass information to another one, you can connect their [plugs](intro/terminology.md/#plug). To do that, you just need to `Left-Click and Drag` from one plug to the other plug you want to connect to. This will propagate whatever data is produced by the first operator and pass it to the connected plug.  
+If you want a certain operator to pass information to another one, you can connect their [plugs](../intro/terminology.md/#plug). To do that, you just need to `Left-Click and Drag` from one plug to the other plug you want to connect to. This will propagate whatever data is produced by the first operator and pass it to the connected plug.  
 
 ![Connected Nodes](../images/connected_nodes.png "Connected Nodes")  
 
@@ -31,6 +31,6 @@ To do that simply release your `Left-Click` mouse button over the node when crea
 
 ## Removing a Plug
 
-To remove a plug you can use the `Right-Click` context menu of the plug item. Removing a plug will destroy all the existing connections to that plug.
+To remove a plug you can use the `Right-Click` on the plug and select "*Remove Plug*". Removing a plug will destroy all the existing connections to that plug.
 
 ![Removing Plug](../images/removing_plug.gif)
