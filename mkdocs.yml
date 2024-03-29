@@ -93,7 +93,6 @@ copyright: |
 # Page tree
 nav:
   - Home: 
-    - Index: index.md
     - Getting Started:
       - Introduction: intro.md
       - UI Overview: intro/ui_overview.md
@@ -106,10 +105,8 @@ nav:
   - Licensing: licensing.md
   - Requirements: requirements.md
   - Release Notes: release_notes.md
-  - FAQ: faq.md
-  - Documentation:
-    - documentation/index.md
-    - API: 
+  - Shift Developer Help:
+    - Building for Shift: 
       - documentation/api.md
     - Maya:
       - 1.0.0: 

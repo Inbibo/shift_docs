@@ -40,7 +40,7 @@ Right under the toolbar you will find the Shift board. This element is what will
 - "*Add to Selection*": `Shift Key + Left-Click`
 - "*Create Node*": `Double Left-Click` or `Tab Key`
 - "*Delete Selected*": `Delete Key`
-- **Don't know the name for dragging selection**
+- "*Recatangular Selection*": `Left-Click and Drag`
 
 You can open as many Shift boards as you want to work on different tasks at the same time; each will be displayed as a separate tab.
 

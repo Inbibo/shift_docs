@@ -7,4 +7,3 @@ Welcome to the Shift documentation.
 - [Licensing](licensing.md)
 - [Requirements](requirements.md)
 - [Release Notes](release_notes.md)
-- [FAQ](faq.md)

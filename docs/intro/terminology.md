@@ -15,3 +15,7 @@ A plug is a Shift object containing the data that is passed to or from a certain
 ## Workflow
 
 A Shift workflow is a directed acyclic graph (DAG) that builds the causal relationship between the execution of its nodes.
+
+## Catalog
+
+A Shift catalog is a collection of Shift operators, that usually share a common context. They serve mainly for organizing the available operators. A Catalog example is [*`Shift_USD`*](https://github.com/Inbibo/Shift_USD) which contains nodes to process and manipulate Usd data or the builtin *`Workflow`* catalog which contains nodes to run nested workflows. Users can create their own catalogs to organize their custom operators.
