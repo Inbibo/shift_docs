@@ -107,11 +107,4 @@ nav:
   - Release Notes: release_notes.md
   - Shift Developer Help:
     - Building for Shift: 
-      - documentation/api.md
-    - Maya:
-      - 1.0.0: 
-        - documentation/maya/1.0.0/index.md
-        - A simple Setup      : documentation/maya/1.0.0/simple_setup.md
-    - Houdini:
-      - 1.0.0: 
-        - documentation/houdini/1.0.0/index.md
+      - dev_help/shift/api_standalone.md

@@ -1,3 +1,0 @@
-# Shift API
-
-Coming soon...
