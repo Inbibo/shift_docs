@@ -7,3 +7,5 @@ Welcome to the Shift documentation.
 - [Licensing](licensing.md)
 - [Requirements](requirements.md)
 - [Release Notes](release_notes.md)
+
+- [Your Shift Development](dev_help/shift/api_standalone.md)

@@ -93,6 +93,7 @@ copyright: |
 # Page tree
 nav:
   - Home: 
+    - Index: index.md
     - Getting Started:
       - Introduction: intro.md
       - UI Overview: intro/ui_overview.md
