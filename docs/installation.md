@@ -23,7 +23,7 @@ mshift.show()
 
 ## Houdini
 
-Similarly insde Houdini, you need to run the following inside the Houdini *Python Source Editor*:
+Similarly inside Houdini, you need to run the following inside the Houdini *Python Source Editor*:
 
 ```python
 import sys
@@ -32,4 +32,17 @@ sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages
 
 from shift.tools import hshift
 hshift.show()
+```
+
+## Nuke
+
+Inside Nuke, you need to run the following inside the Nuke *Script Editor*:
+
+```python
+import sys
+sys.path.append("<path_to_your_shift_folder>")
+sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages")
+
+from shift.tools import nshift
+nshift.show()
 ```
