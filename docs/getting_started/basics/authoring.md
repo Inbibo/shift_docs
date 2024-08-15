@@ -1,36 +1,43 @@
 # Workflow Authoring
 
-By opening Shift you will be prompted to an empty board.  
+This page is dedicated to explain the most basic steps for creating a Shift workflow. 
+When launching Shift, an new and empty board will be opened where nodes and connections can be added to start building the workflow. 
 
-## Creating Your First Node
+### Creating a Node
 
-To create a new [operator](../intro/terminology.md/#operator), you can either press the `Tab Key` or `Double Left-Click` with your mouse.  
+To create a new [node](../terminology.md/#operator), press the `Tab` key or `Double Left-Click` to open the "*Create Node*" dialog. This dialog enables searching for nodes by name and/or filtering by [catalog](../terminology.md/#catalog). The nodes will be listed alphabetically underneath, where they can be added to the Shift board by double-clicking on them.
 
-![Create Node Dialog](../images/node_creation_dialog.png "Create Node Dialog")  
+![Create Node Dialog](../../images/create_node_dialog.gif "Create Node Dialog")   
 
-Then you can choose the type of operator you want to create and double-click on its name to create it.
+Alternatively, nodes can be added to the board using the [Nodes List widget](../ui_overview.md/#operator) present in the Shift interface.
 
-## Creating Connections
+### Creating Connections
 
-If you want a certain operator to pass information to another one, you can connect their [plugs](../intro/terminology.md/#plug). To do that, you just need to `Left-Click and Drag` from one plug to the other plug you want to connect to. This will propagate whatever data is produced by the first operator and pass it to the connected plug.  
+To establish a connection between plugs from different nodes, `Left-Click` and `Drag` from one plug to the desired plug. By creating a connection, the workflow can propagate the data produced in the output plugs of a node and transfer it to the connected input plug of another node.
 
-![Connected Nodes](../images/connected_nodes.png "Connected Nodes")  
+![Connected Nodes](../../images/connect_plugs.gif "Connected Nodes")  
 
-This will have created the simplest example of a Shift workflow.
+### Creating New Plugs
 
-## Creating New Plugs
+Certain nodes in Shift allow the creation of new plugs. To create a new plug, `Right-Click` on the node to open its context menu and select the "*Create New Plug*" option if available. This will open the "*Add Plug*" dialog, which contains all the information fields required to create a custom plug. These are:
 
-Certain nodes in Shift allow the creation of new plugs. To do that you can `Right-Click` on the node and select the "*Create New Plug*" option if available. It will prompt you to a new dialog asking to fill in the information needed to create the plug.
+- **Name**: The name of the plug. This must be unique among the plugs of the same direction in the same node. For example, if an input plug named *value* already exists in the node, no other input plug can have that name.
+- **Type**: The type of the plug. This will determine which data type values are compatible with the plug. More details about plug types are provided [here](#TODO).
+- **Value**: The initial value of the plug on creation. 
+- **Default**: The default value of the plug. This is the value the plug will be set to when an invalid value is given or the node errors. If no default value is defined in the dialog, the default value will become the inital value of the plug.
+- **Direction**: The direction of the plug. These can be:
+    * *In*: The plug will be created at the left side of the node, which corresponds to the node's inputs. This plug will receive and/or set data to the node. 
+    * *Out*: The plug will be created at the right side of the node, which corresponds to the node's outputs. This plug will have the data processed by the node.
+    * *Through*: Two plugs with the same name will be created, one to the left side of the node as an input and another one to the right side of the node as an ouput. 
 
-![New Plug](../images/new_plug.gif)
+![Add Plug Dialog 1](../../images/create_plug.gif)
 
-You can also prompt the creation of a new plug while creating a connection. This will automatically fill in the name and type, matching the plug that the connection is coming from.
-To do that simply release your `Left-Click` mouse button over the node when creating the connection.
+Adding a new plug to a node can also be done while creating a connection. To achieve this, **drag and drop** a plug over the node where the new connection is to be added. This action will automatically prompt and populate the "*Add Plug*" dialog with the name, type, values, and direction information of the plug from which the connection was started from. Once the new plug is created, a connection between this plug and the one that was dragged will be established.
 
-![New Plug](../images/new_plug_drag_connection.gif)
+![Add Plug Dialog 2](../../images/create_plug_drag_connection.gif)
 
-## Removing a Plug
+### Removing a Plug
 
-To remove a plug you can use the `Right-Click` on the plug and select "*Remove Plug*". Removing a plug will destroy all the existing connections to that plug.
+To remove a plug, `Right-Click` on the plug and select the "*Remove Plug*" option. This action will delete the plug and destroy all existing connections associated with it.
 
-![Removing Plug](../images/removing_plug.gif)
+![Removing Plug](../../images/remove_plugs.gif)
