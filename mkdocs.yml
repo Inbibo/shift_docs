@@ -92,9 +92,8 @@ copyright: |
 
 # Page tree
 nav:
-  - Index:                      index.md
+  - Introduction:               intro.md
   - Getting Started:
-    - Introduction:             getting_started/intro.md
     - Installation:             getting_started/installation.md
     - Licensing:                getting_started/licensing.md
     - Requirements:             getting_started/requirements.md
@@ -106,7 +105,7 @@ nav:
       - Workflow Debugging:     getting_started/basics/debug.md
       - Nesting Workflows:      getting_started/basics/nesting_workflows.md
       - Batch Execution:        getting_started/basics/batch.md
-    - FAQ:                      faq.md
+    - FAQ:                      getting_started/faq.md
   - Reference: 
     - Nodes:                    
       - reference/nodes.md
