@@ -37,13 +37,13 @@ extra:
       link: https://www.youtube.com/@inbibo9227/featured
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/people/Inbibo/100064064923495/
-# plugins:
-#   - mkdocs-video:
-#       is_video: True
-#       video_muted: True
-#       video_controls: True
-#       css_style:
-#         width: "75%"
+plugins:
+  - mkdocs-video:
+      is_video: True
+      video_muted: True
+      video_controls: True
+      css_style:
+        width: "75%"
         
 markdown_extensions:
   - pymdownx.highlight:
@@ -109,11 +109,11 @@ nav:
   - Reference: 
     - Nodes:                    
       - reference/nodes.md
-      - Python Script Node:     references/nodes/python_script.md
-      - Iteration Nodes:        references/nodes/iteration.md
-      - Workflow Nodes:         references/nodes/workflow.md
-      - Variable Node:          references/nodes/variable.md
-      - Conditional Node:       references/nodes/conditional.md
+      - Python Script Node:     reference/nodes/python_script.md
+      - Iteration Nodes:        reference/nodes/iteration.md
+      - Workflow Nodes:         reference/nodes/workflow.md
+      - Variable Node:          reference/nodes/variable.md
+      - Conditional Node:       reference/nodes/conditional.md
     - Catalogs:                 
       - reference/catalogs.md
       - Catalog Manager:        reference/catalog_manager.md
