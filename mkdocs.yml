@@ -37,13 +37,13 @@ extra:
       link: https://www.youtube.com/@inbibo9227/featured
     - icon: fontawesome/brands/facebook
       link: https://www.facebook.com/people/Inbibo/100064064923495/
-plugins:
-  - mkdocs-video:
-      is_video: True
-      video_muted: True
-      video_controls: True
-      css_style:
-        width: "75%"
+# plugins:
+#   - mkdocs-video:
+#       is_video: True
+#       video_muted: True
+#       video_controls: True
+#       css_style:
+#         width: "75%"
         
 markdown_extensions:
   - pymdownx.highlight:
@@ -92,20 +92,42 @@ copyright: |
 
 # Page tree
 nav:
-  - Home: 
-    - Index: index.md
-    - Getting Started:
-      - Introduction: intro.md
-      - UI Overview: intro/ui_overview.md
-      - Terminology: intro/terminology.md
-      - Workflow Authoring: intro/authoring.md
-      - Executing Your Workflow: intro/execute.md
-      - Prototype Your Workflow: intro/scriptable_nodes.md
-      - Nesting Workflows: intro/nesting_workflows.md
-  - Installation: installation.md
-  - Licensing: licensing.md
-  - Requirements: requirements.md
-  - Release Notes: release_notes.md
-  - Shift Developer Help:
-    - Building for Shift: 
-      - dev_help/shift/api_standalone.md
+  - Index:                      index.md
+  - Getting Started:
+    - Introduction:             getting_started/intro.md
+    - Installation:             getting_started/installation.md
+    - Licensing:                getting_started/licensing.md
+    - Requirements:             getting_started/requirements.md
+    - Shift Basics:
+      - Terminology:            getting_started/basics/terminology.md
+      - UI Overview:            getting_started/basics/ui_overview.md
+      - Workflow Authoring:     getting_started/basics/authoring.md
+      - Workflow Execution:     getting_started/basics/execute.md
+      - Workflow Debugging:     getting_started/basics/debug.md
+      - Nesting Workflows:      getting_started/basics/nesting_workflows.md
+      - Batch Execution:        getting_started/basics/batch.md
+    - FAQ:                      faq.md
+  - Reference: 
+    - Nodes:                    
+      - reference/nodes.md
+      - Python Script Node:     references/nodes/python_script.md
+      - Iteration Nodes:        references/nodes/iteration.md
+      - Workflow Nodes:         references/nodes/workflow.md
+      - Variable Node:          references/nodes/variable.md
+      - Conditional Node:       references/nodes/conditional.md
+    - Catalogs:                 
+      - reference/catalogs.md
+      - Catalog Manager:        reference/catalog_manager.md
+    - Plugins:                  reference/plugins.md
+    - Notes:                    reference/notes.md
+    - Logger:                   reference/logger.md
+    - Enviorment Variables:     reference/enviorment.md
+    - Shift Python API:         reference/api.md
+  - Integrations & Resources:
+    - Maya:                     integration_resources/maya.md
+    - Houdini:                  integration_resources/houdini.md
+    - Nuke:                     integration_resources/nuke.md
+    - USD:                      integration_resources/usd.md
+    - Deadline:                 integration_resources/deadline.md
+  - Release Notes:
+    - Release Notes:            release_notes.md
