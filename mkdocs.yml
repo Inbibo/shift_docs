@@ -92,7 +92,7 @@ copyright: |
 
 # Page tree
 nav:
-  - Introduction:               intro.md
+  - Introduction:               index.md
   - Getting Started:
     - Installation:             getting_started/installation.md
     - Licensing:                getting_started/licensing.md
