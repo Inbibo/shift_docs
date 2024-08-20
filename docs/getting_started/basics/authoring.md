@@ -1,7 +1,7 @@
 # Workflow Authoring
 
 This page is dedicated to explain the most basic steps for creating a Shift workflow. 
-When launching Shift, an new and empty board will be opened where nodes and connections can be added to start building the workflow. 
+When launching Shift, an new empty board is opened where nodes and connections can be added to start building the workflow. 
 
 ## Creating a Node
 
