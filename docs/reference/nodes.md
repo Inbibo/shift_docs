@@ -43,7 +43,7 @@ Plugs define the input and output data of the nodes. Data values can be set thro
 | *Instance* | Defines an object instance. These plugs can be differentiated by their dotted outline.|`Any`|
 | *Int* | Defines a integer value.|`Int`|
 | *List* | Defines a list value.|`List`|
-| *Object* | Defines generic python object.|`Any`|
+| *Object* | Defines a generic Python object.|`Any`|
 | *String* | Defines a string value.|`String`|
 
 ### Inspect a Plug
