@@ -9,7 +9,8 @@ When a node does not execute successfully it will turn red and the workflow exec
 ![Traceback](../../images/traceback.gif)
 
 
-Once the root of the error is fixed, the node will turn blue and its traceback will be cleared when it gets recomputed. 
+Once the error is fixed, for example by changing a connection or a plug value, the node will turn blue and its traceback will be cleared when it gets recomputed. 
+
 
 ### Logger
 The error traceback information can be consulted in the [Logger widget](../ui_overview/#logger) too. The logger also reports warnings raised by nodes, and other Shift messages such as plug connection errors or other general logs related to the workflow or the application itself. 
