@@ -114,14 +114,14 @@ nav:
       - Workflow Nodes:         reference/nodes/workflow.md
       - Variable Node:          reference/nodes/variable.md
       - Conditional Node:       reference/nodes/conditional.md
-    - Catalogs:                 
-      - reference/catalogs.md
-      - Catalog Manager:        reference/catalog_manager.md
+    - Catalogs:                 reference/catalogs.md
     - Plugins:                  reference/plugins.md
     - Notes:                    reference/notes.md
     - Logger:                   reference/logger.md
     - Enviorment Variables:     reference/enviorment.md
-    - Shift Python API:         reference/api.md
+    - Developer Guide:        
+      - reference\dev_help\api_standalone.md
+      - Shift Python API:         reference/api.md
   - Integrations & Resources:
     - Maya:                     integration_resources/maya.md
     - Houdini:                  integration_resources/houdini.md
