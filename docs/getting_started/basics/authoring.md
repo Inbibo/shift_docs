@@ -33,7 +33,7 @@ Certain nodes in Shift allow the creation of new plugs. To create a new plug, `R
 ![Add Plug Dialog 1](../../images/create_plug.gif)
 
 ### Creating New Plugs through a Connection
-Adding a new plug to a node can also be done while creating a connection. To achieve this, **drag and drop** a plug over the node where the new connection is to be added. This action will automatically prompt and populate the "*Add Plug*" dialog with the name, type, values, and direction information of the plug from which the connection was started from. Once the new plug is created, a connection between this plug and the one that was dragged will be established.
+Adding a new plug to a node can also be done while creating a connection. To achieve this, **drag and drop** a connection over the node where the new connection is to be added. This action will automatically prompt and populate the "*Add Plug*" dialog with the name, type, values, and direction information of the plug from which the connection was started from. Once the new plug is created, a connection between this plug and the one that was dragged will be established.
 
 ![Add Plug Dialog 2](../../images/create_plug_drag_connection.gif)
 
