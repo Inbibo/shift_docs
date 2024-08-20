@@ -35,7 +35,8 @@ Plugs define the input and output data of the nodes. Data values can be set thro
 | *Bool* | Defines a boolean value.|`Bool`|
 | *Code* | Defines a python code block. This type is used whenever custom scripting is required in a node. A plug of this type displays as an embedded text editor in the inspector. |`String`|
 | *Color* | Defines a color in RGBA. Interacting with a plug of this type opens a color picker dialog.|`List`|
-| *Dict* | Defines a dictionary value.|`Bool`|
+| *Dict* | Defines a dictionary value.|`Dict`|
+
 | *Dir* | Defines a directory path. Interacting with a plug of this type opens a directory browser dialog.|`String`|
 | *FileIn* | Defines an input file. This type is used for open and import operations. Interacting with a plug of this type opens a file browser dialog.|`String`|
 | *FileOut* | Defines an output file. This type is used for save and export operations. Interacting with a plug of this type opens a file browser dialog.|`String`|
