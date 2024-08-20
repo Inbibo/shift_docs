@@ -12,7 +12,7 @@ from shift.core import files
 workflow, catalog_manifest = files.openBatchWorkflow("<path_to_your_workflow_file>")
 ```
 
-This method execution will return the `SWorkflow` Python class containing the workflow and a Python dictionary containing the information on the Python modules loaded by the workflow. Have a look at the [Shift API](../../reference/api.md) for more information on the method and the `SWorkflow` class.
+The execution of this method will return the `SWorkflow` Python class containing the workflow and a Python dictionary containing the information on the Python modules loaded by the workflow. Have a look at the [Shift API](../../reference/api.md) for more information on the method and the `SWorkflow` class.
 
 ## Executing a Workflow
 
