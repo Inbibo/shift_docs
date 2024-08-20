@@ -5,7 +5,7 @@ When launching Shift, an new empty board is opened where nodes and connections c
 
 ## Creating a Node
 
-To create a new [node](../terminology.md/#operator), press the `Tab` key or `Double Left-Click` to open the "*Create Node*" dialog. This dialog enables searching for nodes by name and/or filtering by [catalog](../terminology.md/#catalog). The nodes will be listed alphabetically underneath, where they can be added to the Shift board by double-clicking on them.
+To create a new [node](../terminology.md/#operator), press the `Tab` key or `Double Left-Click` in the board to open the "*Create Node*" dialog. This dialog enables searching for nodes by name and/or filtering by [catalog](../terminology.md/#catalog). The nodes will be listed alphabetically underneath, where they can be added to the Shift board by double-clicking on them.
 
 ![Create Node Dialog](../../images/create_node_dialog.gif "Create Node Dialog")   
 
