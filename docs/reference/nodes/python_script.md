@@ -1,10 +1,30 @@
 # Python Script Node
 
-In order to prototype your workflow or perform specific operations that are not included in Shift's built-in catalogs, you can script your custom operator with Python.  
-The **Python Script** operator offers the possibility to write your own code to tailor the processing of your data the way you want.  
+The *PythonScript* node offers the possibility to write custom Python code to develop new and specific operator behaviors. This feature is useful for prototyping workflows or processing specialized tasks not covered by other Shift nodes.
 
-![Python Script Operator](../images/pyscript_node.png)  
+External Python libraries can be imported to enhance the capabilities of the *PythonScript* node, as long as the enviornment used to launch Shift supports those libraries. To do this, simply import the modules or packages within the *PythonScript* node and use them as you would in any Python code.
 
-You can also import external Python libraries to extend the functionality of your custom operator as long as the Python interpreter you used to start Shift has them available. To do that simply import the modules or packages inside the Python Script operator and use them as you would in any Python code.  
+![Python Script Operator](../../images/nodes/pyscript.png)  
 
-This makes Shift compatible with any software that supports a Python API.
+### Inputs
+
+- **Script**: This plug of type [Code](../nodes/#plugs) defines the logic of the *PythonScript* node. On the [Inspector](../../getting_started/basics/ui_overview.md/#inspector), this plug provides a script editor for Python to write the block of code to be executed.
+
+The *PythonScript* node allows for any type of custom plugs too. Custom input plugs can receive data from other nodes that can be imported into the code by just using the plug name as a variable.
+
+
+### Outputs
+
+- **Output**: This plug of type [Object](../nodes/#plugs) outputs the result of the logic executed by the *PythonScript*. To set the result of to this plug, simply equal to `output` (the plug's name) the value to output.
+
+If outputting several values is needed, new outputs plugs can be added to the node, which can be used the same way as the default output plug.
+
+>[!NOTE]
+> Plugs in *PythonScript* nodes cannot be renamed, as it is important to keep the plug's name unique and consistent for the node's correct function. 
+
+
+<!-- ### Examples
+
+This section is reserved to an example video of how to use the Python Script node.
+
+ -->
