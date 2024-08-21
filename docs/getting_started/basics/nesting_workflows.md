@@ -3,6 +3,7 @@
 In Shift, any workflow can be embedded into a node and executed within another workflow.
 
 ## Setting Workflow I/Os
+
 To create a reusable workflow, the input and output of the workflow must be specified. This is done through `Input` and `Output` nodes. The plugs created in these nodes define which inputs are expected by the workflow and which are the outputs that will be returned.
 
 ![Workflow I/Os](../../images/workflow_ios.png)
@@ -11,7 +12,7 @@ The plugs from these nodes will act as data pathways, linking information set ex
 
 ## Workflow Node
 
-The `Workflow` node allows to embed the execution of a workflow inside another workflow. This node has a *file* plug, where the workflow to nest is to be indicated. When the file plug content is set to reference a valid workflow file (with a *.sft* extension), the node will automatically update by creating the input and output plugs corresponding to the sourced workflow inputs and outputs. Then, when the `Workflow` node gets executed, it will execute the referenced workflow. 
+The `Workflow` node allows to embed the execution of a workflow inside another workflow. This node has a *file* plug, where the workflow to nest is to be indicated. When the file plug content is set to reference a valid workflow file (with a *.sft* extension), the node will automatically update by creating the input and output plugs corresponding to the sourced workflow inputs and outputs. Then, when the `Workflow` node gets executed, it will execute the referenced workflow.
 
 ![Nested Workflows](../../images/workflow_nesting.gif)
 
