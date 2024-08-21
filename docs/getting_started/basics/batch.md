@@ -12,7 +12,7 @@ from shift.core import files
 workflow, catalog_manifest = files.openBatchWorkflow("<path_to_your_workflow_file>")
 ```
 
-The execution of this method will return the `SWorkflow` Python class containing the workflow and a Python dictionary containing the information on the Python modules loaded by the workflow. Have a look at the [Shift API](../../reference/api.md) for more information on the method and the `SWorkflow` class.
+This method execution will return the `SWorkflow` Python class containing the workflow and a Python dictionary containing the information on the Shft catalogs loaded by the workflow. Have a look at the [Shift API](../../reference/api.md) for more information on the method and the `SWorkflow` class.
 
 ## Executing a Workflow
 
@@ -24,7 +24,26 @@ result = workflow.execute()
 
 External inputs for the workflow can be set by providing a Python dictionary as first argument of the `workflow.execute` call. This dictionary should be formatted using the input plug names from the `Input` operator as keys and the content that should be passed as values.
 
-The `result` variable will contain a similarly structured dictionary with the output plug names of the `Output` operator as keys and their content as values.
+```python
+workflow_externals = {
+    "myFloatPlug1": 1.5,
+    "myFloatPlug2": 9.5,
+    "myBooleanPlug": True
+}
+result = workflow.execute(workflow_externals)
+```
+
+The `result` variable will contain a similarly structured dictionary with the output plug names of the `Output` operator as keys and their content as values. If the workflow does not contain an Output node, the result will be `None`, for this reason it is suggested to always set up an `Input` and an `Output` operator in your workflows.
+
+### Execution Behaviour
+
+Similarly to the Shift interactive option, the workflow execution behaviour can be modified. By default if a node in the graph errors, the execution of the subsequent nodes will continue. This behaviour can be changed by setting the following argument:
+
+```python
+result = workflow.execute(workflow_externals, stopOnError=True)
+```
+
+With this setting active the workflow will stop executing when an error is raised. In case the execution stops the `result` will return `None`.
 
 ## Closing a Workflow
 
