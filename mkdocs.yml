@@ -117,7 +117,9 @@ nav:
     - Catalogs:                 
       - reference/catalogs.md
       - Catalog Manager:        reference/catalog_manager.md
-    - Plugins:                  reference/plugins.md
+    - Plugins:                  
+      - reference/plugins.md
+      - Developing Custom Plugins: reference/plugins/developing_custom_plugins.md
     - Notes:                    reference/notes.md
     - Logger:                   reference/logger.md
     - Enviorment Variables:     reference/enviorment.md
