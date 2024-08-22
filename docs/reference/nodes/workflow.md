@@ -21,7 +21,7 @@ The *WorkflowProcess* node works similarly to the *Workflow* node, however, the 
 
 ![WorkflowProcess Node](../../images/nodes/workflow_process.png)
 
-The available python interpreters will depend on the environment variable configuration. To allow the *WorkflowProcess* find new python interpreters, it must be added a new variable to the environment with the following format `SHIFT_PROCESS_<NAME OF THE INTERPRETER>`. The value of this variable must be the path to the desired python interpreter.
+The available Python interpreters will depend on the environment variable configuration. To allow the *WorkflowProcess* find new Python interpreters, it must be added a new variable to the environment with the following format `SHIFT_PROCESS_<NAME OF THE INTERPRETER>`. The value of this variable must be the path to the desired Python interpreter.
 
 >[!EXAMPLE]
 > To add Maya's python interpreter as an option for the *WorkflowProcess* the following should be added to the environment variables:
