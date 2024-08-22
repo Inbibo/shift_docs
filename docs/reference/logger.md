@@ -33,7 +33,8 @@ The default configuration settings of the Logger can be changed by defining the 
 
 |Environment Variable| Description | Fallback Value |
 |:--|:---|:--|
-|`SHIFT_LOG_LEVEL`| The default log level when starting Shift| "*WARNING*"
+|`SHIFT_LOG_LEVEL`| The default log level when starting Shift.| "*WARNING*"
+
 |`SHIFT_LOG_MAXSIZE`| The maximum size of the log files in MB.| "*10485760*"
 |`SHIFT_LOG_MAXFILES`| The maximum number of log files.| "*5*"
 |`SHIFT_LOG_DIRECTORY`| The location of log files.| "*C:/Users/[USERNAME]/AppData/Local/Temp/Shift*"
