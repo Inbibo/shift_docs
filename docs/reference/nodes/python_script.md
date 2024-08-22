@@ -2,7 +2,7 @@
 
 The *PythonScript* node offers the possibility to write custom Python code to develop new and specific operator behaviors. This feature is useful for prototyping workflows or processing specialized tasks not covered by other Shift nodes.
 
-External Python libraries can be imported to enhance the capabilities of the *PythonScript* node, as long as the enviornment used to launch Shift supports those libraries. To do this, simply import the modules or packages within the *PythonScript* node and use them as you would in any Python code.
+External Python libraries can be imported to enhance the capabilities of the *PythonScript* node, as long as the environment used to launch Shift supports those libraries. To do this, simply import the modules or packages within the *PythonScript* node and use them as you would in any Python code.
 
 ![Python Script Operator](../../images/nodes/pyscript.png)  
 
