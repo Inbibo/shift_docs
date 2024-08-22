@@ -18,7 +18,8 @@ The *Workflow* node executes an external workflow different from the workflow th
 
 ## WorkflowProcess Node
 
-The *WorkflowProcess* node works similarly to the *Workflow* node, however, the execution the referenced workflow will run by an external process. By default, the workflow will be executed in a new instance of the Python, however, the node allows to choose Python interpreter the workflow will run in. 
+The *WorkflowProcess* node works similarly to the *Workflow* node, however, the execution of the referenced workflow will be run by an external process. By default, the workflow will be executed in a new instance of Python, however, the node allows to choose Python interpreter the workflow will run in. 
+
 
 ![WorkflowProcess Node](../../images/nodes/workflow_process.png)
 
