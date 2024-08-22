@@ -2,7 +2,8 @@
 
 
 ## Input & Output Nodes
-*Input* and *Output* nodes are used to define the required inputs and outputs of a workflow to be executed externally. Setting these nodes is essential to be able to nest workflows or executing the workflow in [batch mode](../../getting_started/basics/batch.md). The custom plugs from these nodes,  which should be of type `through`, will act as data pathways, linking information set externally in the workflow to the current workflow and viceversa. 
+*Input* and *Output* nodes are used to define the required inputs and outputs of a workflow to be executed externally. Setting these nodes is essential to be able to nest workflows or executing the workflow in [batch mode](../../getting_started/basics/batch.md). The custom plugs from these nodes, which should be of type `through`, will act as data pathways, linking information set externally in the workflow to the current workflow and viceversa. 
+
 
 ![Workflow Node](../../images/nodes/Input_outputNodes.png) 
 
