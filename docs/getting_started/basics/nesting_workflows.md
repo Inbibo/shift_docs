@@ -4,7 +4,7 @@ In Shift, any workflow can be embedded into a node and executed within another w
 
 ## Setting Workflow I/Os
 
-To create a reusable workflow, the input and output of the workflow must be specified. This is done through `Input` and `Output` nodes. The plugs created in these nodes define which inputs are expected by the workflow and which are the outputs that will be returned.
+To create a reusable workflow, the input and output of the workflow must be specified. This is done through `Input` and `Output` nodes. The plugs created in these nodes, which must be `through` plugs, define which inputs are expected by the workflow and which are the outputs that will be returned.
 
 ![Workflow I/Os](../../images/workflow_ios.png)
 
