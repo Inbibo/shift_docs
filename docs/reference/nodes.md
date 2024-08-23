@@ -4,7 +4,7 @@ Nodes are the graphic units that build up the workflow. Each node is associated 
 
 ## Node Interface
 
-There are five main interface elements that compose the node: the node's name, the operator type, the trigger plugs and the i/o's plugs.
+There are five main interface elements that compose the node: the node's name, the operator type, the trigger plugs, the i/o's plugs and the progress bar.
 
 ![Node UI](../../images/node_ui.png "Node UI")  
 
