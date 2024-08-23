@@ -2,7 +2,7 @@
 
 A node in a workflow gets executed when its been computed successfully and outputs a result. Once a node has been executed, it will be **clean** and will not be recomputed unless it gets **dirty**. A node will be dirty whenever a plug value is modified or the workflow gets saved. Shift will use dirty propagation to identify the nodes affected by the modifications done to a node and flag them to be recomputed.
 
-There are different ways a workflow can be executed, which depends on which nodes will get computed. 
+There are different ways a workflow can be executed, which depend on which nodes will get computed. 
 
 ## ![Execute All Button](../../images/toolbar/execute_all_default.svg){:width="25" height="25"} Execute All
 
