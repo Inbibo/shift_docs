@@ -23,7 +23,7 @@ catalog = {"Description": "This catalog includes fundamental Python type operato
 There are two ways of adding a custom catalog to Shift:
 
 - **As a User Catalog**: Use the [Catalog Manager](../catalogs/#the-catalog-manager) to source the catalog file and add it to Shift. This catalog is saved in the user preferences.
-- **As a Environment Catalog**: Add the **path to the directory** the containing the catalog file to the `SHIFT_CATALOG_PATH` environment variable. All files in this path containing a `catalog` object will be identified as custom catalogs and loaded by Shift.
+- **As an Environment Catalog**: Add the **path to the directory** containing the catalog file to the `SHIFT_CATALOG_PATH` environment variable. All files in this path containing a `catalog` object will be identified as custom catalogs and loaded by Shift.
 
 ## Operator Syntax
 
@@ -79,9 +79,13 @@ class MyOperator(SOperator):
         super(self.__class__, self).execute(force)
 ```
 
-The `SOperator` constructor method takes care of initializing the plug objects and adding them to the operator. Each plug must be initialized specifying a unique code name, its value, type, and a direction which can be either `SDirection.kIn` or `SDirection.kOut`.
+The `SOperator` constructor method takes care of initializing the plug objects and adding them to the operator. Each plug must be initialized specifying:
+- a unique code name, which will correspond to the name displayed in the UI
+- a value, which will correspond to the value the plug is initialized with
+- a type, which will define the behaviour of the plug when translating the provided inputs to a Python object
+- a direction which can be either `SDirection.kIn` or `SDirection.kOut`.
 
-The **execute** method takes care of defining the list of steps to be performed when the execution of the operator is issued inside Shift. In the example above the execute method picks up the values of the two input plugs and multiplies them together. Finally it stores the result in the output plug.
+The **execute** method takes care of defining the list of steps to be performed when the execution of the operator is issued inside Shift. In the example above, the execute method picks up the values of the two input plugs and multiplies them together. Finally, it stores the result in the output plug.
 
 Please refer to the Shift API documentation to know more about which plug types are present in Shift, and which additional methods the `SPlug` and `SOperator` classes offer.
 

@@ -1,6 +1,7 @@
 # Catalogs
 
-Catalogs are libraries of operators. Catalogs are what extends Shift's capabilities, as it provides the specialized nodes for different areas of development and automatization. 
+Catalogs are libraries of operators that define and extend Shift's capabilities, as they provide the specialized nodes for different areas of development and automatization. 
+
 
 Shift comes with six native catalogs that contain the necessary nodes to start building a workflow:
 
@@ -15,7 +16,9 @@ Shift comes with six native catalogs that contain the necessary nodes to start b
 > Shift also comes with a native catalog for Deadline. For more information about Shift's integration in Deadline and how to use this catalog, please refer to the [Deadline Integration](../integration_resources/deadline.md) documentation.
 
 ### Custom Catalogs
+
 Catalogs are scripted Python files that define a list of operators classes and their execution logic. To learn more about how to write a custom catalog, please refer to the [developer's guide](../reference/dev_help/developers_guide/#create-a-catalog) for catalogs. 
+
 
 ## The Catalog Manager
 
