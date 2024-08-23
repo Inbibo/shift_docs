@@ -18,6 +18,6 @@ The *ConditionalEquals* node allows to compare if two values are equal. Dependin
 
 <!-- ### Examples
 
-This section is reserved to an example video of how to use the Python Script node.
+This section is reserved to an example video of how to use the Conditional nodes.
 
  -->

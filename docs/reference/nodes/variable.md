@@ -17,6 +17,6 @@ Output plugs in the *Variable* node are used to retrieve the data from the globa
 
 <!-- ### Examples
 
-This section is reserved to an example video of how to use the Python Script node.
+This section is reserved to an example video of how to use the Variable node.
 
  -->

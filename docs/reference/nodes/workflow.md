@@ -39,6 +39,6 @@ The available Python interpreters will depend on the environment variable config
 
 <!-- ### Examples
 
-This section is reserved to an example video of how to use the Python Script node.
+This section is reserved to an example video of how to use the Workflow nodes.
 
  -->

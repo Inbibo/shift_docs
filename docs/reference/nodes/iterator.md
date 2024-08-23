@@ -42,6 +42,6 @@ Custom plugs should be added to the *ListAccumulator* plug to define which eleme
 
 <!-- ### Examples
 
-This section is reserved to an example video of how to use the Python Script node.
+This section is reserved to an example video of how to use the Iterators nodes.
 
  -->
