@@ -47,6 +47,7 @@ Plugs define the input and output data of the nodes. Data values can be set thro
 | *List* | Defines a list value.|`List`|
 | *Object* | Defines a generic Python object.|`Any`|
 | *String* | Defines a string value.|`String`|
+| *Trigger* | Defines the node's position in the execution graph based on the connected nodes.|`-`|
 
 ### Inspect a Plug
 
@@ -57,7 +58,7 @@ To read further information about an existing plug in a node, `Right-Click` on t
 * The plug current value.
 * The plug default value.
 
-Alternatively, this information can also be accessed by right clicking and picking the *Show* option on the associated widget for the plug in the inspector widget. 
+Alternatively, this information can also be accessed by doing `Right-Click` on the associated widget for the plug in the inspector widget and `Click` on the *Show* option. 
 
 ![Shift Plug Information Dialog](../images/shift_plug_dialog.gif)
 
