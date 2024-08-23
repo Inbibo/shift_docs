@@ -14,7 +14,7 @@ hshift.show()
 ```
 
 ## Python Interpreter Setup
-In Shift it is possible to launch the execution of a workflow via an application's Python interpreter with the [WorkflowProcess](../reference/nodes/workflow/#workflowProcess-node) node. To achieve this for Houdini, set path to its Python interpreter in your environment variables:
+In Shift it is possible to launch the execution of a workflow via an application's Python interpreter with the [WorkflowProcess](../reference/nodes/workflow/#workflowProcess-node) node. To achieve this for Houdini, set path to its Python interpreter the following environment variable:
 
 `SHIFT_PROCESS_HOUDINI : path to Houdini's Python interpreter (hython)`
 
@@ -23,6 +23,6 @@ In Shift it is possible to launch the execution of a workflow via an application
 Shift provides some catalogs with operators specific to work within Houdini. Most of these nodes are found in the *CreativeSofware* catalog. 
 
 <!-- ### Examples
-This section is reserved to an example video of how to use the Python Script node.
+This section is reserved to an example video of how to use Shift in Houdini.
  -->
 

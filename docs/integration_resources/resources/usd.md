@@ -15,15 +15,15 @@ To start working with the USD API in Shift, please follow the following steps:
 * Add the path of the *plugin.json* file found in the Shift_USD directory to the `SHIFT_PLUGIN_PATH` environment variable.
 
 ## Dependencies
-| **Dependency**                                           | **Version** |
-| -------------------------------------------------------- | ----------- |
-| [Python](https://www.python.org/download/releases/3.0/)  | > 3.7       |
-| [USD](https://graphics.pixar.com/usd/release/index.html) | > 21.8      |
+| **Dependency**                                           | **Version**    |
+| -------------------------------------------------------- | -------------- |
+| [Python](https://www.python.org/download/releases/3.0/)  | 3.7 or higher  |
+| [USD](https://pypi.org/project/usd-core/)                | 21.8 or higher |
 
 <!-- ##Plugins
 
 This section is reserved to USD Plugins information 
 
 ### Examples
-This section is reserved to an example video of how to use the Python Script node.
+This section is reserved to an example video of how to use USD resources.
  -->

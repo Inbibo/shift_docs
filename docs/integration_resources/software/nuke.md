@@ -14,7 +14,7 @@ nshift.show()
 ```
 
 ## Python Interpreter Setup
-In Shift it is possible to launch the execution of a workflow via an application's Python interpreter with the [WorkflowProcess](../reference/nodes/workflow/#workflowProcess-node) node. To achieve this for Nuke, set the path to its Python interpreter in your environment variables:
+In Shift it is possible to launch the execution of a workflow via an application's Python interpreter with the [WorkflowProcess](../reference/nodes/workflow/#workflowProcess-node) node. To achieve this for Nuke, set path to its Python interpreter the following environment variables:
 
 `SHIFT_PROCESS_NUKE : path to Nuke’s Python interpreter (python)`
 
@@ -24,6 +24,6 @@ Shift provides some catalogs with operators specific to work within Nuke. Most o
 
 
 <!-- ### Examples
-This section is reserved to an example video of how to use the Python Script node.
+This section is reserved to an example video of how to use Shift in Nuke.
  -->
 
