@@ -47,7 +47,7 @@ With this setting active the workflow will stop executing when an error is raise
 
 ## Closing a Workflow
 
-It is highly recomended to close the workflow after the execution is done. This process will take care of cleaning the unneded Python modules from memory. This can be performed by calling the method:
+It is highly recommended to close the workflow after the execution is done. This process will take care of cleaning the unneeded Shift catalogs from memory. This can be performed by calling the method:
 
 ```python
 files.closeWorkflow(workflow, catalog_manifest)
