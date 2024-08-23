@@ -1,12 +1,12 @@
 # Workflow Execution
 
-A node in a workflow gets executed when its been computed successfully and outputs a result. Once a node has been executed, it will be **clean** and will not be recomputed unless it gets **dirty**. A node will be dirty whenever a plug value is modified or the workflow gets saved. Shift will use dirty propagation to identify the nodes affected by the modifications done to a node and flag them to be recomputed.
+The execution of a node in a Shift workflow consist in the evaluation of its internal logic given the node's input data. If the execution completes successfully, the output plugs will be updated with the result and the node will be flagged as **clean**. All clean nodes will be displayed with a full blue progress bar and will not be recomputed unless they become **dirty**. The dirty status is set whenever a plug value is modified or the workflow gets saved or manually reset via the Shift UI. Shift will use dirty propagation to identify the nodes affected by the modifications done to a node and flag them to be recomputed.
 
 There are different ways a workflow can be executed, which depends on which nodes will get computed. 
 
 ## ![Execute All Button](../../images/toolbar/execute_all_default.svg){:width="25" height="25"} Execute All
 
-The "Execute All" action will compute all the nodes present in the workflow. 
+The "Execute All" action will compute all the dirty nodes present in the workflow. 
 
 ![Execute All](../../images/execute_all.gif)
 
@@ -22,11 +22,11 @@ The "Execute Next" action will compute the next dirty node present in the workfl
 
 ![Execute Next](../../images/execute_step_by_step.gif)
 
-## ![Stop Execution Button](../../images/toolbar/clear_all_default.svg){:width="25" height="25"} Stop Execution
+## ![Clear Execution Button](../../images/toolbar/clear_all_default.svg){:width="25" height="25"} Stop Execution
 
-The "Stop Execution" action will set all the nodes in the workflow to dirty. All **connected** inputs and output values will be cleared to their default values. This forces Shift to recompute all nodes the next time the workflow has to be executed. 
+The "Clear Execution" action will set all the nodes in the workflow to dirty. All **connected** inputs and output values will be cleared to their default values. This forces Shift to recompute all nodes the next time the workflow has to be executed. 
 
-![Stop Execution](../../images/clear_execution.gif)
+![Clear Execution](../../images/clear_execution.gif)
 
 ## ![Live Execution Button](../../images/toolbar/execute_live_default.svg){:width="25" height="25"} Live Execution
 
