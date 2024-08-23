@@ -18,7 +18,7 @@ catalog = {"Description": "This catalog includes fundamental Python type operato
 ```
 
 >[!NOTE]
-> The *Operators* list from the `catalog` is a list of lists containing two elements. The first one corresponds to the operator class, and the second one is a list of compatible hosts for the operator. For example, if the second element is `["maya", "houdini"]`the operator will be only compatible with those DCC's and work under those contexts. Refer to [Integrations & Resources](../../integration_resources/integrations_resources.md) for more information.
+> The *Operators* list from the `catalog` is a list of lists containing two elements. The first one corresponds to the operator class, and the second one is a list of compatible hosts for the operator. If no host is specified, the node will be usable in any context. For instance, if the second element is `["maya", "houdini"]` the operator will be only available for those DCC's. Refer to [Integrations & Resources](../../integration_resources/integrations_resources.md) for more information.
 
 There are two ways of adding a custom catalog to Shift:
 
@@ -38,7 +38,10 @@ from shift.core.constants import SType
 from shift.core.constants import SDirection
  
 class MyOperator(SOperator):
-
+    """ The docstring provided for the SOperator class will be use as the operator's description when inspecting a node's information. 
+    It is recommended to write a detailed description of the operator's behavior alongside the required inputs and outputs here.
+  
+    """
     def __init__(self, code, parent=None):
 
         super(self.__class__, self).__init__(code, parent)
