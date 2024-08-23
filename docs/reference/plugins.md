@@ -4,7 +4,8 @@ Shift supports the integration of custom Plugins. Shift Plugins are Qt based UIs
 
 ## Shift Native Plugins
 
-Shift ships with two example plugins which can be found in the *Tools* section in the top menu bar. The desired plugin can be opened by clicking on the corresponding entry.
+Shift ships with two plugins which can be found in the *Tools* section in the top menu bar. The desired plugin can be opened by clicking on the corresponding entry.
+
 Once a Plugin is opened, the Shift UI can be customized with the best suited layout.
 
 The *Operators List* Plugin helps us visualize the list of operators in the workflow and shows the their current progress.
