@@ -4,7 +4,7 @@ Nodes are the graphic units that build up the workflow. Each node is associated 
 
 ## Node Interface
 
-There are four main interface elements that compose the node: the node's name, the operator type, the trigger plugs and the i/o's plugs.
+There are five main interface elements that compose the node: the node's name, the operator type, the trigger plugs and the i/o's plugs.
 
 ![Node UI](../../images/node_ui.png "Node UI")  
 
@@ -12,6 +12,7 @@ There are four main interface elements that compose the node: the node's name, t
 * **Operator Type**: The associated operator to the node. It determines the native plugs of the node.
 * **Trigger Plugs**: The trigger plugs (`>>>`) are plugs meant to define the node's position in the execution graph. They do not pass any data. If the node has other input or output plugs connected to another node, the trigger plugs do not need to be connected; otherwise, it is recommended to connect these plugs to indicate when the node needs to get computed.
 * **I/O's Plugs**: Input and output plugs are define the incoming data required by the operator and the resulting data after it is computed. 
+* **Progress bar**: A visual indicator of the percentage of the node's execution that is complete. 
 
 ### Inspect a Node
 
