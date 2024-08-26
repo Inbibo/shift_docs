@@ -10,14 +10,17 @@ The log level determines which messages will be logged depending on its critical
 
 |Log Level|Description|Color|
 |:--|:---|:--|
-|DEBUG | Technical information about execution processes, usually only of interest for developers when trying to diagnose an issue. | No color
+|DEBUG | Technical information about execution processes, usually useful for developers when trying to diagnose an issue. | No color
+
 |INFO | General information about execution processes indicating that are they working as expected.| No color
-|WARNING | Information about a behavior that might not be the expected one or might cause issues in the near future. | Yellow
+|WARNING | Information about a behavior that might not be the expected one and might cause issues in the near future. | Yellow
+
 |ERROR | Information about a process that has not been able to execute successfully. Errors are usually handled by Shift and indicate the source of the problem.| Red
 |CRITICAL| Information about a process that has not been able to execute successfully due to a serious problem. Exceptions not handled by Shift are considered critical.| Red
 |LOG | Logs from the Logger itself, usually indicating that Shift has started properly. These messages always print. | No color
 
-By default, when opening Shift the Logger is set to the Warning level. The level can be changed through the UI, by choosing the preferred log level under the `View -> Log Level` options in the menu top bar.
+By default, when opening Shift the Logger is set to the *Warning* level. The level can be changed via the UI, by choosing the preferred log level under the `View -> Log Level` options in the top menu bar.
+
 
 >[!NOTE]
 >If persistent critical errors are experienced, please, [contact support](https://inbibo.co.uk/contact?_gl=1*m7h22j*_up*MQ..*_ga*MTU4MzcxNTg4OS4xNzI0MzE2MTQ2*_ga_DY05R1LZDB*MTcyNDMxNjE0Ni4xLjEuMTcyNDMxNjE1Mi4wLjAuMTg0MTg0MzEwNw..) attaching the error message and providing a description of the issue.
