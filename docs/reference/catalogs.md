@@ -22,6 +22,7 @@ Catalogs are scripted Python files that define a list of operators classes and t
 
 ## The Catalog Manager
 
-The Catalog Manager allows to inspect the current existing catalogs in Shift, add new ones, and load or unload them. 
+The Catalog Manager is used to inspect the current available catalogs for Shift, add new ones, and load or unload them. 
+
 
 TO BE DEFINED BY ISSUE #16
