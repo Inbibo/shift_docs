@@ -3,7 +3,9 @@
 Iteration Nodes are used to create and define loops within a workflow. 
 
 ## Iterator Node
-The *Iterator* node is used to create a loop in a workflow. This node generates multiple execution subgraphs with the nodes following the *Iterator* node. Each execution of the loop uses one value from the input iterable object as if it was effectively iterating over its elements.
+
+This node forces the execution of the subgraph composed by the nodes following the *Iterator* node as many times as the number of elements passed to the input of the node. Each execution of the loop uses one value from the input iterable object as if it was effectively iterating over its elements.
+
 
 ![Iterator Node](../../images/nodes/iterator.png) 
 
@@ -15,10 +17,13 @@ The *Iterator* node is used to create a loop in a workflow. This node generates 
 - **inValues** : This plug of type [Object](../nodes/#plugs) expects an iterable Python object, such as lists, dictionaries, sets or tuples. The number of elements of the iterable object will determine the number of loops the *Iterator* node will execute.
 
 ### Outputs
+
 - **outValue**: This plug of type [Object](../nodes/#plugs) will output one value of the input iterable object corresponding to the current iteration. This means that the output of this plug will change dynamically for each loop the iteration Node executes. 
 
+
 ## IteratorEnd Node
-The *IteratorEnd* node is used to define the end of a loop started by an *Iterator* node. This means that all nodes between an *Iterator* and a *IteratorEnd* will be part of the execution loop. It is recommended to always have an *IteratorEnd* node per *Iterator* node in a workflow.
+The *IteratorEnd* node is used to define the end of a loop started by an *Iterator* node. This means that only the nodes between the *Iterator* and the *IteratorEnd* will compose the subgraph used for the execution loop. It is recommended to always have one *IteratorEnd* node per *Iterator* node in a workflow.
+
 
 ![IteratorEnd Node](../../images/nodes/iteratorEnd.png)  
 

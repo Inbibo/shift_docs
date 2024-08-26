@@ -1,6 +1,6 @@
 # Python Script Node
 
-The *PythonScript* node offers the possibility to write custom Python code to develop new and specific operator behaviors. This feature is useful for prototyping workflows or processing specialized tasks not covered by other Shift nodes.
+The *PythonScript* node offers the possibility to write custom Python code to develop new and specific execution behaviors. This feature is useful for prototyping workflows or processing specialized tasks not covered by other Shift nodes.
 
 External Python libraries can be imported to enhance the capabilities of the *PythonScript* node, as long as the environment used to launch Shift supports those libraries. To do this, simply import the modules or packages within the *PythonScript* node and use them as you would in any Python code.
 
@@ -11,7 +11,6 @@ External Python libraries can be imported to enhance the capabilities of the *Py
 - **Script**: This plug of type [Code](../nodes/#plugs) defines the logic of the *PythonScript* node. On the [Inspector](../../getting_started/basics/ui_overview.md/#inspector), this plug provides a script editor for Python to write the block of code to be executed.
 
 The *PythonScript* node allows for any type of custom plugs too. Custom input plugs can receive data from other nodes that can be imported into the code by just using the plug name as a variable.
-
 
 ### Outputs
 
