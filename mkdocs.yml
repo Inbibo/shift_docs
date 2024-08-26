@@ -132,7 +132,7 @@ nav:
       - Nuke:                     integration_resources/software/nuke.md
       - Resolve:                  integration_resources/software/resolve.md
       - Deadline:                 integration_resources/software/deadline.md
-    - Open Resources:
+    - Other Resources:
       - USD:                      integration_resources/resources/usd.md
       - Ftrack:                   integration_resources/resources/ftrack.md
   - Release Notes:
