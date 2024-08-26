@@ -19,6 +19,8 @@ The *PythonScript* node allows for any type of custom plugs too. Custom input pl
 
 If outputting several values is needed, new output plugs of any type, including Instance plugs, can be added to the node. All custom outputs can be used the same way as the default output plug to return any data from the python script execution.
 
+![Python Script Sum Example](../../images/nodes/sum_python_script.png) 
+
 >[!NOTE]
 > Plugs in *PythonScript* nodes cannot be renamed, as it is important to keep the plug's name unique and consistent for the node's correct function. 
 

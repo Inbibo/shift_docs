@@ -23,7 +23,7 @@ The *IteratorEnd* node is used to define the end of a loop started by an *Iterat
 ![IteratorEnd Node](../../images/nodes/iteratorEnd.png)  
 
 >[!NOTE]
-> It is advised to connect to the *IteratorEnd* node the output generated in the loop via a custom `through` plug. 
+> It is advised to connect to the *IteratorEnd* node the output generated in the loop via a custom `through` plug. The output plugs of the *IteratorEnd* node will contain the the values of the last iteration. 
 
 ## ListAccumulator Node
 The *ListAccumulator* node allows to accumulate the result of each iteration of the loop. The elements to be appended to the list are defined by custom input plugs added to the node.
