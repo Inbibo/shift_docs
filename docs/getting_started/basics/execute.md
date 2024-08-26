@@ -1,31 +1,35 @@
-# Executing Your Workflow
+# Workflow Execution
 
-You can execute your workflow in different ways:
+The execution of a node in a Shift workflow consist in the evaluation of its internal logic given the node's input data. If the execution completes successfully, the output plugs will be updated with the result and the node will be flagged as **clean**. All clean nodes will be displayed with a full blue progress bar and will not be recomputed unless they become **dirty**. The dirty status is set whenever a plug value is modified or the workflow gets saved or manually reset via the Shift UI. Shift will use dirty propagation to identify the nodes affected by the modifications done to a node and flag them to be recomputed.
 
-## Execute All
+There are different ways a workflow can be executed, which depend on which nodes will get computed. 
 
-Click the “Execute” button (![Execute Button](../images/toolbar/button_execute.png){:width="25" height="25"}). You should see the nodes progress bars lighting up.
+## ![Execute All Button](../../images/toolbar/execute_all_default.svg){:width="25" height="25"} Execute All
 
-![Execute All](../images/execute_all.gif)
+The "Execute All" action will compute all the dirty nodes present in the workflow. 
 
-## Stop Execution
+![Execute All](../../images/execute_all.gif)
 
-Shift uses dirty propagation to determine which nodes need to be recomputed. Whenever a plug value on a node is modified, that node is set to be recomputed in the next execution. You can force Shift to recompute all nodes by pressing the “Stop Execution” button (![Stop Execution](../images/toolbar/button_executeStop.png){:width="30" height="30"}).
+## ![Execute Selected Button](../../images/toolbar/execute_selected_default.svg){:width="25" height="25"} Execute Selected
 
-## Execute Step-by-Step
+The "Execute Selected" action will compute all the selected nodes in the workflow. To do so, Shift will identify the workflow sub-graph required to evaluate the desired nodes and execute it.
 
-It is also possible to execute a workflow step-by-step. Simply press the “Execute Next Operator” button (![Execute Next Button](../images/toolbar/button_executeNext.png){:width="30" height="30"}) to see the workflow being executed one node at a time.
+![Execute Selected](../../images/execute_selected.gif)
 
-![Execute Step by Step](../images/execute_step_by_step.gif)
+## ![Execute Next Button](../../images/toolbar/execute_next_default.svg){:width="25" height="25"} Execute Next
 
-## Execute Selected
+The "Execute Next" action will compute the next dirty node present in the workflow. This allows to execute one node at a time and becomes useful to closely follow and inspect the processing of the workflow.
 
-The execution can also be forced on selected nodes. By selecting the desired nodes and pressing the “Execute Selected” button (![Execute Selected Button](../images/toolbar/button_executeSelected.png){:width="30" height="30"}), Shift will identify the workflow sub-graph required to evaluate the desired nodes and execute it.
+![Execute Next](../../images/execute_step_by_step.gif)
 
-## Live Execution
+## ![Clear Execution Button](../../images/toolbar/clear_all_default.svg){:width="25" height="25"} Clear Execution
 
-Finally, it is also possible to trigger the execution of a workflow whenever a change to any node is done by using the live execution option. Press the “Toggle Live Execution” button (![Live Execute](../images/toolbar/button_executeLiveOff.png){:width="30" height="30"}) and Shift will execute the workflow automatically every time a change is being made.
+The "Clear Execution" action will set all the nodes in the workflow to dirty. All **connected** inputs and output values will be cleared to their default values. This forces Shift to recompute all nodes the next time the workflow has to be executed. 
 
-![Live Execution](../images/live_execution.gif)
+![Clear Execution](../../images/clear_execution.gif)
 
-While the Live Execution is turned on, the other execution buttons are disabled. To re-enable all the execution buttons, turn Live Execution off.
+## ![Live Execution Button](../../images/toolbar/execute_live_default.svg){:width="25" height="25"} Live Execution
+
+The "Live Execution" action allows to trigger the execution of the whole workflow whenever a change to any node is done. While the "Live Execution" is turned on, the other execution buttons are disabled. To re-enable all the execution buttons, turn Live Execution off.
+
+![Live Execution](../../images/live_execution.gif)
