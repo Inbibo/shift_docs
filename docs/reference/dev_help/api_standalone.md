@@ -32,6 +32,9 @@ All Shift operators inherit from the `SOperator` Shift's Python class. To write 
 Here is an example of an operator class syntax:
 
 <pre><code class="language-python" style="background-color: #f00; white-space: wrap">
+
+TEST
+
 from shift.core.workflow import SOperator
 from shift.core.workflow import SPlug
 from shift.core.constants import SType
