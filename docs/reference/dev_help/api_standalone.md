@@ -31,7 +31,7 @@ All Shift operators inherit from the `SOperator` Shift's Python class. To write 
 
 Here is an example of an operator class syntax:
 
-<pre><code id="python_code">
+```python
 from shift.core.workflow import SOperator
 from shift.core.workflow import SPlug
 from shift.core.constants import SType
@@ -77,7 +77,7 @@ class MyOperator(SOperator):
 
         self.getPlug("output").setValue(output)
         super(self.__class__, self).execute(force)
-</code></pre>
+```
 
 The `SOperator` constructor method takes care of initializing the plug objects and adding them to the operator. Each plug must be initialized specifying:
 - A unique code name, which will correspond to the name displayed in the UI.
@@ -97,7 +97,7 @@ Finally Shift allows you to create your own Qt-based custom tools that can be in
 
 Similarly to the custom catalog you can create your custom Plugin for Shift in a Python file. The Plugin must follow the syntax in the example in order for it to correctly communicate with the Shift operators and interface:
 
-<pre><code id="python_code">
+```python
 from PySide2 import QtWidgets
 
 class MyPlugin(QtWidgets.QDialog):
@@ -127,14 +127,14 @@ class MyPlugin(QtWidgets.QDialog):
     def myUpdateUIMethod(self):
 
         <your_qt_update_logic>
-</code></pre>
+```
 
 This is a basic implementation example to show how the interaction with the Shift UI with Qt signals should be initialized. The `MyPlugin` class is parented to the Shift Main Window which gives us access to certain signals for the global interaction with the Shift UI (like `newBoardCreated`). Then the workflow specific actions like node selection, node removal or workflow execution are controlled by the specific Shift board which contains the operators we are working with. As each board in Shift is a separate Python instance, we must connect its signals every time a new board is created. We suggest to organize this logic in the `connectBoardSignals` method like in the example code. An API `SPlugin` class will come in the future to take care of simplifying the implementation of this logic.
 
 Plugins need an additional file to setup the information needed by Shift to integrate the Plugin in the UI.
 Such file is a *json* and should be called `plugins.json`. Here is an example of its content:
 
-<pre><code>
+```
 "My Plugin": {
         "menu": "My Menu",
         "path": "<path_to_the_plugin_file>/myPlugin.py",
@@ -145,7 +145,7 @@ Such file is a *json* and should be called `plugins.json`. Here is an example of
         "path": "<path_to_the_plugin_file>/myOtherPlugin.py",
         "class": "myOtherPlugin"
     }
-</code></pre>
+```
 
 As we can see from the example in this file we can list several plugins to be initialized and specify the path to the python file containing the specific Plugin class and the top menu to add the new entry to. If the mentioned menu is not present already, Shift will take care of creating it for you.
 
