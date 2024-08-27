@@ -5,7 +5,7 @@ This page covers all the information about Shift's interface and interactions wi
 ## The Shift Window
 
 <center>
-    <img src ="../../../images/ui.png" alt="Shift Window UI"/>
+    <img src ="images/ui.png" alt="Shift Window UI"/>
 </center>
 
 ## Menu Bar
@@ -51,7 +51,7 @@ Additional menus from the ones listed are plugin menus, which allow to extend Sh
 The toolbar consists in a list of buttons with the most used and relevant actions for Shift.
 
 <center>
-    <img src ="../../../images/toolbar.png" alt="Toolbar"/>
+    <img src ="images/toolbar.png" alt="Toolbar"/>
 </center>
 
 These are, from left to right:
@@ -100,7 +100,7 @@ The inspector is used to display and modify the properties of the selected nodes
 - The node's outputs: List of node outputs and its corresponding values.
 
 <center>
-    <img src ="../../../images/inspector.png" alt="Inspector Widget" />
+    <img src ="images/inspector.png" alt="Inspector Widget" />
 </center>
 
 > [!NOTE]
@@ -111,7 +111,7 @@ The inspector is used to display and modify the properties of the selected nodes
 The logger displays all the log messages generated while working on Shift. This covers everything from nodes errors and warnings, setup information, missing configurations or extraordinary exceptions raised by Shift. Log messages can be removed by clicking `Clear` on the bottom right corner of the widget. 
 
 <center>
-    <img src ="../../../images/logger.png" alt="Logger Widget" />
+    <img src ="images/logger.png" alt="Logger Widget" />
 </center>
 
 More information about the logger and custom configuration can be found [here](../../reference/logger.md).
