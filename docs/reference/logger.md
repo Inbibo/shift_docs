@@ -29,7 +29,7 @@ By default, when opening Shift the Logger is set to the *Warning* level. The lev
 
 All messages caught by the Logger are recorded in log files. Shift uses a rotating file handler, meaning that new logs will be created when the file exceeds a specific size without exceeding a set number of backups. By default, the log files can be found in the OS's default temporary directory:
 
-> [!NOTE = Temporary Folder]
+> [!NOTE = Temporary Folder Location]
 > === Windows
 > 
 > `C:\Users\<username>\AppData\Local\Temp`
