@@ -22,6 +22,7 @@ To start working with the USD API in Shift, please follow the following steps:
 
 <!-- ##Plugins
 
+TODO #43
 This section is reserved to USD Plugins information 
 
 ### Examples
