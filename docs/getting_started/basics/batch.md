@@ -1,8 +1,30 @@
 # Batch Execution
 
-Shift is able to run workflows without the need of a UI interface. This is called Batch mode and can be used via the Shift Python API.
+Shift is able to run workflows without the need of a UI interface. This is called Batch mode and can be launched via a terminal command or using the Shift Python API.
 
-## Opening a Workflow
+## Terminal Command
+
+The Batch execution of a Shift workflow can be launched using the `shift_batch` command located in the Shift installation root folder. Here is an example of the command syntax:
+
+> [!NOTE = Example Command]
+> === Windows
+> 
+> `shift_batch.bat "path_to_workflow_file/workflow.sft" myInt=1 myFloat=5.6 myBool=True myList=[1,2.5,0.03]`
+>
+>  === Linux
+>
+> `./shift_batch "path_to_workflow_file/workflow.sft" myInt=1 myFloat=5.6 myBool=True myList=[1,2.5,0.03]`
+
+This command allows users to provide initialization for external inputs via a human readable format. Like it is shown in the example above, an arbitrary number of specific input plug values can be passed to the workflow by formatting the arguments of the command as `<input_plug_name>=<plug_value>`. The plug value passed by the call will then be casted to the desired Python object type depending on the type of the plug that it is being set to.
+
+> [!WARNING]
+> This command can only be used to pass serializable objects as inputs. For more advanced use it is suggested to write your own Python script and use the Shift Python API.
+
+## Shift Python API
+
+The Shift Python API allows more flexibility when launching Batch execution of Shift workflows.
+
+### Opening a Workflow
 
 The following snippet of code can be used to open a Shift workflow file:
 
@@ -14,7 +36,7 @@ workflow, catalog_manifest = files.openBatchWorkflow("<path_to_your_workflow_fil
 
 The `openBatchWorkflow `method will return the `SWorkflow` Python class containing the workflow and a Python dictionary containing the information on the Shift catalogs loaded by the workflow. Have a look at the [Shift API](../../reference/api.md) for more information on the method and the `SWorkflow` class.
 
-## Executing a Workflow
+### Executing a Workflow
 
 Once the workflow file is opened, its execution can be triggered with the following code:
 
@@ -35,7 +57,7 @@ result = workflow.execute(workflow_externals)
 
 The `result` variable will contain a similarly structured dictionary with the output plug names of the `Output` operator as keys and their content as values. If the workflow does not contain an Output node, the result will be `None`, for this reason it is suggested to always set up an `Input` and an `Output` operator in your workflows.
 
-## Closing a Workflow
+### Closing a Workflow
 
 It is highly recommended to close the workflow after the execution is done. This process will take care of cleaning the unneeded Shift catalogs from memory. This can be performed by calling the method:
 
