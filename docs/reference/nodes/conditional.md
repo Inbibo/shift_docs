@@ -6,7 +6,7 @@
 
 The *ConditionalEquals* node allows to compare if two values are equal. Depending on the result of the comparison, the execution of the workflow will continue through one graph branch or another. 
 
-<figure style="width:80%" markdown>
+<figure style="width:80%;" markdown>
     ![ConditionEquals Node](images/conditionEquals.png)
 </figure>
 
@@ -19,7 +19,7 @@ The *ConditionalEquals* node allows to compare if two values are equal. Dependin
 - **false**: This plug of type [Bool](../nodes/#plugs) indicates if the compared values are not equal. If that is the case (the value of this plug is `True`), the nodes connected to this plug will be executed.
 
 In this example, we are comparing two `True` boolean values. The result of the ConditionalEquals evaluation is **true**, therefore, the branch connected to the *true* plug will be evaluated.
-<figure style="width:80%" markdown>
+<figure style="width:80%;" markdown>
     ![ConditionEquals Node Execution](images/conditionalsExecution.gif)
 </figure
 
