@@ -8,6 +8,7 @@ The *ConditionalEquals* node allows to compare if two values are equal. Dependin
 
 <figure style="width:80%;" markdown>
     ![ConditionEquals Node](images/conditionEquals.png)
+    <figcaption><b>Figure 1</b>: ConditionEquals Node UI.</figcaption>
 </figure>
 
 ### Inputs
@@ -21,6 +22,7 @@ The *ConditionalEquals* node allows to compare if two values are equal. Dependin
 In this example, we are comparing two `True` boolean values. The result of the ConditionalEquals evaluation is **true**, therefore, the branch connected to the *true* plug will be evaluated.
 <figure style="width:80%;" markdown>
     ![ConditionEquals Node Execution](images/conditionalsExecution.gif)
+    <figcaption><b>Figure 2</b>: ConditionEquals execution for a true evaluation.</figcaption>
 </figure
 
 <!-- ### Examples
