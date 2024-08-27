@@ -4,7 +4,7 @@ The *PythonScript* node offers the possibility to write custom Python code to de
 
 External Python libraries can be imported to enhance the capabilities of the *PythonScript* node, as long as the environment used to launch Shift supports those libraries. To do this, simply import the modules or packages within the *PythonScript* node and use them as you would in any Python code.
 
-<figure markdown>
+<figure style="width:80%" markdown>
     ![Python Script Operator](images/pyscript.png)  
 </figure>
 
@@ -20,7 +20,7 @@ The *PythonScript* node allows for any type of custom plugs too. Custom input pl
 
 If outputting several values is needed, new output plugs of any type, including Instance plugs, can be added to the node. All custom outputs can be used the same way as the default output plug to return any data from the Python script execution.
 
-<figure markdown>
+<figure style="width:80%" markdown>
     ![Python Script Sum Example](images/sum_python_script.png)
 </figure>
 
