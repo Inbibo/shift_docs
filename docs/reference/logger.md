@@ -12,10 +12,8 @@ The log level determines which messages will be logged depending on its critical
 |Log Level|Description|Color|
 |:--|:---|:--|
 |DEBUG | Technical information about execution processes, usually useful for developers when trying to diagnose an issue. | No color
-
 |INFO | General information about execution processes indicating that are they working as expected.| No color
 |WARNING | Information about a behavior that might not be the expected one and might cause issues in the near future. | Yellow
-
 |ERROR | Information about a process that has not been able to execute successfully. Errors are usually handled by Shift and indicate the source of the problem.| Red
 |CRITICAL| Information about a process that has not been able to execute successfully due to a serious problem. Exceptions not handled by Shift are considered critical.| Red
 |LOG | Logs from the Logger itself, usually indicating that Shift has started properly. These messages always print. | No color
@@ -29,7 +27,16 @@ By default, when opening Shift the Logger is set to the *Warning* level. The lev
 
 ## Log Files
 
-All messages caught by the Logger are recorded in log files. Shift uses a rotating file handler, meaning that new logs will be created when the file exceeds a specific size without exceeding a set number of backups. By default, the log files can be found in a temporary folder in the user's AppData directory.
+All messages caught by the Logger are recorded in log files. Shift uses a rotating file handler, meaning that new logs will be created when the file exceeds a specific size without exceeding a set number of backups. By default, the log files can be found in the OS's default temporary directory:
+
+> [!NOTE = Temporary Folder]
+> === Windows
+> 
+> `C:\Users\<username>\AppData\Local\Temp`
+>
+>  === Linux
+>
+> `/tmp`
 
 ## Configuring the Logger
 
@@ -38,10 +45,9 @@ The default configuration settings of the Logger can be changed by defining the 
 |Environment Variable| Description | Fallback Value |
 |:--|:---|:--|
 |`SHIFT_LOG_LEVEL`| The default log level when starting Shift.| "*WARNING*"
-
 |`SHIFT_LOG_MAXSIZE`| The maximum size of the log files in MB.| "*10485760*"
 |`SHIFT_LOG_MAXFILES`| The maximum number of log files.| "*5*"
-|`SHIFT_LOG_DIRECTORY`| The location of log files.| "*C:/Users/[USERNAME]/AppData/Local/Temp/Shift*"
+|`SHIFT_LOG_DIRECTORY`| The location of log files.| OS's default temporary directory.
 
 >[!NOTE]
 > If the maximum size or the maximum number of files is 0, Shift will generate a unique log file with no size limit.
