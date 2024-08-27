@@ -7,7 +7,7 @@ Iteration Nodes are used to create and define loops within a workflow.
 This node forces the execution of the subgraph composed by the nodes following the *Iterator* node as many times as the number of elements passed to the input of the node. Each execution of the loop uses one value from the input iterable object as if it was effectively iterating over its elements.
 
 <figure markdown>
-    ![Iterator Node](../../images/nodes/iterator.png)
+    ![Iterator Node](images/iterator.png)
 </figure>
 
 >[!NOTE]
@@ -26,7 +26,7 @@ This node forces the execution of the subgraph composed by the nodes following t
 The *IteratorEnd* node is used to define the end of a loop started by an *Iterator* node. This means that only the nodes between the *Iterator* and the *IteratorEnd* will compose the subgraph used for the execution loop. It is recommended to always have one *IteratorEnd* node per *Iterator* node in a workflow.
 
 <figure markdown>
-    ![IteratorEnd Node](../../images/nodes/iteratorEnd.png)
+    ![IteratorEnd Node](images/iteratorEnd.png)
 </figure>
 
 >[!NOTE]
@@ -36,7 +36,7 @@ The *IteratorEnd* node is used to define the end of a loop started by an *Iterat
 The *ListAccumulator* node allows to accumulate the result of each iteration of the loop. The elements to be appended to the list are defined by custom input plugs added to the node.
 
 <figure markdown>
-    ![ListAccumulator Node](../../images/nodes/listAccumulator.png)
+    ![ListAccumulator Node](images/listAccumulator.png)
 </figure>
 
 ### Inputs
