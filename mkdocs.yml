@@ -25,6 +25,8 @@ theme:
     scheme: slate
     primary: light blue
     accent: deep purple
+  icon:
+    repo: fontawesome/brands/github
 extra_css:
   - /stylesheets/extra.css
 use_directory_urls: true
@@ -123,10 +125,15 @@ nav:
       - reference\dev_help\api_standalone.md
       - Shift Python API:         reference/api.md
   - Integrations & Resources:
-    - Maya:                     integration_resources/maya.md
-    - Houdini:                  integration_resources/houdini.md
-    - Nuke:                     integration_resources/nuke.md
-    - USD:                      integration_resources/usd.md
-    - Deadline:                 integration_resources/deadline.md
+    - integration_resources/integrations_resources.md
+    - Software Platforms:
+      - Maya:                     integration_resources/software/maya.md
+      - Houdini:                  integration_resources/software/houdini.md
+      - Nuke:                     integration_resources/software/nuke.md
+      - Resolve:                  integration_resources/software/resolve.md
+      - Deadline:                 integration_resources/software/deadline.md
+    - Other Resources:
+      - USD:                      integration_resources/resources/usd.md
+      - Ftrack:                   integration_resources/resources/ftrack.md
   - Release Notes:
     - Release Notes:            release_notes.md
