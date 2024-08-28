@@ -64,14 +64,14 @@ This code placed in a menu.py file executed by Nuke will create a Shift toolbar 
 
 
 <figure>
-      <img src="images/nuke/shift_toolbar.png" alt="UI">
+      <img src="images/shift_toolbar.png" alt="UI">
       <figcaption><b>Figure 1</b>: Shift Toolbar.</figcaption>
 </figure>
 
 and a Shift menu entry
 
 <figure>
-      <img src="images/nuke/shift_menu.png" alt="UI">
+      <img src="images/shift_menu.png" alt="UI">
       <figcaption><b>Figure 2</b>: Shift Menu.</figcaption>
 </figure>
 
