@@ -7,7 +7,7 @@ Shift provides a `nshift` utility script to properly bind the Shift UI to Nuke. 
 ```python
 import sys
 sys.path.append("<path_to_your_shift_folder>")
-sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages")
+sys.path.append("<path_to_your_shift_folder>/shift/thirdparty/python/Lib/site-packages")
 
 from shift.tools import nshift
 nshift.show()

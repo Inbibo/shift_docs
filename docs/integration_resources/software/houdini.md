@@ -7,7 +7,7 @@ Shift provides a `hshift` utility script to properly bind the Shift UI to Houdin
 ```python
 import sys
 sys.path.append("<path_to_your_shift_folder>")
-sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages")
+sys.path.append("<path_to_your_shift_folder>/shift/thirdparty/python/Lib/site-packages")
 
 from shift.tools import hshift
 hshift.show()

@@ -15,7 +15,7 @@ In order to run shift inside Maya, you need to run the following inside the Maya
 ```python
 import sys
 sys.path.append("<path_to_your_shift_folder>")
-sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages")
+sys.path.append("<path_to_your_shift_folder>/shift/thirdparty/python/Lib/site-packages")
 
 from shift.tools import mshift
 mshift.show()
@@ -28,7 +28,7 @@ Similarly inside Houdini, you need to run the following inside the Houdini *Pyth
 ```python
 import sys
 sys.path.append("<path_to_your_shift_folder>")
-sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages")
+sys.path.append("<path_to_your_shift_folder>/shift/thirdparty/python/Lib/site-packages")
 
 from shift.tools import hshift
 hshift.show()
@@ -41,7 +41,7 @@ Inside Nuke, you need to run the following inside the Nuke *Script Editor*:
 ```python
 import sys
 sys.path.append("<path_to_your_shift_folder>")
-sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages")
+sys.path.append("<path_to_your_shift_folder>/shift/thirdparty/python/Lib/site-packages")
 
 from shift.tools import nshift
 nshift.show()
