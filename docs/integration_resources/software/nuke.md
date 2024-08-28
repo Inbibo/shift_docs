@@ -55,7 +55,7 @@ try:
     shiftM = menubar.addMenu("Shift")
     shiftM.addCommand("Shift UI", shiftCode, '')
 except Exception as e:
-    pass  # Skip the Error raise to avoid Nuke faililg at opening if setting up the menu does not work on startup.
+    pass  # Skip the Error raise to avoid Nuke failing at opening if setting up the menu does not work on startup.
 ```
 
 This code placed in a menu.py file executed by Nuke will create a Shift toolbar entry
