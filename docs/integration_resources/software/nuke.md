@@ -33,7 +33,8 @@ sys.path.append("<path_to_your_shift_folder>/shift/thirdparty/python/Lib/site-pa
 
 ### Menu
 
-In the menu.py file is required to configure the Shift menu and toolbar entries in the Nuke UI.
+In the menu.py file it is required to configure the Shift menu and toolbar entries in the Nuke UI.
+
 
 ```python
 import os
