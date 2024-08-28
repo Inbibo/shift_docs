@@ -58,7 +58,8 @@ except Exception as e:
     pass  # Skip the Error raise to avoid Nuke faililg at opening if setting up the menu does not work on startup.
 ```
 
-This code placed in a menu.py executed by Nuke will create a Shif toolbar entry
+This code placed in a menu.py file executed by Nuke will create a Shift toolbar entry
+
 
 ![Shift Toolbar](../../images/nuke/shift_toolbar.png)
 
