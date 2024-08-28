@@ -10,4 +10,4 @@ After downloading the package, unzip the folder to the desired location and doub
 
 For running Shift with a custom Python interpreter, refer to the  [requirements](requirements.md) page.
 
--<!-- TODO #44 -->
+<!-- TODO #44 -->
