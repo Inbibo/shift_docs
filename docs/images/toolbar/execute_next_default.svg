@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #999;
+        stroke-miterlimit: 10;
+        stroke-width: 2.12px;
+      }
+
+      .cls-1, .cls-2 {
+        fill: #3c4150;
+      }
+
+      .cls-3 {
+        fill: aqua;
+      }
+
+      .cls-3, .cls-2, .cls-4, .cls-5 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #999;
+      }
+
+      .cls-5 {
+        fill: #23262f;
+      }
+    </style>
+  </defs>
+  <g id="executeNext">
+    <g id="nodes_copy_2" data-name="nodes copy 2">
+      <rect class="cls-5" x="13.84" y="7.75" width="44.32" height="50.44" rx="4.23" ry="4.23"/>
+    </g>
+    <g id="nodes_copy_3" data-name="nodes copy 3">
+      <rect class="cls-1" x="9.84" y="3.75" width="44.32" height="49.47" rx="4.23" ry="4.23"/>
+    </g>
+    <circle class="cls-4" cx="48.1" cy="47.53" r="13.48"/>
+    <g>
+      <path class="cls-2" d="M52.59,47.23l-10.3-6.49c-.11-.07-.24-.07-.35,0s-.18.18-.18.3v12.99c0,.13.07.24.18.3.11.06.24.06.35,0l10.3-6.49c.1-.06.16-.17.16-.29s-.06-.23-.16-.29h0Z"/>
+      <path class="cls-2" d="M53.4,40.6h.69c.19,0,.34.19.34.34v13.17c0,.19-.15.34-.34.34h-.69c-.19,0-.34-.19-.34-.34v-13.17c0-.19.15-.34.34-.34Z"/>
+    </g>
+    <g id="light_copy_3" data-name="light copy 3">
+      <g id="light-2" data-name="light">
+        <polygon class="cls-5" points="33.28 11.86 44.4 11.86 36.6 27.23 44.4 27.23 26.24 48.4 31.69 35.32 22.16 35.32 33.28 11.86"/>
+      </g>
+      <polygon id="light-3" data-name="light" class="cls-3" points="30.72 9.47 41.84 9.47 34.04 24.84 41.84 24.84 24.26 48.09 29.13 32.93 19.6 32.93 30.72 9.47"/>
+    </g>
+  </g>
+</svg>

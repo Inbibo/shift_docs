@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: aqua;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #999;
+      }
+
+      .cls-3 {
+        fill: #23262f;
+      }
+
+      .cls-4 {
+        fill: #3c4150;
+        stroke: #999;
+        stroke-miterlimit: 10;
+        stroke-width: 1.88px;
+      }
+    </style>
+  </defs>
+  <g id="execSelect">
+    <g id="nodes_copy" data-name="nodes copy">
+      <rect class="cls-3" x="13.16" y="7.75" width="43.4" height="50.44" rx="2.94" ry="2.94"/>
+      <rect class="cls-4" x="9.16" y="3.75" width="43.58" height="49.48" rx="2.94" ry="2.94"/>
+    </g>
+    <g id="light_copy" data-name="light copy">
+      <g id="light-2" data-name="light">
+        <polygon class="cls-3" points="33.14 11.86 44.26 11.86 36.46 27.23 44.26 27.23 26.1 48.4 31.55 35.32 22.02 35.32 33.14 11.86"/>
+      </g>
+      <polygon id="light-3" data-name="light" class="cls-1" points="30.58 9.47 41.7 9.47 33.9 24.84 41.7 24.84 24.12 48.09 28.99 32.93 19.46 32.93 30.58 9.47"/>
+    </g>
+    <polygon class="cls-2" points="60.73 53.25 43.12 32.97 43.12 59.83 49.42 54.27 52.18 61.65 55.09 60.56 52.33 53.18 60.73 53.25"/>
+  </g>
+</svg>
