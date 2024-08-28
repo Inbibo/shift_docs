@@ -63,11 +63,17 @@ This code placed in a menu.py file executed by Nuke will create a Shift toolbar 
 
 
 
-![Shift Toolbar](../../images/nuke/shift_toolbar.png)
+<figure>
+      <img src="../../images/nuke/shift_toolbar.png" alt="UI">
+      <figcaption><b>Figure 1</b>: Shift Toolbar.</figcaption>
+</figure>
 
 and a Shift menu entry
 
-![Shift Menu](../../images/nuke/shift_menu.png)
+<figure>
+      <img src="../../images/nuke/shift_menu.png" alt="UI">
+      <figcaption><b>Figure 2</b>: Shift Menu.</figcaption>
+</figure>
 
 when Nuke is initialized.
 
@@ -77,7 +83,7 @@ In Shift it is possible to launch the execution of a workflow via an application
 
 **SHIFT_PROCESS_NUKE** : path to Nuke's Python interpreter (python)
 
-You can set this environment variable in any environment to be able to execute Shift Workflows in Nuke even if Shift in running in Standalone or a different Software environment.
+The variable can be set in any environment to be able to execute Shift Workflows in Nuke even if Shift in running in Standalone or a different Software environment.
 
 ## Catalogs
 
