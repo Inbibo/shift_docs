@@ -15,7 +15,7 @@ nshift.show()
 
 ## Shift installation in Nuke
 
-In order to have Shift installed inside Nuke and be able to open the Shift UI with a menu entry, is required to setup Shift in the user init and menu python files. It can be added in the user init and menu files from the nuke preference folder ([home directory]/.nuke) or a custom init and menu files inside the pipeline. If the directory were this files are stored is a path read by Nuke, they will be automatically executed on startup.
+In order to have Shift installed inside Nuke and be able to open the Shift UI with a menu entry, is required to setup Shift in the user init and menu python files. It can be added in the user init and menu files from the nuke preference folder ([home directory]/.nuke) or a custom init and menu files inside your pipeline. If the directory were this files are stored is a path read by Nuke, they will be automatically executed on startup.
 
 ### Init
 
@@ -24,7 +24,7 @@ In the init.py file is required to configure the Shift basics to work in Nuke ba
 ```python
 import sys
 sys.path.append("<path_to_your_shift_folder>")
-sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages")
+sys.path.append("<path_to_your_shift_folder>/shift/thirdparty/python/Lib/site-packages")
 ```
 
 >[!NOTE]
