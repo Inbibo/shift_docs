@@ -28,7 +28,7 @@ sys.path.append("<path_to_your_shift_folder>/shift/thirdparty/python/Lib/site-pa
 ```
 
 >[!NOTE]
-> If the paths are added in the system or before opening Nuke, then this configuration step won't be required.
+> If the paths are added in the system or before opening Nuke, then this configuration step will not be required.
 
 
 ### Menu
