@@ -23,14 +23,14 @@ At the very top of the application we find Shift's menu bar. This menu has all t
 ||||
 |*Undo*|*Edit*|Undoes the last action performed on the board.|`Ctrl+Z`|
 |*Redo*|*Edit*|Redoes the last undo performed on the board.|`Ctrl+Y`|
-|*Add New Node*|*Edit*|Prompts the "[Create Node](../basics/authoring.md/#creating-a-node)" dialog.|`Ctrl+A`|
-|*Duplicate Nodes*|*Edit*|Duplicates the selected items.|`Ctrl+D`|
-|*Copy Items*|*Edit*|Copies the selected items to the clipboard.|`Ctrl+C`|
-|*Paste Items*|*Edit*|Pastes the items copied on the clipboard.|`Ctrl+V`|
-|*Cut Items*|*Edit*|Removes and copies the selected items to the clipboard.|`Ctrl+X`|
-|*Remove Node*|*Edit*|Removes an item from the board.|`Del`|
+|*Add New Node*|*Edit*|Prompts the "[Create Node](basics/authoring.md/#creating-a-node)" dialog.|`Ctrl+A`|
+|*Duplicate*|*Edit*|Duplicates the selected items.|`Ctrl+D`|
+|*Copy*|*Edit*|Copies the selected items to the clipboard.|`Ctrl+C`|
+|*Paste*|*Edit*|Pastes the items copied on the clipboard.|`Ctrl+V`|
+|*Cut*|*Edit*|Copies and removes the selected items to the clipboard.|`Ctrl+X`|
+|*Remove*|*Edit*|Removes an item from the board.|`Del`|
 |*Add Note*|*Edit*|Adds a new note to the board.|`N`|
-|*Add Plug*|*Edit*|If a node is selected, prompts the "[Add Plug](../basics/authoring.md/#creating-new-plugs)" dialog.|`Ctrl+P`|
+|*Add Plug*|*Edit*|If a node is selected, prompts the "[Add Plug](basics/authoring.md/#creating-new-plugs)" dialog.|`Ctrl+P`|
 ||||
 |*Execute All*|*Execute*|Executes all the nodes in the workflow.|`Ctrl+Return`|
 |*Execute Selected*|*Execute*|Executes the selected nodes in the workflow.|`Shift+Return`|
