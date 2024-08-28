@@ -4,7 +4,7 @@ Shift Plugins are developed as custom *PySide2* classes inheriting from `QtWidge
 
 ## Writing a Plugin Class
 
-The Plugin widget class instances will always be parented to the Shift Main Window so a good starting point to look at the API index can be the `shift.ui.widgets.main.ShiftWindow` class to understand how to access objects like: the current board, the current workflow, its operators or workflow variables.
+The Plugin widget class instances will always be parented to Shift's Main Window. This facilitates access to objects like the current board, the current workflow, operators, or workflow variables. To learn more about how to integrate a custom Plugin into Shift, please refer to Shift's API, especially to the application's main widget `shift.ui.widgets.main.ShiftWindow`. 
 
 Shift's native plugins code, together with a template file can be found in the `shift/plugins` folder. These should serve as a reference for implementing your custom logic and integrating it correctly inside Shift.
 
