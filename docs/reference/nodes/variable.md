@@ -3,7 +3,8 @@
 The *Variable* node provides a way to save and reuse data throughout the workflow. Plugs set in a *Variable* node will be treated as global variables of the workflow, allowing their values to be accessed at any point in the graph. This node is helpful when multiple nodes across large workflows need to share data or a variable needs to be updated for each step of an iteration loop.
 
 <figure style="width:80%;" markdown>
-    ![Variable Node](images/variable.png)
+    <img src="images/variable.png" alt="Variable Node">
+    <figcaption><b>Figure 1</b>: Variable Node UI.</figcaption>
 </figure> 
 
 ### Inputs
