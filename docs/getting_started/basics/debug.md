@@ -15,7 +15,7 @@ Once the error is fixed, for example by changing a connection or a plug value, t
 
 ### Logger
 
-The error traceback information can be consulted in the [Logger widget](ui_overview.md/#the-logger) too. The logger also reports warnings raised by nodes, and other Shift messages such as plug connection errors or other general logs related to the workflow or the application itself. 
+The error traceback information can be consulted in the [Logger widget](ui_overview#the-logger) too. The logger also reports warnings raised by nodes, and other Shift messages such as plug connection errors or other general logs related to the workflow or the application itself. 
 To learn more about the Logger's messages and configuration, please refer to this [page](../../reference/logger.md). 
 
 

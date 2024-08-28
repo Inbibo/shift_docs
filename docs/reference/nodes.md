@@ -28,7 +28,7 @@ To read further information about a node, `Right-Click` on the node and `Click` 
 
 ## Plugs
 
-Plugs define the input and output data of the nodes. Data values can be set through the [*Inspector Widget*](../getting_started/basics/ui_overview.md#the-inspector) or by connecting plugs, which allows nodes to pass data from one to another. The kind of data compatible with a plug is defined by the plug type.
+Plugs define the input and output data of the nodes. Data values can be set through the [*Inspector Widget*](../getting_started/basics/ui_overview#the-inspector) or by connecting plugs, which allows nodes to pass data from one to another. The kind of data compatible with a plug is defined by the plug type.
 
 **Plug Types**
 

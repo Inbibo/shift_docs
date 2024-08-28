@@ -9,7 +9,7 @@ To create a new [node](../terminology.md/#node), press the `Tab` key or `Double 
 
 ![Create Node Dialog](../../images/create_node_dialog.gif "Create Node Dialog")
 
-Alternatively, nodes can be added to the board using the [Nodes List widget](ui_overview.md/#the-nodes-list) present in the Shift interface.
+Alternatively, nodes can be added to the board using the [Nodes List widget](ui_overview#the-nodes-list) present in the Shift interface.
 
 ## Creating Connections
 
