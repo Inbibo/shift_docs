@@ -47,7 +47,7 @@ Each Plugin main entry name will define the name displayed by the Plugin menu en
 
 Shift allows users to add their custom plugins even to native menus. If a new menu name is requested, it will be added to the UI automatically.
 
-Now that the required setups are ready, the Plugin can be sourced by appending the path to the *plugins.json* file to the `SHIFT_PLUGIN_PATH` environment variable before starting Shift. For example in *Windows*:
+Once the .json file is created and populated, the Plugin can be sourced by appending the path to the *plugins.json* file to the `SHIFT_PLUGIN_PATH` environment variable before starting Shift. For example in *Windows*:
 
 ```cmd
 set SHIFT_PLUGIN_PATH=<path_to_the_plugins_json>/plugins.json;%SHIFT_PLUGIN_PATH%
