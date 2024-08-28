@@ -5,3 +5,5 @@ To install Shift, download the *.zip* file corresponding to the preferred Python
 After downloading the package, unzip the folder to the desired location and double-click the `shift.bat` file to launch the application.
 
 For running Shift with a custom Python interpreter, refer to the  [requirements](requirements.md) page.
+
+<!-- TODO #44 -->
