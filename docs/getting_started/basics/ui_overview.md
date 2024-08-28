@@ -19,18 +19,18 @@ At the very top of the application we find Shift's menu bar. This menu has all t
 |*Open Recent*|*File*|Lists the most recent workflows to open.||
 |*Save Workflow*|*File*|Saves the current workflow.|`Ctrl+S`|
 |*Save Workflow As*|*File*|Saves the current workflow with a new name.|`Ctrl+Shift+S`|
-|*Catalog Manager*|*File*|Opens the [Catalog Manager](../../reference/catalogs/#catalog-manager).|`P`|
+|*Catalog Manager*|*File*|Opens the [Catalog Manager](../../reference/catalogs#catalog-manager).|`P`|
 ||||
 |*Undo*|*Edit*|Undoes the last action performed on the board.|`Ctrl+Z`|
 |*Redo*|*Edit*|Redoes the last undo performed on the board.|`Ctrl+Y`|
-|*Add New Node*|*Edit*|Prompts the "[Create Node](basics/authoring.md/#creating-a-node)" dialog.|`Ctrl+A`|
+|*Add New Node*|*Edit*|Prompts the "[Create Node](authoring#creating-a-node)" dialog.|`Ctrl+A`|
 |*Duplicate*|*Edit*|Duplicates the selected items.|`Ctrl+D`|
 |*Copy*|*Edit*|Copies the selected items to the clipboard.|`Ctrl+C`|
 |*Paste*|*Edit*|Pastes the items copied on the clipboard.|`Ctrl+V`|
 |*Cut*|*Edit*|Copies and removes the selected items to the clipboard.|`Ctrl+X`|
 |*Remove*|*Edit*|Removes an item from the board.|`Del`|
 |*Add Note*|*Edit*|Adds a new note to the board.|`N`|
-|*Add Plug*|*Edit*|If a node is selected, prompts the "[Add Plug](basics/authoring.md/#creating-new-plugs)" dialog.|`Ctrl+P`|
+|*Add Plug*|*Edit*|If a node is selected, prompts the "[Add Plug](authoring#creating-new-plugs)" dialog.|`Ctrl+P`|
 ||||
 |*Execute All*|*Execute*|Executes all the nodes in the workflow.|`Ctrl+Return`|
 |*Execute Selected*|*Execute*|Executes the selected nodes in the workflow.|`Shift+Return`|
