@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="default" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #2be6ef;
+        stroke-miterlimit: 10;
+        stroke-width: 4px;
+      }
+
+      .cls-2 {
+        fill: #999;
+      }
+
+      .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #23262f;
+      }
+    </style>
+  </defs>
+  <g id="liveExec_default">
+    <g id="light-2" data-name="light">
+      <polygon class="cls-3" points="33.26 11.02 45.59 11.02 36.94 28.06 45.59 28.06 24.76 57.83 31.49 37.04 20.92 37.04 33.26 11.02"/>
+    </g>
+    <g id="light-3" data-name="light">
+      <polygon class="cls-2" points="31.59 8.59 43.77 8.59 35.23 25.41 43.77 25.41 23.21 54.78 29.85 34.27 19.42 34.27 31.59 8.59"/>
+    </g>
+    <g id="signal">
+      <path class="cls-1" d="M44.86,45.76c3.86-3.6,6.27-8.73,6.27-14.42,0-5.25-2.05-10.01-5.39-13.54"/>
+      <path class="cls-1" d="M18.54,17.91c-3.29,3.52-5.3,8.25-5.3,13.45,0,5.64,2.37,10.74,6.17,14.33"/>
+      <path class="cls-1" d="M51.61,51.36c4.98-4.92,8.06-11.74,8.06-19.29s-3.02-14.24-7.91-19.14"/>
+      <path class="cls-1" d="M12.52,13.03c-4.84,4.9-7.82,11.62-7.82,19.05s3.03,14.27,7.94,19.17"/>
+    </g>
+  </g>
+</svg>
