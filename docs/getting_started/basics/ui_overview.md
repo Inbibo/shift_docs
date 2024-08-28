@@ -5,7 +5,10 @@ This page covers all the information about Shift's interface and interactions wi
 ## The Shift Window
 
 <center>
-    <img src ="images/ui.png" alt="Shift Window UI"/>
+    <figure>
+        <img src ="images/ui.png" alt="Shift Window UI"/>
+        <figcaption><b>Figure 1</b>: Shift UI at startup.</figcaption>
+    </figure>
 </center>
 
 ## Menu Bar
