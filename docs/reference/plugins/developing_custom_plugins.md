@@ -4,21 +4,51 @@ Shift Plugins are developed as custom *PySide2* classes inheriting from `QtWidge
 
 ## Writing a Plugin Class
 
-The Plugin widget class instances will always be parented to Shift's Main Window. This facilitates access to objects like the current board, the current workflow, operators, or workflow variables. To learn more about how to integrate a custom Plugin into Shift, please refer to Shift's API, especially to the application's main widget `shift.ui.widgets.main.ShiftWindow`. 
+The Plugin widget class instances will always be parented to Shift's Main Window. This facilitates access to objects like the current board, the current workflow, operators, or workflow variables. To learn more about how to integrate a custom Plugin into Shift, please refer to Shift's API, especially to the application's main widget `shift.ui.widgets.main.ShiftWindow`.
 
 Shift's native plugins code, together with a template file can be found in the `shift/plugins` folder. These should serve as a reference for implementing your custom logic and integrating it correctly inside Shift.
 
-Advanced users can code their own way through the Shift Python API, however it is strongly recommended to wrap all your Qt signal connections in a dedicated method (see the `MainWidget._connectBoardSignals` in the *pluginTemplate.py* example file).
+Advanced users can code their own way through the Shift Python API, however it is strongly recommended to follow these design principles:
+
+- Store the widget parent in a class property. After the initialization of the widget class, Shift will change the parenting hierarchy. For this reason it is strongly suggested to store the parent object in the Plugin class constructor. At initialization time, the parent will correspond to the *ShiftWindow* object.
 
 ```python
-def _connectBoardSignals(self):
-    """Standard method to connect to the current board signals."""
+  class MainWidget(QtWidgets.QWidget):
+      """Main plugin widget.
 
-    # The signals to be connected from the board...e.g.
-    self.parent().getActiveBoard().workflowExecuted.connect(self._updateContent)
+      @param parent shift.ui.widgets.main.ShiftWindow: The Shift main window.
+
+      """
+      def __init__(self, parent=None):
+          super(MainWidget, self).__init__(parent)
+
+          #Store the ShiftWindow inside a class property
+          self.mainWindow = parent
 ```
 
-This method should be run for all existing and new board tabs for the Plugin to correctly interact with Shift.
+- Wrap all the Qt signal connection calls to the board in a dedicated method (see the `MainWidget._connectBoardSignals` in the *pluginTemplate.py* example file). As each workflow board propagates its own Qt signals, connections must be performed for all existing boards and new ones.
+
+```python
+  def _connectBoardSignals(self):
+      """Standard method to connect to the current board signals."""
+
+      # The signals to be connected from the board...e.g.
+      self.mainWindow.getActiveBoard().workflowExecuted.connect(self._updateContent)
+```
+
+This method should be run for all existing and new board tabs for the Plugin to correctly interact with Shift. The ideal way to do that is to use this method as a Qt slot and connect it to the following signals at the end of the Plugin class constructor logic:
+
+```python
+  def __init__(self, parent=None):
+
+      [...]
+
+      self.mainWindow._boardTabsWidget.currentChanged.connect(self._connectBoardSignals)
+      self.mainWindow.newBoardCreated.connect(self._connectBoardSignals)
+      self._connectBoardSignals()
+```
+
+This will automatically connect the board signals to the currently active one and brand new ones.
 
 ## Adding the Plugin to Shift
 
@@ -47,8 +77,6 @@ Each Plugin main entry name will define the name displayed by the Plugin menu en
 
 Shift allows users to add their custom plugins even to native menus. If a new menu name is requested, it will be added to the UI automatically.
 
-Once the .json file is created and populated, the Plugin can be sourced by appending the path to the *plugins.json* file to the `SHIFT_PLUGIN_PATH` environment variable before starting Shift. For example in *Windows*:
+Once the .json file is created and populated, the Plugin can be sourced by appending the path to the *plugins.json* file to the `SHIFT_PLUGIN_PATH` environment variable before starting Shift:
 
-```cmd
-set SHIFT_PLUGIN_PATH=<path_to_the_plugins_json>/plugins.json;%SHIFT_PLUGIN_PATH%
-```
+**SHIFT_PLUGIN_PATH** : "<path_to_the_plugins_json>/plugins.json"
