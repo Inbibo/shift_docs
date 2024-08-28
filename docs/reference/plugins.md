@@ -12,6 +12,7 @@ The *Operators List* Plugin helps us visualize the list of operators in the work
 
 ![Opening a Plugin](/images/opening_a_plugin.gif)
 
-The *Variables Browser* allows users to parse the workflow variables currently set and check their content. This is especially helpful in large workflows where it is easy to lose track of the nodes previously executed. This Plugin also allows to delete specific workflow variables when developing your workflow. To do that right-click on the variable entry that should be deleted and select the *Delete* option.
+The *Variables Browser* allows users to parse the workflow variables currently set and check their content. This is especially helpful in large workflows where it is easy to lose track of which nodes were previously executed. This Plugin also allows to delete specific workflow variables set while working on a workflow. To do that `Right-click` on the variable entry to delete and select the *Delete* option.
+
 
 ![Variables Browser Plugin](/images/variables_browser_plugin.gif)
