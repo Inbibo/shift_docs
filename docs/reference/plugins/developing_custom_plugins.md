@@ -41,9 +41,9 @@ The first step to add the Plugin to the Shift UI is to create a *json* file cont
 
 Each Plugin main entry name will define the name displayed by the Plugin menu entry in the top bar menu. Then for each Plugin entry will need:
 
-- the name of the top menu entry that the Plugin should be added to.
-- the absolute or relative path to the Python file containing the Plugin class
-- the name of the Plugin class to be imported
+- The name of the top menu entry that the Plugin should be added to.
+- The absolute or relative path to the Python file containing the Plugin class.
+- The name of the Plugin class to be imported.
 
 Shift allows users to add their custom plugins even to native menus. If a new menu name is requested, it will be added to the UI automatically.
 
