@@ -4,21 +4,17 @@ Shift is able to run workflows without the need of a UI interface. This is calle
 
 ## Terminal Command
 
-The Batch execution of a Shift workflow can be launched using the `shift_batch` command located in the Shift installation root folder. Here is an example of the command syntax:
+The Batch execution of a Shift workflow can be launched using the `shift_batch_lite` command located in the Shift installation root folder. Here is an example of the command syntax:
 
 > [!NOTE = Example Command]
 > === Windows
 > 
-> `shift_batch.bat "path_to_workflow_file/workflow.sft" myInt=1 myFloat=5.6 myBool=True myList=[1,2.5,0.03]`
->
->  === Linux
->
-> `./shift_batch "path_to_workflow_file/workflow.sft" myInt=1 myFloat=5.6 myBool=True myList=[1,2.5,0.03]`
+> `shift_batch_lite.bat "path_to_workflow_file/workflow.sft" myInt=1 myFloat=5.6 myBool=True myList=[1, 2.5, 0.03, 'Hello World'] myString='Shift is great!'`
 
 This command allows users to provide initialization for external inputs via a human readable format. Like it is shown in the example above, an arbitrary number of specific input plug values can be passed to the workflow by formatting the arguments of the command as `<input_plug_name>=<plug_value>`. The plug value passed by the call will then be casted to the desired Python object type depending on the type of the plug that it is being set to.
 
 > [!WARNING]
-> This command can only be used to pass serializable objects as inputs. For more advanced use it is suggested to write your own Python script and use the Shift Python API.
+> String type inputs must be wrapped in single quotation marks (`'`), as shown in the example above. Double quotation marks (`"`) are special characters that the OS might use to process the command syntax and can lead to unexpected behaviour.
 
 ## Shift Python API
 
