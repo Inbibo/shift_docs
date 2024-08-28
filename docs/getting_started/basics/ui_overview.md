@@ -53,7 +53,7 @@ The toolbar consists in a list of buttons with the most used and relevant action
 
 <figure>
       <img src="images/toolbar.png" alt="Toolbar">
-      <figcaption><b>Figure 2</b>: Shift's tool bar.</figcaption>
+      <figcaption><b>Figure 2</b>: Shift's tool bar.</figcaption>   
 </figure>
 
 These are, from left to right:
