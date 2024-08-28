@@ -28,7 +28,7 @@ At the very top of the application we find Shift's menu bar. This menu has all t
 |*Copy*|*Edit*|Copies the selected items to the clipboard.|`Ctrl+C`|
 |*Paste*|*Edit*|Pastes the items copied on the clipboard.|`Ctrl+V`|
 |*Cut*|*Edit*|Copies and removes the selected items to the clipboard.|`Ctrl+X`|
-|*Remove*|*Edit*|Removes an item from the board.|`Del`|
+|*Remove*|*Edit*|Removes the selected items from the board.|`Del`|
 |*Add Note*|*Edit*|Adds a new note to the board.|`N`|
 |*Add Plug*|*Edit*|If a node is selected, prompts the "[Add Plug](authoring#creating-new-plugs)" dialog.|`Ctrl+P`|
 ||||
@@ -75,8 +75,8 @@ The following controls are available for the board:
 
 |Action|Short-Cut|
 |:--|:--|
-|*Pan*|`Alt + Left-Click` or `Middle-Click`|
-|*Zoom*|`Alt + Right-Click` or `Mouse Wheel`|
+|*Pan*|`Alt + Left-Click and Drag` or `Middle-Click and Drag`|
+|*Zoom*|`Alt + Right-Click and Drag` or `Mouse Wheel`|
 |*Focus on Selected*|`F`|
 |*Select*|`Left-Click`|
 |*Add to Selection*|`Shift + Left-Click`|
@@ -97,7 +97,7 @@ Shift standalone comes with three native and indispensable widgets:
 The inspector is used to display and modify the properties of the selected nodes in the workflow. It is divided into four sections (from top to bottom):
 
 - The node's unique name.
-- The parameters group: It contains the operator's name, which can be modify to change the name of the node.
+- The parameters group: It contains the operator's name, which can be modified to change the name of the node.
 - The node's inputs: List of node inputs and its corresponding values. Input values can be modified here as long as they are not connected to another plug; if this is the case, the corresponding widget will be disabled and greyed out.
 - The node's outputs: List of node outputs and its corresponding values.
 
