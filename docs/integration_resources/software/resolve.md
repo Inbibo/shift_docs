@@ -21,6 +21,13 @@ To use the Python interpreter provided with Shift, set up the variable in this w
 
 **SHIFT_PROCESS_NUKE** : <path_to_your_shift_folder>/shift/thirdparty/python
 
+It's required to add to the PATH the directories of Shift too. This paths can be added in the environment, before open Resolve, or in the python file where Shift will be executed.
+
+```
+PATH: <path_to_your_shift_folder>
+PATH: <path_to_your_shift_folder>/thirdparty/python/Lib/site-packages
+```
+
 ## Shift Menu
 
 The Resolve Script menus for python files are limited to add entries to the section of `Workspace>Scripts` and split by workspaces layouts inside.
@@ -47,6 +54,10 @@ For a windows local user, the result path for the file will be this one:
 Inside the file, add the following code:
 
 ```python
+import sys
+sys.path.append("<path_to_your_shift_folder>")
+sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages")
+
 from shift.tools import shiftui
 shiftui.show()
 ```
