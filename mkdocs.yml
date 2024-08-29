@@ -117,15 +117,14 @@ nav:
       - Variable Node:          reference/nodes/variable.md
       - Conditional Node:       reference/nodes/conditional.md
     - Catalogs:                 reference/catalogs.md
-    - Plugins:                  
-      - reference/plugins.md
-      - Developing Custom Plugins: reference/plugins/developing_custom_plugins.md
+    - Plugins:                  reference/plugins.md
     - Notes:                    reference/notes.md
     - Logger:                   reference/logger.md
     - Enviorment Variables:     reference/enviorment.md
     - Developer Guide:        
-      - reference\dev_help\api_standalone.md
-      - Shift Python API:         reference/api.md
+      - Developing Catalogs:    reference/dev_help/developing_custom_catalogs.md
+      - Developing Plugins:     reference/dev_help/developing_custom_plugins.md
+      - Shift Python API:       reference/api.md
   - Integrations & Resources:
     - integration_resources/integrations_resources.md
     - Software Platforms:
