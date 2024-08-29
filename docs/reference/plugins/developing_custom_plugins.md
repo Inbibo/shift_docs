@@ -36,14 +36,14 @@ Advanced users can code their own way through the Shift Python API, however it i
       self.mainWindow.getActiveBoard().workflowExecuted.connect(self._updateContent)
 ```
 
-This method should be run for all existing and new board tabs for the Plugin to correctly interact with Shift. The ideal way to do that is to use this method as a Qt slot and connect it to the following signals at the end of the Plugin class constructor logic:
+This method should be executed for all existing and new board tabs for the Plugin to correctly interact with Shift. The ideal way to do that is to use this method as a Qt slot and connect it to the following signals at the end of the Plugin class constructor logic:
 
 ```python
   def __init__(self, parent=None):
 
       [...]
 
-      self.mainWindow._boardTabsWidget.currentChanged.connect(self._connectBoardSignals)
+      self.mainWindow.getBoardTabsWidget().currentChanged.connect(self._connectBoardSignals)
       self.mainWindow.newBoardCreated.connect(self._connectBoardSignals)
       self._connectBoardSignals()
 ```
