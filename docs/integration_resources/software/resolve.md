@@ -62,6 +62,9 @@ from shift.tools import shiftui
 shiftui.show()
 ```
 
+>[!NOTE]
+> If the paths are added in the system or before opening Nuke, then this configuration step will not be required.
+
 With this file saved, Resolve will show a Shift menu that can be executed to open the Shift UI inside Davinci Resolve.
 
 <figure>
