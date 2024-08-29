@@ -6,8 +6,8 @@ Shift provides a `nshift` utility script to properly bind the Shift UI to Nuke. 
 
 ```python
 import sys
-sys.path.append("<path_to_your_shift_folder>")
-sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages")
+sys.path.append("<path_to_the_shift_installation_folder>")
+sys.path.append("<path_to_the_shift_installation_folder>/thirdparty/python/Lib/site-packages")
 
 from shift.tools import nshift
 nshift.show()
@@ -24,8 +24,8 @@ In the init.py file is required to configure the Shift basics to work in Nuke ba
 
 ```python
 import sys
-sys.path.append("<path_to_your_shift_folder>")
-sys.path.append("<path_to_your_shift_folder>/shift/thirdparty/python/Lib/site-packages")
+sys.path.append("<path_to_the_shift_installation_folder>")
+sys.path.append("<path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages")
 ```
 
 >[!NOTE]
