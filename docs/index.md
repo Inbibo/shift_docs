@@ -18,3 +18,12 @@ With Shift you can:
 - create custom operators for use case specific scenarios,
 - improve efficiency at authoring workflows in your pipeline,
 - have a common technology foundation for your team.
+
+
+## Start to Shift
+
+- [Installation](getting_started/installation.md)
+- [Licensing](getting_started/licensing.md)
+- [Requirements](getting_started/requirements.md)
+- [Shift Basics](getting_started/basics/ui_overview.md)
+- [Integrations & Resources](integration_resources/integrations_resources.md)
