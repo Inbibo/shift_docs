@@ -30,9 +30,11 @@ To add a new entry and have a Shift menu in Resolve, is required to add a python
 Mac OS X:
   - All users: /Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts
   - Specific user:  /Users/<UserName>/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts
+
 Windows:
   - All users: %PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts
   - Specific user: %APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts
+
 Linux:
   - All users: /opt/resolve/Fusion/Scripts  (or /home/resolve/Fusion/Scripts/ depending on installation)
   - Specific user: $HOME/.local/share/DaVinciResolve/Fusion/Scripts
