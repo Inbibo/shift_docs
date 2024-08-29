@@ -1,12 +1,12 @@
-# Your Shift Development
+# Extending Shift
 
-## Creating a Catalog
+## Custom Catalogs
 
-With shift you can create your own customized catalog with nodes tailored for your specific usecase and softwares.
+In Shift it is possible to create customized catalogs with operators tailored for specific use cases and softwares.
 
-A custom catalog can be written in Python and it must contain a global variable called `catalog` which is a Python dictionary containing the information on the catalog which will be displaied by Shift and a list with the index with the operator classes inside the file.
-Here is an example from the Shift's *Constants* catalog:
+Custom catalogs are written in Python and include a global variable called `catalog`. This variable is a Python dictionary containing the information for the catalog, such as a description, version and authors. Additionally, this dictionary will define the list of operator classes included in the catalog.
 
+**Catalog Dictionary Example**
 ```python
 catalog = {"Description": "This catalog includes fundamental Python type operators.",
            "Version": "1.0.0",
@@ -17,20 +17,31 @@ catalog = {"Description": "This catalog includes fundamental Python type operato
                         [Bool,    []]]}
 ```
 
-A catalog must be then sourced in Shift either by using the *Catalog Manager* from the Shift UI or by adding the path to the folder containing the catalog file to the `SHIFT_CATALOG_PATH` environment variable.
+>[!NOTE]
+> The *Operators* list from the `catalog` is a list of lists containing two elements. The first one corresponds to the operator class, and the second one is a list of compatible hosts for the operator. If no host is specified, the node will be usable in any context. For instance, if the second element is `["maya", "houdini"]` the operator will be only available for those DCC's. Refer to [Integrations & Resources](../../integration_resources/integrations_resources.md) for more information.
+
+There are two ways of adding a custom catalog to Shift:
+
+- **As a User Catalog**: Use the [Catalog Manager](../catalogs/#the-catalog-manager) to source the catalog file and add it to Shift. This catalog is saved in the user preferences.
+- **As an Environment Catalog**: Add the **path to the directory** containing the catalog file to the `SHIFT_CATALOG_PATH` environment variable. All files in this path containing a `catalog` object will be identified as custom catalogs and loaded by Shift.
 
 ## Operator Syntax
 
-Inside the catalog file you can create your custom operators as Python classes. Here is an example of its syntax:
+All Shift operators inherit from the `SOperator` Shift's Python class. To write a custom operator, the `__init__` and `execute` methods must be overwritten. 
+
+Here is an example of an operator class syntax:
 
 ```python
 from shift.core.workflow import SOperator
 from shift.core.workflow import SPlug
 from shift.core.constants import SType
 from shift.core.constants import SDirection
-
+ 
 class MyOperator(SOperator):
-
+    """ The docstring provided for the SOperator class will be use as the operator's description when inspecting a node's information. 
+    It is recommended to write a detailed description of the operator's behavior alongside the required inputs and outputs here.
+  
+    """
     def __init__(self, code, parent=None):
 
         super(self.__class__, self).__init__(code, parent)
@@ -68,13 +79,19 @@ class MyOperator(SOperator):
         super(self.__class__, self).execute(force)
 ```
 
-The example operator's constructor method takes care of initalizing the plug objects and adding them to the operator. Each plug must be initialized specifying its type (which in this case is `SType.kInt`) and a direction which can be either `SDirection.kIn` or `SDirection.kOut`.
+The `SOperator` constructor method takes care of initializing the plug objects and adding them to the operator. Each plug must be initialized specifying:
+- A unique code name, which will correspond to the name displayed in the UI.
+- A value, which will correspond to the value the plug is initialized with.
+- A type, which will define the behaviour of the plug when translating the provided inputs to a Python object. Check the `SType` class in Shift's API for more information.
+- A direction which can be either `SDirection.kIn` or `SDirection.kOut`.
 
-The **execute** method takes care of defining the list of steps to be performed when the execution of the operator is issued inside Shift. In the example the execute method picks up the values of the two input plugs and mutliplies them together. Finally it stores the result in the output plug.
+The **execute** method takes care of defining the list of steps to be performed when the execution of the operator is issued inside Shift. In the example above, the execute method picks up the values of the two input plugs and multiplies them together. Finally, it stores the result in the output plug.
 
 Please refer to the Shift API documentation to know more about which plug types are present in Shift, and which additional methods the `SPlug` and `SOperator` classes offer.
 
 ## Creating a Plugin
+
+TO BE REVIEWED BY ISSUE #17
 
 Finally Shift allows you to create your own Qt-based custom tools that can be integrated in the Shift interface, to allow visual feedback or interaction for your workflows. An example of this could be the *Usd Outliner* from *Shift_USD* which allows the user to traverse the Usd Stages loaded by the catalog Operators and visualize the Prim hierachy.
 
@@ -117,7 +134,7 @@ This is a basic implementation example to show how the interaction with the Shif
 Plugins need an additional file to setup the information needed by Shift to integrate the Plugin in the UI.
 Such file is a *json* and should be called `plugins.json`. Here is an example of its content:
 
-```json
+```
 "My Plugin": {
         "menu": "My Menu",
         "path": "<path_to_the_plugin_file>/myPlugin.py",
