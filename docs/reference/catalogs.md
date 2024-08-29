@@ -17,7 +17,7 @@ Shift comes with six native catalogs that contain the necessary nodes to start b
 
 ### Custom Catalogs
 
-Catalogs are scripted Python files that define a list of operators classes and their execution logic. To learn more about how to write a custom catalog, please refer to the [developer's guide](../reference/dev_help/developers_guide/#create-a-catalog) for catalogs. 
+Catalogs are scripted Python files that define a list of operators classes and their execution logic. To learn more about how to write a custom catalog, please refer to the [Developer guide](../reference/developer_guide/developing_custom_catalogs.md) for catalogs.
 
 
 ## The Catalog Manager

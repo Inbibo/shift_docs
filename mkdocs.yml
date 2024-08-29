@@ -122,9 +122,9 @@ nav:
     - Logger:                   reference/logger.md
     - Enviorment Variables:     reference/enviorment.md
     - Developer Guide:        
-      - Developing Catalogs:    reference/dev_help/developing_custom_catalogs.md
-      - Developing Plugins:     reference/dev_help/developing_custom_plugins.md
-      - Shift Python API:       reference/dev_help/api.md
+      - Developing Catalogs:    reference/developer_guide/developing_custom_catalogs.md
+      - Developing Plugins:     reference/developer_guide/developing_custom_plugins.md
+      - Shift Python API:       reference/developer_guide/api.md
   - Integrations & Resources:
     - integration_resources/integrations_resources.md
     - Software Platforms:
