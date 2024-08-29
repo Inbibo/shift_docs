@@ -6,7 +6,7 @@ Shift supports the integration of custom Plugins. Shift Plugins are Qt based UIs
 
 Shift ships with two plugins which can be found in the *Tools* section in the top menu bar.
 
-The *Nodes Outliner* Plugin helps us visualize the list of operators in the workflow and shows the their current progress. This plugin also lists the nodes in order of execution. This might vary in case *Iterator* or *ConditionEquals* nodes are used as they affect the execution stack order.
+The *Nodes Outliner* Plugin helps us visualise the list of operators in the workflow and shows the their current progress. This plugin also lists the nodes in order of execution. This might vary in case *Iterator* or *ConditionEquals* nodes are used as they affect the execution stack order.
 
 <figure>
       <img src="images/opening_a_plugin.gif" alt="UI">
