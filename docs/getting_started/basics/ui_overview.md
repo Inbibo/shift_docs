@@ -97,7 +97,7 @@ Shift standalone comes with three native and indispensable widgets:
 The inspector is used to display and modify the properties of the selected nodes in the workflow. It is divided into four sections (from top to bottom):
 
 - The node's unique name.
-- The parameters group: It contains the operator's name, which can be modified to change the name of the node.
+- The parameters group: It contains the node's name, which can be modified to change the name of the node.
 - The node's inputs: List of node inputs and its corresponding values. Input values can be modified here as long as they are not connected to another plug; if this is the case, the corresponding widget will be disabled and greyed out.
 - The node's outputs: List of node outputs and its corresponding values.
 
