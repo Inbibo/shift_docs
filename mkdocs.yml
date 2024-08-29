@@ -124,7 +124,7 @@ nav:
     - Developer Guide:        
       - Developing Catalogs:    reference/dev_help/developing_custom_catalogs.md
       - Developing Plugins:     reference/dev_help/developing_custom_plugins.md
-      - Shift Python API:       reference/api.md
+      - Shift Python API:       reference/dev_help/api.md
   - Integrations & Resources:
     - integration_resources/integrations_resources.md
     - Software Platforms:
