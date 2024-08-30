@@ -1,6 +1,6 @@
 # Introduction
 
-Welcome to the technical documentation of Shift where we provide you with all the information you need to use the software in your digital characters. If you need more information or help, please do not hesitate to send an email to shiftsupport@inbibo.co.uk with your consult.
+Welcome to the technical documentation of Shift where we provide you with all the information you need to use the software to create workflows to automate tasks. If you need more information or help, please do not hesitate to send an email to shiftsupport@inbibo.co.uk with your consult.
 
 ## Key Values 
 
