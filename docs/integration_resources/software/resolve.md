@@ -58,7 +58,7 @@ shiftui.show()
 ```
 
 >[!NOTE]
-> If the paths are added in the system or in the environment before opening Resolve, then lines to append the path to the system won't be required.
+> If the paths are added in the system or in the environment before opening Resolve, then the code to append the path to the system won't be required.
 
 With this file saved, Resolve will show a Shift menu that can be executed to open the Shift UI inside Davinci Resolve.
 
