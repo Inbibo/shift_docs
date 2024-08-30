@@ -5,7 +5,7 @@ Welcome to the technical documentation of Shift where we provide you with all th
 ## Key Values 
 
 Shift is a node-based low-code automation software entirely written in Python.  
-With Shift you can use libraries of operators and workflows, connect them together and intuitively build complex processes. Being based on Python, means that Shift gives you the freedom to implement any type of workflow.
+With Shift you can use libraries of operators, connect them together and intuitively build workflows to run complex processes. Being based on Python, means that Shift gives you the freedom to implement any type of workflow.
 
 - **Easy to Use**: Most automation in VFX, Animation and Video Games relies on the availability of people with software development skills. Shift node-based approach is more familiar to many digital artists and technical directors, allowing everyone to intuitively contribute to the technology stack.
 - **Lean & Scalable**: Working with many interconnected pipeline scripts makes it difficult to follow the pace enforced by production. Using operator catalogs and working with processes as assets (not software) allows to rapidly adapt and address any production and business requirement.
