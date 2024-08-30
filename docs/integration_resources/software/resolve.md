@@ -31,7 +31,7 @@ PATH: <path_to_your_shift_folder>/thirdparty/python/Lib/site-packages
 
 ## Shift Menu
 
-The Resolve Script menus for python files are limited to add entries to the section of `Workspace>Scripts` and split by workspaces layouts inside.
+The Resolve Script menus for Python files are limited to add entries to the section of `Workspace>Scripts` and splitted by workspaces layouts inside.
 
 To add a new entry and have a Shift menu in Resolve, is required to add a python script to the Resolve Scripts folder. This folder can be different for each Resolve version, and it's recommended to check the right directory for the version that is being used. However, typically the folder is located in this locations:
 
