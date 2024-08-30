@@ -51,7 +51,8 @@ Inside the file, add the following code:
 ```python
 import sys
 sys.path.append("<path_to_the_shift_installation_folder>")
-sys.path.append("<path_to_the_shift_installation_folder>/thirdparty/python/Lib/site-packages")
+sys.path.append("<path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages")
+
 
 from shift.tools import shiftui
 shiftui.show()
