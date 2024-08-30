@@ -9,7 +9,8 @@ Shift can be integrated in Davinci Resolve and used to automate editorial proces
       <figcaption><b>Figure 1</b>: Shift UI in Davinci Resolve.</figcaption>
 </figure>
 
-To run Shift inside Davinci Resolve is required to set up the configuration required by Blackmagic to have the ability of execution python code inside Resolve. 
+To run Shift inside Davinci Resolve it is required to set up the configuration needed by Blackmagic to be able to execute Python code inside Resolve. 
+
 
 ## Python Interpreter Setup
 
