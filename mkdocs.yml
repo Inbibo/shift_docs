@@ -120,7 +120,7 @@ nav:
     - Plugins:                  reference/plugins.md
     - Notes:                    reference/notes.md
     - Logger:                   reference/logger.md
-    - Enviorment Variables:     reference/enviorment.md
+    - Environment Variables:     reference/environment.md
     - Developer Guide:        
       - reference\dev_help\api_standalone.md
       - Shift Python API:         reference/api.md
