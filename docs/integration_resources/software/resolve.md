@@ -2,7 +2,7 @@
 
 ## Running Shift in Davinci Resolve
 
-Shift can be integrated in Davinci Resolve and used to automatize editorial process using all the catalog provided with Shift, but specially the Shift_Resolve catalog.
+Shift can be integrated in Davinci Resolve and used to automate editorial process using all the catalog provided with Shift, but specially the Shift_Resolve catalog.
 
 <figure>
       <img src="images/resolve_shift_ui.png" alt="Resolve Shift UI">
