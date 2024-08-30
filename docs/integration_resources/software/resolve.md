@@ -22,8 +22,8 @@ To use the Python interpreter provided with Shift, set up the variable in this w
 It's required to add to the PATH the directories of Shift too. This paths can be added in the environment, before open Resolve, or in the python file where Shift will be executed.
 
 ```
-PATH: <path_to_your_shift_folder>
-PATH: <path_to_your_shift_folder>/thirdparty/python/Lib/site-packages
+PATH: <path_to_the_shift_installation_folder>
+PATH: <path_to_the_shift_installation_folder>/thirdparty/python/Lib/site-packages
 ```
 
 ## Shift Menu
@@ -50,8 +50,8 @@ Inside the file, add the following code:
 
 ```python
 import sys
-sys.path.append("<path_to_your_shift_folder>")
-sys.path.append("<path_to_your_shift_folder>/thirdparty/python/Lib/site-packages")
+sys.path.append("<path_to_the_shift_installation_folder>")
+sys.path.append("<path_to_the_shift_installation_folder>/thirdparty/python/Lib/site-packages")
 
 from shift.tools import shiftui
 shiftui.show()
