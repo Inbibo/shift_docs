@@ -11,16 +11,13 @@ Shift can be integrated in Davinci Resolve and used to automate editorial proces
 
 To run Shift inside Davinci Resolve it is required to set up the configuration needed by Blackmagic to be able to execute Python code inside Resolve. 
 
-
-## Python Interpreter Setup
-
 Blackmagic usually provides a `Readme.txt` file where these requirements are detailed for the version in use in the installation folder `C:\ProgramData\Blackmagic Design\DaVinci Resolve\Support\Developer\Scripting\Readme.txt`
 
 Apart from the official requirements, the `PYTHONHOME` environment is required to be set. It must point to the Python interpreter to be used in Resolve.
 
 To use the Python interpreter provided with Shift, set up the variable in this way:
 
-**SHIFT_PROCESS_NUKE** : <path_to_your_shift_folder>/shift/thirdparty/python
+**PYTHONHOME** : <path_to_your_shift_folder>/shift/thirdparty/python
 
 It's required to add to the PATH the directories of Shift too. This paths can be added in the environment, before open Resolve, or in the python file where Shift will be executed.
 
@@ -35,17 +32,14 @@ The Resolve Script menus for Python files are limited to add entries to the sect
 
 To add a new entry and have a Shift menu in Resolve, is required to add a Python script to the Resolve Scripts folder. This folder can be different for each Resolve version, and it's recommended to check the right directory for the version that is being used. However, typically the folder is located in these locations:
 
-Mac OS X:
-  - All users: /Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts
-  - Specific user:  /Users/<UserName>/Library/Application Support/Blackmagic Design/DaVinci Resolve/Fusion/Scripts
-
-Windows:
-  - All users: %PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts
-  - Specific user: %APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts
-
-Linux:
-  - All users: /opt/resolve/Fusion/Scripts  (or /home/resolve/Fusion/Scripts/ depending on installation)
-  - Specific user: $HOME/.local/share/DaVinciResolve/Fusion/Scripts
+> [!NOTE = Resolve Scripts Folders]
+> === Windows:
+>  - All users: %PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts
+>  - Specific user: %APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts
+>
+> === Linux:
+>  - All users: /opt/resolve/Fusion/Scripts  (or /home/resolve/Fusion/Scripts/ depending on installation)
+>  - Specific user: $HOME/.local/share/DaVinciResolve/Fusion/Scripts
 
 To add Shift as a menu option, it is required to create a Python Script inside one workspace folder, `Edit` for example. The Python file name will be used like menu name too, soo name the file `Shift`.
 
@@ -64,7 +58,7 @@ shiftui.show()
 ```
 
 >[!NOTE]
-> If the paths are added in the system or before opening Nuke, then this configuration step will not be required.
+> If the paths are added in the system or in the environment before opening Resolve, then lines to append the path to the system won't be required.
 
 With this file saved, Resolve will show a Shift menu that can be executed to open the Shift UI inside Davinci Resolve.
 
