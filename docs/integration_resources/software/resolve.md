@@ -75,4 +75,4 @@ With this file saved, Resolve will show a Shift menu that can be executed to ope
 
 ## Catalogs
 
-Shift provides a catalog with operators specific to work within Davinci Resolve. This catalog is not zipped with the main instalation of Shift, but it can be access and downloaded from [Shift_Resolve](https://github.com/Inbibo/Shift_Resolve).
+Shift provides a catalog with operators specific to work within Davinci Resolve. This catalog is not zipped with the main instalation of Shift, but it can be accessed and downloaded from [Shift_Resolve](https://github.com/Inbibo/Shift_Resolve).
