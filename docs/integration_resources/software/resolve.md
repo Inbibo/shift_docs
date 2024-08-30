@@ -23,7 +23,8 @@ It's required to add to the PATH the directories of Shift too. This paths can be
 
 ```
 PATH: <path_to_the_shift_installation_folder>
-PATH: <path_to_the_shift_installation_folder>/thirdparty/python/Lib/site-packages
+PATH: <path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages
+
 ```
 
 ## Shift Menu
