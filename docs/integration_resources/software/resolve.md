@@ -16,7 +16,7 @@ To run Shift inside Davinci Resolve it is required to set up the configuration n
 
 Blackmagic usually provides a `Readme.txt` file where these requirements are detailed for the version in use in the installation folder `C:\ProgramData\Blackmagic Design\DaVinci Resolve\Support\Developer\Scripting\Readme.txt`
 
-Apart from the official requirements, the `PYTHONHOME` environment is required to be set. It must point to the python interpreter to be used in Resolve.
+Apart from the official requirements, the `PYTHONHOME` environment is required to be set. It must point to the Python interpreter to be used in Resolve.
 
 To use the Python interpreter provided with Shift, set up the variable in this way:
 
