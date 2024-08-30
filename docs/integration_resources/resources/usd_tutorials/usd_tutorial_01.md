@@ -1,4 +1,4 @@
-## Hello World - Creating Your First USD Stage
+## Creating Your First USD Stage
 
 This tutorial is focused on creating, using the operators from Shift_USD catalog, a simple USD stage containing a transform and a sphere.
 
