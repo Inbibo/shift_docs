@@ -28,3 +28,15 @@ This section is reserved to USD Plugins information
 ### Examples
 This section is reserved to an example video of how to use USD resources.
  -->
+
+## Tutorials
+
+To start learning how to use the different operators implemented for the Shift_USD catalog, a series of tutorials are helpful to understand the overall of the basic operators. These following tutorials are inspired on the Pixar's tutorials from the [OpenUsd](https://openusd.org/release/tut_usd_tutorials.html) project webpage:
+
+1. [Hello World - Creating Your First USD Stage](usd_tutorials/usd_tutorial_01.md)
+2. Hello World Redux - Using Generic Prims
+3. Inspecting and Authoring Properties
+4. Referencing Layers
+5. Converting Between Layer Formats
+6. Traversing a Stage
+7. Authoring Variants
