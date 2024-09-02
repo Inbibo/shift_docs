@@ -6,7 +6,7 @@ In order to follow easily the steps, it is recommended to read the documentation
 
 **TODO: Update Screenshots once the Shift PR #1113 is merged**
 
-### Creating the Stage
+### Tutorial
 
 1. Open Shift application. A new window's instance of Shift should appear like the following one:
 

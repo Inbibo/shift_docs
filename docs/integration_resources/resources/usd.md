@@ -34,7 +34,7 @@ This section is reserved to an example video of how to use USD resources.
 To start learning how to use the different operators implemented for the Shift_USD catalog, a series of tutorials are helpful to understand the overall of the basic operators. These following tutorials are inspired on the Pixar's tutorials from the [OpenUsd](https://openusd.org/release/tut_usd_tutorials.html) project webpage:
 
 1. [Creating Your First USD Stage](usd_tutorials/usd_tutorial_01.md)
-2. Inspecting and Authoring Properties
+2. [Inspecting and Authoring Properties](usd_tutorials/usd_tutorial_02.md)
 3. Referencing Layers
 4. Converting Between Layer Formats
 5. Traversing a Stage
