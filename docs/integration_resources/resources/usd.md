@@ -37,5 +37,5 @@ To start learning how to use the different operators implemented for the Shift_U
 2. [Inspecting and Authoring Properties](usd_tutorials/usd_tutorial_02.md)
 3. Referencing Layers
 4. [Converting Between Layer Formats](usd_tutorials/usd_tutorial_04.md)
-5. Traversing a Stage
+5. [Traversing a Stage](usd_tutorials/usd_tutorial_05.md)
 6. Authoring Variants

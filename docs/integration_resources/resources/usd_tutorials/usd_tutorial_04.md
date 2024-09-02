@@ -14,7 +14,7 @@ In order to follow easily the steps, it is recommended to read the documentation
     <figcaption><b>Figure 1</b>: Shift UI.</figcaption>
 </figure>
 
-2. First, add a new **<tt>UsdStageOpen</tt>** node to the board and rename it as `OpenUsdFile`. Using the **Inspector** widget, set as value for the **filepath** plug a filepath pointing to a `.usd` file. For doing this, the UI offers a browse button next to the plug input field that opens a browse dialog to facilitate locating the file or it can be added typing manually the path. For this example, the filepath can be: `D:/USD_TUTORIALS/04/Sphere.usd`. The board should look like the following one:
+2. First, add a new **<tt>UsdStageOpen</tt>** node to the board and rename it as `OpenUsdFile`. Using the **Inspector** widget, set as value for the **filepath** input plug a filepath pointing to a `.usd` file. For doing this, the UI offers a browse button next to the plug input field that opens a browse dialog to facilitate locating the file or it can be added typing manually the path. For this example, the filepath can be: `D:/USD_TUTORIALS/04/Sphere.usd`. The board should look like the following one:
 
 <figure>
     <img src="images/usd_tutorial_04/step_02_t04.png" alt="Added 'OpenUsdFile' node to the board.">
