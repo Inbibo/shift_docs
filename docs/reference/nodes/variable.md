@@ -13,13 +13,15 @@ When an input plug is added in a *Variable* node, Shift will create an internal 
 
 ### Outputs
 
-Output plugs in the *Variable* node are used to retrieve the data from the global variables with a **matching plug name**. When the *Variable* node gets executed, the global variable value will be set as the value of the output plug.
+Output plugs in the *Variable* node are used to retrieve the data from the global variables with a **matching plug name**. When the *Variable* node gets executed, the global variable value will be set as the value of the output plug with the matching name.
 
 >[!NOTE]
 > Plugs in *Variable* nodes cannot be renamed, as it is important to keep the plug's name unique and consistent for the node's correct function. 
 
 <!-- ### Examples
-
-This section is reserved to an example video of how to use the Variable node.
+TODO: #62
+This section is reserved to an example video of how to use the Variable node, such as:
+How to update for example a dictionary in an iteration loop.
+How to pass a different values to the same plug depending on the condition equals executed branch.
 
  -->
