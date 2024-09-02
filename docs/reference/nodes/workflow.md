@@ -17,6 +17,9 @@ The *Workflow* node executes an external workflow. This node allows to nest work
     <figcaption><b>Figure 2</b>: Workflow Node UI.</figcaption>
 </figure>
 
+
+When double-clicking on a *Workflow* node, the referenced workflow will be opened in a new tab inside Shift. Any changes done to the referenced workflow will be picked up by the *Workflow* node and update its plugs if necessary.
+
 ### Inputs
 
 - **File**: This plug of type [FileIn](../nodes#plugs) is used to reference the workflow file (*.sft* extension) that will be executed by the node. When the `file` plug content is set, the node will automatically update by creating the input and output plugs corresponding to the sourced workflow inputs and outputs.
@@ -29,6 +32,8 @@ The *WorkflowProcess* node works similarly to the *Workflow* node, however, the 
     <img src="images/workflow_process.png" alt="WorkflowProcess Node">
     <figcaption><b>Figure 3</b>: WorkflowProcess Node UI.</figcaption>
 </figure>
+
+As well as the *Workflow* node, by double-clicking on the *WorkflowProcess* node, a new tab with the referenced workflow will be opened.
 
 The available Python interpreters to run the external workflow with will depend on the environment configuration. To allow the *WorkflowProcess* to find new Python interpreters, a new environment variable must be set with the following format `SHIFT_PROCESS_<NAME OF THE INTERPRETER>`. The value of this variable must be the path to the desired Python interpreter. In order to use this node there must be at least one Shift process environment variable specified. Please, refer to the [Installation](../../getting_started/installation.md) page for more information. 
 
