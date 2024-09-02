@@ -38,4 +38,4 @@ To start learning how to use the different operators implemented for the Shift_U
 3. Referencing Layers
 4. [Converting Between Layer Formats](usd_tutorials/usd_tutorial_04.md)
 5. [Traversing a Stage](usd_tutorials/usd_tutorial_05.md)
-6. Authoring Variants
+6. [Authoring Variants](usd_tutorials/usd_tutorial_06.md)
