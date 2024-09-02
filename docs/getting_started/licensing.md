@@ -64,5 +64,7 @@ The trial period does not require any input from the user. Simply click *Continu
 
 Trial licenses are intended for testing and non-commercial purposes. To use Shift for commercial purposes a `PRODUCT KEY` must be purchased through Inbibo's official [website](https://inbibo.co.uk/shift#prices) and activated. See the Shift [End User License Agreement](https://inbibo.co.uk/shift-eula) for details.
 
+
 > [!NOTE]
 > This activation mode requires access to the internet.
+>
