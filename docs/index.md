@@ -56,6 +56,12 @@
 <img src="images/giftest.gif" alt="UI">
 <b>Figure 5</b>: Plain Image
 
+## Embedded images
+
 My text ![UI](images/ui.png){style="width:4%"} .
 
 ## ![UI](images/ui.png){style="width:10%"}  My header.
+
+My text ![UI](images/ui.png){style="width:4%"} .
+
+## ![UI](images/execute_all_default.svg){style="width:10%"}  My header.
