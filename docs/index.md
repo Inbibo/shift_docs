@@ -55,3 +55,7 @@
 
 <img src="images/giftest.gif" alt="UI">
 <b>Figure 5</b>: Plain Image
+
+My text ![UI](images/ui.png){style="width:4%"} .
+
+## ![UI](images/ui.png){style="width:10%"}  My header.
