@@ -2,7 +2,7 @@
 
 This tutorial is focused on converting layer files between the different native USD file formats using the operators from the Shift_USD catalog.
 
-In order to follow easily the steps, it is recommended to read the documentation about the Shift controls **TODO: Add link here**
+In order to follow easily the steps, it is recommended to read the documentation about the [Shift's interface](../../../getting_started/basics/ui_overview.md) and [workflow execution](../../../getting_started/basics/execute.md).
 
 
 ### Converting between .usda/.usdc and .usd
@@ -62,13 +62,13 @@ In order to follow easily the steps, it is recommended to read the documentation
 1. For running the verification between the original `Sphere.usd` file and the generated file `Sphere.usda`, use the terminal for executing the <tt>usddiff</tt> tool shipped with USD for showing the difference between 2 USD files. The terminal should show no differences:
 
 <figure>
-    <img src="images/usd_tutorial_04/verification_01_t04.png" alt="Usddiff command executed between original 'Sphere.usd' file and generated 'Sphere.usda' file." width=475 height=133>
+    <img src="images/usd_tutorial_04/verification_01_t04.png" alt="Usddiff command executed between original 'Sphere.usd' file and generated 'Sphere.usda' file." width="475" height="133">
     <figcaption><b>Figure 8</b>: Usddiff command executed between original 'Sphere.usd' file and generated 'Sphere.usda' file.</figcaption>
 </figure>
 
 2. As previously done, for running the verification between the `Sphere.usda` file and the `Sphere.usdc` file, use the terminal for executing the <tt>usddiff</tt> tool. The terminal should show no differences:
 
 <figure>
-    <img src="images/usd_tutorial_04/verification_02_t04.png" alt="Usddiff command executed between 'Sphere.usda' and 'Sphere.usdc' files."  width=475 height=133>
+    <img src="images/usd_tutorial_04/verification_02_t04.png" alt="Usddiff command executed between 'Sphere.usda' and 'Sphere.usdc' files."  width="475" height="133">
     <figcaption><b>Figure 9</b>: Usddiff command executed between 'Sphere.usda' and 'Sphere.usdc' files.</figcaption>
 </figure>

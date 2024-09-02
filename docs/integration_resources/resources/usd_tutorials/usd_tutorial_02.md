@@ -2,7 +2,8 @@
 
 This tutorial is focused on looking at the properties containing geometric data on the prims created in the [Creating Your First USD Stage](usd_tutorial_01.md) tutorial, using the operators from the Shift_USD catalog.
 
-In order to follow easily the steps, it is recommended to read the documentation about the Shift controls **TODO: Add link here**
+In order to follow easily the steps, it is recommended to read the documentation about the [Shift's interface](../../../getting_started/basics/ui_overview.md) and [workflow execution](../../../getting_started/basics/execute.md).
+
 
 ### Tutorial
 
@@ -147,6 +148,7 @@ In order to follow easily the steps, it is recommended to read the documentation
 </figure>
 
 20. Execute the entire workflow. Open again the `HelloWorld.usda` file, it will contain the authored properties updated and the new **displayColor** attribute set.
+
 
 ### Visualizing the Stage
 
