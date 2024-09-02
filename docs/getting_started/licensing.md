@@ -67,4 +67,4 @@ Trial licenses are intended for testing and non-commercial purposes. To use Shif
 
 > [!NOTE]
 > This activation mode requires access to the internet.
->
+
