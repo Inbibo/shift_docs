@@ -14,7 +14,7 @@ In order to follow easily the steps, it is recommended to read the documentation
     <figcaption><b>Figure 1</b>: Shift UI.</figcaption>
 </figure>
 
-2. Now, add a new **<tt>UsdStageOpen</tt>** node to the board and rename it to `StageOpen`. Using the **Inspector** widget, set as value for the **filepath** plug a filepath pointing to the `HelloWorld.usda` file downloaded for the example. For doing this, the UI offers a browse button next to the plug input field that opens a browse dialog to facilitate locating the file or it can be added typing manually the path. The board should look like the following one:
+2. Now, add a new **<tt>UsdStageOpen</tt>** node to the board and rename it to `StageOpen`. Using the **Inspector** widget, set as value for the **filepath** input plug a filepath pointing to the `HelloWorld.usda` file downloaded for the example. For doing this, the UI offers a browse button next to the plug input field that opens a browse dialog to facilitate locating the file or it can be added typing manually the path. The board should look like the following one:
 
 <figure>
     <img src="images/usd_tutorial_06/step_02_t06.png" alt="Added the 'StageOpen' node to the board for opening a given USD file.">
