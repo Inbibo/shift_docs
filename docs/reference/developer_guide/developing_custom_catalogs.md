@@ -9,13 +9,13 @@ Custom catalogs are written in Python and include a global variable called `cata
 **Catalog Dictionary Example**
 <pre>
   <code style="white-space: pre">
-    catalog = {"Description": "This catalog includes fundamental Python type operators.",
-              "Version": "1.0.0",
-              "Author": "Shift's development team", 
-              "Operators":[[String,  []],
-                            [Integer, []],
-                            [Float,   []],
-                            [Bool,    []]]}
+catalog = {"Description": "This catalog includes fundamental Python type operators.",
+          "Version": "1.0.0",
+          "Author": "Shift's development team", 
+          "Operators":[[String,  []],
+                        [Integer, []],
+                        [Float,   []],
+                        [Bool,    []]]}
   </code>
 </pre>
 
@@ -35,51 +35,51 @@ Here is an example of an operator class syntax:
 
 <pre>
   <code style="white-space: pre">
-    from shift.core.workflow import SOperator
-    from shift.core.workflow import SPlug
-    from shift.core.constants import SType
-    from shift.core.constants import SDirection
-    
-    class MyOperator(SOperator):
-        """ The docstring provided for the SOperator class will be use as the operator's description when inspecting a node's information. 
-        It is recommended to write a detailed description of the operator's behavior alongside the required inputs and outputs here.
-      
-        """
-        def __init__(self, code, parent=None):
+from shift.core.workflow import SOperator
+from shift.core.workflow import SPlug
+from shift.core.constants import SType
+from shift.core.constants import SDirection
 
-            super(self.__class__, self).__init__(code, parent)
+class MyOperator(SOperator):
+    """ The docstring provided for the SOperator class will be use as the operator's description when inspecting a node's information. 
+    It is recommended to write a detailed description of the operator's behavior alongside the required inputs and outputs here.
+  
+    """
+    def __init__(self, code, parent=None):
 
-            inPlug1 = SPlug(code="input1",
-                          value=0,
-                          type=SType.kInt,
-                          direction=SDirection.kIn,
-                          parent=self)
+        super(self.__class__, self).__init__(code, parent)
 
-            inPlug2 = SPlug(code="input2",
-                          value=0,
-                          type=SType.kInt,
-                          direction=SDirection.kIn,
-                          parent=self)
+        inPlug1 = SPlug(code="input1",
+                      value=0,
+                      type=SType.kInt,
+                      direction=SDirection.kIn,
+                      parent=self)
 
-            outPlug = SPlug(code="output",
-                          value=0,
-                          type=SType.kInt,
-                          direction=SDirection.kOut,
-                          parent=self)
+        inPlug2 = SPlug(code="input2",
+                      value=0,
+                      type=SType.kInt,
+                      direction=SDirection.kIn,
+                      parent=self)
 
-            self.addPlug(inPlug1)
-            self.addPlug(inPlug2)
-            self.addPlug(outPlug)
+        outPlug = SPlug(code="output",
+                      value=0,
+                      type=SType.kInt,
+                      direction=SDirection.kOut,
+                      parent=self)
 
-        def execute(self, force=False):
+        self.addPlug(inPlug1)
+        self.addPlug(inPlug2)
+        self.addPlug(outPlug)
 
-            input1 = self.getPlug("input1", SDirection.kIn).value()
-            input2 = self.getPlug("input2", SDirection.kOut).value()
+    def execute(self, force=False):
 
-            output = input1 * input2
+        input1 = self.getPlug("input1", SDirection.kIn).value()
+        input2 = self.getPlug("input2", SDirection.kOut).value()
 
-            self.getPlug("output").setValue(output)
-            super(self.__class__, self).execute(force)
+        output = input1 * input2
+
+        self.getPlug("output").setValue(output)
+        super(self.__class__, self).execute(force)
   </code>
 </pre>
 

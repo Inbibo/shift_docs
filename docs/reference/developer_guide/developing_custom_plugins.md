@@ -14,17 +14,17 @@ Advanced users can code their own way through the Shift Python API, however it i
 
 <pre>
   <code style="white-space: pre">
-    class MainWidget(QtWidgets.QWidget):
-        """Main plugin widget.
+class MainWidget(QtWidgets.QWidget):
+    """Main plugin widget.
 
-        @param parent shift.ui.widgets.main.ShiftWindow: The Shift main window.
+    @param parent shift.ui.widgets.main.ShiftWindow: The Shift main window.
 
-        """
-        def __init__(self, parent=None):
-            super(MainWidget, self).__init__(parent)
+    """
+    def __init__(self, parent=None):
+        super(MainWidget, self).__init__(parent)
 
-            #Store the ShiftWindow inside a class property
-            self.mainWindow = parent
+        #Store the ShiftWindow inside a class property
+        self.mainWindow = parent
   </code>
 </pre>
 
@@ -32,11 +32,11 @@ Advanced users can code their own way through the Shift Python API, however it i
 
 <pre>
   <code style="white-space: pre">
-    def _connectBoardSignals(self):
-        """Standard method to connect to the current board signals."""
+def _connectBoardSignals(self):
+    """Standard method to connect to the current board signals."""
 
-        # The signals to be connected from the board...e.g.
-        self.mainWindow.getActiveBoard().workflowExecuted.connect(self._updateContent)
+    # The signals to be connected from the board...e.g.
+    self.mainWindow.getActiveBoard().workflowExecuted.connect(self._updateContent)
   </code>
 </pre>
 
@@ -44,13 +44,13 @@ This method should be executed for all existing and new board tabs for the plugi
 
 <pre>
   <code style="white-space: pre">
-    def __init__(self, parent=None):
+def __init__(self, parent=None):
 
-        [...]
+    [...]
 
-        self.mainWindow.getBoardTabsWidget().currentChanged.connect(self._connectBoardSignals)
-        self.mainWindow.newBoardCreated.connect(self._connectBoardSignals)
-        self._connectBoardSignals()
+    self.mainWindow.getBoardTabsWidget().currentChanged.connect(self._connectBoardSignals)
+    self.mainWindow.newBoardCreated.connect(self._connectBoardSignals)
+    self._connectBoardSignals()
   </code>
 </pre>
 
@@ -62,18 +62,18 @@ The first step to add the plugin to the Shift UI is to create a *json* file cont
 
 <pre>
   <code style="white-space: pre">
-    {
-      "Operators List": {
-        "menu": "Tools",
-        "path": "./operatorsList.py",
-        "class": "OperatorsList"
-      },
-      "Variables Browser": {
-        "menu": "Tools",
-        "path": "./variablesBrowser.py",
-        "class": "VariablesBrowser"
-      }
-    }
+{
+  "Operators List": {
+    "menu": "Tools",
+    "path": "./operatorsList.py",
+    "class": "OperatorsList"
+  },
+  "Variables Browser": {
+    "menu": "Tools",
+    "path": "./variablesBrowser.py",
+    "class": "VariablesBrowser"
+  }
+}
   </code>
 </pre>
 

@@ -26,9 +26,9 @@ The following snippet of code can be used to open a Shift workflow file:
 
 <pre>
   <code style="white-space: pre">
-    from shift.core import files
+from shift.core import files
 
-    workflow, catalog_manifest = files.openBatchWorkflow("<path_to_your_workflow_file>")
+workflow, catalog_manifest = files.openBatchWorkflow("&lt path_to_your_workflow_file &gt")
   </code>
 </pre>
 
@@ -40,7 +40,7 @@ Once the workflow file is opened, its execution can be triggered with the follow
 
 <pre>
   <code style="white-space: pre">
-    result = workflow.execute()
+result = workflow.execute()
   </code>
 </pre>
 
@@ -48,12 +48,12 @@ External inputs for the workflow can be set by providing a Python dictionary as 
 
 <pre>
   <code style="white-space: pre">
-    workflow_externals = {
-        "myFloatPlug1": 1.5,
-        "myFloatPlug2": 9.5,
-        "myBooleanPlug": True
-    }
-    result = workflow.execute(workflow_externals)
+workflow_externals = {
+    "myFloatPlug1": 1.5,
+    "myFloatPlug2": 9.5,
+    "myBooleanPlug": True
+}
+result = workflow.execute(workflow_externals)
   </code>
 </pre>
 
@@ -65,6 +65,6 @@ It is highly recommended to close the workflow after the execution is done. This
 
 <pre>
   <code style="white-space: pre">
-    files.closeWorkflow(workflow, catalog_manifest)
+files.closeWorkflow(workflow, catalog_manifest)
   </code>
 </pre>
