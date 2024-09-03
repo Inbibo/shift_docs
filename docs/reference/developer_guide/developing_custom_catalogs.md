@@ -7,15 +7,17 @@ In Shift it is possible to create customized catalogs with operators tailored fo
 Custom catalogs are written in Python and include a global variable called `catalog`. This variable is a Python dictionary containing the information for the catalog, such as a description, version and authors. Additionally, this dictionary will define the list of operator classes included in the catalog.
 
 **Catalog Dictionary Example**
-```python
-catalog = {"Description": "This catalog includes fundamental Python type operators.",
-           "Version": "1.0.0",
-           "Author": "Shift's development team", 
-           "Operators":[[String,  []],
-                        [Integer, []],
-                        [Float,   []],
-                        [Bool,    []]]}
-```
+<pre>
+  <code style="white-space: pre">
+    catalog = {"Description": "This catalog includes fundamental Python type operators.",
+              "Version": "1.0.0",
+              "Author": "Shift's development team", 
+              "Operators":[[String,  []],
+                            [Integer, []],
+                            [Float,   []],
+                            [Bool,    []]]}
+  </code>
+</pre>
 
 >[!NOTE]
 > The *Operators* list from the `catalog` is a list of lists containing two elements. The first one corresponds to the operator class, and the second one is a list of compatible hosts for the operator. If no host is specified, the node will be usable in any context. For instance, if the second element is `["maya", "houdini"]` the operator will be only available for those DCC's. Refer to [Integrations & Resources](../../integration_resources/integrations_resources.md) for more information.
@@ -31,53 +33,55 @@ All Shift operators inherit from the `SOperator` Shift's Python class. To write 
 
 Here is an example of an operator class syntax:
 
-```python
-from shift.core.workflow import SOperator
-from shift.core.workflow import SPlug
-from shift.core.constants import SType
-from shift.core.constants import SDirection
- 
-class MyOperator(SOperator):
-    """ The docstring provided for the SOperator class will be use as the operator's description when inspecting a node's information. 
-    It is recommended to write a detailed description of the operator's behavior alongside the required inputs and outputs here.
-  
-    """
-    def __init__(self, code, parent=None):
+<pre>
+  <code style="white-space: pre">
+    from shift.core.workflow import SOperator
+    from shift.core.workflow import SPlug
+    from shift.core.constants import SType
+    from shift.core.constants import SDirection
+    
+    class MyOperator(SOperator):
+        """ The docstring provided for the SOperator class will be use as the operator's description when inspecting a node's information. 
+        It is recommended to write a detailed description of the operator's behavior alongside the required inputs and outputs here.
+      
+        """
+        def __init__(self, code, parent=None):
 
-        super(self.__class__, self).__init__(code, parent)
+            super(self.__class__, self).__init__(code, parent)
 
-        inPlug1 = SPlug(code="input1",
-                       value=0,
-                       type=SType.kInt,
-                       direction=SDirection.kIn,
-                       parent=self)
+            inPlug1 = SPlug(code="input1",
+                          value=0,
+                          type=SType.kInt,
+                          direction=SDirection.kIn,
+                          parent=self)
 
-        inPlug2 = SPlug(code="input2",
-                       value=0,
-                       type=SType.kInt,
-                       direction=SDirection.kIn,
-                       parent=self)
+            inPlug2 = SPlug(code="input2",
+                          value=0,
+                          type=SType.kInt,
+                          direction=SDirection.kIn,
+                          parent=self)
 
-        outPlug = SPlug(code="output",
-                       value=0,
-                       type=SType.kInt,
-                       direction=SDirection.kOut,
-                       parent=self)
+            outPlug = SPlug(code="output",
+                          value=0,
+                          type=SType.kInt,
+                          direction=SDirection.kOut,
+                          parent=self)
 
-        self.addPlug(inPlug1)
-        self.addPlug(inPlug2)
-        self.addPlug(outPlug)
+            self.addPlug(inPlug1)
+            self.addPlug(inPlug2)
+            self.addPlug(outPlug)
 
-    def execute(self, force=False):
+        def execute(self, force=False):
 
-        input1 = self.getPlug("input1", SDirection.kIn).value()
-        input2 = self.getPlug("input2", SDirection.kOut).value()
+            input1 = self.getPlug("input1", SDirection.kIn).value()
+            input2 = self.getPlug("input2", SDirection.kOut).value()
 
-        output = input1 * input2
+            output = input1 * input2
 
-        self.getPlug("output").setValue(output)
-        super(self.__class__, self).execute(force)
-```
+            self.getPlug("output").setValue(output)
+            super(self.__class__, self).execute(force)
+  </code>
+</pre>
 
 The `SOperator` constructor method takes care of initializing the plug objects and adding them to the operator. Each plug must be initialized specifying:
 - A unique code name, which will correspond to the name displayed in the UI.
