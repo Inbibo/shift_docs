@@ -4,7 +4,7 @@ This page assembles a list of definitions for some of Shift's main concepts.
 
 ## Workflow
 
-A workflow is a directed acyclic graph (DAG) that builds the relationship between the execution of its nodes. A workflow is composed of interconnected nodes and defines an execution process.
+A workflow is a directed acyclic graph (DAG) that builds the casual relationship between the execution of its nodes. A workflow is composed of interconnected nodes and defines the global execution logic of the automation process.
 
 ## Node
 
@@ -12,7 +12,7 @@ Nodes are the graphic block units that build up the workflow. Each node is assoc
 
 ## Plug
 
-A plug represents an input or output of a node. Plugs have a type associated based their compatibility with different Python data types. Plug values can be set manually via the inspector widget or gotten from a connected plug.
+A plug represents an input or output of a node. Plugs have associated types based on the Python object that they should contain. Plug values can be set manually via the inspector widget or propagated from a connected plug.
 
 ## Connection
 
@@ -24,7 +24,7 @@ The execution stack refers to the order in which nodes will be executed. The exe
 
 ## Board
 
-Refers to the workspace in the Shift UI where the workflow is constructed.
+The board refers to the workspace in the Shift UI where the graphical counterpart of the workflow is build. It is the master object holding all information on the graphic items in the interface.
 
 ## Inspector
 
