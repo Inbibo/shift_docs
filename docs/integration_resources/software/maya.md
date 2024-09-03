@@ -5,7 +5,7 @@
 Shift provides a `mshift` utility script to properly bind the Shift UI to Maya. In order to run and open Shift in Maya, execute the following code block inside the Maya *Python Script Editor*:
 
 <pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px 0; box-sizing: border-box;">
+    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
 import sys
 sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
 sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")

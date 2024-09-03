@@ -13,7 +13,7 @@ Advanced users can code their own way through the Shift Python API, however it i
 - Store the widget parent in a class property. After the initialization of the widget class, Shift will change the parenting hierarchy. For this reason it is strongly suggested to store the parent object in the plugin class constructor. At initialization time, the parent will correspond to the *ShiftWindow* object.
 
 <pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px 0; box-sizing: border-box;">
+    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
 class MainWidget(QtWidgets.QWidget):
     """Main plugin widget.
 
@@ -31,7 +31,7 @@ class MainWidget(QtWidgets.QWidget):
 - Wrap all the Qt signal connection calls to the board in a dedicated method (see the `MainWidget._connectBoardSignals` in the *pluginTemplate.py* example file). As each workflow board propagates its own Qt signals, connections must be performed for all existing boards and new ones.
 
 <pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px 0; box-sizing: border-box;">
+    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
 def _connectBoardSignals(self):
     """Standard method to connect to the current board signals."""
 
@@ -43,7 +43,7 @@ def _connectBoardSignals(self):
 This method should be executed for all existing and new board tabs for the plugin to correctly interact with Shift. The ideal way to do that is to use this method as a Qt slot and connect it to the following signals at the end of the plugin class constructor logic:
 
 <pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px 0; box-sizing: border-box;">
+    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
 def __init__(self, parent=None):
 
     [...]
@@ -61,7 +61,7 @@ This will automatically connect the board signals to the currently active one an
 The first step to add the plugin to the Shift UI is to create a *json* file containing the information needed by Shift to source all of the custom plugin classes. This file should be formatted in the following way:
 
 <pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px 0; box-sizing: border-box;">
+    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
 {
   "Operators List": {
     "menu": "Tools",

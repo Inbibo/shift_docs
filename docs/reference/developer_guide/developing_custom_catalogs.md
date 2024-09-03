@@ -8,7 +8,7 @@ Custom catalogs are written in Python and include a global variable called `cata
 
 **Catalog Dictionary Example**
 <pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px 0; box-sizing: border-box;">
+    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
 catalog = {"Description": "This catalog includes fundamental Python type operators.",
           "Version": "1.0.0",
           "Author": "Shift's development team", 
@@ -34,7 +34,7 @@ All Shift operators inherit from the `SOperator` Shift's Python class. To write 
 Here is an example of an operator class syntax:
 
 <pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px 0; box-sizing: border-box;">
+    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
 from shift.core.workflow import SOperator
 from shift.core.workflow import SPlug
 from shift.core.constants import SType
