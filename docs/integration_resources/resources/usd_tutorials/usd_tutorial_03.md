@@ -2,6 +2,8 @@
 
 This tutorial is focused on referencing the stage created in the previous tutorials into a new stage, using the operators from the Shift_USD catalog. The example will reuse the `HelloWorld.usda` file generated in the previous tutorial [Inspecting and Authoring Properties](usd_tutorial_02.md).
 
+Also, the base file for the example can be downloaded from the [OpenUSD](https://github.com/PixarAnimationStudios/OpenUSD) Github project repository, from `extras/usd/tutorials/referencingLayers/` folder, it is the `HelloWorld.usda` file.
+
 In order to follow easily the steps, it is recommended to read the documentation about the [Shift's interface](../../../getting_started/basics/ui_overview.md) and [workflow execution](../../../getting_started/basics/execute.md).
 
 

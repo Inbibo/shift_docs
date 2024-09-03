@@ -2,6 +2,8 @@
 
 This tutorial is focused on looking at the properties containing geometric data on the prims created in the [Creating Your First USD Stage](usd_tutorial_01.md) tutorial, using the operators from the Shift_USD catalog.
 
+Also, the base file for the example can be downloaded from the [OpenUSD](https://github.com/PixarAnimationStudios/OpenUSD) Github project repository, from `extras/usd/tutorials/authoringProperties/` folder, it is the `HelloWorld.usda` file.
+
 In order to follow easily the steps, it is recommended to read the documentation about the [Shift's interface](../../../getting_started/basics/ui_overview.md) and [workflow execution](../../../getting_started/basics/execute.md).
 
 

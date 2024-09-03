@@ -1,6 +1,8 @@
-## Converting Between Layer Formats
+## Traversing a Stage
 
-This tutorial is focused on traversing the composed prims on a UsdStage, using the operators from the Shift_USD catalog.
+This tutorial is focused on traversing the composed prims on a UsdStage, using the operators from the Shift_USD catalog. The example will reuse the layer files generated in the previous tutorial [Referencing Layers](usd_tutorial_03.md).
+
+Also, the base files for the example can be downloaded from the [OpenUSD](https://github.com/PixarAnimationStudios/OpenUSD) Github project repository, from `extras/usd/tutorials/traversingStage/` folder, they are the `HelloWorld.usda` and `RefExample.usda` files.
 
 In order to follow easily the steps, it is recommended to read the documentation about the [Shift's interface](../../../getting_started/basics/ui_overview.md) and [workflow execution](../../../getting_started/basics/execute.md).
 

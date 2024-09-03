@@ -2,6 +2,8 @@
 
 This tutorial is focused on creating and authoring a variant set using the <tt>HelloWorld</tt> layer from the [Inspecting and Authoring Properties](usd_tutorial_02.md) tutorial, using the operators from Shift_USD catalog.
 
+Also, the base file for the example can be downloaded from the [OpenUSD](https://github.com/PixarAnimationStudios/OpenUSD) Github project repository, from `extras/usd/tutorials/authoringVariants/` folder, it is the `HelloWorld.usda` file.
+
 In order to follow easily the steps, it is recommended to read the documentation about the [Shift's interface](../../../getting_started/basics/ui_overview.md) and [workflow execution](../../../getting_started/basics/execute.md).
 
 
