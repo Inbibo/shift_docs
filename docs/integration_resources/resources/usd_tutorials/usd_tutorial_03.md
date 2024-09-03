@@ -168,6 +168,8 @@ In order to follow easily the steps, it is recommended to read the documentation
     <figcaption><b>Figure 23</b>: Added the 'FlattenStageSave' node to the board connected to the 'StageFlatten' node.</figcaption>
 </figure>
 
+24. Execute the entire workflow. Open the `RefExample.usda` file, it will contain the references and overrides updated. Also, preview the `RefExampleFlatten.usda` for checking how *flattening* the stage works.
+
 
 ### Visualizing the Stage
 
