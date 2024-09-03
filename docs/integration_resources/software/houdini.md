@@ -4,7 +4,7 @@
 
 Shift provides a `hshift` utility script to properly bind the Shift UI to Houdini. In order to run and open Shift in Houdini, execute the following code block inside the Houdini *Python Script Editor*:
 
-<pre>
+<pre style="margin: 10px 0; padding: 10px;">
   <code style="white-space: pre">
 import sys
 sys.path.append("&lt path_to_the_shift_installation_folder &gt")
