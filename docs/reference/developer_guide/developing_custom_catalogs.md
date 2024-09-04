@@ -7,7 +7,7 @@ In Shift it is possible to create customized catalogs with operators tailored fo
 Custom catalogs are written in Python and include a global variable called `catalog`. This variable is a Python dictionary containing the information for the catalog, such as a description, version and authors. Additionally, this dictionary will define the list of operator classes included in the catalog.
 
 **Catalog Dictionary Example**
-<pre><code style="white-space: pre; padding: 10px; box-sizing: border-box;">catalog = {"Description": "This catalog includes fundamental Python type operators.",
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">catalog = {"Description": "This catalog includes fundamental Python type operators.",
           "Version": "1.0.0",
           "Author": "Shift's development team", 
           "Operators":[[String,  []],
@@ -31,7 +31,7 @@ All Shift operators inherit from the `SOperator` Shift's Python class. To write 
 
 Here is an example of an operator class syntax:
 
-<pre><code style="white-space: pre; padding: 10px; box-sizing: border-box;">from shift.core.workflow import SOperator
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">from shift.core.workflow import SOperator
 from shift.core.workflow import SPlug
 from shift.core.constants import SType
 from shift.core.constants import SDirection
