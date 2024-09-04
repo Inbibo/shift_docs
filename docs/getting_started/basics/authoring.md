@@ -7,7 +7,10 @@ When launching Shift, an new empty board is opened where nodes and connections c
 
 To create a new [node](../terminology.md/#node), press the `Tab` key or `Double Left-Click` in the board to open the "*Create Node*" dialog. This dialog enables searching for nodes by name and/or filtering by [catalog](../terminology.md/#catalog). The nodes will be listed alphabetically underneath, where they can be added to the Shift board by double-clicking on them.
 
-![Create Node Dialog](../../images/create_node_dialog.gif "Create Node Dialog")
+<figure>
+      <img src="images/create_node_dialog.gif" alt="Create Node Dialog">
+      <figcaption><b>Figure 1</b>: Creating a Float node in the Shift board.</figcaption>
+</figure>
 
 Alternatively, nodes can be added to the board using the [Nodes List widget](ui_overview#the-nodes-list) present in the Shift interface.
 
@@ -15,7 +18,11 @@ Alternatively, nodes can be added to the board using the [Nodes List widget](ui_
 
 To establish a connection between [plugs](../terminology.md/#plug) from different nodes, `Left-Click` and `Drag` from one plug to the desired plug. By creating a connection, the workflow can propagate the data produced in the output plugs of a node and transfer it to the connected input plug of another node.
 
-![Connected Nodes](../../images/connect_plugs.gif "Connected Nodes")
+<figure>
+      <img src="images/connect_plugs.gif" alt="Connect Plugs">
+      <figcaption><b>Figure 2</b>: Connecting a plug from a Float node to a plug from the AddValues node. </figcaption>
+</figure>
+
 
 ## Creating New Plugs
 
@@ -30,19 +37,31 @@ Certain nodes in Shift allow the creation of new plugs. To create a new plug, `R
     * *Out*: The plug will be created at the right side of the node, which corresponds to the node's outputs. This plug will have the data processed by the node.
     * *Through*: Two plugs with the same name will be created, one to the left side of the node as an input and another one to the right side of the node as an output.
 
-![Add Plug Dialog 1](../../images/create_plug.gif)
+<figure>
+      <img src="images/create_plug.gif" alt="Create Plug">
+      <figcaption><b>Figure 3</b>: Creating a new float plug.</figcaption>
+</figure>
+
 
 ### Creating New Plugs through a Connection
 
 Adding a new plug to a node can also be done while creating a connection. To achieve this, **drag and drop** a connection over the node where the new connection is to be added. This action will automatically prompt and populate the "*Add Plug*" dialog with the name, type, values, and direction information of the plug from which the connection was started from. Once the new plug is created, a connection between this plug and the one that was dragged will be established.
 
-![Add Plug Dialog 2](../../images/create_plug_drag_connection.gif)
+<figure>
+      <img src="images/create_plug_drag_connection.gif" alt="Create a plug drag and drop.">
+      <figcaption><b>Figure 4</b>: Creating a new plug by dragging and dropping.</figcaption>
+</figure>
+
 
 ## Removing a Plug
 
 To remove a plug, `Right-Click` on the plug and select the "*Remove Plug*" option. This action will delete the plug and destroy all existing connections associated with it.
 
-![Removing Plug](../../images/remove_plugs.gif)
+<figure>
+      <img src="images/remove_plugs.gif" alt="Remove Plugs">
+      <figcaption><b>Figure 5</b>: Removing a connected plug from node.</figcaption>
+</figure>
+
 
 ## Removing a Connection
 
