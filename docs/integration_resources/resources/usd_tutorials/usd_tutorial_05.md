@@ -90,3 +90,8 @@ Also, the base files for the example, `HelloWorld.usda` and `RefExample.usda`, c
     <img src="images/usd_tutorial_05/step_12_t05.png" alt="Re-executing the 'TraverseStage' node will traverseAll plug set to True.">
     <figcaption><b>Figure 12</b>: Re-executing the 'TraverseStage' node will traverseAll plug set to True.</figcaption>
 </figure>
+
+
+### Workflow Resources
+
+In the Shift installation folder you can find the provided example workflow for the explained tutorial. Is the file named `tutorial_05.sft` located in: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_05_traversing_stage/`.

@@ -72,3 +72,8 @@ The base file for the example, `Sphere.usd`, can be downloaded from the [OpenUSD
     <img src="images/usd_tutorial_04/verification_02_t04.png" alt="Usddiff command executed between 'Sphere.usda' and 'Sphere.usdc' files."  width="475" height="133">
     <figcaption><b>Figure 9</b>: Usddiff command executed between 'Sphere.usda' and 'Sphere.usdc' files.</figcaption>
 </figure>
+
+
+### Workflow Resources
+
+In the Shift installation folder you can find the provided example workflow for the explained tutorial. Is the file named `tutorial_04.sft` located in: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_04_converting_layer_formats/`.

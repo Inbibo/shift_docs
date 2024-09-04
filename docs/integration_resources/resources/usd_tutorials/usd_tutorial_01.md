@@ -61,3 +61,8 @@ Use the <tt>usdview</tt> tool shipped with USD to visualise and inspect the stag
 </figure>
 
 **TODO: ADD SUGGESTION FOR USING THE STAGEVIEW PLUGIN**
+
+
+### Workflow Resources
+
+In the Shift installation folder you can find the provided example workflow for the explained tutorial. Is the file named `tutorial_01.sft` located in: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_01_creating_first_stage/`.

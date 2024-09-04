@@ -172,3 +172,8 @@ Use the <tt>usdview</tt> tool shipped with USD to visualise and inspect the stag
 </figure>
 
 **TODO: ADD SUGGESTION FOR USING THE STAGEVIEW PLUGIN**
+
+
+### Workflow Resources
+
+In the Shift installation folder you can find the provided example workflows for the explained tutorial. Are the files named `tutorial_06.sft` and `set_variant_display_color.sft` located in: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_06_authoring_variants/`.
