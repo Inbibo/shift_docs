@@ -15,12 +15,14 @@ nshift.show()
 
 ## Shift installation in Nuke
 
-To install Shift and open the Shift UI with a menu entry within Nuke, it is required to set up Shift in the user init and menu Python files from Nuke. Shift can be added to the user init and menu files from Nuke's preference folder (*<home directory>/.nuke*) or to a custom init and menu files inside a custom folder structure. If the directory where these files are stored is a path read by Nuke, they will be automatically executed on startup.
+To install Shift and open the Shift UI with a menu entry within Nuke, it is required to set up Shift in the user init and menu Python files from Nuke. Shift can be added to the user init and menu files from Nuke's preference folder (*<home directory>/.nuke*) or to a custom init and menu files inside a custom folder structure. If the directory where these files are stored is a path sourced by Nuke, they will be automatically executed on startup.
+
 
 
 ### Init
 
-In the init.py file is required to configure the Shift basics to work in Nuke batch and interface modes. For that purpose is only required to add the Shift installation path to the environment variables. 
+In the init.py file is required to configure the requirements for Shift to work in Nuke batch and interactive modes. For that purpose is only required to add the Shift installation path to the **PATH** environment variable. 
+
 
 ```python
 import sys
@@ -29,7 +31,8 @@ sys.path.append("<path_to_the_shift_installation_folder>/shift/thirdparty/python
 ```
 
 >[!NOTE]
-> If the paths are added in the system or before opening Nuke, then this configuration step will not be required.
+> If the paths are added at the system level or before opening Nuke, then this configuration step will not be required.
+
 
 
 ### Menu
@@ -59,23 +62,18 @@ except Exception as e:
     pass  # Skip the Error raise to avoid Nuke failing at opening if setting up the menu does not work on startup.
 ```
 
-This code placed in a menu.py file executed by Nuke will create a Shift toolbar entry.
-
-
+This code, placed in a menu.py file and executed by Nuke, will create a Shift toolbar entry (Figure 1) and a Shift menu entry (Figure 2) when Nuke is initialized.
 
 <figure>
       <img src="images/nuke_shift_toolbar.png" alt="Shift Toolbar">
       <figcaption><b>Figure 1</b>: Shift Menu entry in the Nuke Nodes Toolbar.</figcaption>
 </figure>
 
-and a Shift menu entry
-
 <figure>
       <img src="images/nuke_shift_menu.png" alt="Shift Menu">
       <figcaption><b>Figure 2</b>: Shift Menu on Nuke's top menu bar.</figcaption>
 </figure>
 
-when Nuke is initialized.
 
 ## Python Interpreter Setup
 In Shift it is possible to launch the execution of a workflow via an application's Python interpreter with the [WorkflowProcess](../reference/nodes/workflow#workflowProcess-node) node. To achieve this for Nuke, set path to its Python interpreter the following environment variables:
@@ -83,7 +81,8 @@ In Shift it is possible to launch the execution of a workflow via an application
 
 **SHIFT_PROCESS_NUKE** : path to Nuke's Python interpreter (python)
 
-The variable can be set in any environment to be able to execute Shift Workflows in Nuke even if Shift in running in Standalone or a different Software environment.
+The variable can be set in any environment to be able to execute Shift Workflows in Nuke from standalone or other DCC instances.
+
 
 ## Catalogs
 
