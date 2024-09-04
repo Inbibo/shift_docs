@@ -24,12 +24,10 @@ The Shift Python API allows more flexibility when launching Batch execution of S
 
 The following snippet of code can be used to open a Shift workflow file:
 
-<pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
-from shift.core import files
+<code style="white-space: pre; margin: 15px 0; padding: 10px; box-sizing: border-box;">from shift.core import files
 workflow, catalog_manifest = files.openBatchWorkflow("&ltpath_to_your_workflow_file&gt")
-  </code>
-</pre>
+</code>
+
 
 The `openBatchWorkflow `method will return the `SWorkflow` Python class containing the workflow and a Python dictionary containing the information on the Shift catalogs loaded by the workflow. Have a look at the [Shift API](../../reference/api.md) for more information on the method and the `SWorkflow` class.
 
@@ -37,24 +35,20 @@ The `openBatchWorkflow `method will return the `SWorkflow` Python class containi
 
 Once the workflow file is opened, its execution can be triggered with the following code:
 
-<pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
-result = workflow.execute()
-  </code>
-</pre>
+<code style="white-space: pre; padding: 10px; box-sizing: border-box;">result = workflow.execute()
+</code>
+
 
 External inputs for the workflow can be set by providing a Python dictionary as first argument of the `workflow.execute` call. This dictionary should be formatted using the input plug names from the `Input` operator as keys and the content that should be passed as values.
 
-<pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
-workflow_externals = {
+<code style="white-space: pre; padding: 10px; box-sizing: border-box;">workflow_externals = {
     "myFloatPlug1": 1.5,
     "myFloatPlug2": 9.5,
     "myBooleanPlug": True
 }
 result = workflow.execute(workflow_externals)
-  </code>
-</pre>
+</code>
+
 
 The `result` variable will contain a similarly structured dictionary with the output plug names of the `Output` operator as keys and their content as values. If the workflow does not contain an Output node, the result will be `None`, for this reason it is suggested to always set up an `Input` and an `Output` operator in your workflows.
 
@@ -62,8 +56,6 @@ The `result` variable will contain a similarly structured dictionary with the ou
 
 It is highly recommended to close the workflow after the execution is done. This process will take care of cleaning the unneeded Shift catalogs from memory. This can be performed by calling the method:
 
-<pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
-files.closeWorkflow(workflow, catalog_manifest)
-  </code>
-</pre>
+<code style="white-space: pre; padding: 10px; box-sizing: border-box;">files.closeWorkflow(workflow, catalog_manifest)
+</code>
+

@@ -4,16 +4,14 @@
 
 Shift provides a `nshift` utility script to properly bind the Shift UI to Nuke. In order to run and open Shift in Nuke, execute the following code block inside the Nuke *Python Script Editor*:
 
-<pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
-import sys
+<code style="white-space: pre; padding: 10px; box-sizing: border-box;">import sys
 sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
 sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
 
 from shift.tools import nshift
 nshift.show()
-  </code>
-</pre>
+</code>
+
 
 ## Python Interpreter Setup
 In Shift it is possible to launch the execution of a workflow via an application's Python interpreter with the [WorkflowProcess](../reference/nodes/workflow/#workflowProcess-node) node. To achieve this for Nuke, set path to its Python interpreter the following environment variables:

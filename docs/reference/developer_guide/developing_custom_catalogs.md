@@ -7,17 +7,15 @@ In Shift it is possible to create customized catalogs with operators tailored fo
 Custom catalogs are written in Python and include a global variable called `catalog`. This variable is a Python dictionary containing the information for the catalog, such as a description, version and authors. Additionally, this dictionary will define the list of operator classes included in the catalog.
 
 **Catalog Dictionary Example**
-<pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
-catalog = {"Description": "This catalog includes fundamental Python type operators.",
+<code style="white-space: pre; padding: 10px; box-sizing: border-box;">catalog = {"Description": "This catalog includes fundamental Python type operators.",
           "Version": "1.0.0",
           "Author": "Shift's development team", 
           "Operators":[[String,  []],
                         [Integer, []],
                         [Float,   []],
                         [Bool,    []]]}
-  </code>
-</pre>
+</code>
+
 
 >[!NOTE]
 > The *Operators* list from the `catalog` is a list of lists containing two elements. The first one corresponds to the operator class, and the second one is a list of compatible hosts for the operator. If no host is specified, the node will be usable in any context. For instance, if the second element is `["maya", "houdini"]` the operator will be only available for those DCC's. Refer to [Integrations & Resources](../../integration_resources/integrations_resources.md) for more information.
@@ -33,9 +31,7 @@ All Shift operators inherit from the `SOperator` Shift's Python class. To write 
 
 Here is an example of an operator class syntax:
 
-<pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
-from shift.core.workflow import SOperator
+<code style="white-space: pre; padding: 10px; box-sizing: border-box;">from shift.core.workflow import SOperator
 from shift.core.workflow import SPlug
 from shift.core.constants import SType
 from shift.core.constants import SDirection
@@ -80,8 +76,8 @@ class MyOperator(SOperator):
 
         self.getPlug("output").setValue(output)
         super(self.__class__, self).execute(force)
-  </code>
-</pre>
+</code>
+
 
 The `SOperator` constructor method takes care of initializing the plug objects and adding them to the operator. Each plug must be initialized specifying:
 - A unique code name, which will correspond to the name displayed in the UI.
