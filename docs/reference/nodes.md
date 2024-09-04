@@ -8,7 +8,7 @@ There are five main interface elements that compose the node: the node's name, t
 
 ![Node UI](../../images/node_ui.png "Node UI")  
 
-* **Node Name**: Defines the name of the node. On creation, the name of the node is the name of the operator with an enumerated suffix. The name of the node can be changed through the [*Inspector Widget*](../getting_started/basics/ui_overview/#inspector).
+* **Node Name**: Defines the name of the node. On creation, the name of the node is the name of the operator with an enumerated suffix. The name of the node can be changed through the [*Inspector Widget*](../getting_started/basics/ui_overview#the-inspector).
 * **Operator Type**: The associated operator to the node. It determines the native plugs of the node.
 * **Trigger Plugs**: The trigger plugs (`>>>`) are plugs meant to define the node's position in the execution graph. They do not pass any data. If the node has other input or output plugs connected to another node, the trigger plugs do not need to be connected; otherwise, it is recommended to connect these plugs to indicate when the node needs to get computed.
 * **I/O's Plugs**: Input and output plugs are define the incoming data required by the operator and the resulting data after it is computed. 
@@ -28,7 +28,7 @@ To read further information about a node, `Right-Click` on the node and `Click` 
 
 ## Plugs
 
-Plugs define the input and output data of the nodes. Data values can be set through the [*Inspector Widget*](../getting_started/basics/ui_overview/#inspector) or by connecting plugs, which allows nodes to pass data from one to another. The kind of data compatible with a plug is defined by the plug type.
+Plugs define the input and output data of the nodes. Data values can be set through the [*Inspector Widget*](../getting_started/basics/ui_overview#the-inspector) or by connecting plugs, which allows nodes to pass data from one to another. The kind of data compatible with a plug is defined by the plug type.
 
 **Plug Types**
 
