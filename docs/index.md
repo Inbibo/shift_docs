@@ -65,3 +65,24 @@ My text ![UI](images/ui.png){style="width:4%"} .
 My text ![UI](images/ui.png){style="width:4%"} .
 
 ## ![UI](images/execute_all_default.svg){style="width:10%"}  My header.
+
+
+
+## Code blocks
+
+<pre style="margin: 15px 0">
+    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
+myCode
+  </code>
+</pre>
+
+<pre style="margin: 15px 0">
+<code style="white-space: pre; padding: 10px; box-sizing: border-box;">
+myCode
+</code>
+</pre>
+
+<pre style="margin: 15px 0">
+    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">from shift.core import files
+workflow, catalog_manifest = files.openBatchWorkflow("&ltpath_to_your_workflow_file&gt")</code>
+</pre>
