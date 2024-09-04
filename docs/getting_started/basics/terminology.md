@@ -16,7 +16,7 @@ A plug represents an input or output of a node. Plugs have associated types base
 
 ## Connection
 
-A connection is the graphical representation of the relationship between two plugs and shows the direction of the data propagation. Connections between plugs from different nodes are what defines the execution stack of the workflow. 
+A connection is the graphical representation of the relationship between two plugs and shows the direction of the data propagation. Connections between plugs from different nodes define the execution stack of the workflow. 
 
 ## Execution Stack
 
@@ -24,7 +24,7 @@ The execution stack refers to the order in which nodes will be executed. The exe
 
 ## Board
 
-The board refers to the workspace in the Shift UI where the graphical counterpart of the workflow is build. It is the master object holding all information on the graphic items in the interface.
+The board refers to the workspace in the Shift UI where the graphical counterpart of the workflow is build. It is the main object holding all information on the graphic items in the interface.
 
 ## Inspector
 
