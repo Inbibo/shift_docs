@@ -19,13 +19,12 @@ To use the Python interpreter provided with Shift, set up the variable in this w
 
 **PYTHONHOME** : <path_to_your_shift_folder>/shift/thirdparty/python
 
-It's required to add to the PATH the directories of Shift too. This paths can be added in the environment, before open Resolve, or in the python file where Shift will be executed.
+To source Shift in Davinci Resolve the directories of Shift must also be added to the PATH environment variable. The paths to the directories must be set before opening Resolve or in the script that will launch Shift.
 
-```
-PATH: <path_to_the_shift_installation_folder>
-PATH: <path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages
 
-```
+**PATH** : <path_to_the_shift_installation_folder>
+**PATH** : <path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages
+
 
 ## Shift Menu
 
@@ -60,9 +59,11 @@ shiftui.show()
 ```
 
 >[!NOTE]
-> If the paths are added in the system or in the environment before opening Resolve, then the code to append the path to the system won't be required.
+> If the paths are added to the environment before opening Resolve, then the code to append the Shift installation folders to the **PATH** will not be required.
 
-With this file saved, Resolve will show a Shift menu that can be executed to open the Shift UI inside Davinci Resolve.
+
+With this file saved, Resolve will show a Shift menu that can be clicked on to open the Shift UI inside Davinci Resolve.
+
 
 <figure>
       <img src="images/resolve_shift_menu.png" alt="Shift Menu">
@@ -71,5 +72,6 @@ With this file saved, Resolve will show a Shift menu that can be executed to ope
 
 ## Catalogs
 
-Shift provides a catalog with operators specific to work within Davinci Resolve. This catalog is not shipped with the main instalation of Shift, but it can be accessed and downloaded from [Shift_Resolve](https://github.com/Inbibo/Shift_Resolve).
+Shift provides a catalog with operators to work with Davinci Resolve. This catalog is not shipped with Shift, but it can be accessed and downloaded from [Shift_Resolve](https://github.com/Inbibo/Shift_Resolve).
+
 
