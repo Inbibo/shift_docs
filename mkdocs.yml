@@ -112,7 +112,7 @@ nav:
     - Nodes:                    
       - reference/nodes.md
       - Python Script Node:     reference/nodes/python_script.md
-      - Iteration Nodes:        reference/nodes/iteration.md
+      - Iteration Nodes:        reference/nodes/iterator.md
       - Workflow Nodes:         reference/nodes/workflow.md
       - Variable Node:          reference/nodes/variable.md
       - Conditional Node:       reference/nodes/conditional.md
@@ -122,8 +122,9 @@ nav:
     - Logger:                   reference/logger.md
     - Enviorment Variables:     reference/enviorment.md
     - Developer Guide:        
-      - reference\dev_help\api_standalone.md
-      - Shift Python API:         reference/api.md
+      - Developing Catalogs:    reference/developer_guide/developing_custom_catalogs.md
+      - Developing Plugins:     reference/developer_guide/developing_custom_plugins.md
+      - Shift Python API:       reference/developer_guide/api.md
   - Integrations & Resources:
     - integration_resources/integrations_resources.md
     - Software Platforms:

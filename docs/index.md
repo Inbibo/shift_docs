@@ -19,11 +19,11 @@ With Shift you can:
 - Improve efficiency at authoring workflows in your pipeline.
 - Allow non-technical teams to quickly sketch their automation with the abstraction that they need.
 
-
 ## Start to Shift
 
 - [Installation](getting_started/installation.md)
 - [Licensing](getting_started/licensing.md)
 - [Requirements](getting_started/requirements.md)
 - [Shift Basics](getting_started/basics/ui_overview.md)
+- [Developer Guide](reference/developer_guide/api.md)
 - [Integrations & Resources](integration_resources/integrations_resources.md)
