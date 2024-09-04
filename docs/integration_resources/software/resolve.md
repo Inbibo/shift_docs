@@ -48,15 +48,14 @@ For a Windows local user, the result path for the file will be this one:
 
 Inside the file, add the following code:
 
-```python
-import sys
-sys.path.append("<path_to_the_shift_installation_folder>")
-sys.path.append("<path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages")
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">import sys
+sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
+sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
 
 
 from shift.tools import shiftui
 shiftui.show()
-```
+</code></pre>
 
 >[!NOTE]
 > If the paths are added to the environment before opening Resolve, then the code to append the Shift installation folders to the **PATH** will not be required.
