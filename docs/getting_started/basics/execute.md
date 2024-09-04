@@ -4,32 +4,52 @@ The execution of a node in a Shift workflow consist in the evaluation of its int
 
 There are different ways a workflow can be executed, which depend on which nodes will get computed. 
 
-## ![Execute All Button](../../images/toolbar/execute_all_default.svg){:width="25" height="25"} Execute All
+## ![Execute All Button](images/execute_all_default.svg){style="width:5%"} Execute All
 
 The "Execute All" action will compute all the dirty nodes present in the workflow. 
 
-![Execute All](../../images/execute_all.gif)
+<figure>
+      <img src="images/execute_all.gif" alt="Execute All">
+      <figcaption><b>Figure 1</b>: Executing all the workflow.</figcaption>
+</figure>
 
-## ![Execute Selected Button](../../images/toolbar/execute_selected_default.svg){:width="25" height="25"} Execute Selected
+
+## ![Execute Selected Button](images/execute_selected_default.svg){style="width:5%"} Execute Selected
 
 The "Execute Selected" action will compute all the selected nodes in the workflow. To do so, Shift will identify the workflow sub-graph required to evaluate the desired nodes and execute it.
 
-![Execute Selected](../../images/execute_selected.gif)
+<figure>
+      <img src="images/execute_selected.gif" alt="Execute Selected">
+      <figcaption><b>Figure 2</b>: Executing the workflow up to the selected node.</figcaption>
+</figure>
 
-## ![Execute Next Button](../../images/toolbar/execute_next_default.svg){:width="25" height="25"} Execute Next
+
+## ![Execute Next Button](images/execute_next_default.svg){style="width:5%"} Execute Next
 
 The "Execute Next" action will compute the next dirty node present in the workflow. This allows to execute one node at a time and becomes useful to closely follow and inspect the processing of the workflow.
 
-![Execute Next](../../images/execute_step_by_step.gif)
+<figure>
+      <img src="images/execute_step_by_step.gif" alt="Execute next">
+      <figcaption><b>Figure 3</b>: Executing the workflow one step at a time.</figcaption>
+</figure>
 
-## ![Clear Execution Button](../../images/toolbar/clear_all_default.svg){:width="25" height="25"} Clear Execution
+
+## ![Clear Execution Button](images/clear_all_default.svg){style="width:5%"} Clear Execution
 
 The "Clear Execution" action will set all the nodes in the workflow to dirty. All **connected** inputs and output values will be cleared to their default values. This forces Shift to recompute all nodes the next time the workflow has to be executed. 
 
-![Clear Execution](../../images/clear_execution.gif)
+<figure>
+      <img src="images/clear_execution.gif" alt="Clear execution">
+      <figcaption><b>Figure 4</b>: Clear the executed status from all nodes.</figcaption>
+</figure>
 
-## ![Live Execution Button](../../images/toolbar/execute_live_default.svg){:width="25" height="25"} Live Execution
+
+## ![Live Execution Button](images/execute_live_default.svg){style="width:5%"} Live Execution
 
 The "Live Execution" action allows to trigger the execution of the whole workflow whenever a change to any node is done. While the "Live Execution" is turned on, the other execution buttons are disabled. To re-enable all the execution buttons, turn Live Execution off.
 
-![Live Execution](../../images/live_execution.gif)
+<figure>
+      <img src="images/live_execution.gif" alt="Live Execution">
+      <figcaption><b>Figure 5</b>: Executing workflow in live execution mode.</figcaption>
+</figure>
+
