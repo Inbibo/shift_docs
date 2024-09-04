@@ -76,9 +76,9 @@ myCode
   </code>
 </pre>
 
-<pre style="margin: 15px 0"><code style="white-space: pre; padding: 10px; box-sizing: border-box;">
+<code style="white-space: pre; padding: 10px; box-sizing: border-box;">
 myCode
-</code></pre>
+</code>
 
 <pre style="margin: 15px 0">
     <code style="white-space: pre; padding: 10px; box-sizing: border-box;">from shift.core import files
