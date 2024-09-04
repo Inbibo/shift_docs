@@ -76,7 +76,7 @@ myCode
   </code>
 </pre>
 
-<code style="white-space: pre; padding: 10px; box-sizing: border-box;">
+<code style="white-space: pre; padding: 10px; box-sizing: border-box; display: block;">
 myCode
 </code>
 
