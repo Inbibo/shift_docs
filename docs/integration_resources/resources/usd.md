@@ -17,7 +17,7 @@ To start working with the USD API in Shift, please follow the following steps:
 ## Dependencies
 | **Dependency**                                           | **Version**    |
 | -------------------------------------------------------- | -------------- |
-| [Python](https://www.python.org/download/releases/3.0/)  | 3.7 or higher  |
+| [Python](https://www.python.org/download/releases/3.0/)  | 3.7 to 3.11    |
 | [USD](https://pypi.org/project/usd-core/)                | 21.8 or higher |
 
 <!-- ##Plugins
