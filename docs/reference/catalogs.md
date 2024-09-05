@@ -1,6 +1,6 @@
 # Catalogs
 
-Catalogs are libraries of operators that define and extend Shift's capabilities, as they provide the specialized nodes for different areas of development and automatization. 
+Catalogs are libraries of operators that define and extend Shift's capabilities, as they provide specialized nodes for different areas of development and automatization. 
 
 Shift comes with six native catalogs that contain the necessary nodes to start building a workflow:
 
@@ -9,7 +9,7 @@ Shift comes with six native catalogs that contain the necessary nodes to start b
 - **FileSystem catalog**: Provides operators to work with the OS filesystem and environment variables. It includes operators to perform file & directory creation and manipulation and more.
 - **Regex catalog**: Provides operators to work with regular expressions and functions.
 - **CreativeSoftware catalog**: Provides operators to work with Digital Content Creation softwares. It includes operators for scene management, geometry handling, node graph manipulation and more, across popular DCC tools like Maya, Houdini, Blender, and Nuke.
-- **Workflow catalog**: Provides operators to manage and nest Shift workflows. It includes operators to input and output data, store [variables](nodes/variables.md) and execute [sub-workflows](nodes/workflow.md).
+- **Workflow catalog**: Provides operators to manage and nest Shift workflows. It includes operators to input and output data, store [variables](nodes/variable.md) and execute [sub-workflows](nodes/workflow.md).
 
 >[!NOTE]
 > Shift also comes with a native catalog for Deadline. For more information about Shift's integration in Deadline and how to use this catalog, please refer to the [Deadline Integration](../integration_resources/software/deadline.md) documentation.
