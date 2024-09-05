@@ -25,4 +25,4 @@ To learn more about the `Workflow` node functionalities, please refer to the [`W
 
 ### Workflows on External Processes
 
-When using the `Workflow` node, the execution of the workflow happens on the same Python process Shift is running in. However, it is also possible to execute a workflow in an external process running in a different Python interpreter. To do so, please refer to the [`Workflow Process`](../../nodes/workflow_process.md) documentation.
+When using the `Workflow` node, the execution of the workflow happens on the same Python process Shift is running in. However, it is also possible to execute a workflow in an external process running in a different Python interpreter. To do so, please refer to the `Workflow Process`(../../nodes/workflow#workflowprocess-node) documentation.

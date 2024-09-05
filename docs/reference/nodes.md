@@ -19,7 +19,7 @@ There are five main interface elements that compose the node: the node's name, t
 To read further information about a node, `Right-Click` on the node and `Click` on the *Help* option. This will prompt a dialog with the following information:
 
 * The node's name.
-* The operator type and the [Catalog](../reference/catalogs/#catalogs) it belongs to.
+* The operator type and the [Catalog](../reference/catalogs.md) it belongs to.
 * The operator description.
 * The input and output plugs with their corresponding plug types.
 
