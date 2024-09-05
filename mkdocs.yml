@@ -117,6 +117,7 @@ nav:
       - Variable Node:          reference/nodes/variable.md
       - Conditional Node:       reference/nodes/conditional.md
     - Catalogs:                 reference/catalogs.md
+    - Integrated Catalogs:
       - sUsd:                   reference/catalogs/susd.md
     - Plugins:                  reference/plugins.md
     - Notes:                    reference/notes.md
