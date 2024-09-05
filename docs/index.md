@@ -24,6 +24,7 @@
       <figcaption><b>Figure 4</b>: Figure with image</figcaption>
 </figure>
 
+## Title
 <figure style="width: 30%">
 	<img src="images\ui.png" alt="Node UI">
 	<figcaption>Node UI</figcaption>
