@@ -3,7 +3,7 @@ This catalog doesn't have a description
 
 ## *sUSD* Operators
 ## UsdAttributeAdd
-<img style="width: 30%" src="images\UsdAttributeAdd.png" alt="Node UI"/>
+<img style="width: 30%" src="images/UsdAttributeAdd.png" alt="Node UI"/>
 
 
 Add UsdAttribute to UsdPrim.
