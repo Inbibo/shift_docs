@@ -24,6 +24,11 @@
       <figcaption><b>Figure 4</b>: Figure with image</figcaption>
 </figure>
 
+<figure>
+      <img src="images/ui.png" alt="UI">
+      <figcaption>Tets</figcaption>
+</figure>
+
 
 <img src="images/ui.png" alt="UI">
 <b>Figure 5</b>: Plain Image
