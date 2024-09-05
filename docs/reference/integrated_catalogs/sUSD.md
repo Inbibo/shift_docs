@@ -27,7 +27,6 @@ Add UsdAttribute to UsdPrim.
 ## UsdAttributeClear
 <figure style="width: 30%">
 	<img src="images\usdattributeclear.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
 </figure>
 
 
