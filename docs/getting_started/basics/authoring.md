@@ -5,7 +5,7 @@ When launching Shift, an new empty board is opened where nodes and connections c
 
 ## Creating a Node
 
-To create a new [node](../terminology.md/#node), press the `Tab` key or `Double Left-Click` in the board to open the "*Create Node*" dialog. This dialog enables searching for nodes by name and/or filtering by [catalog](../terminology.md/#catalog). The nodes will be listed alphabetically underneath, where they can be added to the Shift board by double-clicking on them.
+To create a new [node](terminology#node), press the `Tab` key or `Double Left-Click` in the board to open the "*Create Node*" dialog. This dialog enables searching for nodes by name and/or filtering by [catalog](terminology#catalog). The nodes will be listed alphabetically underneath, where they can be added to the Shift board by double-clicking on them.
 
 <figure>
       <img src="images/create_node_dialog.gif" alt="Create Node Dialog">
@@ -16,7 +16,7 @@ Alternatively, nodes can be added to the board using the [Nodes List widget](ui_
 
 ## Creating Connections
 
-To establish a connection between [plugs](../terminology.md/#plug) from different nodes, `Left-Click` and `Drag` from one plug to the desired plug. By creating a connection, the workflow can propagate the data produced in the output plugs of a node and transfer it to the connected input plug of another node.
+To establish a connection between [plugs](terminology#plug) from different nodes, `Left-Click` and `Drag` from one plug to the desired plug. By creating a connection, the workflow can propagate the data produced in the output plugs of a node and transfer it to the connected input plug of another node.
 
 <figure>
       <img src="images/connect_plugs.gif" alt="Connect Plugs">
