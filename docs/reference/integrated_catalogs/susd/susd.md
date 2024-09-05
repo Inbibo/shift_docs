@@ -5,6 +5,7 @@ This catalog doesn't have a description
 ## UsdAttributeAdd
 <figure style="width: 30%">
 	<img src="images/UsdAttributeAdd.png" alt="Node UI">
+	<figcaption><b>Figure 1</b>: Catalog Manager UI.</figcaption>   
 </figure>
 
 
