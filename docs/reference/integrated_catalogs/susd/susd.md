@@ -4,7 +4,7 @@ This catalog doesn't have a description
 ## *sUSD* Operators
 ## UsdAttributeAdd
 <figure style="width: 30%">
-	<img src="images\UsdAttributeAdd.png" alt="Node UI">
+	<img src="images/UsdAttributeAdd.png" alt="Node UI">
 </figure>
 
 
