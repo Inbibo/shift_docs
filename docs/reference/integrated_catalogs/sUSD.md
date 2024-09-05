@@ -3,10 +3,7 @@ This catalog doesn't have a description
 
 ## *sUSD* Operators
 ## UsdAttributeAdd
-<figure style="width: 30%">
-	<img src="images\UsdAttributeAdd.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributeAdd.png" alt="Node UI"/>
 
 
 Add UsdAttribute to UsdPrim.
@@ -25,10 +22,7 @@ Add UsdAttribute to UsdPrim.
 
 
 ## UsdAttributeClear
-<figure style="width: 30%">
-	<img src="images\UsdAttributeClear.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributeClear.png" alt="Node UI"/>
 
 
 Clears the authored value from the given UsdAttribute.
@@ -51,10 +45,7 @@ Clears the authored value from the given UsdAttribute.
 
 
 ## UsdAttributeConnectionAdd
-<figure style="width: 30%">
-	<img src="images\UsdAttributeConnectionAdd.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributeConnectionAdd.png" alt="Node UI"/>
 
 
 Add connection between two UsdAttributes.
@@ -72,10 +63,7 @@ Add connection between two UsdAttributes.
 
 
 ## UsdAttributeConnectionRemove
-<figure style="width: 30%">
-	<img src="images\UsdAttributeConnectionRemove.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributeConnectionRemove.png" alt="Node UI"/>
 
 
 Remove connection between two UsdAttributes.
@@ -93,10 +81,7 @@ Remove connection between two UsdAttributes.
 
 
 ## UsdAttributeCopy
-<figure style="width: 30%">
-	<img src="images\UsdAttributeCopy.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributeCopy.png" alt="Node UI"/>
 
 
 Copy Usd.Attribute from source Usd.Prim to target Usd.Prim.
@@ -117,10 +102,7 @@ Copy Usd.Attribute from source Usd.Prim to target Usd.Prim.
 
 
 ## UsdAttributeGet
-<figure style="width: 30%">
-	<img src="images\UsdAttributeGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributeGet.png" alt="Node UI"/>
 
 
 Get UsdAttribute from UsdPrim.
@@ -138,10 +120,7 @@ Get UsdAttribute from UsdPrim.
 
 
 ## UsdAttributeRemove
-<figure style="width: 30%">
-	<img src="images\UsdAttributeRemove.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributeRemove.png" alt="Node UI"/>
 
 
 Remove UsdAttribute .
@@ -159,10 +138,7 @@ Remove UsdAttribute .
 
 
 ## UsdAttributeTypeGet
-<figure style="width: 30%">
-	<img src="images\UsdAttributeTypeGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributeTypeGet.png" alt="Node UI"/>
 
 
 Get the type name for UsdAttribute.
@@ -179,10 +155,7 @@ Get the type name for UsdAttribute.
 
 
 ## UsdAttributeValueGet
-<figure style="width: 30%">
-	<img src="images\UsdAttributeValueGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributeValueGet.png" alt="Node UI"/>
 
 
 Get UsdAttribute value.
@@ -201,10 +174,7 @@ Get UsdAttribute value.
 
 
 ## UsdAttributeValueSet
-<figure style="width: 30%">
-	<img src="images\UsdAttributeValueSet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributeValueSet.png" alt="Node UI"/>
 
 
 Get UsdAttribute value.
@@ -224,10 +194,7 @@ Get UsdAttribute value.
 
 
 ## UsdAttributesGetDict
-<figure style="width: 30%">
-	<img src="images\UsdAttributesGetDict.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdAttributesGetDict.png" alt="Node UI"/>
 
 
 Returns a dictionary with the attribute names and their respective values.
@@ -244,10 +211,7 @@ Returns a dictionary with the attribute names and their respective values.
 
 
 ## UsdInstanceNameGet
-<figure style="width: 30%">
-	<img src="images\UsdInstanceNameGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdInstanceNameGet.png" alt="Node UI"/>
 
 
 Get the name of Usd instance.
@@ -264,10 +228,7 @@ Get the name of Usd instance.
 
 
 ## UsdInstancePathGet
-<figure style="width: 30%">
-	<img src="images\UsdInstancePathGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdInstancePathGet.png" alt="Node UI"/>
 
 
 Get the Sdf.Path for Usd instance.
@@ -285,10 +246,7 @@ Get the Sdf.Path for Usd instance.
 
 
 ## UsdLayerAdd
-<figure style="width: 30%">
-	<img src="images\UsdLayerAdd.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdLayerAdd.png" alt="Node UI"/>
 
 
 Adds a given source layer to the subLayerPaths of the destination layer.
@@ -315,10 +273,7 @@ Adds a given source layer to the subLayerPaths of the destination layer.
 
 
 ## UsdLayerCreateAnonymous
-<figure style="width: 30%">
-	<img src="images\UsdLayerCreateAnonymous.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdLayerCreateAnonymous.png" alt="Node UI"/>
 
 
 Creates a new anonymous layer with an optional given tag.
@@ -335,10 +290,7 @@ Creates a new anonymous layer with an optional given tag.
 
 
 ## UsdLayerCreateNew
-<figure style="width: 30%">
-	<img src="images\UsdLayerCreateNew.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdLayerCreateNew.png" alt="Node UI"/>
 
 
 Creates a new empty layer in the given filepath.
@@ -355,10 +307,7 @@ Creates a new empty layer in the given filepath.
 
 
 ## UsdLayerFindOrOpen
-<figure style="width: 30%">
-	<img src="images\UsdLayerFindOrOpen.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdLayerFindOrOpen.png" alt="Node UI"/>
 
 
 Returns an existing SdfLayer with the given identifier.
@@ -378,10 +327,7 @@ Returns an existing SdfLayer with the given identifier.
 
 
 ## UsdLayerGet
-<figure style="width: 30%">
-	<img src="images\UsdLayerGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdLayerGet.png" alt="Node UI"/>
 
 
 Returns a layer in the given position from the given UsdStage layer stack.
@@ -400,10 +346,7 @@ Returns a layer in the given position from the given UsdStage layer stack.
 
 
 ## UsdLayerPathGet
-<figure style="width: 30%">
-	<img src="images\UsdLayerPathGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdLayerPathGet.png" alt="Node UI"/>
 
 
 Gets the path and the identifier from the given SdfLayer.
@@ -421,10 +364,7 @@ Gets the path and the identifier from the given SdfLayer.
 
 
 ## UsdLoadedLayersGet
-<figure style="width: 30%">
-	<img src="images\UsdLoadedLayersGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdLoadedLayersGet.png" alt="Node UI"/>
 
 
 Returns all layers currently held by the layer registry.
@@ -436,10 +376,7 @@ Returns all layers currently held by the layer registry.
 
 
 ## SdfSubLayersGet
-<figure style="width: 30%">
-	<img src="images\SdfSubLayersGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\SdfSubLayersGet.png" alt="Node UI"/>
 
 
 Get the sublayers from the given SdfLayer.
@@ -456,10 +393,7 @@ Get the sublayers from the given SdfLayer.
 
 
 ## UsdPrimAdd
-<figure style="width: 30%">
-	<img src="images\UsdPrimAdd.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimAdd.png" alt="Node UI"/>
 
 
 Add UsdPrim to UsdStage.
@@ -479,10 +413,7 @@ Add UsdPrim to UsdStage.
 
 
 ## UsdPrimChildAppend
-<figure style="width: 30%">
-	<img src="images\UsdPrimChildAppend.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimChildAppend.png" alt="Node UI"/>
 
 
 Append child prim to UsdPrim.
@@ -501,10 +432,7 @@ Append child prim to UsdPrim.
 
 
 ## UsdPrimCopy
-<figure style="width: 30%">
-	<img src="images\UsdPrimCopy.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimCopy.png" alt="Node UI"/>
 
 
 Copy UsdPrim from source UsdStage to target UsdStage.
@@ -525,10 +453,7 @@ Copy UsdPrim from source UsdStage to target UsdStage.
 
 
 ## UsdPrimDisable
-<figure style="width: 30%">
-	<img src="images\UsdPrimDisable.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimDisable.png" alt="Node UI"/>
 
 
 Disable UsdPrim inside UsdStage.
@@ -546,10 +471,7 @@ Disable UsdPrim inside UsdStage.
 
 
 ## UsdPrimDisplayColorGet
-<figure style="width: 30%">
-	<img src="images\UsdPrimDisplayColorGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimDisplayColorGet.png" alt="Node UI"/>
 
 
 Get display color primvar of the given Usd prim.
@@ -568,10 +490,7 @@ Get display color primvar of the given Usd prim.
 
 
 ## UsdPrimDisplayColorSet
-<figure style="width: 30%">
-	<img src="images\UsdPrimDisplayColorSet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimDisplayColorSet.png" alt="Node UI"/>
 
 
 Sets display color primvar to the given Usd prim.
@@ -591,10 +510,7 @@ Sets display color primvar to the given Usd prim.
 
 
 ## UsdPrimGet
-<figure style="width: 30%">
-	<img src="images\UsdPrimGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimGet.png" alt="Node UI"/>
 
 
 Get UsdPrim from prim path inside UsdStage.
@@ -612,10 +528,7 @@ Get UsdPrim from prim path inside UsdStage.
 
 
 ## UsdPrimInternalReferenceAdd
-<figure style="width: 30%">
-	<img src="images\UsdPrimInternalReferenceAdd.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimInternalReferenceAdd.png" alt="Node UI"/>
 
 
 Internal reference a UsdPrim.
@@ -634,10 +547,7 @@ Internal reference a UsdPrim.
 
 
 ## UsdPrimKindGet
-<figure style="width: 30%">
-	<img src="images\UsdPrimKindGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimKindGet.png" alt="Node UI"/>
 
 
 Get UsdPrim Kind.
@@ -654,10 +564,7 @@ Get UsdPrim Kind.
 
 
 ## UsdPrimKindSet
-<figure style="width: 30%">
-	<img src="images\UsdPrimKindSet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimKindSet.png" alt="Node UI"/>
 
 
 Set UsdPrim Kind.
@@ -666,7 +573,7 @@ Set UsdPrim Kind.
 | Name | Type | Default | Options
 | --- | --- | --- | --- |
 | prim | Instance | None | 
-| kind | Enum | subcomponent | assembly, component, group, model, subcomponent
+| kind | Enum | component | assembly, component, group, model, subcomponent
 
 #### Outputs
 | Name | Type | Default |
@@ -675,10 +582,7 @@ Set UsdPrim Kind.
 
 
 ## UsdPrimOverride
-<figure style="width: 30%">
-	<img src="images\UsdPrimOverride.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimOverride.png" alt="Node UI"/>
 
 
 Add an override UsdPrim to UsdStage.
@@ -697,10 +601,7 @@ Add an override UsdPrim to UsdStage.
 
 
 ## UsdPrimPropertyNamesGet
-<figure style="width: 30%">
-	<img src="images\UsdPrimPropertyNamesGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimPropertyNamesGet.png" alt="Node UI"/>
 
 
 Get the list of property names of a prim.
@@ -717,10 +618,7 @@ Get the list of property names of a prim.
 
 
 ## UsdPrimPurposeGet
-<figure style="width: 30%">
-	<img src="images\UsdPrimPurposeGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimPurposeGet.png" alt="Node UI"/>
 
 
 Get UsdPrim Purpose.
@@ -737,10 +635,7 @@ Get UsdPrim Purpose.
 
 
 ## UsdPrimPurposeSet
-<figure style="width: 30%">
-	<img src="images\UsdPrimPurposeSet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimPurposeSet.png" alt="Node UI"/>
 
 
 Set UsdPrim Purpose.
@@ -758,10 +653,7 @@ Set UsdPrim Purpose.
 
 
 ## UsdPrimReferenceAdd
-<figure style="width: 30%">
-	<img src="images\UsdPrimReferenceAdd.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimReferenceAdd.png" alt="Node UI"/>
 
 
 Adds a reference to a UsdPrim.
@@ -788,10 +680,7 @@ Adds a reference to a UsdPrim.
 
 
 ## UsdPrimReferenceGet
-<figure style="width: 30%">
-	<img src="images\UsdPrimReferenceGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimReferenceGet.png" alt="Node UI"/>
 
 
 Get the filepaths References from a UsdPrim.
@@ -809,10 +698,7 @@ Get the filepaths References from a UsdPrim.
 
 
 ## UsdPrimReferenceRemove
-<figure style="width: 30%">
-	<img src="images\UsdPrimReferenceRemove.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimReferenceRemove.png" alt="Node UI"/>
 
 
 Remove the filepath Referenced to a UsdPrim.
@@ -833,10 +719,7 @@ Remove the filepath Referenced to a UsdPrim.
 
 
 ## UsdPrimStageGet
-<figure style="width: 30%">
-	<img src="images\UsdPrimStageGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimStageGet.png" alt="Node UI"/>
 
 
 Get the UsdStage for UsdPrim.
@@ -853,10 +736,7 @@ Get the UsdStage for UsdPrim.
 
 
 ## UsdPrimTypeGet
-<figure style="width: 30%">
-	<img src="images\UsdPrimTypeGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdPrimTypeGet.png" alt="Node UI"/>
 
 
 Get the type name for UsdPrim.
@@ -873,10 +753,7 @@ Get the type name for UsdPrim.
 
 
 ## UsdSdfReferenceCreate
-<figure style="width: 30%">
-	<img src="images\UsdSdfReferenceCreate.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdSdfReferenceCreate.png" alt="Node UI"/>
 
 
 Create a Usd Sdf Reference with filepath and primpath.
@@ -895,10 +772,7 @@ Create a Usd Sdf Reference with filepath and primpath.
 
 
 ## UsdSdfReferenceQuery
-<figure style="width: 30%">
-	<img src="images\UsdSdfReferenceQuery.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdSdfReferenceQuery.png" alt="Node UI"/>
 
 
 Get the filepath and primpath from a Usd Sdf Reference.
@@ -916,10 +790,7 @@ Get the filepath and primpath from a Usd Sdf Reference.
 
 
 ## UsdShadeAttributeAdd
-<figure style="width: 30%">
-	<img src="images\UsdShadeAttributeAdd.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdShadeAttributeAdd.png" alt="Node UI"/>
 
 
 Add UsdShade.Input Or UsdShade.Output to UsdShade prims.
@@ -940,10 +811,7 @@ Add UsdShade.Input Or UsdShade.Output to UsdShade prims.
 
 
 ## UsdShadeAttributeGet
-<figure style="width: 30%">
-	<img src="images\UsdShadeAttributeGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdShadeAttributeGet.png" alt="Node UI"/>
 
 
 Get UsdShade.Input Or UsdShade.Output belong to UsdShade prims.
@@ -962,10 +830,7 @@ Get UsdShade.Input Or UsdShade.Output belong to UsdShade prims.
 
 
 ## UsdStage
-<figure style="width: 30%">
-	<img src="images\UsdStage.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStage.png" alt="Node UI"/>
 
 
 Defines an USD stage instance.
@@ -982,10 +847,7 @@ Defines an USD stage instance.
 
 
 ## UsdStageDefaultPrimClear
-<figure style="width: 30%">
-	<img src="images\UsdStageDefaultPrimClear.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageDefaultPrimClear.png" alt="Node UI"/>
 
 
 Clears the default prim layer metadata in the given UsdStage root layer.
@@ -1002,10 +864,7 @@ Clears the default prim layer metadata in the given UsdStage root layer.
 
 
 ## UsdStageDefaultPrimGet
-<figure style="width: 30%">
-	<img src="images\UsdStageDefaultPrimGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageDefaultPrimGet.png" alt="Node UI"/>
 
 
 Gets the default prim in the given UsdStage root layer.
@@ -1022,10 +881,7 @@ Gets the default prim in the given UsdStage root layer.
 
 
 ## UsdStageDefaultPrimSet
-<figure style="width: 30%">
-	<img src="images\UsdStageDefaultPrimSet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageDefaultPrimSet.png" alt="Node UI"/>
 
 
 Sets the default prim to the given UsdStage root layer.
@@ -1043,10 +899,7 @@ Sets the default prim to the given UsdStage root layer.
 
 
 ## UsdStageEditTargetGet
-<figure style="width: 30%">
-	<img src="images\UsdStageEditTargetGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageEditTargetGet.png" alt="Node UI"/>
 
 
 Returns the current edit target and its associated layer from the given USD stage.
@@ -1064,10 +917,7 @@ Returns the current edit target and its associated layer from the given USD stag
 
 
 ## UsdStageEditTargetSet
-<figure style="width: 30%">
-	<img src="images\UsdStageEditTargetSet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageEditTargetSet.png" alt="Node UI"/>
 
 
 Sets the edit target to the given USD stage using the given layer.
@@ -1086,10 +936,7 @@ Sets the edit target to the given USD stage using the given layer.
 
 
 ## UsdStageFlatten
-<figure style="width: 30%">
-	<img src="images\UsdStageFlatten.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageFlatten.png" alt="Node UI"/>
 
 
 Returns a single, anonymous, merged SdfLayer from the given UsdStage or SdfLayer, and a UsdStage that uses the resulting merged layer.
@@ -1113,10 +960,7 @@ Returns a single, anonymous, merged SdfLayer from the given UsdStage or SdfLayer
 
 
 ## UsdStageMetadataGet
-<figure style="width: 30%">
-	<img src="images\UsdStageMetadataGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageMetadataGet.png" alt="Node UI"/>
 
 
 Get UsdStage metadata.
@@ -1135,10 +979,7 @@ Get UsdStage metadata.
 
 
 ## UsdStageMetadataSet
-<figure style="width: 30%">
-	<img src="images\UsdStageMetadataSet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageMetadataSet.png" alt="Node UI"/>
 
 
 Set UsdStage metadata.
@@ -1157,10 +998,7 @@ Set UsdStage metadata.
 
 
 ## UsdStageNew
-<figure style="width: 30%">
-	<img src="images\UsdStageNew.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageNew.png" alt="Node UI"/>
 
 
 Creating a new USD stage instance. The filepath (or identifier) should be written in a valid USD file format.
@@ -1180,10 +1018,7 @@ Creating a new USD stage instance. The filepath (or identifier) should be writte
 
 
 ## UsdStageOpen
-<figure style="width: 30%">
-	<img src="images\UsdStageOpen.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageOpen.png" alt="Node UI"/>
 
 
 Open a new USD stage instance from the given file path.
@@ -1200,10 +1035,7 @@ Open a new USD stage instance from the given file path.
 
 
 ## UsdStageRootLayerGet
-<figure style="width: 30%">
-	<img src="images\UsdStageRootLayerGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageRootLayerGet.png" alt="Node UI"/>
 
 
 Returns the root layer from the given UsdStage.
@@ -1221,10 +1053,7 @@ Returns the root layer from the given UsdStage.
 
 
 ## UsdStageSave
-<figure style="width: 30%">
-	<img src="images\UsdStageSave.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageSave.png" alt="Node UI"/>
 
 
 Save an exist USD stage instance .
@@ -1242,10 +1071,7 @@ Save an exist USD stage instance .
 
 
 ## UsdStageSessionLayerGet
-<figure style="width: 30%">
-	<img src="images\UsdStageSessionLayerGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageSessionLayerGet.png" alt="Node UI"/>
 
 
 Returns the session layer from the given UsdStage.
@@ -1263,10 +1089,7 @@ Returns the session layer from the given UsdStage.
 
 
 ## UsdStageToString
-<figure style="width: 30%">
-	<img src="images\UsdStageToString.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageToString.png" alt="Node UI"/>
 
 
 Converts the stage dada into a flattened Usd text representation.
@@ -1285,10 +1108,7 @@ Converts the stage dada into a flattened Usd text representation.
 
 
 ## UsdStageSubLayerAdd
-<figure style="width: 30%">
-	<img src="images\UsdStageSubLayerAdd.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageSubLayerAdd.png" alt="Node UI"/>
 
 
 Add UsdLayer to the UsdStage subLayerPaths using the given file path.
@@ -1307,10 +1127,7 @@ Add UsdLayer to the UsdStage subLayerPaths using the given file path.
 
 
 ## UsdStageLayerStackGet
-<figure style="width: 30%">
-	<img src="images\UsdStageLayerStackGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageLayerStackGet.png" alt="Node UI"/>
 
 
 Get the layer stack from the given UsdStage.
@@ -1335,10 +1152,7 @@ Get the layer stack from the given UsdStage.
 
 
 ## UsdStageSubLayerRemove
-<figure style="width: 30%">
-	<img src="images\UsdStageSubLayerRemove.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageSubLayerRemove.png" alt="Node UI"/>
 
 
 Remove UsdLayer to the UsdStage subLayerPaths using the given file path.
@@ -1356,10 +1170,7 @@ Remove UsdLayer to the UsdStage subLayerPaths using the given file path.
 
 
 ## UsdStageTraverse
-<figure style="width: 30%">
-	<img src="images\UsdStageTraverse.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageTraverse.png" alt="Node UI"/>
 
 
 Traverses the UsdStage and returns the UsdPrims that are active, defined, loaded, and concrete.
@@ -1382,10 +1193,7 @@ Traverses the UsdStage and returns the UsdPrims that are active, defined, loaded
 
 
 ## UsdStageUpAxisGet
-<figure style="width: 30%">
-	<img src="images\UsdStageUpAxisGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageUpAxisGet.png" alt="Node UI"/>
 
 
 Get the UsdStage's up axis.
@@ -1402,10 +1210,7 @@ Get the UsdStage's up axis.
 
 
 ## UsdStageUpAxisSet
-<figure style="width: 30%">
-	<img src="images\UsdStageUpAxisSet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdStageUpAxisSet.png" alt="Node UI"/>
 
 
 Set the UsdStage's up axis, which must be Y or Z.
@@ -1423,10 +1228,7 @@ Set the UsdStage's up axis, which must be Y or Z.
 
 
 ## UsdSubLayersPathGet
-<figure style="width: 30%">
-	<img src="images\UsdSubLayersPathGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdSubLayersPathGet.png" alt="Node UI"/>
 
 
 Get the sublayers paths from the given SdfLayer.
@@ -1448,10 +1250,7 @@ Get the sublayers paths from the given SdfLayer.
 
 
 ## UsdVariantAdd
-<figure style="width: 30%">
-	<img src="images\UsdVariantAdd.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdVariantAdd.png" alt="Node UI"/>
 
 
 Adds a variant with the given name to the input variant set.
@@ -1475,10 +1274,7 @@ Adds a variant with the given name to the input variant set.
 
 
 ## UsdVariantGetAll
-<figure style="width: 30%">
-	<img src="images\UsdVariantGetAll.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdVariantGetAll.png" alt="Node UI"/>
 
 
 Get all variants for the input variant set.
@@ -1501,10 +1297,7 @@ Get all variants for the input variant set.
 
 
 ## UsdVariantGetSelected
-<figure style="width: 30%">
-	<img src="images\UsdVariantGetSelected.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdVariantGetSelected.png" alt="Node UI"/>
 
 
 Get the selected variant for the input variant set.
@@ -1527,10 +1320,7 @@ Get the selected variant for the input variant set.
 
 
 ## UsdVariantSetAdd
-<figure style="width: 30%">
-	<img src="images\UsdVariantSetAdd.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdVariantSetAdd.png" alt="Node UI"/>
 
 
 Adds a variant set to the prim.
@@ -1554,10 +1344,7 @@ Adds a variant set to the prim.
 
 
 ## UsdVariantSetGet
-<figure style="width: 30%">
-	<img src="images\UsdVariantSetGet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdVariantSetGet.png" alt="Node UI"/>
 
 
 Get a variant set to the prim.
@@ -1581,10 +1368,7 @@ Get a variant set to the prim.
 
 
 ## UsdVariantSetSelected
-<figure style="width: 30%">
-	<img src="images\UsdVariantSetSelected.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdVariantSetSelected.png" alt="Node UI"/>
 
 
 Set the selected variant for the input variant set.
@@ -1608,10 +1392,7 @@ Set the selected variant for the input variant set.
 
 
 ## UsdVariantWorkflow
-<figure style="width: 30%">
-	<img src="images\UsdVariantWorkflow.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdVariantWorkflow.png" alt="Node UI"/>
 
 
 The variant workflow operator executes an external Shift workflow within a USD variant context.
@@ -1631,10 +1412,7 @@ The variant workflow operator executes an external Shift workflow within a USD v
 | variant | String | ""
 
 ## UsdXformSet
-<figure style="width: 30%">
-	<img src="images\UsdXformSet.png" alt="Node UI">
-<figcaption></figcaption>
-</figure>
+<img style="width: 30%" src="images\UsdXformSet.png" alt="Node UI"/>
 
 
 Set UsdGeom xform operations.
