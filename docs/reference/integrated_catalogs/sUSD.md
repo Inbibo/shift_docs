@@ -3,6 +3,7 @@ This catalog doesn't have a description
 
 ## *sUSD* Operators
 ## UsdAttributeAdd
+
 <figure style="width: 30%">
 	<img src="images\usdattributeadd.png" alt="Node UI">
 	<figcaption>Node UI</figcaption>
@@ -25,6 +26,7 @@ Add UsdAttribute to UsdPrim.
 
 
 ## UsdAttributeClear
+
 <figure style="width: 30%">
 	<img src="images\usdattributeclear.png" alt="Node UI">
 </figure>
