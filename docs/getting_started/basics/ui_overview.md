@@ -49,7 +49,7 @@ At the very top of the application we find Shift's menu bar. This menu has all t
 Additional menus from the ones listed are plugin menus, which allow to extend Shift's functionalities and utility widgets. Please, refer to this [page](../../reference/plugins.md) for more information.
 ## Toolbar
 
-The toolbar consists in a list of buttons with the most used and relevant actions for Shift.
+The toolbar consists of a list of buttons with the most used and relevant actions for Shift.
 
 <figure>
       <img src="images/toolbar.png" alt="Toolbar">
@@ -103,7 +103,7 @@ The inspector is used to display and modify the properties of the selected nodes
 
 <figure>
       <img src="images/inspector.png" alt="Inspector">
-      <figcaption><b>Figure 3</b>: Inspector widget showing a PythonScript node with its script, inputs and outputs.</figcaption>
+      <figcaption><b>Figure 3</b>: Inspector widget showing a PythonScript node with its script, inputs, and outputs.</figcaption>
 </figure>
 
 > [!NOTE]
@@ -111,7 +111,7 @@ The inspector is used to display and modify the properties of the selected nodes
 
 ### The Logger
 
-The logger displays all the log messages generated while working on Shift. This covers everything from nodes errors and warnings, setup information, missing configurations or extraordinary exceptions raised by Shift. Log messages can be removed by clicking `Clear` on the bottom right corner of the widget. 
+The logger displays all the log messages generated while working on Shift. This covers everything from node errors and warnings, setup information, missing configurations, or extraordinary exceptions raised by Shift. Log messages can be removed by clicking `Clear` on the bottom right corner of the widget. 
 
 <figure>
       <img src="images/logger.png" alt="Logger">
