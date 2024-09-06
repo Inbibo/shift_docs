@@ -1,7 +1,7 @@
 # workflow
 A catalog to manage and nest Shift workflows. It includes operators to input and output data, store variables and execute sub-workflows.
 
-## *workflow* Operators
+
 ## Input
 
 

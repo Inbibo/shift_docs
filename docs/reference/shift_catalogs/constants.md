@@ -1,7 +1,6 @@
 # constants
 A catalog to work with standard Python type objects.
 
-## *constants* Operators
 ## Bool
 
 

@@ -1,7 +1,7 @@
 # regex
 A catalog to work with regex functions.
 
-## *regex* Operators
+
 ## RE_Compile
 <span style="color: yellow"><i>Beta operator</i></span>
 

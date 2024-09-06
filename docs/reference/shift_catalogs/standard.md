@@ -1,7 +1,7 @@
 # standard
 A catalog to work with standard Python operations. It provides logic to perform loop iterations and create scriptable Python nodes. It also includes operators to read/write JSON files, operate with lists, strings, dictionaries and more.
 
-## *standard* Operators
+
 ## ConditionEquals
 <span style="color: yellow"><i>Beta operator</i></span>
 

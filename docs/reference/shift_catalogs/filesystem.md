@@ -1,7 +1,7 @@
 # fileSystem
 A catalog to work with the OS filesystem and environment variables. It includes operators to perform file & directory creation and manipulation and more.
 
-## *fileSystem* Operators
+
 ## CopyFiles
 
 
