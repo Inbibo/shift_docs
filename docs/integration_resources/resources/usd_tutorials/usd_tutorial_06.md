@@ -59,7 +59,7 @@ Also, the base file for the example, `HelloWorld.usda`, can be downloaded from t
     <figcaption><b>Figure 7</b>: Added the 'StageSave' node to the board connected to the 'WorldStageGet' node.</figcaption>
 </figure>
 
-8. Add a new *UsdPrimGet* node to the board and rename it to *HelloGet*. Connect the **stage** output plug from *WorldStageGet* node to the **stage** input plug of the new node, also, connect the **out-trigger** output plug from the *StageSave* node to the **in-trigger** input plug. The board should look like the following:
+8. Add a new *UsdPrimGet* node to the board and rename it to *HelloGet*. Connect the **stage** output plug from *WorldStageGet* node to the **stage** input plug of the new node, also, connect the **out-trigger** output plug from the *StageSave* node to the **in-trigger** input plug. Set `/hello` as the value to the **primpath** input plug. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_08_t06.gif" alt="Added the 'HelloGet' node to the board connected to the 'WorldStageGet' and 'StageSave' nodes.">
@@ -101,21 +101,21 @@ Also, the base file for the example, `HelloWorld.usda`, can be downloaded from t
     <figcaption><b>Figure 13</b>: Added the 'GreenVariantSelect' node to the board connected to the 'GreenVariantAdd' node.</figcaption>
 </figure>
 
-14. Follow the steps done in the section [Creating a variant workflow](usd_tutorial_06.md#creating-a-variant-workflow) and add a new *UsdVariantWorkflow* node and rename it to *RedVariantDCSet*. Set as the value for the **file** input plug of the node the path to the workflow created in the section, for example, `D:/USD_TUTORIALS/06/set_variant_display_color.sft`. Once the file is properly set, the node will be automatically updated to show the inputs and outputs from the nested workflow. Then, connect the **prim** output plug from *WorldGet* node to the **prim** input plug of the new node, set `red` as the value for the **variant** input plug and for the **color** input plug set as the value `[1,0,0]`. The board should look like the following:
+14. Follow the steps done in the section [Creating a variant workflow](usd_tutorial_06.md#creating-a-variant-workflow) and add a new *UsdVariantWorkflow* node and rename it to *RedVariantDCSet*. Set as the value for the **file** input plug of the node the path to the workflow created in the section, for example, `D:/USD_TUTORIALS/06/set_variant_display_color.sft`. Once the file is properly set, the node will be automatically updated to show the inputs and outputs from the nested workflow. Then, connect the **variantSet** output plug from *GreenVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from *WorldGet* node to the **prim** input plug of the new node. Set `red` as the value for the **variant** input plug and for the **color** input plug set as the value `[1,0,0]`. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_14_t06.png" alt="Added the 'RedVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.">
     <figcaption><b>Figure 14</b>: Added the 'RedVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.</figcaption>
 </figure>
 
-15. Duplicate the *RedVariantDCSet* node and rename it as *BlueVariantDCSet*. As done before, connect the **prim** output plug from *WorldGet* node to the **prim** input plug of the new node, set `blue` as the value for the **variant** input plug and for the **color** input plug set as the value `[0,0,1]`. The board should look like the following: 
+15. Duplicate the *RedVariantDCSet* node and rename it as *BlueVariantDCSet*. As done before, connect the **variantSet** output plug from *GreenVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from *WorldGet* node to the **prim** input plug of the new node. Set `blue` as the value for the **variant** input plug and for the **color** input plug set as the value `[0,0,1]`. The board should look like the following: 
 
 <figure>
     <img src="images/usd_tutorial_06/step_15_t06.png" alt="Added the 'BlueVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.">
     <figcaption><b>Figure 15</b>: Added the 'BlueVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.</figcaption>
 </figure>
 
-16. Duplicate the *RedVariantDCSet* node again and rename it as *GreenVariantDCSet*. As done before, connect the **prim** output plug from *WorldGet* node to the **prim** input plug of the new node, set `green` as the value for the **variant** input plug and for the **color** input plug set as the value `[0,1,0]`. The board should look like the following: 
+16. Duplicate the *RedVariantDCSet* node again and rename it as *GreenVariantDCSet*. As done before, connect the **variantSet** output plug from *GreenVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from *WorldGet* node to the **prim** input plug of the new node. Set `green` as the value for the **variant** input plug and for the **color** input plug set as the value `[0,1,0]`. The board should look like the following: 
 
 <figure>
     <img src="images/usd_tutorial_06/step_16_t06.png" alt="Added the 'BlueVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.">
