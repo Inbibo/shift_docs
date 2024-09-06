@@ -53,14 +53,22 @@ This tutorial is focused on creating a simple USD stage containing a transform a
 
 ### Visualizing the Stage
 
-Use the *usdview* tool shipped with USD to visualise and inspect the stage:
+Shift is shipped with native plugins to visualize and inspect the stage. They can be accessed from the *Usd* top menu:
+* **USD Outliner**: Shows the user the stage hierarchy sourced from specific Usd nodes in the active board workflow.
+
+* **USD Viewer**: Shows the stage in the Usd viewer sourced from specific Usd nodes in the active board workflow.
+
+<figure>
+    <img src="images/usd_tutorial_01/step_08_t01.png" alt="Shift USD Outliner and USD Viewer plugins.">
+    <figcaption><b>Figure 7</b>: Shift USD Outliner and USD Viewer plugins.</figcaption>
+</figure>
+
+Also, the *usdview* tool shipped with USD is used to visualise and inspect the stage:
 
 <figure>
     <img src="images/usd_tutorial_01/step_07_t01.png" alt="Visualisation of the generated stage.">
-    <figcaption><b>Figure 7</b>: Visualisation of the generated stage.</figcaption>
+    <figcaption><b>Figure 8</b>: Visualisation of the generated stage.</figcaption>
 </figure>
-
-<-- TODO: ADD SUGGESTION FOR USING THE STAGEVIEW PLUGIN -->
 
 
 ### Workflow Resources

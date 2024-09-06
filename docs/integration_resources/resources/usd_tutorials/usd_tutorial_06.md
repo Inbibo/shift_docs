@@ -167,14 +167,22 @@ Also, the base file for the example, `HelloWorld.usda`, can be downloaded from t
 
 ### Visualizing the Stage
 
-Use the *usdview* tool shipped with USD to visualise and inspect the stage:
+Shift is shipped with native plugins to visualize and inspect the stage. They can be accessed from the *Usd* top menu:
+* **USD Outliner**: Shows the user the stage hierarchy sourced from specific Usd nodes in the active board workflow.
+
+* **USD Viewer**: Shows the stage in the Usd viewer sourced from specific Usd nodes in the active board workflow.
+
+<figure>
+    <img src="images/usd_tutorial_06/step_23_t06.png" alt="Shift USD Outliner and USD Viewer plugins.">
+    <figcaption><b>Figure 22</b>: Shift USD Outliner and USD Viewer plugins.</figcaption>
+</figure>
+
+Also, the *usdview* tool shipped with USD is used to visualise and inspect the stage:
 
 <figure>
     <img src="images/usd_tutorial_06/step_22_t06.gif" alt="Visualizing the stage.">
-    <figcaption><b>Figure 22</b>: Visualizing the stage.</figcaption>
+    <figcaption><b>Figure 23</b>: Visualizing the stage.</figcaption>
 </figure>
-
-<-- TODO: ADD SUGGESTION FOR USING THE STAGEVIEW PLUGIN -->
 
 
 ### Workflow Resources
