@@ -6,11 +6,13 @@ A catalog to work with standard Python type objects.
 
 <figure style="width: 30%">
 	<img src="images\Bool.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
 
 
 Operator used to define a boolean value.
 
+    
 
 #### Inputs
 | Name | Type | Default
@@ -28,6 +30,7 @@ Operator used to define a boolean value.
 
 <figure style="width: 30%">
 	<img src="images\Float.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
 
 
@@ -51,6 +54,7 @@ Operator used to define a floating point number value.
 
 <figure style="width: 30%">
 	<img src="images\Integer.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
 
 
@@ -74,6 +78,7 @@ Operator used to define an integer number value.
 
 <figure style="width: 30%">
 	<img src="images\String.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
 
 
