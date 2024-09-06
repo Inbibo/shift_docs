@@ -3,9 +3,8 @@ A catalog to work with standard Python type objects.
 
 ## Bool
 
-
 <figure style="width: 30%">
-	<img src="images\Bool.png" alt="Node UI">
+	<img src="images/Bool.png" alt="Node UI">
 	<figcaption>Node UI</figcaption>
 </figure>
 
@@ -29,7 +28,7 @@ Operator used to define a boolean value.
 
 
 <figure style="width: 30%">
-	<img src="images\Float.png" alt="Node UI">
+	<img src="images/Float.png" alt="Node UI">
 	<figcaption>Node UI</figcaption>
 </figure>
 
@@ -53,7 +52,7 @@ Operator used to define a floating point number value.
 
 
 <figure style="width: 30%">
-	<img src="images\Integer.png" alt="Node UI">
+	<img src="images/Integer.png" alt="Node UI">
 	<figcaption>Node UI</figcaption>
 </figure>
 
@@ -77,7 +76,7 @@ Operator used to define an integer number value.
 
 
 <figure style="width: 30%">
-	<img src="images\String.png" alt="Node UI">
+	<img src="images/String.png" alt="Node UI">
 	<figcaption>Node UI</figcaption>
 </figure>
 
