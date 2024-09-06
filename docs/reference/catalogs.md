@@ -1,14 +1,14 @@
 # Catalogs
 
-Catalogs are libraries of operators that define and extend Shift's capabilities, as they provide the specialized nodes for different areas of development and automatization. 
+Catalogs are libraries of operators that define and extend Shift's capabilities, as they provide specialized nodes for different areas of development and automatization. 
 
 Shift comes with six native catalogs that contain the necessary nodes to start building a workflow:
 
-- **Constants catalog**: Provides operators to work with standard Python type objects, such as booleans or strings.
+- **Constants catalog**: Provides operators to work with standard Python-type objects, such as booleans or strings.
 - **Standard catalog**: Provides operators to work with standard Python operations. It provides logic to perform [loop iterations](../reference/nodes/iteration.md) and create [scriptable Python nodes](../reference/nodes/python_script.md). It also includes operators to read/write JSON files, operate with lists, strings, dictionaries and more.
 - **FileSystem catalog**: Provides operators to work with the OS filesystem and environment variables. It includes operators to perform file & directory creation and manipulation and more.
 - **Regex catalog**: Provides operators to work with regular expressions and functions.
-- **CreativeSoftware catalog**: Provides operators to work with Digital Content Creation softwares. It includes operators for scene management, geometry handling, node graph manipulation and more, across popular DCC tools like Maya, Houdini, Blender, and Nuke.
+- **CreativeSoftware catalog**: Provides operators to work with Digital Content Creation software. It includes operators for scene management, geometry handling, node graph manipulation and more, across popular DCC tools like Maya, Houdini, Blender, and Nuke.
 - **Workflow catalog**: Provides operators to manage and nest Shift workflows. It includes operators to input and output data, store [variables](../reference/nodes/variables.md) and execute [sub-workflows](../reference/nodes/workflow.md).
 
 >[!NOTE]
@@ -29,7 +29,7 @@ To open the Catalog Manager press `P` or click on the menu option under `File ->
       <figcaption><b>Figure 1</b>: Catalog Manager UI.</figcaption>   
 </figure>
 
-The interface features the list of catalogs found by Shift, which can be divided in three categories:
+The interface features the list of catalogs found by Shift, which can be divided into three categories:
 
 - **Shift catalogs**: These are catalogs native to Shift.
 - **Environment catalogs**: These are catalogs sourced from the environment variable `SHIFT_CATALOGS_PATH`. 
@@ -37,7 +37,7 @@ The interface features the list of catalogs found by Shift, which can be divided
 
 ### Load and Unload Catalogs
 
-To load or unload a catalog, simply indicate in the checkbox at the left of the catalog entry whether it should be loaded or not. Loaded catalogs will have a blue check mark while unloaded catalogs an empty checkbox. Once satisfied with the selection, click on `Save Changes` at the bottom of the dialog. This will change the loaded catalogs configuration in the user preferences and update Shift accordingly.
+To load or unload a catalog, simply indicate in the checkbox at the left of the catalog entry whether it should be loaded or not. Loaded catalogs will have a blue checkmark while unloaded catalogs an empty checkbox. Once satisfied with the selection, click on `Save Changes` at the bottom of the dialog. This will change the loaded catalogs configuration in the user preferences and update Shift accordingly.
 
 >[!WARNING]
 > It is not possible to have two catalogs with the same name loaded simultaneously. Attempting to do so will require one of them to be unloaded. 
@@ -45,7 +45,7 @@ To load or unload a catalog, simply indicate in the checkbox at the left of the 
 
 ### Add a Catalogs
 
-To add a catalog click on the `Add Catalog` button at the top right corner of the Catalog Manager. This will prompt a file browser to search and select the catalog to add to Shift. Once the catalog file is found, click on `Open` in the browser. The new catalog will be added as a **User** catalog to the list, and will be, by default, set to loaded in Shift. Finally, make sure to click on `Save Changes` to commit the latest addition. 
+To add a catalog click on the `Add Catalog` button at the top right corner of the Catalog Manager. This will prompt a file browser to search and select the catalog to add to Shift. Once the catalog file is found, click on `Open` in the browser. The new catalog will be added as a **User** catalog to the list and will be, by default, set to loaded in Shift. Finally, make sure to click on `Save Changes` to commit the latest addition. 
 
 ### Inspect Catalogs
 The Catalog Manager provides a search bar to find catalogs by name. Additionally, detailed information about a catalog can be read by clicking on the information button at the right of the list entries. By clicking on it, a new dialog will be prompted indicating information about:
