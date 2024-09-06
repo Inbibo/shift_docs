@@ -5,7 +5,7 @@ The Shift Logger logs any message raised by Shift, errors and warnings from node
 
 ## Log Levels
 
-The log level determines which messages will be logged depending on its criticality. Depending on the log level, the message may be color coded in the widget.
+The log level determines which messages will be logged depending on their criticality. Depending on the log level, the message may be color coded in the widget.
 
 **Log Levels**
 
