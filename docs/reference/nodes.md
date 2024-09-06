@@ -1,6 +1,6 @@
 # Shift Nodes
 
-Nodes are the graphic units that build up the workflow. Each node is associated to an [operator](../basics/terminology/#operator), which defines the execution logic of the node, and are connected to other nodes through [plugs](../basics/terminology/#plug).
+Nodes are the graphic units that build up the workflow. Each node is associated to an [operator](../getting_started/basics/terminology#operator), which defines the execution logic of the node, and are connected to other nodes through [plugs](../getting_started/basics/terminology#plug).
 
 ## Node Interface
 
