@@ -5,7 +5,7 @@
 
 [< Main USD Tutorials Page](../usd#tutorials)
 <span style="float:right;">
-[Next Tutorial >](usd_tutorial_02)
+[Next Tutorial >](usd_tutorial_02.md)
 </span>
 
 </p>
