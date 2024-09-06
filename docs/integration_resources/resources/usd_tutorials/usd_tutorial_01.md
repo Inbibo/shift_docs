@@ -1,3 +1,17 @@
+
+---
+
+<p style="text-align:left;">
+
+[< Main USD Tutorials Page](../usd#tutorials)
+<span style="float:right;">
+[Next Tutorial >](usd_tutorial_02)
+</span>
+
+</p>
+
+---
+
 ## Creating a simple USD Stage
 
 This tutorial is focused on creating a simple USD stage containing a transform and a sphere using the operators from Shift_USD catalog.
@@ -74,3 +88,16 @@ Also, the *usdview* tool shipped with USD is used to visualise and inspect the s
 ### Workflow Resources
 
 The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_01_creating_first_stage/tutorial_01.sft`.
+
+---
+
+<p style="text-align:left;">
+
+[< Main USD Tutorials Page](../usd#tutorials)
+<span style="float:right;">
+[Next Tutorial >](usd_tutorial_02)
+</span>
+
+</p>
+
+---
