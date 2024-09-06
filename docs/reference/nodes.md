@@ -1,10 +1,10 @@
 # Shift Nodes
 
-Nodes are the graphic units that build up the workflow. Each node is associated to an [operator](../getting_started/basics/terminology#operator), which defines the execution logic of the node, and are connected to other nodes through [plugs](../getting_started/basics/terminology#plug).
+Nodes are the graphic units that build up the workflow. Each node is associated with an [operator](../getting_started/basics/terminology#operator), which defines the execution logic of the node and is connected to other nodes through [plugs](../getting_started/basics/terminology#plug).
 
 ## Node Interface
 
-There are five main interface elements that compose the node: the node's name, the operator type, the trigger plugs, the i/o's plugs and the progress bar.
+Five main interface elements compose the node: the node's name, the operator type, the trigger plugs, the i/o's plugs, and the progress bar.
 
 <figure>
     <img src="images/node_ui.png" alt="Node UI">
@@ -14,7 +14,7 @@ There are five main interface elements that compose the node: the node's name, t
 * **Node Name**: Defines the name of the node. On creation, the name of the node is the name of the operator with an enumerated suffix. The name of the node can be changed through the [*Inspector Widget*](../getting_started/basics/ui_overview#the-inspector).
 * **Operator Type**: The associated operator to the node. It determines the native plugs of the node.
 * **Trigger Plugs**: The trigger plugs (`>>>`) are plugs meant to define the node's position in the execution graph. They do not pass any data. If the node has other input or output plugs connected to another node, the trigger plugs do not need to be connected; otherwise, it is recommended to connect these plugs to indicate when the node needs to get computed.
-* **I/O's Plugs**: Input and output plugs are define the incoming data required by the operator and the resulting data after it is computed. 
+* **I/O's Plugs**: Input and output plugs define the incoming data required by the operator and the resulting data after it is computed. 
 * **Progress bar**: A visual indicator of the percentage of the node's execution that is complete. 
 
 ### Inspect a Node
@@ -40,13 +40,13 @@ Plugs define the input and output data of the nodes. Data values can be set thro
 | Type | Description | Compatible Python Type |
 | :--- | :---------- | :---|
 | *Bool* | Defines a boolean value.|`Bool`|
-| *Code* | Defines a python code block. This type is used whenever custom scripting is required in a node. A plug of this type displays as an embedded text editor in the inspector. |`String`|
+| *Code* | Defines a Python code block. This type is used whenever custom scripting is required in a node. A plug of this type displays as an embedded text editor in the inspector. |`String`|
 | *Color* | Defines a color in RGBA. Interacting with a plug of this type opens a color picker dialog.|`List`|
 | *Dict* | Defines a dictionary value.|`Dict`|
 | *Dir* | Defines a directory path. Interacting with a plug of this type opens a directory browser dialog.|`String`|
 | *Enumerator* | Defines a list of selectable values. It is not possible to create custom Enumerator plugs in a node.|`String`|
 | *FileIn* | Defines an input file. This type is used for open and import operations. Interacting with a plug of this type opens a file browser dialog to select an existing file.|`String`|
-| *FileOut* | Defines an output file. This type is used for save and export operations. Interacting with a plug of this type opens a file browser dialog, although it is possible to enter a not existing file. Selecting an existing file will override the file the after execution. |`String`|
+| *FileOut* | Defines an output file. This type is used for save and export operations. Interacting with a plug of this type opens a file browser dialog, although it is possible to enter a non-existent file. Selecting an existing file will override the file after the workflow executes. |`String`|
 | *Float* | Defines a float value.|`Float`|
 | *Instance* | Defines an object instance. These plugs can be differentiated by their dotted outline.|`Any`|
 | *Int* | Defines a integer value.|`Int`|
