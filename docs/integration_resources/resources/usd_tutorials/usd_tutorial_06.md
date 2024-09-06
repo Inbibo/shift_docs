@@ -21,7 +21,7 @@ Also, the base file for the example, `HelloWorld.usda`, can be downloaded from t
 
 ### Tutorial
 
-1. Open Shift application. A new window's instance of Shift should appear like the following one:
+1. Open Shift application. A new window instance of Shift should appear like the following one:
 
 <figure>
     <img src="images/usd_tutorial_06/step_01_t06.png" alt="Shift UI.">
@@ -191,7 +191,7 @@ Shift is shipped with native plugins to visualize and inspect the stage. They ca
     <figcaption><b>Figure 22</b>: Shift USD Outliner and USD Viewer plugins.</figcaption>
 </figure>
 
-Also, the *usdview* tool shipped with USD is used to visualise and inspect the stage:
+The *USD viewer* tool shipped with USD is used to visualise and inspect the stage viewport:
 
 <figure>
     <img src="images/usd_tutorial_06/step_22_t06.gif" alt="Visualizing the stage.">

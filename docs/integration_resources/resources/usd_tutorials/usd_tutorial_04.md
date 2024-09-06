@@ -21,7 +21,7 @@ The base file for the example, `Sphere.usd`, can be downloaded from the [OpenUSD
 
 ### Converting between .usda/.usdc and .usd
 
-1. Open Shift application. A new window's instance of Shift should appear like the following one:
+1. Open Shift application. A new window instance of Shift should appear like the following one:
 
 <figure>
     <img src="images/usd_tutorial_04/step_01_t04.png" alt="Shift UI.">
@@ -31,7 +31,7 @@ The base file for the example, `Sphere.usd`, can be downloaded from the [OpenUSD
 >[!NOTE]
 > Before creating the USD workflow, ensure that the USD nodes appear in the Node List widget. The catalogs combobox should show `sUSD` and `sUSDTypes` if USD is correctly loaded in Shift. If this is not the case, please check again the [Shift_USD installation page](../usd#installation).
 
-2. First, add a new *UsdStageOpen* node to the board and rename it as *OpenUsdFile*. Using the **Inspector** widget, set as the value for the **filepath** input plug a filepath pointing to a `.usd` file. For the purpose of this tutorial, the filepath is: `D:/USD_TUTORIALS/04/Sphere.usd`. The board should look like the following:
+2. First, add a new *UsdStageOpen* node to the board and rename it as *OpenUsdFile*. Using the **Inspector** widget, set as the value for the **filepath** input plug a filepath pointing to a `.usd` file. For the purpose of this tutorial, the filepath will be: `D:/USD_TUTORIALS/04/Sphere.usd`. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_04/step_02_t04.png" alt="Added 'OpenUsdFile' node to the board.">

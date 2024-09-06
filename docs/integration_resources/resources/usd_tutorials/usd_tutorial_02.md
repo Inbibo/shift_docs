@@ -21,7 +21,7 @@ The base file for the example is the resulting USD from the previous tutorial na
 
 ### Tutorial
 
-1. Open Shift application. A new window's instance of Shift should appear like the following one:
+1. Open Shift application. A new window instance of Shift should appear like the following one:
 
 <figure>
     <img src="images/usd_tutorial_02/step_01_t02.png" alt="Shift UI.">
@@ -38,28 +38,28 @@ The base file for the example is the resulting USD from the previous tutorial na
     <figcaption><b>Figure 2</b>: Added the 'UsdStageOpen' node to the board for opening a given USD file.</figcaption>
 </figure>
 
-3. Add a new *UsdPrimGet* node to the board. Connect the **stage** output plug from the *UsdStageOpen* node to the **stage** input plug of the new node and set `/hello` as the value for the **primpath** input plug. Rename the node as *HelloXformGet* to identify it easily. The board should look like the following:
+3. Add a new *UsdPrimGet* node to the board. Connect the **stage** output plug from the *UsdStageOpen* node to the **stage** input plug of the new node and set `/hello` as the value for the **primpath** input plug. Rename the node as *HelloXformGet* to easily identify it. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_03_t02.png" alt="Added the 'HelloXformGet' node to the board connected to the 'UsdStageOpen' node for getting the '/hello' prim.">
     <figcaption><b>Figure 3</b>: Added the 'HelloXformGet' node to the board connected to the 'UsdStageOpen' node for getting the '/hello' prim.</figcaption>
 </figure>
 
-4. Add another *UsdPrimGet* node to the board. Connect the **stage** output plug from the *UsdStageOpen* node to the **stage** input plug of the new node and set `/hello/world` as the value for the **primpath** input plug. Rename the node as *WorldSphereGet* to identify it easily. The board should look like the following:
+4. Add another *UsdPrimGet* node to the board. Connect the **stage** output plug from the *UsdStageOpen* node to the **stage** input plug of the new node and set `/hello/world` as the value for the **primpath** input plug. Rename the node as *WorldSphereGet* to easily identify it. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_04_t02.png" alt="Added the 'WorldSphereGet' node to the board connected to the 'UsdStageOpen' node for getting the '/hello/world' prim.">
     <figcaption><b>Figure 4</b>: Added the 'WorldSphereGet' node to the board connected to the 'UsdStageOpen' node for getting the '/hello/world' prim.</figcaption>
 </figure>
 
-5. Add a new *UsdPrimPropertyNamesGet* node to the board. Connect the **prim** output plug from the *HelloXformGet* node to the **prim** input plug of the new node. Rename the node as *HelloPropertyNamesGet* to identify it easily. The board should look like the following:
+5. Add a new *UsdPrimPropertyNamesGet* node to the board. Connect the **prim** output plug from the *HelloXformGet* node to the **prim** input plug of the new node. Rename the node as *HelloPropertyNamesGet* to easily identify it. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_05_t02.png" alt="Added the 'HelloPropertyNamesGet' node to the board connected to the 'HelloXformGet' node.">
     <figcaption><b>Figure 5</b>: Added the 'HelloPropertyNamesGet' node to the board connected to the 'HelloXformGet' node.</figcaption>
 </figure>
 
-6. As done in the previous step, add another *UsdPrimPropertyNamesGet* node to the board. Connect the **prim** output plug from the *WorldSphereGet* node to the **prim** input plug of this new node. Rename the node as *WorldPropertyNamesGet* to identify it easily. The board should look like the following:
+6. As done in the previous step, add another *UsdPrimPropertyNamesGet* node to the board. Connect the **prim** output plug from the *WorldSphereGet* node to the **prim** input plug of this new node. Rename the node as *WorldPropertyNamesGet* to easily identify it. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_06_t02.png" alt="Added the 'WorldPropertyNamesGet' node to the board connected to the 'WorldSphereGet' node.">
@@ -80,14 +80,14 @@ The base file for the example is the resulting USD from the previous tutorial na
     <figcaption><b>Figure 8</b>: Executed the selected node named 'WorldPropertyNamesGet'.</figcaption>
 </figure>
 
-9. Add a new *UsdAttributeGet* node to the board. Connect the **prim** output plug from the *WorldSphereGet* node to the **prim** input plug of the new node and set `extent` as the value for the **name** input plug. Rename the node as *ExtentGet* to identify it easily. The board should look like the following:
+9. Add a new *UsdAttributeGet* node to the board. Connect the **prim** output plug from the *WorldSphereGet* node to the **prim** input plug of the new node and set `extent` as the value for the **name** input plug. Rename the node as *ExtentGet* to easily identify it. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_09_t02.png" alt="Added the 'ExtentGet' node to the board connected to the 'WorldSphereGet' node.">
     <figcaption><b>Figure 9</b>: Added the 'ExtentGet' node to the board connected to the 'WorldSphereGet' node.</figcaption>
 </figure>
 
-10. In order to get the value of an attribute, add a new *UsdAttributeValueGet* node to the board. Connect the **attribute** output plug from the *ExtentGet* node to the **prim** input plug of the new node. Leave the **useTime** input plug value set to `False` and the **time** input plug value set to `0`. Rename the node as *ExtentValueGet* to identify it easily. The board should look like the following:
+10. In order to get the value of an attribute, add a new *UsdAttributeValueGet* node to the board. Connect the **attribute** output plug from the *ExtentGet* node to the **prim** input plug of the new node. Leave the **useTime** input plug value set to `False` and the **time** input plug value set to `0`. Rename the node as *ExtentValueGet* to easily identify it. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_10_t02.png" alt="Added the 'ExtentValueGet' node to the board connected to the 'ExtentGet' node.">
@@ -101,7 +101,7 @@ The base file for the example is the resulting USD from the previous tutorial na
     <figcaption><b>Figure 11</b>: Executed the 'ExtentValueGet' node.</figcaption>
 </figure>
 
-12. Add another *UsdAttributeGet* node to the board. Connect the **prim** output plug from the *WorldSphereGet* node to the **prim** input plug of this new node and set `radius` as the value for the **name** input plug. Rename the node as *RadiusGet* to identify it easily. The board should look like the following:
+12. Add another *UsdAttributeGet* node to the board. Connect the **prim** output plug from the *WorldSphereGet* node to the **prim** input plug of this new node and set `radius` as the value for the **name** input plug. Rename the node as *RadiusGet* to easily identify it. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_12_t02.png" alt="Added the 'RadiusGet' node to the board connected to the 'WorldSphereGet' node.">
@@ -115,14 +115,14 @@ The base file for the example is the resulting USD from the previous tutorial na
     <figcaption><b>Figure 13</b>: Added the 'RadiusValueSet' node to the board connected to the 'RadiusGet' node.</figcaption>
 </figure>
 
-14. Add a new *Float* node is necessary, add it to the board and rename it as *RadiusValue*. Set `2,0` as the value of the input **value** plug. Connect the **out** output plug from *RadiusValue* node to the **value** input plug of the *RadiusValueSet* node. The board should look like the following:
+14. Add a new *Float* node to the board and rename it as *RadiusValue*. Set `2,0` as the value of the input **value** plug. Connect the **out** output plug from *RadiusValue* node to the **value** input plug of the *RadiusValueSet* node. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_14_t02.png" alt="Added the 'RadiusValueSet' node to the board connected to the 'RadiusGet' node.">
     <figcaption><b>Figure 14</b>: Added the 'RadiusValue' node to the board connected to the 'RadiusValueSet' node.</figcaption>
 </figure>
 
-15. To update the sphere's extent to reflect its new size, the same process is needed to update the value of the extent attribute. First, add a new *PythonScript* node and rename it as *MultiplyExtent*. Drag and drop a connection from the **value** output plug of the *ExtentValueGet* node over the *MultiplyExtent* node. In the **Add Plug** dialog should appear, keep the preselected values for the plug configuration as they are preselected and click over the **OK** button to create the new input plug. Create an additional output plug doing `Right-Click` over the node and selecting the **Create New Plug** option. In the **Add Plug** dialog, set the name as `outValue`, the type as `instance` and the direction as `out`. Finally, type `outValue = value * 2` in the **script** input plug of the *MultiplyExtent* node. The board should look like the following:
+15. To update the sphere's extent to reflect its new size, the same process is needed to update the value of the extent attribute. First, add a new *PythonScript* node and rename it as *MultiplyExtent*. Drag and drop a connection from the **value** output plug of the *ExtentValueGet* node over the *MultiplyExtent* node. In the **Add Plug** dialog should appear, keep the preselected values for the plug configuration and click over the **OK** button to create the new input plug. Create an additional output plug by pressing `Right-Click` over the node and selecting the **Create New Plug** option. In the **Add Plug** dialog, set the name as `outValue`, the type as `instance` and the direction as `out`. Finally, type `outValue = value * 2` in the **script** input plug of the *MultiplyExtent* node. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_15_t02.gif" alt="Added the 'MultiplyExtent' node to the board connected to the 'ExtentValueGet' node.">
@@ -136,7 +136,7 @@ The base file for the example is the resulting USD from the previous tutorial na
     <figcaption><b>Figure 16</b>: Added the 'ExtentValueSet' node to the board connected to the 'ExtentGet' node.</figcaption>
 </figure>
 
-17. For authoring the *displayColor* attribute of the sphere, add a new *UsdPrimDisplayColorSet* node to the board. Connect the **prim** output plug from the *WorldSphereGet* node to the **prim** input plug of the new node. Set the **color** input plug value to `[0,0,1]`, the **indices** input plug value as `[]`, and the **interpolation** input plug value as `constant`. Rename the node as *WorldDisplayColorSet* to identify it easily. The board should look like the following:
+17. For authoring the *displayColor* attribute of the sphere, add a new *UsdPrimDisplayColorSet* node to the board. Connect the **prim** output plug from the *WorldSphereGet* node to the **prim** input plug of the new node. Set the **color** input plug value to `[0,0,1]`, the **indices** input plug value as `[]`, and the **interpolation** input plug value as `constant`. Rename the node as *WorldDisplayColorSet* to easily identify it. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_17_t02.png" alt="Added the 'RadiusValueSet' node to the board connected to the 'RadiusGet' node.">
@@ -157,14 +157,14 @@ The base file for the example is the resulting USD from the previous tutorial na
     <figcaption><b>Figure 19</b>: Added the 'WorldStageGet' node to the board connected to the 'WorldDisplayColorSet' node.</figcaption>
 </figure>
 
-20. For saving the stage, add a new *UsdStageSave* node. Connect the **stage** output plug from the *WorldStageGet* node to the **stage** input plug of the new node. Leave the **filepath** input plug value empty to override the opened initial USD file for the current example. The board should look like the following:
+20. For saving the stage, add a new *UsdStageSave* node. Connect the **stage** output plug from the *WorldStageGet* node to the **stage** input plug of the new node. Leave the **filepath** input plug value empty to override the same USD file opened at the beginning. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_20_t02.png" alt="Added the 'UsdStageSave' node to the board connected to the 'WorldStageGet' node.">
     <figcaption><b>Figure 20</b>: Added the 'UsdStageSave' node to the board connected to the 'WorldStageGet' node.</figcaption>
 </figure>
 
-21. Execute the entire workflow. Open again the `HelloWorld.usda` file, it will contain the authored properties updated and the new *displayColor* attribute set.
+21. Execute the entire workflow. Open again the `HelloWorld.usda` file, it will now contain the authored properties updated and the new *displayColor* attribute set.
 
 
 ### Visualizing the Stage
@@ -179,7 +179,7 @@ Shift is shipped with native plugins to visualize and inspect the stage. They ca
     <figcaption><b>Figure 21</b>: Shift USD Outliner and USD Viewer plugins.</figcaption>
 </figure>
 
-Also, the *usdview* tool shipped with USD is used to visualise and inspect the stage:
+The *USD viewer* tool shipped with USD is used to visualise and inspect the stage viewport:
 
 <figure>
     <img src="images/usd_tutorial_02/step_22_t02.png" alt="Visualisation of the generated stage.">

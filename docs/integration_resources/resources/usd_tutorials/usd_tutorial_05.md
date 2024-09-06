@@ -21,7 +21,7 @@ Also, the base files for the example, `HelloWorld.usda` and `RefExample.usda`, c
 
 ### Tutorial
 
-1. Open Shift application. A new window's instance of Shift should appear like the following one:
+1. Open Shift application. A new window instance of Shift should appear like the following one:
 
 <figure>
     <img src="images/usd_tutorial_05/step_01_t05.png" alt="Shift UI.">
@@ -31,7 +31,7 @@ Also, the base files for the example, `HelloWorld.usda` and `RefExample.usda`, c
 >[!NOTE]
 > Before creating the USD workflow, ensure that the USD nodes appear in the Node List widget. The catalogs combobox should show `sUSD` and `sUSDTypes` if USD is correctly loaded in Shift. If this is not the case, please check again the [Shift_USD installation page](../usd#installation).
 
-2. Add a new *UsdStageOpen* node to the board and rename it as *OpenStage*. Using the **Inspector** widget, set as the value for the **filepath** input plug a filepath pointing to the `RefExample.usda` file. For the current example, the filepath can be: `D:/USD_TUTORIALS/05/RefExample.usda`. The board should look like the following:
+2. Add a new *UsdStageOpen* node to the board and rename it as *OpenStage*. Using the **Inspector** widget, set as the value for the **filepath** input plug a filepath pointing to the `RefExample.usda` file. For the current example, the filepath will be: `D:/USD_TUTORIALS/05/RefExample.usda`. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_05/step_02_t05.png" alt="Added 'OpenStage' node to the board.">

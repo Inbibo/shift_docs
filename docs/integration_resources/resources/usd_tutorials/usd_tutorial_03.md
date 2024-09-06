@@ -21,7 +21,7 @@ The base file for the example, `HelloWorld.usda`, can be downloaded from the [Op
 
 ### Tutorial
 
-1. Open Shift application. A new window's instance of Shift should appear like the following one:
+1. Open Shift application. A new window instance of Shift should appear like the following one:
 
 <figure>
     <img src="images/usd_tutorial_03/step_01_t03.png" alt="Shift UI.">
@@ -171,7 +171,7 @@ The base file for the example, `HelloWorld.usda`, can be downloaded from the [Op
     <figcaption><b>Figure 21</b>: Added the 'WorldStageSave' node to the board connected to the 'WorldStageGet' node.</figcaption>
 </figure>
 
-22. To flatten the resulting stage, add a new *UsdStageFlatten* node to the board and rename it to *StageFlatten*. Connect the **stage** output plug from the *WorldStageGet* node to the **stage** input plug of the new node. Leave the **layer** input plug with the default value `None` set. Finally, connect the **out-trigger** output plug from the *WorldStageSave* node to the **in-trigger** input plug of the new node. The board should look like the following:
+22. To flatten the resulting stage, add a new *UsdStageFlatten* node to the board and rename it to *StageFlatten*. Connect the **stage** output plug from the *WorldStageGet* node to the **stage** input plug of the new node. Leave the **layer** input plug with the default value to `None`. Finally, connect the **out-trigger** output plug from the *WorldStageSave* node to the **in-trigger** input plug of the new node. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_03/step_22_t03.png" alt="Added the 'StageFlatten' node to the board connected to the 'WorldStageGet' node.">
@@ -200,7 +200,7 @@ Shift is shipped with native plugins to visualize and inspect the stage. They ca
     <figcaption><b>Figure 24</b>: Shift USD Outliner and USD Viewer plugins.</figcaption>
 </figure>
 
-Also, the *usdview* tool shipped with USD is used to visualise and inspect the stage:
+The *USD viewer* tool shipped with USD is used to visualise and inspect the stage viewport:
 
 <figure>
     <img src="images/usd_tutorial_03/step_24_t03.png" alt="Visualisation of the generated stage.">
