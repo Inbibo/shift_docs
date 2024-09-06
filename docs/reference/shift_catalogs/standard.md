@@ -1,15 +1,13 @@
 # standard
 A catalog to work with standard Python operations. It provides logic to perform loop iterations and create scriptable Python nodes. It also includes operators to read/write JSON files, operate with lists, strings, dictionaries and more.
 
-
 ## ConditionEquals
 <span style="color: yellow"><i>Beta operator</i></span>
 
-
 <figure style="width: 30%">
-	<img src="images\ConditionEquals.png" alt="Node UI">
+	<img src="images/ConditionEquals.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Compares two input objects.
     The result of the comparison is used to branch the execution stack.
@@ -32,11 +30,10 @@ Compares two input objects.
 
 ## Dict
 
-
 <figure style="width: 30%">
-	<img src="images\Dict.png" alt="Node UI">
+	<img src="images/Dict.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 This operator implements a dict object in Python.
     The operator does not have any input.
@@ -53,11 +50,10 @@ This operator implements a dict object in Python.
 
 ## DictGet
 
-
 <figure style="width: 30%">
-	<img src="images\DictGet.png" alt="Node UI">
+	<img src="images/DictGet.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Get values from dictionary given a series of user-defined output plugs as keys.
     Outputs the value assigned to the specified key (output plug) from the dictionary.
@@ -73,11 +69,10 @@ Get values from dictionary given a series of user-defined output plugs as keys.
 
 ## DictKeys
 
-
 <figure style="width: 30%">
-	<img src="images\DictKeys.png" alt="Node UI">
+	<img src="images/DictKeys.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Retrieves the list of keys from a dictionary
     Outputs the list of dictionary's keys.
@@ -97,11 +92,10 @@ Retrieves the list of keys from a dictionary
 
 ## DictSet
 
-
 <figure style="width: 30%">
-	<img src="images\DictSet.png" alt="Node UI">
+	<img src="images/DictSet.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Sets dictionary values by keys defined by the user as input plugs.
     The name of the plug relates to the name of the key to be set.
@@ -124,11 +118,10 @@ Sets dictionary values by keys defined by the user as input plugs.
 
 ## DictSetKey
 
-
 <figure style="width: 30%">
-	<img src="images\DictSetKey.png" alt="Node UI">
+	<img src="images/DictSetKey.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Sets dictionary value of a key defined by the user.
     Outputs the dictionary after the new value is set to the provided key.
@@ -150,11 +143,10 @@ Sets dictionary value of a key defined by the user.
 
 ## Iterator
 
-
 <figure style="width: 30%">
-	<img src="images\Iterator.png" alt="Node UI">
+	<img src="images/Iterator.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Implements a for loop in Shift.
     This works by generating multiple execution stack, each using a value from a list as inputs.
@@ -176,11 +168,10 @@ Implements a for loop in Shift.
 
 ## IteratorEnd
 
-
 <figure style="width: 30%">
-	<img src="images\IteratorEnd.png" alt="Node UI">
+	<img src="images/IteratorEnd.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Defined the end of a for loop in Shift.
     This specific node is found by the graph evaluator to stop the iterative expansion fo the graph.
@@ -192,11 +183,10 @@ Defined the end of a for loop in Shift.
 
 ## JsonRead
 
-
 <figure style="width: 30%">
-	<img src="images\JsonRead.png" alt="Node UI">
+	<img src="images/JsonRead.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Reads data from a JSON file. Optionally one can define its encoding, by default is utf-8.
     Outputs the read data.
@@ -217,11 +207,10 @@ Reads data from a JSON file. Optionally one can define its encoding, by default 
 
 ## JsonStringRead
 
-
 <figure style="width: 30%">
-	<img src="images\JsonStringRead.png" alt="Node UI">
+	<img src="images/JsonStringRead.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Reads data from a JSON string and deserializes it to a Python object.
     Outputs the Python object.
@@ -241,11 +230,10 @@ Reads data from a JSON string and deserializes it to a Python object.
 
 ## JsonWrite
 
-
 <figure style="width: 30%">
-	<img src="images\JsonWrite.png" alt="Node UI">
+	<img src="images/JsonWrite.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Writes a Python Dictionary to a JSON file.
     Optionally one can select the encoding for the write mode. By default it is utf-8.
@@ -272,11 +260,10 @@ Writes a Python Dictionary to a JSON file.
 
 ## JsonWriteString
 
-
 <figure style="width: 30%">
-	<img src="images\JsonWriteString.png" alt="Node UI">
+	<img src="images/JsonWriteString.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Reads data from a Python Dictionary and serializes it to a JSON string.
     Outputs the converted data.
@@ -296,11 +283,10 @@ Reads data from a Python Dictionary and serializes it to a JSON string.
 
 ## List
 
-
 <figure style="width: 30%">
-	<img src="images\List.png" alt="Node UI">
+	<img src="images/List.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 This operator implements a list of Python objects.
     The operator does not have any input.
@@ -317,11 +303,10 @@ This operator implements a list of Python objects.
 
 ## ListAccumulator
 
-
 <figure style="width: 30%">
-	<img src="images\ListAccumulator.png" alt="Node UI">
+	<img src="images/ListAccumulator.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to accumulate an element to a List (based on ListAppend but using kInstance).
     The elements to be added are defined by user-defined input plugs added to the operator.
@@ -344,11 +329,10 @@ Operator to accumulate an element to a List (based on ListAppend but using kInst
 
 ## ListAppend
 
-
 <figure style="width: 30%">
-	<img src="images\ListAppend.png" alt="Node UI">
+	<img src="images/ListAppend.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to append an element to a List.
     The elements to be added are defined by user-defined input plugs added to the operator.
@@ -371,11 +355,10 @@ Operator to append an element to a List.
 
 ## ListExtend
 
-
 <figure style="width: 30%">
-	<img src="images\ListExtend.png" alt="Node UI">
+	<img src="images/ListExtend.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Extends an input list adding another list to it.
     It allows selecting whether the input list is mutated or is left immutable.
@@ -399,11 +382,10 @@ Extends an input list adding another list to it.
 
 ## ListGet
 
-
 <figure style="width: 30%">
-	<img src="images\ListGet.png" alt="Node UI">
+	<img src="images/ListGet.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Retrieves the list's element at a given index.
     Outputs the Python object at the given index in the list.
@@ -424,11 +406,10 @@ Retrieves the list's element at a given index.
 
 ## ListInsert
 
-
 <figure style="width: 30%">
-	<img src="images\ListInsert.png" alt="Node UI">
+	<img src="images/ListInsert.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator that inserts an item into the given list at the given index.
     Outputs the updated list.
@@ -446,11 +427,10 @@ Operator that inserts an item into the given list at the given index.
 
 ## ListLength
 
-
 <figure style="width: 30%">
-	<img src="images\ListLength.png" alt="Node UI">
+	<img src="images/ListLength.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Gets the length of the provided list.
 
@@ -471,11 +451,10 @@ Gets the length of the provided list.
 
 ## ListPop
 
-
 <figure style="width: 30%">
-	<img src="images\ListPop.png" alt="Node UI">
+	<img src="images/ListPop.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Pops the item placed in the provided index from the provided list.
     Outputs the list updated and the item.
@@ -499,11 +478,10 @@ Pops the item placed in the provided index from the provided list.
 
 ## ListRemove
 
-
 <figure style="width: 30%">
-	<img src="images\ListRemove.png" alt="Node UI">
+	<img src="images/ListRemove.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Removes an item from the provided list.
     Optionally one can choose to remove the provided item recursively if there is more than 1 occurrence in the list.
@@ -528,11 +506,10 @@ Removes an item from the provided list.
 
 ## ListReverse
 
-
 <figure style="width: 30%">
-	<img src="images\ListReverse.png" alt="Node UI">
+	<img src="images/ListReverse.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Reverse the items of a list and output the reversed list.
 
@@ -553,11 +530,10 @@ Reverse the items of a list and output the reversed list.
 
 ## ListSort
 
-
 <figure style="width: 30%">
-	<img src="images\ListSort.png" alt="Node UI">
+	<img src="images/ListSort.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Sorts the items in the given list. 
     Optionally one can turn on the reverse option to get the list sorted in reversed.
@@ -581,11 +557,10 @@ Sorts the items in the given list.
 
 ## Print
 
-
 <figure style="width: 30%">
-	<img src="images\Print.png" alt="Node UI">
+	<img src="images/Print.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator for printing out messages.
     Outputs the same message that was printed.
@@ -606,11 +581,10 @@ Operator for printing out messages.
 
 ## PythonScript
 
-
 <figure style="width: 30%">
-	<img src="images\PythonScript.png" alt="Node UI">
+	<img src="images/PythonScript.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Executes a scripted Python code.
     The node accepts any custom object as input.
@@ -633,11 +607,10 @@ Executes a scripted Python code.
 
 ## Sleep
 
-
 <figure style="width: 30%">
-	<img src="images\Sleep.png" alt="Node UI">
+	<img src="images/Sleep.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator that puts the current thread execution to sleep for a given number of seconds.
 
@@ -650,11 +623,10 @@ Operator that puts the current thread execution to sleep for a given number of s
 
 ## StringConcatenate
 
-
 <figure style="width: 30%">
-	<img src="images\StringConcatenate.png" alt="Node UI">
+	<img src="images/StringConcatenate.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to concatenate the provided strings.
     The operator provides the user with two standard string plugs to concatenate.
@@ -681,11 +653,10 @@ Operator to concatenate the provided strings.
 
 ## StringFormat
 
-
 <figure style="width: 30%">
-	<img src="images\StringFormat.png" alt="Node UI">
+	<img src="images/StringFormat.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Formats the given template string by using the arguments provided.
     Two types of arguments can be specified, positional (list) or named (dict).
@@ -708,11 +679,10 @@ Formats the given template string by using the arguments provided.
 
 ## StringLength
 
-
 <figure style="width: 30%">
-	<img src="images\StringLength.png" alt="Node UI">
+	<img src="images/StringLength.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Returns the length of the string passed in.
 
@@ -731,11 +701,10 @@ Returns the length of the string passed in.
 
 ## StringSplit
 
-
 <figure style="width: 30%">
-	<img src="images\StringSplit.png" alt="Node UI">
+	<img src="images/StringSplit.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator that splits the given string into substrings.
     One can select the delimiter to the substrings, by default the delimiter is a whitespace.
@@ -760,11 +729,10 @@ Operator that splits the given string into substrings.
 ## PythonExecute
 <span style="color: red"><i>Deprecated operator</i></span>
 
-
 <figure style="width: 30%">
-	<img src="images\PythonExecute.png" alt="Node UI">
+	<img src="images/PythonExecute.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Executes a scripted Python code.
     The node accepts a Python Object (can even be a list or a dictionary) as input.

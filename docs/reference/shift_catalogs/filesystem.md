@@ -1,14 +1,12 @@
 # fileSystem
 A catalog to work with the OS filesystem and environment variables. It includes operators to perform file & directory creation and manipulation and more.
 
-
 ## CopyFiles
 
-
 <figure style="width: 30%">
-	<img src="images\CopyFiles.png" alt="Node UI">
+	<img src="images/CopyFiles.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to copy a given list of files to a target directory.
     By turning on the preserveMetadata option one can choose to also copy the file's metadata.
@@ -36,11 +34,10 @@ Operator to copy a given list of files to a target directory.
 
 ## CreateDirectory
 
-
 <figure style="width: 30%">
-	<img src="images\CreateDirectory.png" alt="Node UI">
+	<img src="images/CreateDirectory.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to create a directory in the provided path.
     Optionally one can specify to create the path if the one provided does not exist.
@@ -63,11 +60,10 @@ Operator to create a directory in the provided path.
 ## CreateTempDirectory
 <span style="color: yellow"><i>Beta operator</i></span>
 
-
 <figure style="width: 30%">
-	<img src="images\CreateTempDirectory.png" alt="Node UI">
+	<img src="images/CreateTempDirectory.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to create a temporary directory in the provided path.
      If no path is provided it will use the default temp directory.
@@ -90,11 +86,10 @@ Operator to create a temporary directory in the provided path.
 
 ## FilterFiles
 
-
 <figure style="width: 30%">
-	<img src="images\FilterFiles.png" alt="Node UI">
+	<img src="images/FilterFiles.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Filter a list of files using either Python regular expressions format or a shell style matching.
     By turning the onlyBasename option on, the filter will only filter by the basename of the provided files.
@@ -117,11 +112,10 @@ Filter a list of files using either Python regular expressions format or a shell
 
 ## GetCurrentDirectory
 
-
 <figure style="width: 30%">
-	<img src="images\GetCurrentDirectory.png" alt="Node UI">
+	<img src="images/GetCurrentDirectory.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to get the current working directory path.
     Optionally one can specify to get the absolute or the relative path.
@@ -141,11 +135,10 @@ Operator to get the current working directory path.
 
 ## GetEnvironmentVariable
 
-
 <figure style="width: 30%">
-	<img src="images\GetEnvironmentVariable.png" alt="Node UI">
+	<img src="images/GetEnvironmentVariable.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to get the value of the environment variable provided.
     If the variable does not exist, the node returns None.
@@ -165,11 +158,10 @@ Operator to get the value of the environment variable provided.
 
 ## GetPythonSysPath
 
-
 <figure style="width: 30%">
-	<img src="images\GetPythonSysPath.png" alt="Node UI">
+	<img src="images/GetPythonSysPath.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to get the content stored in the sys.path variable. Returns a list of strings.
     
@@ -183,11 +175,10 @@ Operator to get the content stored in the sys.path variable. Returns a list of s
 
 ## JoinPath
 
-
 <figure style="width: 30%">
-	<img src="images\JoinPath.png" alt="Node UI">
+	<img src="images/JoinPath.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to join the two given paths.
     
@@ -207,11 +198,10 @@ Operator to join the two given paths.
 
 ## ListDirectory
 
-
 <figure style="width: 30%">
-	<img src="images\ListDirectory.png" alt="Node UI">
+	<img src="images/ListDirectory.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to list all content inside a given directory path. 
     If requested full paths, it updates the paths to include the directory.
@@ -232,11 +222,10 @@ Operator to list all content inside a given directory path.
 
 ## MakeAbsolutePath
 
-
 <figure style="width: 30%">
-	<img src="images\MakeAbsolutePath.png" alt="Node UI">
+	<img src="images/MakeAbsolutePath.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator that gets the absolute path of the provided path.
     Optionally one can specify the base directory to the absolute path, by default it is absolute to the current working directory.
@@ -257,11 +246,10 @@ Operator that gets the absolute path of the provided path.
 
 ## MakeRelativePath
 
-
 <figure style="width: 30%">
-	<img src="images\MakeRelativePath.png" alt="Node UI">
+	<img src="images/MakeRelativePath.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator that gets the relative path of the provided path.
     Optionally one can specify the base directory to the relative path, by default it is relative to the current working directory.
@@ -284,11 +272,10 @@ Operator that gets the relative path of the provided path.
 
 ## MoveFiles
 
-
 <figure style="width: 30%">
-	<img src="images\MoveFiles.png" alt="Node UI">
+	<img src="images/MoveFiles.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to move a given list of files to a target directory.
     By turning on the preserveMetadata option one can choose to also preserve the file's metadata.
@@ -316,11 +303,10 @@ Operator to move a given list of files to a target directory.
 
 ## ReadFile
 
-
 <figure style="width: 30%">
-	<img src="images\ReadFile.png" alt="Node UI">
+	<img src="images/ReadFile.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to read the content from a given file.
     Optionally the reading mode can be modified. By default it is on reading mode.
@@ -343,11 +329,10 @@ Operator to read the content from a given file.
 
 ## ReadFileLines
 
-
 <figure style="width: 30%">
-	<img src="images\ReadFileLines.png" alt="Node UI">
+	<img src="images/ReadFileLines.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator used to read the content from a given file line by line.
     The result is a list of strings where each element of the list represents one line in the file.
@@ -371,11 +356,10 @@ Operator used to read the content from a given file line by line.
 
 ## RemoveDirectory
 
-
 <figure style="width: 30%">
-	<img src="images\RemoveDirectory.png" alt="Node UI">
+	<img src="images/RemoveDirectory.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to remove the given directory. By default, if the directory is not empty, the operator will raise an error.
     Optionally one can force the recursive removal of its content by turning on the removeContent option.
@@ -390,11 +374,10 @@ Operator to remove the given directory. By default, if the directory is not empt
 
 ## RenameFiles
 
-
 <figure style="width: 30%">
-	<img src="images\RenameFiles.png" alt="Node UI">
+	<img src="images/RenameFiles.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to rename a given list of filepaths with the new names provided by the newFilenames list.
     If the option overwrite is on and the name of the new file already exists, then it will be overwritten. Otherwise it will show a warning about the filename being duplicated.
@@ -418,11 +401,10 @@ Operator to rename a given list of filepaths with the new names provided by the 
 
 ## SetCurrentDirectory
 
-
 <figure style="width: 30%">
-	<img src="images\SetCurrentDirectory.png" alt="Node UI">
+	<img src="images/SetCurrentDirectory.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to set the current working directory to the path specified.
     If the createPath option is turned on and the path provided does not exist, it will be created.
@@ -443,11 +425,10 @@ Operator to set the current working directory to the path specified.
 
 ## SetEnvironmentVariable
 
-
 <figure style="width: 30%">
-	<img src="images\SetEnvironmentVariable.png" alt="Node UI">
+	<img src="images/SetEnvironmentVariable.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to set the value of an environment variable.
     If the environment variable already exists, it will be overwritten.
@@ -462,11 +443,10 @@ Operator to set the value of an environment variable.
 
 ## SetFileExtension
 
-
 <figure style="width: 30%">
-	<img src="images\SetFileExtension.png" alt="Node UI">
+	<img src="images/SetFileExtension.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to set an extension to a given filename.
     Optionally one can turn on the replaceExtension option if the filepath already has an extension, this will replace it with the provided one.
@@ -488,11 +468,10 @@ Operator to set an extension to a given filename.
 
 ## SplitFileExtension
 
-
 <figure style="width: 30%">
-	<img src="images\SplitFileExtension.png" alt="Node UI">
+	<img src="images/SplitFileExtension.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to split a given filename into the root filename and the extension.
     
@@ -512,11 +491,10 @@ Operator to split a given filename into the root filename and the extension.
 
 ## SplitFilePath
 
-
 <figure style="width: 30%">
-	<img src="images\SplitFilePath.png" alt="Node UI">
+	<img src="images/SplitFilePath.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator that splits the given filepath in two parts: directory contains the last pathname component and basename contains everything leading up to that.
     
@@ -536,11 +514,10 @@ Operator that splits the given filepath in two parts: directory contains the las
 
 ## WriteFile
 
-
 <figure style="width: 30%">
-	<img src="images\WriteFile.png" alt="Node UI">
+	<img src="images/WriteFile.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to write the given content to the provided file.
     Optionally one can turn on the createFile if the provided file does not exist. Otherwise it will raise an error.
@@ -565,11 +542,10 @@ Operator to write the given content to the provided file.
 
 ## WriteFileLines
 
-
 <figure style="width: 30%">
-	<img src="images\WriteFileLines.png" alt="Node UI">
+	<img src="images/WriteFileLines.png" alt="Node UI">
+	<figcaption>Node UI</figcaption>
 </figure>
-
 
 Operator to write the given list of strings to the provided file as individual lines.
     Optionally one can turn on the createFile if the provided filename does not exist. Otherwise it will raise an error.
