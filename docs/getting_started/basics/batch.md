@@ -1,6 +1,6 @@
 # Batch Execution
 
-Shift is able to run workflows without the need of a UI interface. This is called Batch mode and can be launched via a terminal command or using the Shift Python API.
+Shift is able to run workflows without the need for a UI interface. This is called Batch mode and can be launched via a terminal command or using the Shift Python API.
 
 ## Terminal Command
 
@@ -11,7 +11,7 @@ The Batch execution of a Shift workflow can be launched using the `shift_batch_l
 > 
 > `shift_batch_lite.bat "path_to_workflow_file/workflow.sft" myInt=1 myFloat=5.6 myBool=True myList=[1, 2.5, 0.03, 'Hello World'] myString='Shift is great!'`
 
-This command allows users to provide initialization for external inputs via a human readable format. Like it is shown in the example above, an arbitrary number of specific input plug values can be passed to the workflow by formatting the arguments of the command as `<input_plug_name>=<plug_value>`. The plug value passed by the call will then be casted to the desired Python object type depending on the type of the plug that it is being set to.
+This command allows users to provide initialization for external inputs via a human-readable format. Like it is shown in the example above, an arbitrary number of specific input plug values can be passed to the workflow by formatting the arguments of the command as `<input_plug_name>=<plug_value>`. The plug value passed by the call will then be cast to the desired Python object type depending on the type of the plug that it is being set to.
 
 > [!WARNING]
 > String type inputs must be wrapped in single quotation marks (`'`), as shown in the example above. Double quotation marks (`"`) are special characters that the OS might use to process the command syntax and can lead to unexpected behaviour.
@@ -40,7 +40,7 @@ Once the workflow file is opened, its execution can be triggered with the follow
 result = workflow.execute()
 ```
 
-External inputs for the workflow can be set by providing a Python dictionary as first argument of the `workflow.execute` call. This dictionary should be formatted using the input plug names from the `Input` operator as keys and the content that should be passed as values.
+External inputs for the workflow can be set by providing a Python dictionary as the first argument of the `workflow.execute` call. This dictionary should be formatted using the input plug names from the `Input` operator as keys and the content that should be passed as values.
 
 ```python
 workflow_externals = {
@@ -51,7 +51,7 @@ workflow_externals = {
 result = workflow.execute(workflow_externals)
 ```
 
-The `result` variable will contain a similarly structured dictionary with the output plug names of the `Output` operator as keys and their content as values. If the workflow does not contain an Output node, the result will be `None`, for this reason it is suggested to always set up an `Input` and an `Output` operator in your workflows.
+The `result` variable will contain a similarly structured dictionary with the output plug names of the `Output` operator as keys and their content as values. If the workflow does not contain an Output node, the result will be `None`, for this reason, it is suggested to always set up an `Input` and an `Output` operator in your workflows.
 
 ### Closing a Workflow
 
