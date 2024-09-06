@@ -19,8 +19,6 @@ theme:
     - content.tabs.link
     - content.tooltips
   language: en
-  #logo: images/shift_icon_window.png
-  #favicon: images/shift_icon_window.png
   palette:
     scheme: slate
     primary: light blue

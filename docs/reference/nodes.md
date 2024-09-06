@@ -6,7 +6,10 @@ Nodes are the graphic units that build up the workflow. Each node is associated 
 
 There are five main interface elements that compose the node: the node's name, the operator type, the trigger plugs, the i/o's plugs and the progress bar.
 
-![Node UI](../../images/node_ui.png "Node UI")  
+<figure>
+    <img src="images/node_ui.png" alt="Node UI">
+    <figcaption><b>Figure 1</b>: Overview of the Node elements.</figcaption>
+</figure>
 
 * **Node Name**: Defines the name of the node. On creation, the name of the node is the name of the operator with an enumerated suffix. The name of the node can be changed through the [*Inspector Widget*](../getting_started/basics/ui_overview#the-inspector).
 * **Operator Type**: The associated operator to the node. It determines the native plugs of the node.
@@ -23,8 +26,10 @@ To read further information about a node, `Right-Click` on the node and `Click` 
 * The operator description.
 * The input and output plugs with their corresponding plug types.
 
-![Shift Node Information Dialog](../images/shift_operator_dialog.gif)
-
+<figure>
+    <img src="images/shift_operator_dialog.gif" alt="Shift Node Information Dialog">
+    <figcaption><b>Figure 2</b>: Opening the node information dialog from a node.</figcaption>
+</figure>
 
 ## Plugs
 
@@ -61,7 +66,10 @@ To read further information about an existing plug in a node, `Right-Click` on t
 
 Alternatively, this information can also be accessed by doing `Right-Click` on the associated widget for the plug in the inspector widget and `Click` on the *Show* option. 
 
-![Shift Plug Information Dialog](../images/shift_plug_dialog.gif)
+<figure>
+    <img src="images/shift_plug_dialog.gif" alt="Shift Plug Information Dialog">
+    <figcaption><b>Figure 3</b>: Opening the plug information dialog from a node.</figcaption>
+</figure>
 
 ### Rename a Plug
 
@@ -71,4 +79,7 @@ In some nodes it is possible to set a nice name to a plug. Usually, when creatin
 
 All plugs, except for trigger plugs, can be reordered within a node. To reorder plugs, `Right-Click` on the node and `Click` on the *Reorder Plugs* option. This will prompt a dialog with two lists, one for input plugs and another for output plugs. `Drag and drop` the plugs around their corresponding list until they are in the desired order. Finally, `Click` on *Apply* or *Accept* to set the new plug order in the node.
 
-![Shift Plug Reordering](../images/shift_plug_reorder.gif)
+<figure>
+    <img src="images/shift_plug_reorder.gif" alt="Shift Plug Reordering">
+    <figcaption><b>Figure 4</b>: Reordering plugs of a node.</figcaption>
+</figure>

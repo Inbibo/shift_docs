@@ -25,6 +25,9 @@ There are two ways of adding a custom catalog to Shift:
 - **As a User Catalog**: Use the [Catalog Manager](../catalogs/#the-catalog-manager) to source the catalog file and add it to Shift. This catalog is saved in the user preferences.
 - **As an Environment Catalog**: Add the **path to the directory** containing the catalog file to the `SHIFT_CATALOG_PATH` environment variable. All files in this path containing a `catalog` object will be identified as custom catalogs and loaded by Shift.
 
+>[!WARNING]
+> Avoid naming custom catalogs as existing Python modules. Failing to do so may cause clashing issues between modules in Shift. It is recommended to add a prefix or suffix to custom catalogs to identify them. 
+
 ## Operator Syntax
 
 All Shift operators inherit from the `SOperator` Shift's Python class. To write a custom operator, the `__init__` and `execute` methods must be overwritten. 

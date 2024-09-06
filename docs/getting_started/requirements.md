@@ -4,7 +4,7 @@
 
 - Python: 3.7+
 
-## External Dependencies
+## External Dependencies For Shift Interactive
 
 - QtPy: 1.9
 - PySide2: 5.15
