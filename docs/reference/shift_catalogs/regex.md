@@ -6,7 +6,7 @@ A catalog to work with regex functions.
 
 <figure style="width: 30%">
 	<img src="images/RE_Compile.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to compile a regex expression.
@@ -27,7 +27,7 @@ Operator to compile a regex expression.
 
 <figure style="width: 30%">
 	<img src="images/RE_Match.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to find a match given a regular expression pattern.
@@ -56,7 +56,7 @@ Operator to find a match given a regular expression pattern.
 
 <figure style="width: 30%">
 	<img src="images/RE_MatchGroups.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to get all the groups from a Match object.
@@ -77,7 +77,7 @@ Operator to get all the groups from a Match object.
 
 <figure style="width: 30%">
 	<img src="images/RE_Search.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to perform a search using a regular expression pattern.
@@ -106,7 +106,7 @@ Operator to perform a search using a regular expression pattern.
 
 <figure style="width: 30%">
 	<img src="images/RE_Substitute.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to substitute pattern matches in the value string with a given replace string.

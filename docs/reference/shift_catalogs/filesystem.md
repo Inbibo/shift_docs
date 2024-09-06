@@ -5,7 +5,7 @@ A catalog to work with the OS filesystem and environment variables. It includes 
 
 <figure style="width: 30%">
 	<img src="images/CopyFiles.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to copy a given list of files to a target directory.
@@ -36,7 +36,7 @@ Operator to copy a given list of files to a target directory.
 
 <figure style="width: 30%">
 	<img src="images/CreateDirectory.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to create a directory in the provided path.
@@ -62,7 +62,7 @@ Operator to create a directory in the provided path.
 
 <figure style="width: 30%">
 	<img src="images/CreateTempDirectory.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to create a temporary directory in the provided path.
@@ -88,7 +88,7 @@ Operator to create a temporary directory in the provided path.
 
 <figure style="width: 30%">
 	<img src="images/FilterFiles.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Filter a list of files using either Python regular expressions format or a shell style matching.
@@ -114,7 +114,7 @@ Filter a list of files using either Python regular expressions format or a shell
 
 <figure style="width: 30%">
 	<img src="images/GetCurrentDirectory.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to get the current working directory path.
@@ -137,7 +137,7 @@ Operator to get the current working directory path.
 
 <figure style="width: 30%">
 	<img src="images/GetEnvironmentVariable.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to get the value of the environment variable provided.
@@ -160,7 +160,7 @@ Operator to get the value of the environment variable provided.
 
 <figure style="width: 30%">
 	<img src="images/GetPythonSysPath.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to get the content stored in the sys.path variable. Returns a list of strings.
@@ -177,7 +177,7 @@ Operator to get the content stored in the sys.path variable. Returns a list of s
 
 <figure style="width: 30%">
 	<img src="images/JoinPath.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to join the two given paths.
@@ -200,7 +200,7 @@ Operator to join the two given paths.
 
 <figure style="width: 30%">
 	<img src="images/ListDirectory.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to list all content inside a given directory path. 
@@ -224,7 +224,7 @@ Operator to list all content inside a given directory path.
 
 <figure style="width: 30%">
 	<img src="images/MakeAbsolutePath.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator that gets the absolute path of the provided path.
@@ -248,7 +248,7 @@ Operator that gets the absolute path of the provided path.
 
 <figure style="width: 30%">
 	<img src="images/MakeRelativePath.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator that gets the relative path of the provided path.
@@ -274,7 +274,7 @@ Operator that gets the relative path of the provided path.
 
 <figure style="width: 30%">
 	<img src="images/MoveFiles.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to move a given list of files to a target directory.
@@ -305,7 +305,7 @@ Operator to move a given list of files to a target directory.
 
 <figure style="width: 30%">
 	<img src="images/ReadFile.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to read the content from a given file.
@@ -331,7 +331,7 @@ Operator to read the content from a given file.
 
 <figure style="width: 30%">
 	<img src="images/ReadFileLines.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator used to read the content from a given file line by line.
@@ -358,7 +358,7 @@ Operator used to read the content from a given file line by line.
 
 <figure style="width: 30%">
 	<img src="images/RemoveDirectory.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to remove the given directory. By default, if the directory is not empty, the operator will raise an error.
@@ -376,7 +376,7 @@ Operator to remove the given directory. By default, if the directory is not empt
 
 <figure style="width: 30%">
 	<img src="images/RenameFiles.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to rename a given list of filepaths with the new names provided by the newFilenames list.
@@ -403,7 +403,7 @@ Operator to rename a given list of filepaths with the new names provided by the 
 
 <figure style="width: 30%">
 	<img src="images/SetCurrentDirectory.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to set the current working directory to the path specified.
@@ -427,7 +427,7 @@ Operator to set the current working directory to the path specified.
 
 <figure style="width: 30%">
 	<img src="images/SetEnvironmentVariable.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to set the value of an environment variable.
@@ -445,7 +445,7 @@ Operator to set the value of an environment variable.
 
 <figure style="width: 30%">
 	<img src="images/SetFileExtension.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to set an extension to a given filename.
@@ -470,7 +470,7 @@ Operator to set an extension to a given filename.
 
 <figure style="width: 30%">
 	<img src="images/SplitFileExtension.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to split a given filename into the root filename and the extension.
@@ -493,7 +493,7 @@ Operator to split a given filename into the root filename and the extension.
 
 <figure style="width: 30%">
 	<img src="images/SplitFilePath.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator that splits the given filepath in two parts: directory contains the last pathname component and basename contains everything leading up to that.
@@ -516,7 +516,7 @@ Operator that splits the given filepath in two parts: directory contains the las
 
 <figure style="width: 30%">
 	<img src="images/WriteFile.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to write the given content to the provided file.
@@ -544,7 +544,7 @@ Operator to write the given content to the provided file.
 
 <figure style="width: 30%">
 	<img src="images/WriteFileLines.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to write the given list of strings to the provided file as individual lines.

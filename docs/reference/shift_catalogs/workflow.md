@@ -5,7 +5,7 @@ A catalog to manage and nest Shift workflows. It includes operators to input and
 
 <figure style="width: 30%">
 	<img src="images/Input.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator for external input. To define external data, this operator requires the user to create out plugs for it.
@@ -22,7 +22,7 @@ Operator for external input. To define external data, this operator requires the
 
 <figure style="width: 30%">
 	<img src="images/Output.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator for external output. To define the data to send out,
@@ -40,7 +40,7 @@ Operator for external output. To define the data to send out,
 
 <figure style="width: 30%">
 	<img src="images/Variable.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator for to manage workflow variables.
@@ -56,7 +56,7 @@ Operator for to manage workflow variables.
 
 <figure style="width: 30%">
 	<img src="images/Workflow.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 The workflow operator defines and executes an external Shift workflow.
@@ -77,7 +77,7 @@ The workflow operator defines and executes an external Shift workflow.
 
 <figure style="width: 30%">
 	<img src="images/WorkflowProcess.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 The workflow operator defines and executes an external shift workflow.

@@ -6,7 +6,7 @@ A catalog to work with standard Python operations. It provides logic to perform 
 
 <figure style="width: 30%">
 	<img src="images/ConditionEquals.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Compares two input objects.
@@ -32,7 +32,7 @@ Compares two input objects.
 
 <figure style="width: 30%">
 	<img src="images/Dict.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 This operator implements a dict object in Python.
@@ -52,7 +52,7 @@ This operator implements a dict object in Python.
 
 <figure style="width: 30%">
 	<img src="images/DictGet.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Get values from dictionary given a series of user-defined output plugs as keys.
@@ -71,7 +71,7 @@ Get values from dictionary given a series of user-defined output plugs as keys.
 
 <figure style="width: 30%">
 	<img src="images/DictKeys.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Retrieves the list of keys from a dictionary
@@ -94,7 +94,7 @@ Retrieves the list of keys from a dictionary
 
 <figure style="width: 30%">
 	<img src="images/DictSet.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Sets dictionary values by keys defined by the user as input plugs.
@@ -120,7 +120,7 @@ Sets dictionary values by keys defined by the user as input plugs.
 
 <figure style="width: 30%">
 	<img src="images/DictSetKey.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Sets dictionary value of a key defined by the user.
@@ -145,7 +145,7 @@ Sets dictionary value of a key defined by the user.
 
 <figure style="width: 30%">
 	<img src="images/Iterator.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Implements a for loop in Shift.
@@ -170,7 +170,7 @@ Implements a for loop in Shift.
 
 <figure style="width: 30%">
 	<img src="images/IteratorEnd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Defined the end of a for loop in Shift.
@@ -185,7 +185,7 @@ Defined the end of a for loop in Shift.
 
 <figure style="width: 30%">
 	<img src="images/JsonRead.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Reads data from a JSON file. Optionally one can define its encoding, by default is utf-8.
@@ -209,7 +209,7 @@ Reads data from a JSON file. Optionally one can define its encoding, by default 
 
 <figure style="width: 30%">
 	<img src="images/JsonStringRead.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Reads data from a JSON string and deserializes it to a Python object.
@@ -232,7 +232,7 @@ Reads data from a JSON string and deserializes it to a Python object.
 
 <figure style="width: 30%">
 	<img src="images/JsonWrite.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Writes a Python Dictionary to a JSON file.
@@ -262,7 +262,7 @@ Writes a Python Dictionary to a JSON file.
 
 <figure style="width: 30%">
 	<img src="images/JsonWriteString.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Reads data from a Python Dictionary and serializes it to a JSON string.
@@ -285,7 +285,7 @@ Reads data from a Python Dictionary and serializes it to a JSON string.
 
 <figure style="width: 30%">
 	<img src="images/List.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 This operator implements a list of Python objects.
@@ -305,7 +305,7 @@ This operator implements a list of Python objects.
 
 <figure style="width: 30%">
 	<img src="images/ListAccumulator.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to accumulate an element to a List (based on ListAppend but using kInstance).
@@ -331,7 +331,7 @@ Operator to accumulate an element to a List (based on ListAppend but using kInst
 
 <figure style="width: 30%">
 	<img src="images/ListAppend.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to append an element to a List.
@@ -357,7 +357,7 @@ Operator to append an element to a List.
 
 <figure style="width: 30%">
 	<img src="images/ListExtend.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Extends an input list adding another list to it.
@@ -384,7 +384,7 @@ Extends an input list adding another list to it.
 
 <figure style="width: 30%">
 	<img src="images/ListGet.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Retrieves the list's element at a given index.
@@ -408,7 +408,7 @@ Retrieves the list's element at a given index.
 
 <figure style="width: 30%">
 	<img src="images/ListInsert.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator that inserts an item into the given list at the given index.
@@ -429,7 +429,7 @@ Operator that inserts an item into the given list at the given index.
 
 <figure style="width: 30%">
 	<img src="images/ListLength.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Gets the length of the provided list.
@@ -453,7 +453,7 @@ Gets the length of the provided list.
 
 <figure style="width: 30%">
 	<img src="images/ListPop.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Pops the item placed in the provided index from the provided list.
@@ -480,7 +480,7 @@ Pops the item placed in the provided index from the provided list.
 
 <figure style="width: 30%">
 	<img src="images/ListRemove.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Removes an item from the provided list.
@@ -508,7 +508,7 @@ Removes an item from the provided list.
 
 <figure style="width: 30%">
 	<img src="images/ListReverse.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Reverse the items of a list and output the reversed list.
@@ -532,7 +532,7 @@ Reverse the items of a list and output the reversed list.
 
 <figure style="width: 30%">
 	<img src="images/ListSort.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Sorts the items in the given list. 
@@ -559,7 +559,7 @@ Sorts the items in the given list.
 
 <figure style="width: 30%">
 	<img src="images/Print.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator for printing out messages.
@@ -583,7 +583,7 @@ Operator for printing out messages.
 
 <figure style="width: 30%">
 	<img src="images/PythonScript.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Executes a scripted Python code.
@@ -609,7 +609,7 @@ Executes a scripted Python code.
 
 <figure style="width: 30%">
 	<img src="images/Sleep.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator that puts the current thread execution to sleep for a given number of seconds.
@@ -625,7 +625,7 @@ Operator that puts the current thread execution to sleep for a given number of s
 
 <figure style="width: 30%">
 	<img src="images/StringConcatenate.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator to concatenate the provided strings.
@@ -655,7 +655,7 @@ Operator to concatenate the provided strings.
 
 <figure style="width: 30%">
 	<img src="images/StringFormat.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Formats the given template string by using the arguments provided.
@@ -681,7 +681,7 @@ Formats the given template string by using the arguments provided.
 
 <figure style="width: 30%">
 	<img src="images/StringLength.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Returns the length of the string passed in.
@@ -703,7 +703,7 @@ Returns the length of the string passed in.
 
 <figure style="width: 30%">
 	<img src="images/StringSplit.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator that splits the given string into substrings.
@@ -731,7 +731,7 @@ Operator that splits the given string into substrings.
 
 <figure style="width: 30%">
 	<img src="images/PythonExecute.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Executes a scripted Python code.

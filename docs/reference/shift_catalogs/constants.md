@@ -49,7 +49,7 @@ Operator used to define a floating point number value.
 
 <figure style="width: 30%">
 	<img src="images/Integer.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator used to define an integer number value.
@@ -71,7 +71,7 @@ Operator used to define an integer number value.
 
 <figure style="width: 30%">
 	<img src="images/String.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<figcaption></figcaption>
 </figure>
 
 Operator used to define a string value.
