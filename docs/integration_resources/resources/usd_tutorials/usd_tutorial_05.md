@@ -1,3 +1,17 @@
+
+---
+
+<p style="text-align:left;">
+
+[< Converting Between Layer Formats](usd_tutorial_04.md)
+<span style="float:right;">
+[Authoring Variants >](usd_tutorial_06.md)
+</span>
+
+</p>
+
+---
+
 ## Traversing a Stage
 
 This tutorial focuses on traversing the composed prims on a UsdStage, using the operators from the Shift_USD catalog. The example will reuse the layer files generated in the previous tutorial [Referencing Layers](usd_tutorial_03.md).
@@ -98,3 +112,16 @@ Also, the base files for the example, `HelloWorld.usda` and `RefExample.usda`, c
 ### Workflow Resources
 
 The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_05_traversing_stage/tutorial_05.sft`.
+
+---
+
+<p style="text-align:left;">
+
+[< Converting Between Layer Formats](usd_tutorial_04.md)
+<span style="float:right;">
+[Authoring Variants >](usd_tutorial_06.md)
+</span>
+
+</p>
+
+---

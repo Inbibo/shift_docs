@@ -1,3 +1,17 @@
+
+---
+
+<p style="text-align:left;">
+
+[< Inspecting and Authoring Properties](usd_tutorial_02.md)
+<span style="float:right;">
+[Converting Between Layer Formats >](usd_tutorial_04.md)
+</span>
+
+</p>
+
+---
+
 ## Referencing Layers
 
 This tutorial is focused on creating a new stage that references the stage created in the previous tutorials, using the operators from the Shift_USD catalog. The example will reuse the `HelloWorld.usda` file generated during the last tutorial [Inspecting and Authoring Properties](usd_tutorial_02.md).
@@ -197,3 +211,16 @@ Also, the *usdview* tool shipped with USD is used to visualise and inspect the s
 ### Workflow Resources
 
 The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_03_referencing_layers/tutorial_03.sft`.
+
+---
+
+<p style="text-align:left;">
+
+[< Inspecting and Authoring Properties](usd_tutorial_02.md)
+<span style="float:right;">
+[Converting Between Layer Formats >](usd_tutorial_04.md)
+</span>
+
+</p>
+
+---

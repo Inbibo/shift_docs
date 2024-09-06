@@ -1,3 +1,17 @@
+
+---
+
+<p style="text-align:left;">
+
+[< Creating a Simple USD Stage](usd_tutorial_01.md)
+<span style="float:right;">
+[Referencing Layers >](usd_tutorial_03.md)
+</span>
+
+</p>
+
+---
+
 ## Inspecting and Authoring Properties
 
 This tutorial focuses on inspecting the properties containing geometric data of the prims created in the tutorial [Creating a Simple USD Stage](usd_tutorial_01.md), using the operators from the Shift_USD catalog.
@@ -176,3 +190,16 @@ Also, the *usdview* tool shipped with USD is used to visualise and inspect the s
 ### Workflow Resources
 
 The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_02_authoring_properties/tutorial_02.sft`.
+
+---
+
+<p style="text-align:left;">
+
+[< Creating a Simple USD Stage](usd_tutorial_01.md)
+<span style="float:right;">
+[Referencing Layers >](usd_tutorial_03.md)
+</span>
+
+</p>
+
+---

@@ -5,14 +5,14 @@
 
 [< Main USD Tutorials Page](../usd#tutorials)
 <span style="float:right;">
-[Next Tutorial >](usd_tutorial_02.md)
+[Inspecting and Authoring Properties >](usd_tutorial_02.md)
 </span>
 
 </p>
 
 ---
 
-## Creating a simple USD Stage
+## Creating a Simple USD Stage
 
 This tutorial is focused on creating a simple USD stage containing a transform and a sphere using the operators from Shift_USD catalog.
 
@@ -95,7 +95,7 @@ The workflow corresponding to this tutorial can be found in the following path i
 
 [< Main USD Tutorials Page](../usd#tutorials)
 <span style="float:right;">
-[Next Tutorial >](usd_tutorial_02)
+[Inspecting and Authoring Properties >](usd_tutorial_02.md)
 </span>
 
 </p>

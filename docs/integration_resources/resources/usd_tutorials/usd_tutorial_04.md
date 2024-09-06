@@ -1,3 +1,17 @@
+
+---
+
+<p style="text-align:left;">
+
+[< Referencing Layers](usd_tutorial_03.md)
+<span style="float:right;">
+[Traversing a Stage >](usd_tutorial_05.md)
+</span>
+
+</p>
+
+---
+
 ## Converting Between Layer Formats
 
 This tutorial focuses on converting layer files between the different native USD file formats using the operators from the Shift_USD catalog.
@@ -80,3 +94,16 @@ The base file for the example, `Sphere.usd`, can be downloaded from the [OpenUSD
 ### Workflow Resources
 
 The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_04_converting_layer_formats/tutorial_04.sft`.
+
+---
+
+<p style="text-align:left;">
+
+[< Referencing Layers](usd_tutorial_03.md)
+<span style="float:right;">
+[Traversing a Stage >](usd_tutorial_05.md)
+</span>
+
+</p>
+
+---
