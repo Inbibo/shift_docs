@@ -55,11 +55,11 @@ Also, the base files for the example, `HelloWorld.usda` and `RefExample.usda`, c
 5. For filtering the values of the **prims** output plug in the *TraverseStage* node, set the **primType** input plug to `Sphere`. Execute again the node to refresh the output plug result. Once the node is executed again the plug value should be: `[Usd.Prim(</refSphere/world>), Usd.Prim(</refSphere2/world>)]`. The board should look like the following:
 
 <figure>
-    <img src="images/usd_tutorial_05/step_05_t05.png" alt="'TraverseStage' node prims plug value filtering by 'Sphere' primtype.">
-    <figcaption><b>Figure 5</b>: 'TraverseStage' node prims plug value filtering by 'Sphere' primtype.</figcaption>
+    <img src="images/usd_tutorial_05/step_05_t05.png" alt="'TraverseStage' node prims plug value filtering by 'Sphere' prim type.">
+    <figcaption><b>Figure 5</b>: 'TraverseStage' node prims plug value filtering by 'Sphere' prim type.</figcaption>
 </figure>
 
-6. In order to activate/deactivate a prim in an specific layer, for the current example, the session layer, add a new *UsdStageSessionLayerGet* node and rename it as *SessionLayerGet*. Connect the **stage** output plug from the *OpenStage* node to the **stage** input plug of the new node. The board should look like the following:
+6. To activate/deactivate a prim in a specific layer, for the current example, the session layer, add a new *UsdStageSessionLayerGet* node and rename it as *SessionLayerGet*. Connect the **stage** output plug from the *OpenStage* node to the **stage** input plug of the new node. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_05/step_06_t05.png" alt="Added the 'SessionLayerGet' node to the board connected to the 'OpenStage' node.">
@@ -104,8 +104,8 @@ Also, the base files for the example, `HelloWorld.usda` and `RefExample.usda`, c
 12. Now, with the *TraverseStage* node selected, set the **traverseAll** input plug value to `True`. Execute the selected node only to recompute the **prims** output plug value. The value of the **prims** output plug should be: `[Usd.Prim(</refSphere>), Usd.Prim(</refSphere/world>), Usd.Prim(</refSphere2>)]`. The board should look like the following:
 
 <figure>
-    <img src="images/usd_tutorial_05/step_12_t05.png" alt="Re-executing the 'TraverseStage' node will traverseAll plug set to True.">
-    <figcaption><b>Figure 12</b>: Re-executing the 'TraverseStage' node will traverseAll plug set to True.</figcaption>
+    <img src="images/usd_tutorial_05/step_12_t05.png" alt="Re-executing the 'TraverseStage' node with traverseAll plug set to True.">
+    <figcaption><b>Figure 12</b>: Re-executing the 'TraverseStage' node with **traverseAll** plug set to True.</figcaption>
 </figure>
 
 

@@ -59,14 +59,14 @@ Also, the base file for the example, `HelloWorld.usda`, can be downloaded from t
     <figcaption><b>Figure 5</b>: Added the 'DisplayColorAttrClear' node to the board connected to the 'DisplayColorAttrGet' node.</figcaption>
 </figure>
 
-6. Add a new *UsdPrimStageGet* node to the board and rename it to *WorldStageGet*. Connect the **prim** output plug from *WorldGet* node to the **prim** input plug of the new node. The board should look like the following:
+6. Add a new *UsdPrimStageGet* node to the board and rename it to *WorldStageGet*. Connect the **prim** output plug from the *WorldGet* node to the **prim** input plug of the new node. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_06_t06.png" alt="Added the 'WorldStageGet' node to the board connected to the 'WorldGet' node.">
     <figcaption><b>Figure 6</b>: Added the 'WorldStageGet' node to the board connected to the 'WorldGet' node.</figcaption>
 </figure>
 
-7. For saving the modifications done to the `HelloWorld.usda` file, add a new *UsdStageSave* node to the board and rename it to *StageSave*. Connect the **stage** output plug from the *WorldStageGet* node to the **stage** input plug of the new node. Leave empty the value for the **filepath** input plug, doing this, the original file will be overriden. The board should look like the following:
+7. For saving the modifications done to the `HelloWorld.usda` file, add a new *UsdStageSave* node to the board and rename it to *StageSave*. Connect the **stage** output plug from the *WorldStageGet* node to the **stage** input plug of the new node. Leave empty the value for the **filepath** input plug, doing this, the original file will be overridden. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_07_t06.png" alt="Added the 'StageSave' node to the board connected to the 'WorldStageGet' node.">
@@ -80,70 +80,70 @@ Also, the base file for the example, `HelloWorld.usda`, can be downloaded from t
     <figcaption><b>Figure 8</b>: Added the 'HelloGet' node to the board connected to the 'WorldStageGet' and 'StageSave' nodes.</figcaption>
 </figure>
 
-9. Add a new *UsdVariantSetAdd* node to the board and rename it to *ShadingVariantSetAdd*. Connect the **prim** output plug from *HelloGet* node to the **prim** input plug of the new node and set `shadingVariant` as the value for the **variantSetName** input plug. The board should look like the following:
+9. Add a new *UsdVariantSetAdd* node to the board and rename it to *ShadingVariantSetAdd*. Connect the **prim** output plug from the *HelloGet* node to the **prim** input plug of the new node and set `shadingVariant` as the value for the **variantSetName** input plug. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_09_t06.png" alt="Added the 'ShadingVariantSetAdd' node to the board connected to the 'HelloGet' node.">
     <figcaption><b>Figure 9</b>: Added the 'ShadingVariantSetAdd' node to the board connected to the 'HelloGet' node.</figcaption>
 </figure>
 
-10. For adding the variants to the created variantSet, add a new *UsdVariantAdd* node and rename it to *RedVariantAdd*. Connect the **variantSet** output plug from *ShadingVariantSetAdd* node to the **variantSet** input plug of the new node and set `red` as the value for the **variantName** input plug. The board should look like the following:
+10. For adding the variants to the new variant set, add a new *UsdVariantAdd* node and rename it to *RedVariantAdd*. Connect the **variantSet** output plug from the *ShadingVariantSetAdd* node to the **variantSet** input plug of the new node and set `red` as the value for the **variantName** input plug. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_10_t06.png" alt="Added the 'RedVariantAdd' node to the board connected to the 'ShadingVariantSetAdd' node.">
     <figcaption><b>Figure 10</b>: Added the 'RedVariantAdd' node to the board connected to the 'ShadingVariantSetAdd' node.</figcaption>
 </figure>
 
-11. As done in the previous step, add another *UsdVariantAdd* node and rename it to *BlueVariantAdd*. Connect the **variantSet** output plug from *RedVariantAdd* node to the **variantSet** input plug of the new node and set `blue` as the value for the **variantName** input plug. The board should look like the following:
+11. As done in the previous step, add another *UsdVariantAdd* node and rename it to *BlueVariantAdd*. Connect the **variantSet** output plug from the *RedVariantAdd* node to the **variantSet** input plug of the new node and set `blue` as the value for the **variantName** input plug. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_11_t06.png" alt="Added the 'BlueVariantAdd' node to the board connected to the 'RedVariantAdd' node.">
     <figcaption><b>Figure 11</b>: Added the 'BlueVariantAdd' node to the board connected to the 'RedVariantAdd' node.</figcaption>
 </figure>
 
-12. As done in the previous step, add another *UsdVariantAdd* node and rename it to *GreenVariantAdd*. Connect the **variantSet** output plug from *BlueVariantAdd* node to the **variantSet** input plug of the new node and set `green` as the value for the **variantName** input plug. The board should look like the following:
+12. As done in the previous step, add another *UsdVariantAdd* node and rename it to *GreenVariantAdd*. Connect the **variantSet** output plug from the *BlueVariantAdd* node to the **variantSet** input plug of the new node and set `green` as the value for the **variantName** input plug. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_12_t06.png" alt="Added the 'GreenVariantAdd' node to the board connected to the 'BlueVariantAdd' node.">
     <figcaption><b>Figure 12</b>: Added the 'GreenVariantAdd' node to the board connected to the 'BlueVariantAdd' node.</figcaption>
 </figure>
 
-13. Add a new *UsdVariantSetSelected* node and rename it to *GreenVariantSelect*. Connect the **variantSet** output plug from *GreenVariantAdd* node to the **variantSet** input plug of the new node and set `green` as the value for the **variantName** input plug. The board should look like the following:
+13. Add a new *UsdVariantSetSelected* node and rename it to *GreenVariantSelect*. Connect the **variantSet** output plug from the *GreenVariantAdd* node to the **variantSet** input plug of the new node and set `green` as the value for the **variantName** input plug. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_13_t06.png" alt="Added the 'GreenVariantSelect' node to the board connected to the 'GreenVariantAdd' node.">
     <figcaption><b>Figure 13</b>: Added the 'GreenVariantSelect' node to the board connected to the 'GreenVariantAdd' node.</figcaption>
 </figure>
 
-14. Follow the steps done in the section [Creating a variant workflow](usd_tutorial_06.md#creating-a-variant-workflow) and add a new *UsdVariantWorkflow* node and rename it to *RedVariantDCSet*. Set as the value for the **file** input plug of the node the path to the workflow created in the section, for example, `D:/USD_TUTORIALS/06/set_variant_display_color.sft`. Once the file is properly set, the node will be automatically updated to show the inputs and outputs from the nested workflow. Then, connect the **variantSet** output plug from *GreenVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from *WorldGet* node to the **prim** input plug of the new node. Set `red` as the value for the **variant** input plug and for the **color** input plug set as the value `[1,0,0]`. The board should look like the following:
+14. Follow the steps done in the section [Creating a variant workflow](usd_tutorial_06.md#creating-a-variant-workflow) and add a new *UsdVariantWorkflow* node and rename it to *RedVariantDCSet*. Set the path to the workflow created in the [Creating a variant workflow](usd_tutorial_06.md#creating-a-variant-workflow) section as the value for the **file** input plug of the node, which should be named `set_variant_display_color.sft`. Once the file is properly set, the node will be automatically updated to show the inputs and outputs from the nested workflow. Then, connect the **variantSet** output plug from the *GreenVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from the *WorldGet* node to the **prim** input plug of the new node. Set `red` as the value for the **variant** input plug and `[1,0,0]` as the value of the **color** input plug. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_14_t06.png" alt="Added the 'RedVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.">
     <figcaption><b>Figure 14</b>: Added the 'RedVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.</figcaption>
 </figure>
 
-15. Duplicate the *RedVariantDCSet* node and rename it as *BlueVariantDCSet*. As done before, connect the **variantSet** output plug from *GreenVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from *WorldGet* node to the **prim** input plug of the new node. Set `blue` as the value for the **variant** input plug and for the **color** input plug set as the value `[0,0,1]`. The board should look like the following: 
+15. Duplicate the *RedVariantDCSet* node and rename it as *BlueVariantDCSet*. As done before, connect the **variantSet** output plug from the *BlueVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from the *WorldGet* node to the **prim** input plug of the new node. Set `blue` as the value for the **variant** input plug and `[0,0,1]` as the value of the **color** input plug. The board should look like the following: 
 
 <figure>
     <img src="images/usd_tutorial_06/step_15_t06.png" alt="Added the 'BlueVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.">
     <figcaption><b>Figure 15</b>: Added the 'BlueVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.</figcaption>
 </figure>
 
-16. Duplicate the *RedVariantDCSet* node again and rename it as *GreenVariantDCSet*. As done before, connect the **variantSet** output plug from *GreenVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from *WorldGet* node to the **prim** input plug of the new node. Set `green` as the value for the **variant** input plug and for the **color** input plug set as the value `[0,1,0]`. The board should look like the following: 
+16. Duplicate the *RedVariantDCSet* node again and rename it as *GreenVariantDCSet*. As done before, connect the **variantSet** output plug from the *GreenVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from the *WorldGet* node to the **prim** input plug of the new node. Set `green` as the value for the **variant** input plug and `[0,1,0]` as the value of the **color** input plug. The board should look like the following: 
 
 <figure>
     <img src="images/usd_tutorial_06/step_16_t06.png" alt="Added the 'BlueVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.">
     <figcaption><b>Figure 16</b>: Added the 'GreenVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.</figcaption>
 </figure>
 
-17. Add a new *UsdPrimStageGet* node and rename it to *StageFinalGet*. Connect the **prim** output plug from *GreenVariantDCSet* node to the **prim** input plug of the new node. Then, connect the **out-trigger** output plug from the *RedVariantDCSet* and *BlueVariantDCSet* nodes to the **in-trigger** input plug of the new node. The board should look like the following:
+17. Add a new *UsdPrimStageGet* node and rename it to *StageFinalGet*. Connect the **prim** output plug from the *GreenVariantDCSet* node to the **prim** input plug of the new node. Then, connect the **out-trigger** output plug from the *RedVariantDCSet* and *BlueVariantDCSet* nodes to the **in-trigger** input plug of the new node. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_17_t06.png" alt="Added the 'StageFinalGet' node to the board connected to the 'GreenVariantDCSet', 'RedVariantDCSet' and 'BlueVariantDCSet' nodes.">
     <figcaption><b>Figure 17</b>: Added the 'StageFinalGet' node to the board connected to the 'GreenVariantDCSet', 'RedVariantDCSet' and 'BlueVariantDCSet' nodes.</figcaption>
 </figure>
 
-18. Finally, for saving the modifications done in the stage, add a new *UsdStageSave* node and rename it to *StageFinalSave*. Connect the **stage** output plug from the *StageFinalGet* node to the **stage** input plug of the new node. Leave empty the value for the **filepath** input plug, doing this, the original file will be overriden. The board should look like the following one:
+18. Finally, to save the modifications done in the stage, add a new *UsdStageSave* node and rename it to *StageFinalSave*. Connect the **stage** output plug from the *StageFinalGet* node to the **stage** input plug of the new node. Leave empty the value for the **filepath** input plug, doing this, the original file will be overridden. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_18_t06.png" alt="Added the 'StageFinalSave' node to the board connected to the 'StageFinalGet' node.">
@@ -184,7 +184,7 @@ Also, the base file for the example, `HelloWorld.usda`, can be downloaded from t
 Shift is shipped with native plugins to visualize and inspect the stage. They can be accessed from the *Usd* top menu:
 * **USD Outliner**: Shows the user the stage hierarchy sourced from specific Usd nodes in the active board workflow.
 
-* **USD Viewer**: Shows the stage in the Usd viewer sourced from specific Usd nodes in the active board workflow.
+* **USD Viewer**: Shows the stage in the USD viewer sourced from specific USD nodes in the active board workflow.
 
 <figure>
     <img src="images/usd_tutorial_06/step_23_t06.png" alt="Shift USD Outliner and USD Viewer plugins.">

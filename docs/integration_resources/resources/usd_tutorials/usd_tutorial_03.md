@@ -164,7 +164,7 @@ The base file for the example, `HelloWorld.usda`, can be downloaded from the [Op
     <figcaption><b>Figure 20</b>: Added the 'WorldStageGet' node to the board connected to the 'WorldDisplayColorSet' node.</figcaption>
 </figure>
 
-21. Add another *UsdStageSave* node to the board and rename it to *WorldStageSave*. Connect the **stage** output plug from the *WorldStageGet* node to the **stage** input plug of the new node. Leave empty the value for the **filepath** input plug, doing this, the original file will be overriden. The board should look like the following:
+21. Add another *UsdStageSave* node to the board and rename it to *WorldStageSave*. Connect the **stage** output plug from the *WorldStageGet* node to the **stage** input plug of the new node. Leave empty the value for the **filepath** input plug, doing this, the original file will be overridden. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_03/step_21_t03.png" alt="Added the 'WorldStageSave' node to the board connected to the 'WorldStageGet' node.">
@@ -178,7 +178,7 @@ The base file for the example, `HelloWorld.usda`, can be downloaded from the [Op
     <figcaption><b>Figure 22</b>: Added the 'StageFlatten' node to the board connected to the 'WorldStageGet' node.</figcaption>
 </figure>
 
-23. For saving the stage after flattening it, add another *UsdStageSave* node to the board and rename it to *FlattenStageSave*. Connect the **stage** output plug from the *StageFlatten* node to the **stage** input plug of the new node. Now, set the value for the **filepath** input plug to point to a new `.usda` file for avoiding overwritting the final result, for example, `D:/USD_TUTORIALS/03/RefExampleFlatten.usda`. The board should look like the following:
+23. For saving the stage after flattening it, add another *UsdStageSave* node to the board and rename it to *FlattenStageSave*. Connect the **stage** output plug from the *StageFlatten* node to the **stage** input plug of the new node. Now, set the value for the **filepath** input plug to point to a new `.usda` file to avoid overwriting the final result, for example, `D:/USD_TUTORIALS/03/RefExampleFlatten.usda`. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_03/step_23_t03.png" alt="Added the 'FlattenStageSave' node to the board connected to the 'StageFlatten' node.">
@@ -193,7 +193,7 @@ The base file for the example, `HelloWorld.usda`, can be downloaded from the [Op
 Shift is shipped with native plugins to visualize and inspect the stage. They can be accessed from the *Usd* top menu:
 * **USD Outliner**: Shows the user the stage hierarchy sourced from specific Usd nodes in the active board workflow.
 
-* **USD Viewer**: Shows the stage in the Usd viewer sourced from specific Usd nodes in the active board workflow.
+* **USD Viewer**: Shows the stage in the USD viewer sourced from specific USD nodes in the active board workflow.
 
 <figure>
     <img src="images/usd_tutorial_03/step_25_t03.png" alt="Shift USD Outliner and USD Viewer plugins.">

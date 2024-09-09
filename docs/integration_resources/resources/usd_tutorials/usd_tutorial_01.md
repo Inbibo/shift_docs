@@ -70,7 +70,7 @@ This tutorial focuses on creating a simple USD stage containing a transform and 
 Shift is shipped with native plugins to visualize and inspect the stage. They can be accessed from the *Usd* top menu:
 * **USD Outliner**: Shows the user the stage hierarchy sourced from specific Usd nodes in the active board workflow.
 
-* **USD Viewer**: Shows the stage in the Usd viewer sourced from specific Usd nodes in the active board workflow.
+* **USD Viewer**: Shows the stage in the USD viewer sourced from specific USD nodes in the active board workflow.
 
 <figure>
     <img src="images/usd_tutorial_01/step_08_t01.png" alt="Shift USD Outliner and USD Viewer plugins.">

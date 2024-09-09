@@ -73,7 +73,7 @@ The base file for the example is the resulting USD from the previous tutorial na
     <figcaption><b>Figure 7</b>: Executed the selected node named 'HelloPropertyNamesGet'.</figcaption>
 </figure>
 
-8. Following the previous steps, do the same selecting now the *WorldPropertyNamesGet* node. Execute again only the selected node. The execution will run over the nodes on the bottom branch, that was still not executed. When showing the result values from the **propertyNames** output plug, the values of the list are: `['doubleSided', 'extent', 'orientation', 'primvars:displayColor', 'primvars:displayOpacity', 'proxyPrim', 'purpose', 'radius', 'visibility', 'xformOpOrder']`. The board should look like the following:
+8. Following the previous steps, do the same selecting now the *WorldPropertyNamesGet* node. Execute again only the selected node. The execution will run over the nodes on the bottom branch that were still not executed. When showing the result values from the **propertyNames** output plug, the values of the list are: `['doubleSided', 'extent', 'orientation', 'primvars:displayColor', 'primvars:displayOpacity', 'proxyPrim', 'purpose', 'radius', 'visibility', 'xformOpOrder']`. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_08_t02.png" alt="Executed the selected node named 'WorldPropertyNamesGet'.">
@@ -115,7 +115,7 @@ The base file for the example is the resulting USD from the previous tutorial na
     <figcaption><b>Figure 13</b>: Added the 'RadiusValueSet' node to the board connected to the 'RadiusGet' node.</figcaption>
 </figure>
 
-14. Add a new *Float* node to the board and rename it as *RadiusValue*. Set `2,0` as the value of the input **value** plug. Connect the **out** output plug from *RadiusValue* node to the **value** input plug of the *RadiusValueSet* node. The board should look like the following:
+14. Add a new *Float* node to the board and rename it as *RadiusValue*. Set `2,0` as the value of the input **value** plug. Connect the **out** output plug from the *RadiusValue* node to the **value** input plug of the *RadiusValueSet* node. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_14_t02.png" alt="Added the 'RadiusValueSet' node to the board connected to the 'RadiusGet' node.">
@@ -150,7 +150,7 @@ The base file for the example is the resulting USD from the previous tutorial na
     <figcaption><b>Figure 18</b>: Added the trigger connections to 'WorldDisplayColorSet' node.</figcaption>
 </figure>
 
-19. For retrieving the stage from a prim, add a new *UsdPrimStageGet* node and rename it as *WorldStageGet*. Connect the **prim** output plug from *WorldDisplayColorSet* node to the **prim** input plug of the new node. Doing this, the stage is retrieved from the sphere's prim. The board should look like the following:
+19. For retrieving the stage from a prim, add a new *UsdPrimStageGet* node and rename it as *WorldStageGet*. Connect the **prim** output plug from the *WorldDisplayColorSet* node to the **prim** input plug of the new node. Doing this, the stage is retrieved from the sphere's prim. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_19_t02.png" alt="Added the 'WorldStageGet' node to the board connected to the 'WorldDisplayColorSet' node.">
@@ -172,7 +172,7 @@ The base file for the example is the resulting USD from the previous tutorial na
 Shift is shipped with native plugins to visualize and inspect the stage. They can be accessed from the *Usd* top menu:
 * **USD Outliner**: Shows the user the stage hierarchy sourced from specific Usd nodes in the active board workflow.
 
-* **USD Viewer**: Shows the stage in the Usd viewer sourced from specific Usd nodes in the active board workflow.
+* **USD Viewer**: Shows the stage in the USD viewer sourced from specific USD nodes in the active board workflow.
 
 <figure>
     <img src="images/usd_tutorial_02/step_23_t02.png" alt="Shift USD Outliner and USD Viewer plugins.">

@@ -45,7 +45,7 @@ The base file for the example, `Sphere.usd`, can be downloaded from the [OpenUSD
     <figcaption><b>Figure 3</b>: Added 'SaveAsUsdaFile' node to the board connected to 'OpenUsdFile' node.</figcaption>
 </figure>
 
-4. Execute the workflow. Doing this, a new file with the `.usda` extension will be generated using as information the `.usd` file. The board should look like the following:
+4. Execute the workflow, which will generate a new file with the `.usda` extension using the information from the `.usd` file. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_04/step_04_t04.png" alt="Executed the workflow for creating the '.usda' file.">
@@ -76,14 +76,14 @@ The base file for the example, `Sphere.usd`, can be downloaded from the [OpenUSD
 
 ### Run verifications
 
-1. For running the verification between the original `Sphere.usd` file and the generated file `Sphere.usda`, use the terminal for executing the *usddiff* tool shipped with USD for showing the difference between 2 USD files. The terminal should show no differences:
+1. To the verification and inspect the differences between the original `Sphere.usd` file and the generated file `Sphere.usda`, use the terminal and execute the *usddiff* tool shipped with USD. The terminal should show no differences:
 
 <figure>
     <img src="images/usd_tutorial_04/verification_01_t04.png" alt="Usddiff command executed between original 'Sphere.usd' file and generated 'Sphere.usda' file." width="475" height="133">
     <figcaption><b>Figure 8</b>: Usddiff command executed between original 'Sphere.usd' file and generated 'Sphere.usda' file.</figcaption>
 </figure>
 
-2. As previously done, for running the verification between the `Sphere.usda` file and the `Sphere.usdc` file, use the terminal for executing the *usddiff* tool. The terminal should show no differences:
+2. As previously done, to run the verification between the `Sphere.usda` file and the `Sphere.usdc` file, execute the *usddiff* tool in a terminal. The terminal should show no differences:
 
 <figure>
     <img src="images/usd_tutorial_04/verification_02_t04.png" alt="Usddiff command executed between 'Sphere.usda' and 'Sphere.usdc' files."  width="475" height="133">
