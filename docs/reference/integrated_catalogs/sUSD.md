@@ -1,14 +1,34 @@
 # sUSD
 This catalog doesn't have a description
 
-## *sUSD* Operators
+---
+## SdfSubLayersGet
+
+<figure style="width: 30%">
+	<img src="images/SdfSubLayersGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Get the sublayers from the given SdfLayer.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| subLayers | Instance | None
+
+
+---
 ## UsdAttributeAdd
 
 <figure style="width: 30%">
-	<img src="images\usdattributeadd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<img src="images/UsdAttributeAdd.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
-
 
 Add UsdAttribute to UsdPrim.
 
@@ -25,12 +45,13 @@ Add UsdAttribute to UsdPrim.
 | attribute | Instance | None
 
 
+---
 ## UsdAttributeClear
 
 <figure style="width: 30%">
-	<img src="images\usdattributeclear.png" alt="Node UI">
+	<img src="images/UsdAttributeClear.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
-
 
 Clears the authored value from the given UsdAttribute.
     If useTime plug is set to True, the attribute value will be cleared at the given time.
@@ -51,12 +72,13 @@ Clears the authored value from the given UsdAttribute.
 | attribute | Instance | None
 
 
+---
 ## UsdAttributeConnectionAdd
-<figure style="width: 30%">
-	<img src="images\usdattributeconnectionadd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdAttributeConnectionAdd.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Add connection between two UsdAttributes.
 
@@ -72,12 +94,13 @@ Add connection between two UsdAttributes.
 | destination | Instance | None
 
 
+---
 ## UsdAttributeConnectionRemove
-<figure style="width: 30%">
-	<img src="images\usdattributeconnectionremove.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdAttributeConnectionRemove.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Remove connection between two UsdAttributes.
 
@@ -93,12 +116,13 @@ Remove connection between two UsdAttributes.
 | destination | Instance | None
 
 
+---
 ## UsdAttributeCopy
-<figure style="width: 30%">
-	<img src="images\usdattributecopy.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdAttributeCopy.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Copy Usd.Attribute from source Usd.Prim to target Usd.Prim.
 
@@ -117,12 +141,13 @@ Copy Usd.Attribute from source Usd.Prim to target Usd.Prim.
 | targetAttribute | Instance | None
 
 
+---
 ## UsdAttributeGet
-<figure style="width: 30%">
-	<img src="images\usdattributeget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdAttributeGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get UsdAttribute from UsdPrim.
 
@@ -138,12 +163,13 @@ Get UsdAttribute from UsdPrim.
 | attribute | Instance | None
 
 
+---
 ## UsdAttributeRemove
-<figure style="width: 30%">
-	<img src="images\usdattributeremove.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdAttributeRemove.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Remove UsdAttribute .
 
@@ -159,12 +185,13 @@ Remove UsdAttribute .
 | prim | Instance | None
 
 
+---
 ## UsdAttributeTypeGet
-<figure style="width: 30%">
-	<img src="images\usdattributetypeget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdAttributeTypeGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the type name for UsdAttribute.
 
@@ -179,12 +206,13 @@ Get the type name for UsdAttribute.
 | typeName | String | ""
 
 
+---
 ## UsdAttributeValueGet
-<figure style="width: 30%">
-	<img src="images\usdattributevalueget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdAttributeValueGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get UsdAttribute value.
 
@@ -201,12 +229,13 @@ Get UsdAttribute value.
 | value | Instance | None
 
 
+---
 ## UsdAttributeValueSet
-<figure style="width: 30%">
-	<img src="images\usdattributevalueset.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdAttributeValueSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get UsdAttribute value.
 
@@ -224,12 +253,13 @@ Get UsdAttribute value.
 | attribute | Instance | None
 
 
+---
 ## UsdAttributesGetDict
-<figure style="width: 30%">
-	<img src="images\usdattributesgetdict.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdAttributesGetDict.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Returns a dictionary with the attribute names and their respective values.
 
@@ -244,12 +274,13 @@ Returns a dictionary with the attribute names and their respective values.
 | attributesDict | Dict | {}
 
 
+---
 ## UsdInstanceNameGet
-<figure style="width: 30%">
-	<img src="images\usdinstancenameget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdInstanceNameGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the name of Usd instance.
 
@@ -264,12 +295,13 @@ Get the name of Usd instance.
 | name | String | ""
 
 
+---
 ## UsdInstancePathGet
-<figure style="width: 30%">
-	<img src="images\usdinstancepathget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdInstancePathGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the Sdf.Path for Usd instance.
 
@@ -285,12 +317,13 @@ Get the Sdf.Path for Usd instance.
 | pathString | String | ""
 
 
+---
 ## UsdLayerAdd
-<figure style="width: 30%">
-	<img src="images\usdlayeradd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdLayerAdd.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Adds a given source layer to the subLayerPaths of the destination layer.
     The mode plug allows to specify in which position the source layer should 
@@ -315,12 +348,34 @@ Adds a given source layer to the subLayerPaths of the destination layer.
 | sourceLayer | Instance | None
 
 
-## UsdLayerCreateAnonymous
+---
+## UsdLayerClear
+
 <figure style="width: 30%">
-	<img src="images\usdlayercreateanonymous.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<img src="images/UsdLayerClear.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
 
+Clears all the content of the given SdfLayer.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+
+
+---
+## UsdLayerCreateAnonymous
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerCreateAnonymous.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Creates a new anonymous layer with an optional given tag.
 
@@ -335,12 +390,13 @@ Creates a new anonymous layer with an optional given tag.
 | layer | Instance | None
 
 
+---
 ## UsdLayerCreateNew
-<figure style="width: 30%">
-	<img src="images\usdlayercreatenew.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdLayerCreateNew.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Creates a new empty layer in the given filepath.
 
@@ -355,12 +411,84 @@ Creates a new empty layer in the given filepath.
 | layer | Instance | None
 
 
-## UsdLayerFindOrOpen
+---
+## UsdLayerCustomDataGet
+
 <figure style="width: 30%">
-	<img src="images\usdlayerfindoropen.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<img src="images/UsdLayerCustomDataGet.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
 
+Returns the custom layer data information from the given SdfLayer.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+| customLayerData | Dict | {}
+
+
+---
+## UsdLayerCustomDataSet
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerCustomDataSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Sets the custom layer data information to the given SdfLayer.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+| customLayerData | Dict | {}
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+
+
+---
+## UsdLayerExport
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerExport.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Exports the given SdfLayer to a file in the specified filepath.
+    If a comment is given, it will be added to the exported layer.
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+| filepath | FileOut | 
+| comment | String | ""
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+| filepath | FileIn | 
+
+
+---
+## UsdLayerFindOrOpen
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerFindOrOpen.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Returns an existing SdfLayer with the given identifier.
     The identifier can be an absolute or relative path to an existing USD file or a URI.
@@ -378,12 +506,13 @@ Returns an existing SdfLayer with the given identifier.
 | layer | Instance | None
 
 
+---
 ## UsdLayerGet
-<figure style="width: 30%">
-	<img src="images\usdlayerget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdLayerGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Returns a layer in the given position from the given UsdStage layer stack.
 
@@ -400,12 +529,152 @@ Returns a layer in the given position from the given UsdStage layer stack.
 | layer | Instance | None
 
 
-## UsdLayerPathGet
+---
+## UsdLayerIdentifierGet
+
 <figure style="width: 30%">
-	<img src="images\usdlayerpathget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<img src="images/UsdLayerIdentifierGet.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
 
+Returns the identifier of the given SdfLayer.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+| identifier | String | ""
+
+
+---
+## UsdLayerIsAnonymous
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerIsAnonymous.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Returns True if the given SdfLayer is an anonymous layer.
+    Otherwise, returns False.
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+| anonymous | Bool | False
+
+
+---
+## UsdLayerIsDirty
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerIsDirty.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Returns True if the given SdfLayer is dirty. Otherwise, returns False.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+| dirty | Bool | False
+
+
+---
+## UsdLayerIsEmpty
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerIsEmpty.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Returns whether the given SdfLayer has no significant data for defining geometry.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+| empty | Bool | False
+
+
+---
+## UsdLayerMutedGet
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerMutedGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Returns True if the given SdfLayer is muted. Otherwise, returns False.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+| muted | Bool | False
+
+
+---
+## UsdLayerMutedSet
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerMutedSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Mutes or unmutes the given SdfLayer.
+    Mutes the current layer if muted is True. Otherwise, unmutes it.
+    Muting a layer with this node will have a global effect on all stages using this layer.
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+| mute | Bool | False
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+
+
+---
+## UsdLayerPathGet
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerPathGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Gets the path and the identifier from the given SdfLayer.
 
@@ -421,29 +690,18 @@ Gets the path and the identifier from the given SdfLayer.
 | layerIdentifier | String | ""
 
 
-## UsdLoadedLayersGet
+---
+## UsdLayerPermissionToEditGet
+
 <figure style="width: 30%">
-	<img src="images\usdloadedlayersget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<img src="images/UsdLayerPermissionToEditGet.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
 
+Returns True if the given SdfLayer has permission to be edited.
+    Otherwise, returns False.
 
-Returns all layers currently held by the layer registry.
-
-#### Outputs
-| Name | Type | Default |
-| --- | --- | --- |
-| loadedLayers | Instance | None
-
-
-## SdfSubLayersGet
-<figure style="width: 30%">
-	<img src="images\sdfsublayersget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
-
-
-Get the sublayers from the given SdfLayer.
+    
 
 #### Inputs
 | Name | Type | Default
@@ -453,15 +711,135 @@ Get the sublayers from the given SdfLayer.
 #### Outputs
 | Name | Type | Default |
 | --- | --- | --- |
-| subLayers | Instance | None
+| layer | Instance | None
+| editPermission | Bool | False
 
 
-## UsdPrimAdd
+---
+## UsdLayerPermissionToEditSet
+
 <figure style="width: 30%">
-	<img src="images\usdprimadd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<img src="images/UsdLayerPermissionToEditSet.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
 
+Sets permission to edit to the given SdfLayer.
+    Setting True as value to the editPermission plug will make the layer editable.
+    Otherwise, the layer won't be editable.
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+| editPermission | Bool | True
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+
+
+---
+## UsdLayerPermissionToSaveGet
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerPermissionToSaveGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Returns True if the given SdfLayer has permission to be saved.
+    Otherwise, returns False.
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+| savePermission | Bool | True
+
+
+---
+## UsdLayerPermissionToSaveSet
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerPermissionToSaveSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Sets permission to save to the given SdfLayer.
+    Setting True as value to the savePermission plug will make the layer saveable.
+    Otherwise, the layer won't be saveable.
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| layer | Instance | None
+| savePermission | Bool | True
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+
+
+---
+## UsdLayerTransferContent
+
+<figure style="width: 30%">
+	<img src="images/UsdLayerTransferContent.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Copies the content of the given source layer to the given destination layer,
+    returns as a result the destination layer where the source layer has been transferred.
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| sourceLayer | Instance | None
+| destinationLayer | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| layer | Instance | None
+
+
+---
+## UsdLoadedLayersGet
+
+<figure style="width: 30%">
+	<img src="images/UsdLoadedLayersGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Returns all layers currently held by the layer registry.
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| loadedLayers | Instance | None
+
+
+---
+## UsdPrimAdd
+
+<figure style="width: 30%">
+	<img src="images/UsdPrimAdd.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Add UsdPrim to UsdStage.
 
@@ -479,12 +857,13 @@ Add UsdPrim to UsdStage.
 | prim | Instance | None
 
 
+---
 ## UsdPrimChildAppend
-<figure style="width: 30%">
-	<img src="images\usdprimchildappend.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimChildAppend.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Append child prim to UsdPrim.
 
@@ -501,12 +880,13 @@ Append child prim to UsdPrim.
 | childPrim | Instance | None
 
 
+---
 ## UsdPrimCopy
-<figure style="width: 30%">
-	<img src="images\usdprimcopy.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimCopy.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Copy UsdPrim from source UsdStage to target UsdStage.
 
@@ -525,12 +905,13 @@ Copy UsdPrim from source UsdStage to target UsdStage.
 | targetPrim | Instance | None
 
 
+---
 ## UsdPrimDisable
-<figure style="width: 30%">
-	<img src="images\usdprimdisable.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimDisable.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Disable UsdPrim inside UsdStage.
 
@@ -546,12 +927,13 @@ Disable UsdPrim inside UsdStage.
 | prim | Instance | None
 
 
+---
 ## UsdPrimDisplayColorGet
-<figure style="width: 30%">
-	<img src="images\usdprimdisplaycolorget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimDisplayColorGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get display color primvar of the given Usd prim.
 
@@ -568,12 +950,13 @@ Get display color primvar of the given Usd prim.
 | interpolation | String | "constant"
 
 
+---
 ## UsdPrimDisplayColorSet
-<figure style="width: 30%">
-	<img src="images\usdprimdisplaycolorset.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimDisplayColorSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Sets display color primvar to the given Usd prim.
 
@@ -591,12 +974,13 @@ Sets display color primvar to the given Usd prim.
 | prim | Instance | None
 
 
+---
 ## UsdPrimGet
-<figure style="width: 30%">
-	<img src="images\usdprimget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get UsdPrim from prim path inside UsdStage.
 
@@ -612,12 +996,13 @@ Get UsdPrim from prim path inside UsdStage.
 | prim | Instance | None
 
 
+---
 ## UsdPrimInternalReferenceAdd
-<figure style="width: 30%">
-	<img src="images\usdpriminternalreferenceadd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimInternalReferenceAdd.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Internal reference a UsdPrim.
 
@@ -634,12 +1019,13 @@ Internal reference a UsdPrim.
 | prim | Instance | None
 
 
+---
 ## UsdPrimKindGet
-<figure style="width: 30%">
-	<img src="images\usdprimkindget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimKindGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get UsdPrim Kind.
 
@@ -654,12 +1040,13 @@ Get UsdPrim Kind.
 | kind | String | ""
 
 
+---
 ## UsdPrimKindSet
-<figure style="width: 30%">
-	<img src="images\usdprimkindset.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimKindSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Set UsdPrim Kind.
 
@@ -675,12 +1062,13 @@ Set UsdPrim Kind.
 | prim | Instance | None
 
 
+---
 ## UsdPrimOverride
-<figure style="width: 30%">
-	<img src="images\usdprimoverride.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimOverride.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Add an override UsdPrim to UsdStage.
 
@@ -697,12 +1085,34 @@ Add an override UsdPrim to UsdStage.
 | prim | Instance | None
 
 
-## UsdPrimPropertyNamesGet
+---
+## UsdPrimPathGet
+
 <figure style="width: 30%">
-	<img src="images\usdprimpropertynamesget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<img src="images/UsdPrimPathGet.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
 
+Get the prim path of a given prim.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| prim | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| primpath | String | ""
+
+
+---
+## UsdPrimPropertyNamesGet
+
+<figure style="width: 30%">
+	<img src="images/UsdPrimPropertyNamesGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the list of property names of a prim.
 
@@ -717,12 +1127,13 @@ Get the list of property names of a prim.
 | propertyNames | List | []
 
 
+---
 ## UsdPrimPurposeGet
-<figure style="width: 30%">
-	<img src="images\usdprimpurposeget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimPurposeGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get UsdPrim Purpose.
 
@@ -737,12 +1148,13 @@ Get UsdPrim Purpose.
 | purpose | String | ""
 
 
+---
 ## UsdPrimPurposeSet
-<figure style="width: 30%">
-	<img src="images\usdprimpurposeset.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimPurposeSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Set UsdPrim Purpose.
 
@@ -758,12 +1170,13 @@ Set UsdPrim Purpose.
 | prim | Instance | None
 
 
+---
 ## UsdPrimReferenceAdd
-<figure style="width: 30%">
-	<img src="images\usdprimreferenceadd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimReferenceAdd.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Adds a reference to a UsdPrim.
     If a valid variantSet and variantName are given, the reference will be added only
@@ -788,12 +1201,13 @@ Adds a reference to a UsdPrim.
 | prim | Instance | None
 
 
+---
 ## UsdPrimReferenceGet
-<figure style="width: 30%">
-	<img src="images\usdprimreferenceget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimReferenceGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the filepaths References from a UsdPrim.
 
@@ -809,12 +1223,13 @@ Get the filepaths References from a UsdPrim.
 | payloadsList | Instance | None
 
 
+---
 ## UsdPrimReferenceRemove
-<figure style="width: 30%">
-	<img src="images\usdprimreferenceremove.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimReferenceRemove.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Remove the filepath Referenced to a UsdPrim.
 
@@ -833,12 +1248,13 @@ Remove the filepath Referenced to a UsdPrim.
 | prim | Instance | None
 
 
+---
 ## UsdPrimStageGet
-<figure style="width: 30%">
-	<img src="images\usdprimstageget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimStageGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the UsdStage for UsdPrim.
 
@@ -853,12 +1269,13 @@ Get the UsdStage for UsdPrim.
 | stage | Instance | None
 
 
+---
 ## UsdPrimTypeGet
-<figure style="width: 30%">
-	<img src="images\usdprimtypeget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdPrimTypeGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the type name for UsdPrim.
 
@@ -873,12 +1290,13 @@ Get the type name for UsdPrim.
 | typeName | String | ""
 
 
+---
 ## UsdSdfReferenceCreate
-<figure style="width: 30%">
-	<img src="images\usdsdfreferencecreate.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdSdfReferenceCreate.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Create a Usd Sdf Reference with filepath and primpath.
 
@@ -895,12 +1313,13 @@ Create a Usd Sdf Reference with filepath and primpath.
 | reference | Instance | None
 
 
+---
 ## UsdSdfReferenceQuery
-<figure style="width: 30%">
-	<img src="images\usdsdfreferencequery.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdSdfReferenceQuery.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the filepath and primpath from a Usd Sdf Reference.
 
@@ -916,12 +1335,13 @@ Get the filepath and primpath from a Usd Sdf Reference.
 | primpath | String | ""
 
 
+---
 ## UsdShadeAttributeAdd
-<figure style="width: 30%">
-	<img src="images\usdshadeattributeadd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdShadeAttributeAdd.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Add UsdShade.Input Or UsdShade.Output to UsdShade prims.
 
@@ -940,12 +1360,13 @@ Add UsdShade.Input Or UsdShade.Output to UsdShade prims.
 | shadeAttribute | Instance | None
 
 
+---
 ## UsdShadeAttributeGet
-<figure style="width: 30%">
-	<img src="images\usdshadeattributeget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdShadeAttributeGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get UsdShade.Input Or UsdShade.Output belong to UsdShade prims.
 
@@ -962,12 +1383,13 @@ Get UsdShade.Input Or UsdShade.Output belong to UsdShade prims.
 | shadeAttribute | Instance | None
 
 
+---
 ## UsdStage
-<figure style="width: 30%">
-	<img src="images\usdstage.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdStage.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Defines an USD stage instance.
 
@@ -982,12 +1404,13 @@ Defines an USD stage instance.
 | stage | Instance | None
 
 
+---
 ## UsdStageDefaultPrimClear
-<figure style="width: 30%">
-	<img src="images\usdstagedefaultprimclear.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdStageDefaultPrimClear.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Clears the default prim layer metadata in the given UsdStage root layer.
 
@@ -1002,12 +1425,13 @@ Clears the default prim layer metadata in the given UsdStage root layer.
 | stage | Instance | None
 
 
+---
 ## UsdStageDefaultPrimGet
-<figure style="width: 30%">
-	<img src="images\usdstagedefaultprimget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdStageDefaultPrimGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Gets the default prim in the given UsdStage root layer.
 
@@ -1022,12 +1446,13 @@ Gets the default prim in the given UsdStage root layer.
 | prim | Instance | None
 
 
+---
 ## UsdStageDefaultPrimSet
-<figure style="width: 30%">
-	<img src="images\usdstagedefaultprimset.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdStageDefaultPrimSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Sets the default prim to the given UsdStage root layer.
 
@@ -1043,12 +1468,13 @@ Sets the default prim to the given UsdStage root layer.
 | stage | Instance | None
 
 
+---
 ## UsdStageEditTargetGet
-<figure style="width: 30%">
-	<img src="images\usdstageedittargetget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdStageEditTargetGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Returns the current edit target and its associated layer from the given USD stage.
 
@@ -1064,12 +1490,13 @@ Returns the current edit target and its associated layer from the given USD stag
 | editTargetLayer | Instance | None
 
 
+---
 ## UsdStageEditTargetSet
-<figure style="width: 30%">
-	<img src="images\usdstageedittargetset.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdStageEditTargetSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Sets the edit target to the given USD stage using the given layer.
 
@@ -1086,12 +1513,13 @@ Sets the edit target to the given USD stage using the given layer.
 | layer | Instance | None
 
 
+---
 ## UsdStageFlatten
-<figure style="width: 30%">
-	<img src="images\usdstageflatten.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdStageFlatten.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Returns a single, anonymous, merged SdfLayer from the given UsdStage or SdfLayer, and a UsdStage that uses the resulting merged layer.
     If a UsdStage is passed, the operator do the merge from the root layer of the UsdStage.
@@ -1113,206 +1541,13 @@ Returns a single, anonymous, merged SdfLayer from the given UsdStage or SdfLayer
 | flattenLayer | Instance | None
 
 
-## UsdStageMetadataGet
-<figure style="width: 30%">
-	<img src="images\usdstagemetadataget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
-
-
-Get UsdStage metadata.
-
-#### Inputs
-| Name | Type | Default | Options
-| --- | --- | --- | --- |
-| stage | Instance | None | 
-| metadataKey | Enum | comment | comment, defaultPrim, documentation, endFrame, endTimeCode, metersPerUnit, renderSettingsPrimPath, startFrame, startTimeCode, timeCodesPerSecond, upAxis
-
-#### Outputs
-| Name | Type | Default |
-| --- | --- | --- |
-| stage | Instance | None
-| metadataValue | Object | None
-
-
-## UsdStageMetadataSet
-<figure style="width: 30%">
-	<img src="images\usdstagemetadataset.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
-
-
-Set UsdStage metadata.
-
-#### Inputs
-| Name | Type | Default | Options
-| --- | --- | --- | --- |
-| stage | Instance | None | 
-| metadataKey | Enum | comment | comment, defaultPrim, documentation, endFrame, endTimeCode, metersPerUnit, renderSettingsPrimPath, startFrame, startTimeCode, timeCodesPerSecond, upAxis
-| metadataValue | Object | None | 
-
-#### Outputs
-| Name | Type | Default |
-| --- | --- | --- |
-| stage | Instance | None
-
-
-## UsdStageNew
-<figure style="width: 30%">
-	<img src="images\usdstagenew.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
-
-
-Creating a new USD stage instance. The filepath (or identifier) should be written in a valid USD file format.
-    If no filepath is provided, the stage will be created in memory as an anonymous layer.
-
-    
-
-#### Inputs
-| Name | Type | Default
-| --- | --- | --- |
-| filepath | FileOut | 
-
-#### Outputs
-| Name | Type | Default |
-| --- | --- | --- |
-| stage | Instance | None
-
-
-## UsdStageOpen
-<figure style="width: 30%">
-	<img src="images\usdstageopen.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
-
-
-Open a new USD stage instance from the given file path.
-
-#### Inputs
-| Name | Type | Default
-| --- | --- | --- |
-| filepath | FileIn | 
-
-#### Outputs
-| Name | Type | Default |
-| --- | --- | --- |
-| stage | Instance | None
-
-
-## UsdStageRootLayerGet
-<figure style="width: 30%">
-	<img src="images\usdstagerootlayerget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
-
-
-Returns the root layer from the given UsdStage.
-
-#### Inputs
-| Name | Type | Default
-| --- | --- | --- |
-| stage | Instance | None
-
-#### Outputs
-| Name | Type | Default |
-| --- | --- | --- |
-| stage | Instance | None
-| rootLayer | Instance | None
-
-
-## UsdStageSave
-<figure style="width: 30%">
-	<img src="images\usdstagesave.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
-
-
-Save an exist USD stage instance .
-
-#### Inputs
-| Name | Type | Default
-| --- | --- | --- |
-| stage | Instance | None
-| filepath | FileOut | 
-
-#### Outputs
-| Name | Type | Default |
-| --- | --- | --- |
-| filepath | String | ""
-
-
-## UsdStageSessionLayerGet
-<figure style="width: 30%">
-	<img src="images\usdstagesessionlayerget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
-
-
-Returns the session layer from the given UsdStage.
-
-#### Inputs
-| Name | Type | Default
-| --- | --- | --- |
-| stage | Instance | None
-
-#### Outputs
-| Name | Type | Default |
-| --- | --- | --- |
-| stage | Instance | None
-| sessionLayer | Instance | None
-
-
-## UsdStageToString
-<figure style="width: 30%">
-	<img src="images\usdstagetostring.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
-
-
-Converts the stage dada into a flattened Usd text representation.
-    
-    
-
-#### Inputs
-| Name | Type | Default
-| --- | --- | --- |
-| stage | Instance | None
-
-#### Outputs
-| Name | Type | Default |
-| --- | --- | --- |
-| result | Code | None
-
-
-## UsdStageSubLayerAdd
-<figure style="width: 30%">
-	<img src="images\usdstagesublayeradd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
-
-
-Add UsdLayer to the UsdStage subLayerPaths using the given file path.
-
-#### Inputs
-| Name | Type | Default
-| --- | --- | --- |
-| stage | Instance | None
-| filepath | FileIn | 
-| index | Int | -1
-
-#### Outputs
-| Name | Type | Default |
-| --- | --- | --- |
-| stage | Instance | None
-
-
+---
 ## UsdStageLayerStackGet
-<figure style="width: 30%">
-	<img src="images\usdstagelayerstackget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdStageLayerStackGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the layer stack from the given UsdStage.
     If includeSessionLayers is set to True, the result list will include the session layer.
@@ -1335,12 +1570,222 @@ Get the layer stack from the given UsdStage.
 | layers | Instance | None
 
 
-## UsdStageSubLayerRemove
+---
+## UsdStageMetadataGet
+
 <figure style="width: 30%">
-	<img src="images\usdstagesublayerremove.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<img src="images/UsdStageMetadataGet.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
 
+Get UsdStage metadata.
+
+#### Inputs
+| Name | Type | Default | Options
+| --- | --- | --- | --- |
+| stage | Instance | None | 
+| metadataKey | Enum | comment | comment, defaultPrim, documentation, endFrame, endTimeCode, metersPerUnit, renderSettingsPrimPath, startFrame, startTimeCode, timeCodesPerSecond, upAxis
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| stage | Instance | None
+| metadataValue | Object | None
+
+
+---
+## UsdStageMetadataSet
+
+<figure style="width: 30%">
+	<img src="images/UsdStageMetadataSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Set UsdStage metadata.
+
+#### Inputs
+| Name | Type | Default | Options
+| --- | --- | --- | --- |
+| stage | Instance | None | 
+| metadataKey | Enum | comment | comment, defaultPrim, documentation, endFrame, endTimeCode, metersPerUnit, renderSettingsPrimPath, startFrame, startTimeCode, timeCodesPerSecond, upAxis
+| metadataValue | Object | None | 
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| stage | Instance | None
+
+
+---
+## UsdStageMuteLayerSet
+
+<figure style="width: 30%">
+	<img src="images/UsdStageMuteLayerSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Mutes or unmutes the given layer from the given stage.
+    Mutes the layer if muted is True. Otherwise, unmutes it.
+    Muting an anonymous layer will cause that layer and its contents to be lost, 
+    because anonymous layers are not serialised.
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| stage | Instance | None
+| layer | Instance | None
+| mute | Bool | False
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| stage | Instance | None
+| layer | Instance | None
+
+
+---
+## UsdStageNew
+
+<figure style="width: 30%">
+	<img src="images/UsdStageNew.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Creating a new USD stage instance. The filepath (or identifier) should be written in a valid USD file format.
+    If no filepath is provided, the stage will be created in memory as an anonymous layer.
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| filepath | FileOut | 
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| stage | Instance | None
+
+
+---
+## UsdStageOpen
+
+<figure style="width: 30%">
+	<img src="images/UsdStageOpen.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Open a new USD stage instance from the given file path.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| filepath | FileIn | 
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| stage | Instance | None
+
+
+---
+## UsdStageRootLayerGet
+
+<figure style="width: 30%">
+	<img src="images/UsdStageRootLayerGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Returns the root layer from the given UsdStage.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| stage | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| stage | Instance | None
+| rootLayer | Instance | None
+
+
+---
+## UsdStageSave
+
+<figure style="width: 30%">
+	<img src="images/UsdStageSave.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Save an exist USD stage instance .
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| stage | Instance | None
+| filepath | FileOut | 
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| filepath | String | ""
+
+
+---
+## UsdStageSessionLayerGet
+
+<figure style="width: 30%">
+	<img src="images/UsdStageSessionLayerGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Returns the session layer from the given UsdStage.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| stage | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| stage | Instance | None
+| sessionLayer | Instance | None
+
+
+---
+## UsdStageSubLayerAdd
+
+<figure style="width: 30%">
+	<img src="images/UsdStageSubLayerAdd.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Add UsdLayer to the UsdStage subLayerPaths using the given file path.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| stage | Instance | None
+| filepath | FileIn | 
+| index | Int | -1
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| stage | Instance | None
+
+
+---
+## UsdStageSubLayerRemove
+
+<figure style="width: 30%">
+	<img src="images/UsdStageSubLayerRemove.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Remove UsdLayer to the UsdStage subLayerPaths using the given file path.
 
@@ -1356,12 +1801,36 @@ Remove UsdLayer to the UsdStage subLayerPaths using the given file path.
 | stage | Instance | None
 
 
-## UsdStageTraverse
+---
+## UsdStageToString
+
 <figure style="width: 30%">
-	<img src="images\usdstagetraverse.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<img src="images/UsdStageToString.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
 
+Converts the stage dada into a flattened Usd text representation.
+    
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| stage | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| result | Code | None
+
+
+---
+## UsdStageTraverse
+
+<figure style="width: 30%">
+	<img src="images/UsdStageTraverse.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Traverses the UsdStage and returns the UsdPrims that are active, defined, loaded, and concrete.
     If primtype is not 'Any', it will filter by the selected prim type. Otherwise, it will return all the prims without filtering.
@@ -1382,12 +1851,13 @@ Traverses the UsdStage and returns the UsdPrims that are active, defined, loaded
 | prims | Instance | None
 
 
+---
 ## UsdStageUpAxisGet
-<figure style="width: 30%">
-	<img src="images\usdstageupaxisget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdStageUpAxisGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the UsdStage's up axis.
 
@@ -1402,12 +1872,13 @@ Get the UsdStage's up axis.
 | upAxis | String | ""
 
 
+---
 ## UsdStageUpAxisSet
-<figure style="width: 30%">
-	<img src="images\usdstageupaxisset.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdStageUpAxisSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Set the UsdStage's up axis, which must be Y or Z.
 
@@ -1423,12 +1894,13 @@ Set the UsdStage's up axis, which must be Y or Z.
 | stage | Instance | None
 
 
+---
 ## UsdSubLayersPathGet
-<figure style="width: 30%">
-	<img src="images\usdsublayerspathget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdSubLayersPathGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the sublayers paths from the given SdfLayer.
     If includeParentLayer is set to True, the given parent layer will be added
@@ -1448,12 +1920,13 @@ Get the sublayers paths from the given SdfLayer.
 | layersPaths | List | []
 
 
+---
 ## UsdVariantAdd
-<figure style="width: 30%">
-	<img src="images\usdvariantadd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdVariantAdd.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Adds a variant with the given name to the input variant set.
 
@@ -1475,12 +1948,13 @@ Adds a variant with the given name to the input variant set.
 | variantSet | Instance | None
 
 
+---
 ## UsdVariantGetAll
-<figure style="width: 30%">
-	<img src="images\usdvariantgetall.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdVariantGetAll.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get all variants for the input variant set.
 
@@ -1501,12 +1975,13 @@ Get all variants for the input variant set.
 | variantsList | List | []
 
 
+---
 ## UsdVariantGetSelected
-<figure style="width: 30%">
-	<img src="images\usdvariantgetselected.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdVariantGetSelected.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get the selected variant for the input variant set.
 
@@ -1527,12 +2002,13 @@ Get the selected variant for the input variant set.
 | variantName | String | ""
 
 
+---
 ## UsdVariantSetAdd
-<figure style="width: 30%">
-	<img src="images\usdvariantsetadd.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdVariantSetAdd.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Adds a variant set to the prim.
 
@@ -1554,12 +2030,13 @@ Adds a variant set to the prim.
 | variantSet | Instance | None
 
 
+---
 ## UsdVariantSetGet
-<figure style="width: 30%">
-	<img src="images\usdvariantsetget.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdVariantSetGet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Get a variant set to the prim.
 
@@ -1581,12 +2058,13 @@ Get a variant set to the prim.
 | variantSet | Instance | None
 
 
+---
 ## UsdVariantSetSelected
-<figure style="width: 30%">
-	<img src="images\usdvariantsetselected.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdVariantSetSelected.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Set the selected variant for the input variant set.
 
@@ -1608,12 +2086,13 @@ Set the selected variant for the input variant set.
 | variantSet | Instance | None
 
 
+---
 ## UsdVariantWorkflow
-<figure style="width: 30%">
-	<img src="images\usdvariantworkflow.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
-</figure>
 
+<figure style="width: 30%">
+	<img src="images/UsdVariantWorkflow.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 The variant workflow operator executes an external Shift workflow within a USD variant context.
     The operator expands its plugs dynamically to enable access to its input and output data.
@@ -1631,12 +2110,34 @@ The variant workflow operator executes an external Shift workflow within a USD v
 | variantSet | Instance | None
 | variant | String | ""
 
-## UsdXformSet
+---
+## UsdXformOpOrderClear
+
 <figure style="width: 30%">
-	<img src="images\usdxformset.png" alt="Node UI">
-	<figcaption>Node UI</figcaption>
+	<img src="images/UsdXformOpOrderClear.png" alt="Node UI">
+	<figcaption></figcaption>
 </figure>
 
+Clears the operation order for the transformations from the given UsdPrim.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| prim | Instance | None
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| prim | Instance | None
+
+
+---
+## UsdXformSet
+
+<figure style="width: 30%">
+	<img src="images/UsdXformSet.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
 
 Set UsdGeom xform operations.
 

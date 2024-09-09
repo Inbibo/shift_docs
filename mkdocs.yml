@@ -118,7 +118,6 @@ nav:
       - Conditional Node:       reference/nodes/conditional.md
     - Catalogs:                 reference/catalogs.md
     - Integrated Catalogs:
-      - standard:                reference/integrated_catalogs/standard.md
       - sUsd:                   reference/integrated_catalogs/sUsd.md
     - Plugins:                  reference/plugins.md
     - Notes:                    reference/notes.md
