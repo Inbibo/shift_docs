@@ -16,7 +16,7 @@
 
 This tutorial focuses on creating and authoring a variant set using the *HelloWorld* layer from the [Inspecting and Authoring Properties](usd_tutorial_02.md) tutorial, using the operators from Shift_USD catalog.
 
-Also, the base file for the example, `HelloWorld.usda`, can be downloaded from the [OpenUSD](https://github.com/PixarAnimationStudios/OpenUSD) Github project repository, from `extras/usd/tutorials/authoringVariants/` folder.
+The USD file `HelloWorld.usda` can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_02_authoring_properties/result/`.
 
 
 ### Tutorial
@@ -194,8 +194,8 @@ Shift is shipped with native plugins to visualise and inspect the stage. They ca
 The *USD viewer* tool shipped with USD is used to visualise and inspect the stage viewport:
 
 <figure>
-    <img src="images/usd_tutorial_06/step_22_t06.gif" alt="Visualizing the stage.">
-    <figcaption><b>Figure 23</b>: Visualizing the stage.</figcaption>
+    <img src="images/usd_tutorial_06/step_22_t06.gif" alt="Visualising the stage.">
+    <figcaption><b>Figure 23</b>: Visualising the stage.</figcaption>
 </figure>
 
 

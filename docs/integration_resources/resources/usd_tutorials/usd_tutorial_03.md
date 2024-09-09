@@ -16,7 +16,7 @@
 
 This tutorial is focused on creating a new stage that references the stage created in the previous tutorials, using the operators from the Shift_USD catalog. The example will reuse the `HelloWorld.usda` file generated during the last tutorial [Inspecting and Authoring Properties](usd_tutorial_02.md).
 
-The base file for the example, `HelloWorld.usda`, can be downloaded from the [OpenUSD](https://github.com/PixarAnimationStudios/OpenUSD) Github project repository, from `extras/usd/tutorials/referencingLayers/` folder.
+The USD file `HelloWorld.usda` can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_02_authoring_properties/result/`.
 
 
 ### Tutorial

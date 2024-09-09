@@ -16,7 +16,7 @@
 
 This tutorial focuses on converting layer files between the different native USD file formats using the operators from the Shift_USD catalog.
 
-The base file for the example, `Sphere.usd`, can be downloaded from the [OpenUSD](https://github.com/PixarAnimationStudios/OpenUSD) Github project repository, from `extras/usd/tutorials/convertingLayerFormats/` folder.
+The USD file used in this tutorial `Sphere.usd` can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_04_converting_layer_formats/`.
 
 
 ### Converting between .usda/.usdc and .usd
