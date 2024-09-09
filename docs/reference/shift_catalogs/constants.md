@@ -1,6 +1,8 @@
 # constants
 A catalog to work with standard Python type objects.
 
+<hr style="border-top: 3px dotted">
+
 ## Bool
 
 <figure style="width: 30%">
@@ -10,7 +12,7 @@ A catalog to work with standard Python type objects.
 
 Operator used to define a boolean value.
 
-    
+<hr style="border-top: 3px dotted">
 
 #### Inputs
 | Name | Type | Default
