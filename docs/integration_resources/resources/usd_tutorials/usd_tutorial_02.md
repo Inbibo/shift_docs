@@ -167,9 +167,9 @@ The base file for the example is the resulting USD from the previous tutorial na
 21. Execute the entire workflow. Open again the `HelloWorld.usda` file, it will now contain the authored properties updated and the new *displayColor* attribute set.
 
 
-### Visualizing the Stage
+### Visualising the Stage
 
-Shift is shipped with native plugins to visualize and inspect the stage. They can be accessed from the *Usd* top menu:
+Shift is shipped with native plugins to visualise and inspect the stage. They can be accessed from the *USD* top menu:
 * **USD Outliner**: Shows the user the stage hierarchy sourced from specific Usd nodes in the active board workflow.
 
 * **USD Viewer**: Shows the stage in the USD viewer sourced from specific USD nodes in the active board workflow.

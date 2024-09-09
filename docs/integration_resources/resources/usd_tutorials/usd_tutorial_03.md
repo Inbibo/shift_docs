@@ -188,9 +188,9 @@ The base file for the example, `HelloWorld.usda`, can be downloaded from the [Op
 24. Execute the entire workflow. Open the `RefExample.usda` file, it will contain the references and overrides updated. Also, preview the `RefExampleFlatten.usda` for checking how *flattening* the stage works.
 
 
-### Visualizing the Stage
+### Visualising the Stage
 
-Shift is shipped with native plugins to visualize and inspect the stage. They can be accessed from the *Usd* top menu:
+Shift is shipped with native plugins to visualise and inspect the stage. They can be accessed from the *USD* top menu:
 * **USD Outliner**: Shows the user the stage hierarchy sourced from specific Usd nodes in the active board workflow.
 
 * **USD Viewer**: Shows the stage in the USD viewer sourced from specific USD nodes in the active board workflow.
