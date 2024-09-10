@@ -111,7 +111,7 @@ The inspector is used to display and modify the properties of the selected nodes
 
 ### The Logger
 
-The logger displays all the log messages generated while working on Shift. This covers everything from node errors and warnings, setup information, missing configurations, or extraordinary exceptions raised by Shift. Log messages can be removed by clicking `Clear` on the bottom right corner of the widget. 
+The logger displays all the log messages generated while working on Shift. This covers everything from node errors and warnings, setup information, missing configurations to extraordinary exceptions raised by Shift. Log messages can be removed by clicking `Clear` on the bottom right corner of the widget. 
 
 <figure>
       <img src="images/logger.png" alt="Logger">

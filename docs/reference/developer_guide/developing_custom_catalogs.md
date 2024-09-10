@@ -26,7 +26,7 @@ There are two ways of adding a custom catalog to Shift:
 - **As an Environment Catalog**: Add the **path to the directory** containing the catalog file to the `SHIFT_CATALOG_PATH` environment variable. All files in this path containing a `catalog` object will be identified as custom catalogs and loaded by Shift.
 
 >[!WARNING]
-> Avoid naming custom catalogs as existing Python modules. Failing to do so may cause clashing issues between modules in Shift. It is recommended to add a prefix or suffix to custom catalogs to identify them. 
+> Avoid naming custom catalogs after existing Python modules, as this may cause conflicts between modules in Shift. It is recommended to add a prefix or suffix to custom catalog names for easier identification.
 
 ## Operator Syntax
 

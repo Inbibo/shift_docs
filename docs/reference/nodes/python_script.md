@@ -17,7 +17,7 @@ The *PythonScript* node allows for any type of custom plugs too. Custom input pl
 
 ### Outputs
 
-- **Output**: This plug of type [Object](../nodes#plugs) outputs the result of the logic executed by the *PythonScript*. To set the result of this plug, simply equal to `output` (the plug's name) the value to output.
+- **Output**: This plug of type [Object](../nodes#plugs) outputs the result of the logic executed by the *PythonScript*.  Assign the value to output to a variable named `output` (the plug's name).
 
 If outputting several values is needed, new output plugs of any type, including Instance plugs, can be added to the node. All custom outputs can be used the same way as the default output plug to return any data from the Python script execution.
 
