@@ -23,7 +23,7 @@ If outputting several values is needed, new output plugs of any type, including 
 
 <figure style="width:80%;" markdown>
     <img src="images/sum_python_script.png" alt="Sum Python Script">
-    <figcaption><b>Figure 2</b>: Custom plugs in a python script nodes. Blue indicates input plugs, and red, output plugs. </figcaption>
+    <figcaption><b>Figure 2</b>: Custom plugs in a Python script nodes. The blue underline indicates input plugs, and the red, output plugs. </figcaption>
 </figure>
 
 >[!NOTE]
