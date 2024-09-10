@@ -4,7 +4,8 @@ Catalogs are libraries of operators that define and extend Shift's capabilities,
 
 Shift comes with six native catalogs that contain the necessary nodes to start building a workflow:
 
-- **Constants catalog**: Provides operators to work with standard Python-type objects, such as booleans or strings.
+- **Constants catalog**: Provides operators to work with standard Python objects, such as booleans or strings.
+
 - **Standard catalog**: Provides operators to work with standard Python operations. It provides logic to perform [loop iterations](nodes/iterator.md) and create [scriptable Python nodes](nodes/python_script.md). It also includes operators to read/write JSON files, operate with lists, strings, dictionaries and more.
 - **FileSystem catalog**: Provides operators to work with the OS filesystem and environment variables. It includes operators to perform file & directory creation and manipulation and more.
 - **Regex catalog**: Provides operators to work with regular expressions and functions.
