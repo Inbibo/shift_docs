@@ -10,12 +10,12 @@ A catalog to work with the OS filesystem and environment variables. It includes 
 </figure>
 
 Operator to copy a given list of files to a target directory.
-    By turning on the preserveMetadata option one can choose to also copy the file's metadata.
-    Optionally one can specify to create the target directory if the one provided does not exist.
-    If the skipOnError option is on, the copying process will continue and will show a warning if an error occurs. If it's off it will stop the copy and raise an error. 
-    If the overwrite option is on, the copying process will overwrite the existing files and will show a warning message. If it's off it will ignore the existing files.
-    
-    
+By turning on the preserveMetadata option one can choose to also copy the file's metadata.
+Optionally one can specify to create the target directory if the one provided does not exist.
+If the skipOnError option is on, the copying process will continue and will show a warning if an error occurs. If it's off it will stop the copy and raise an error. 
+If the overwrite option is on, the copying process will overwrite the existing files and will show a warning message. If it's off it will ignore the existing files.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -42,9 +42,9 @@ Operator to copy a given list of files to a target directory.
 </figure>
 
 Operator to create a directory in the provided path.
-    Optionally one can specify to create the path if the one provided does not exist.
-    
-    
+Optionally one can specify to create the path if the one provided does not exist.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -69,9 +69,9 @@ Operator to create a directory in the provided path.
 </figure>
 
 Operator to create a temporary directory in the provided path.
-     If no path is provided it will use the default temp directory.
-    
-    
+ If no path is provided it will use the default temp directory.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -96,9 +96,9 @@ Operator to create a temporary directory in the provided path.
 </figure>
 
 Filter a list of files using either Python regular expressions format or a shell style matching.
-    By turning the onlyBasename option on, the filter will only filter by the basename of the provided files.
-    
-    
+By turning the onlyBasename option on, the filter will only filter by the basename of the provided files.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -123,9 +123,9 @@ Filter a list of files using either Python regular expressions format or a shell
 </figure>
 
 Operator to get the current working directory path.
-    Optionally one can specify to get the absolute or the relative path.
-    
-    
+Optionally one can specify to get the absolute or the relative path.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -147,9 +147,9 @@ Operator to get the current working directory path.
 </figure>
 
 Operator to get the value of the environment variable provided.
-    If the variable does not exist, the node returns None.
-    
-    
+If the variable does not exist, the node returns None.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -171,8 +171,8 @@ Operator to get the value of the environment variable provided.
 </figure>
 
 Operator to get the content stored in the sys.path variable. Returns a list of strings.
-    
-    
+
+
 
 #### Outputs
 | Name | Type | Default |
@@ -189,8 +189,8 @@ Operator to get the content stored in the sys.path variable. Returns a list of s
 </figure>
 
 Operator to join the two given paths.
-    
-    
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -213,9 +213,9 @@ Operator to join the two given paths.
 </figure>
 
 Operator to list all content inside a given directory path. 
-    If requested full paths, it updates the paths to include the directory.
-    
-    
+If requested full paths, it updates the paths to include the directory.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -238,9 +238,9 @@ Operator to list all content inside a given directory path.
 </figure>
 
 Operator that gets the absolute path of the provided path.
-    Optionally one can specify the base directory to the absolute path, by default it is absolute to the current working directory.
-    
-    
+Optionally one can specify the base directory to the absolute path, by default it is absolute to the current working directory.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -263,11 +263,11 @@ Operator that gets the absolute path of the provided path.
 </figure>
 
 Operator that gets the relative path of the provided path.
-    Optionally one can specify the base directory to the relative path, by default it is relative to the current working directory.
-    The provided path has to be an absolute path, if not then it will raise an error.
-    The path and the base directory have to belong to the same mounted disk in the system.
-    
-    
+Optionally one can specify the base directory to the relative path, by default it is relative to the current working directory.
+The provided path has to be an absolute path, if not then it will raise an error.
+The path and the base directory have to belong to the same mounted disk in the system.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -290,12 +290,12 @@ Operator that gets the relative path of the provided path.
 </figure>
 
 Operator to move a given list of files to a target directory.
-    By turning on the preserveMetadata option one can choose to also preserve the file's metadata.
-    Optionally one can specify to create the target directory if the one provided does not exist.
-    If the skipOnError option is on, the moving process will continue and will show a warning if an error occurs. If it's off it will stop the moving process and raise an error. 
-    If the overwrite option is on, the moving process will overwrite the existing files and will show a warning message. If it's off it will ignore the existing files.
-    
-    
+By turning on the preserveMetadata option one can choose to also preserve the file's metadata.
+Optionally one can specify to create the target directory if the one provided does not exist.
+If the skipOnError option is on, the moving process will continue and will show a warning if an error occurs. If it's off it will stop the moving process and raise an error. 
+If the overwrite option is on, the moving process will overwrite the existing files and will show a warning message. If it's off it will ignore the existing files.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -322,10 +322,10 @@ Operator to move a given list of files to a target directory.
 </figure>
 
 Operator to read the content from a given file.
-    Optionally the reading mode can be modified. By default it is on reading mode.
-    The default encoding is utf-8, this can be updated by changing the encoding option.
-    
-    
+Optionally the reading mode can be modified. By default it is on reading mode.
+The default encoding is utf-8, this can be updated by changing the encoding option.
+
+
 
 #### Inputs
 | Name | Type | Default | Options
@@ -349,11 +349,11 @@ Operator to read the content from a given file.
 </figure>
 
 Operator used to read the content from a given file line by line.
-    The result is a list of strings where each element of the list represents one line in the file.
-    Optionally the reading mode can be modified to support binary content.
-    The default encoding is utf-8, this can be updated by changing the encoding option.
-    
-    
+The result is a list of strings where each element of the list represents one line in the file.
+Optionally the reading mode can be modified to support binary content.
+The default encoding is utf-8, this can be updated by changing the encoding option.
+
+
 
 #### Inputs
 | Name | Type | Default | Options
@@ -377,9 +377,9 @@ Operator used to read the content from a given file line by line.
 </figure>
 
 Operator to remove the given directory. By default, if the directory is not empty, the operator will raise an error.
-    Optionally one can force the recursive removal of its content by turning on the removeContent option.
-    
-    
+Optionally one can force the recursive removal of its content by turning on the removeContent option.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -396,10 +396,10 @@ Operator to remove the given directory. By default, if the directory is not empt
 </figure>
 
 Operator to rename a given list of filepaths with the new names provided by the newFilenames list.
-    If the option overwrite is on and the name of the new file already exists, then it will be overwritten. Otherwise it will show a warning about the filename being duplicated.
-    If the option skipOnError is on and an error occurs while renaming a file, the execution will continue to the next filepath. Otherwise it will raise an error and stop.
-    
-    
+If the option overwrite is on and the name of the new file already exists, then it will be overwritten. Otherwise it will show a warning about the filename being duplicated.
+If the option skipOnError is on and an error occurs while renaming a file, the execution will continue to the next filepath. Otherwise it will raise an error and stop.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -424,9 +424,9 @@ Operator to rename a given list of filepaths with the new names provided by the 
 </figure>
 
 Operator to set the current working directory to the path specified.
-    If the createPath option is turned on and the path provided does not exist, it will be created.
-    
-    
+If the createPath option is turned on and the path provided does not exist, it will be created.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -449,9 +449,9 @@ Operator to set the current working directory to the path specified.
 </figure>
 
 Operator to set the value of an environment variable.
-    If the environment variable already exists, it will be overwritten.
-    
-    
+If the environment variable already exists, it will be overwritten.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -468,9 +468,9 @@ Operator to set the value of an environment variable.
 </figure>
 
 Operator to set an extension to a given filename.
-    Optionally one can turn on the replaceExtension option if the filepath already has an extension, this will replace it with the provided one.
-    
-    
+Optionally one can turn on the replaceExtension option if the filepath already has an extension, this will replace it with the provided one.
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -494,8 +494,8 @@ Operator to set an extension to a given filename.
 </figure>
 
 Operator to split a given filename into the root filename and the extension.
-    
-    
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -518,8 +518,8 @@ Operator to split a given filename into the root filename and the extension.
 </figure>
 
 Operator that splits the given filepath in two parts: directory contains the last pathname component and basename contains everything leading up to that.
-    
-    
+
+
 
 #### Inputs
 | Name | Type | Default
@@ -542,10 +542,10 @@ Operator that splits the given filepath in two parts: directory contains the las
 </figure>
 
 Operator to write the given content to the provided file.
-    Optionally one can turn on the createFile if the provided file does not exist. Otherwise it will raise an error.
-    Optionally the writing mode can be modified. By default it is on writing mode(w).
-    
-    
+Optionally one can turn on the createFile if the provided file does not exist. Otherwise it will raise an error.
+Optionally the writing mode can be modified. By default it is on writing mode(w).
+
+
 
 #### Inputs
 | Name | Type | Default | Options
@@ -571,11 +571,11 @@ Operator to write the given content to the provided file.
 </figure>
 
 Operator to write the given list of strings to the provided file as individual lines.
-    Optionally one can turn on the createFile if the provided filename does not exist. Otherwise it will raise an error.
-    Optionally the writing mode can be modified. By default it is on overwriting mode.
-    The default encoding is utf-8, this can be updated by changing the encoding option.
-    
-    
+Optionally one can turn on the createFile if the provided filename does not exist. Otherwise it will raise an error.
+Optionally the writing mode can be modified. By default it is on overwriting mode.
+The default encoding is utf-8, this can be updated by changing the encoding option.
+
+
 
 #### Inputs
 | Name | Type | Default | Options

@@ -11,7 +11,7 @@ A catalog to work with standard Python type objects.
 
 Operator used to define a boolean value.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -34,7 +34,7 @@ Operator used to define a boolean value.
 
 Operator used to define a floating point number value.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -57,7 +57,7 @@ Operator used to define a floating point number value.
 
 Operator used to define an integer number value.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -80,7 +80,7 @@ Operator used to define an integer number value.
 
 Operator used to define a string value.
 
-    
+
 
 #### Inputs
 | Name | Type | Default

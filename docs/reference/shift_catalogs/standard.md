@@ -11,10 +11,10 @@ A catalog to work with standard Python operations. It provides logic to perform 
 </figure>
 
 Compares two input objects.
-    The result of the comparison is used to branch the execution stack.
-    Outputs two Boolean values, one (truePlug) set to True if the two values are equal and another (falsePlug) set to True if the two values are different.
+The result of the comparison is used to branch the execution stack.
+Outputs two Boolean values, one (truePlug) set to True if the two values are equal and another (falsePlug) set to True if the two values are different.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -38,11 +38,11 @@ Compares two input objects.
 </figure>
 
 This operator implements a dict object in Python.
-    The operator does not have any input.
-    To modify the content of the dict other operators are used.
-    Outputs an empty dict.
+The operator does not have any input.
+To modify the content of the dict other operators are used.
+Outputs an empty dict.
 
-    
+
 
 #### Outputs
 | Name | Type | Default |
@@ -59,9 +59,9 @@ This operator implements a dict object in Python.
 </figure>
 
 Get values from dictionary given a series of user-defined output plugs as keys.
-    Outputs the value assigned to the specified key (output plug) from the dictionary.
+Outputs the value assigned to the specified key (output plug) from the dictionary.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -79,9 +79,9 @@ Get values from dictionary given a series of user-defined output plugs as keys.
 </figure>
 
 Retrieves the list of keys from a dictionary
-    Outputs the list of dictionary's keys.
+Outputs the list of dictionary's keys.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -103,10 +103,10 @@ Retrieves the list of keys from a dictionary
 </figure>
 
 Sets dictionary values by keys defined by the user as input plugs.
-    The name of the plug relates to the name of the key to be set.
-    Outputs the dictionary after the new values are set.
+The name of the plug relates to the name of the key to be set.
+Outputs the dictionary after the new values are set.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -130,9 +130,9 @@ Sets dictionary values by keys defined by the user as input plugs.
 </figure>
 
 Sets dictionary value of a key defined by the user.
-    Outputs the dictionary after the new value is set to the provided key.
+Outputs the dictionary after the new value is set to the provided key.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -156,11 +156,11 @@ Sets dictionary value of a key defined by the user.
 </figure>
 
 Implements a for loop in Shift.
-    This works by generating multiple execution stack, each using a value from an iterable as inputs.
-    Each execution stack uses one value from the iterable as if it was effectively iterating over the input values.
-    Outputs the iterated value from the input iterable.
+This works by generating multiple execution stack, each using a value from an iterable as inputs.
+Each execution stack uses one value from the iterable as if it was effectively iterating over the input values.
+Outputs the iterated value from the input iterable.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -182,10 +182,10 @@ Implements a for loop in Shift.
 </figure>
 
 Defined the end of a for loop in Shift.
-    This specific node is found by the graph evaluator to stop the iterative expansion fo the graph.
-    This operator accepts an extensible list of plugs (through) to copy the result of the iterator.
+This specific node is found by the graph evaluator to stop the iterative expansion fo the graph.
+This operator accepts an extensible list of plugs (through) to copy the result of the iterator.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -198,9 +198,9 @@ Defined the end of a for loop in Shift.
 </figure>
 
 Reads data from a JSON file. Optionally one can define its encoding, by default is utf-8.
-    Outputs the read data.
+Outputs the read data.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -223,9 +223,9 @@ Reads data from a JSON file. Optionally one can define its encoding, by default 
 </figure>
 
 Reads data from a JSON string and deserializes it to a Python object.
-    Outputs the Python object.
+Outputs the Python object.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -247,12 +247,12 @@ Reads data from a JSON string and deserializes it to a Python object.
 </figure>
 
 Writes a Python Dictionary to a JSON file.
-    Optionally one can select the encoding for the write mode. By default it is utf-8.
-    Optionally one can also select the createFile option, if the file does not exist this will create it. Otherwise it will raise an error.
-    The write mode can be selected between Overwrite or Extend.
-    Outputs the filepath for the JSON file.
+Optionally one can select the encoding for the write mode. By default it is utf-8.
+Optionally one can also select the createFile option, if the file does not exist this will create it. Otherwise it will raise an error.
+The write mode can be selected between Overwrite or Extend.
+Outputs the filepath for the JSON file.
 
-    
+
 
 #### Inputs
 | Name | Type | Default | Options
@@ -278,9 +278,9 @@ Writes a Python Dictionary to a JSON file.
 </figure>
 
 Reads data from a Python Dictionary and serializes it to a JSON string.
-    Outputs the converted data.
+Outputs the converted data.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -302,11 +302,11 @@ Reads data from a Python Dictionary and serializes it to a JSON string.
 </figure>
 
 This operator implements a list of Python objects.
-    The operator does not have any input.
-    To modify the content of the list other operators are used.
-    Outputs and empty list.
+The operator does not have any input.
+To modify the content of the list other operators are used.
+Outputs and empty list.
 
-    
+
 
 #### Outputs
 | Name | Type | Default |
@@ -323,10 +323,10 @@ This operator implements a list of Python objects.
 </figure>
 
 Operator to accumulate an element to a List (based on ListAppend but using kInstance).
-    The elements to be added are defined by user-defined input plugs added to the operator.
-    Outputs the list instance (equal to the input list).
+The elements to be added are defined by user-defined input plugs added to the operator.
+Outputs the list instance (equal to the input list).
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -350,10 +350,10 @@ Operator to accumulate an element to a List (based on ListAppend but using kInst
 </figure>
 
 Operator to append an element to a List.
-    The elements to be added are defined by user-defined input plugs added to the operator.
-    Outputs the resulting list as a new list instance (does not alter the input list).
+The elements to be added are defined by user-defined input plugs added to the operator.
+Outputs the resulting list as a new list instance (does not alter the input list).
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -377,10 +377,10 @@ Operator to append an element to a List.
 </figure>
 
 Extends an input list adding another list to it.
-    It allows selecting whether the input list is mutated or is left immutable.
-    Outputs the list resulting from the addition of the two input lists.
+It allows selecting whether the input list is mutated or is left immutable.
+Outputs the list resulting from the addition of the two input lists.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -405,9 +405,9 @@ Extends an input list adding another list to it.
 </figure>
 
 Retrieves the list's element at a given index.
-    Outputs the Python object at the given index in the list.
+Outputs the Python object at the given index in the list.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -430,8 +430,8 @@ Retrieves the list's element at a given index.
 </figure>
 
 Operator that inserts an item into the given list at the given index.
-    Outputs the updated list.
-    
+Outputs the updated list.
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -453,7 +453,7 @@ Operator that inserts an item into the given list at the given index.
 
 Gets the length of the provided list.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -477,9 +477,9 @@ Gets the length of the provided list.
 </figure>
 
 Pops the item placed in the provided index from the provided list.
-    Outputs the list updated and the item.
+Outputs the list updated and the item.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -505,10 +505,10 @@ Pops the item placed in the provided index from the provided list.
 </figure>
 
 Removes an item from the provided list.
-    Optionally one can choose to remove the provided item recursively if there is more than 1 occurrence in the list.
-    Outputs the list with the item removed.
+Optionally one can choose to remove the provided item recursively if there is more than 1 occurrence in the list.
+Outputs the list with the item removed.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -535,7 +535,7 @@ Removes an item from the provided list.
 
 Reverse the items of a list and output the reversed list.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -559,10 +559,10 @@ Reverse the items of a list and output the reversed list.
 </figure>
 
 Sorts the items in the given list. 
-    Optionally one can turn on the reverse option to get the list sorted in reversed.
-    Outputs the sorted list.
+Optionally one can turn on the reverse option to get the list sorted in reversed.
+Outputs the sorted list.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -587,9 +587,9 @@ Sorts the items in the given list.
 </figure>
 
 Operator for printing out messages.
-    Outputs the same message that was printed.
+Outputs the same message that was printed.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -612,10 +612,10 @@ Operator for printing out messages.
 </figure>
 
 Executes a scripted Python code.
-    The node accepts any custom object as input.
-    Outputs the result of the script if the 'output' variable is explicitly set in the code.
+The node accepts any custom object as input.
+Outputs the result of the script if the 'output' variable is explicitly set in the code.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -662,12 +662,12 @@ Operator to compile a regex expression.
 </figure>
 
 Operator to find a match given a regular expression pattern.
-    The pattern input can be a compiled pattern or an expression in string format.
-    The value input is the string in which the match has to be found.
-    The match output plug stores the match object returned by Regex or None if the pattern is not found.
-    The found output plug is a boolean signaling whether the search was successful or not
+The pattern input can be a compiled pattern or an expression in string format.
+The value input is the string in which the match has to be found.
+The match output plug stores the match object returned by Regex or None if the pattern is not found.
+The found output plug is a boolean signaling whether the search was successful or not
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -692,9 +692,9 @@ Operator to find a match given a regular expression pattern.
 </figure>
 
 Operator to get all the groups from a Match object.
-    Set the createPlugs input to True to create one plug for each group found in the match object automatically.
+Set the createPlugs input to True to create one plug for each group found in the match object automatically.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -714,12 +714,12 @@ Operator to get all the groups from a Match object.
 </figure>
 
 Operator to perform a search using a regular expression pattern.
-    The pattern input can be a compiled pattern or an expression in string format.
-    The value input is the string in which the search have to be executed.
-    The match output plug stores the match object returned by Regex or None if the pattern is not found.
-    The found output plug is a boolean signaling whether the search was successful or not
+The pattern input can be a compiled pattern or an expression in string format.
+The value input is the string in which the search have to be executed.
+The match output plug stores the match object returned by Regex or None if the pattern is not found.
+The found output plug is a boolean signaling whether the search was successful or not
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -744,10 +744,10 @@ Operator to perform a search using a regular expression pattern.
 </figure>
 
 Operator to substitute pattern matches in the value string with a given replace string.
-    The replace input is the value to replace for each match with the given pattern.
-    The count plug controls the number of matches to substitute. The default value of 0 will substitute all matches.
+The replace input is the value to replace for each match with the given pattern.
+The count plug controls the number of matches to substitute. The default value of 0 will substitute all matches.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -773,7 +773,7 @@ Operator to substitute pattern matches in the value string with a given replace 
 
 Operator that puts the current thread execution to sleep for a given number of seconds.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -789,12 +789,12 @@ Operator that puts the current thread execution to sleep for a given number of s
 </figure>
 
 Operator to concatenate the provided strings.
-    The operator provides the user with two standard string plugs to concatenate.
-    If the operator needs to concatenate more than 2 strings, custom string plugs can be added as needed.
-    Optionally the resulting string can have a separator between each provided string. By default it is an emtpy string.
-    Outputs the resulting string.
+The operator provides the user with two standard string plugs to concatenate.
+If the operator needs to concatenate more than 2 strings, custom string plugs can be added as needed.
+Optionally the resulting string can have a separator between each provided string. By default it is an emtpy string.
+Outputs the resulting string.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -820,10 +820,10 @@ Operator to concatenate the provided strings.
 </figure>
 
 Formats the given template string by using the arguments provided.
-    Two types of arguments can be specified, positional (list) or named (dict).
-    Outputs the formatted string.
+Two types of arguments can be specified, positional (list) or named (dict).
+Outputs the formatted string.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -848,7 +848,7 @@ Formats the given template string by using the arguments provided.
 
 Returns the length of the string passed in.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -870,11 +870,11 @@ Returns the length of the string passed in.
 </figure>
 
 Operator that splits the given string into substrings.
-    One can select the delimiter to the substrings, by default the delimiter is a whitespace.
-    One can also select the maximum splits to be applied, by default the value is -1 which means unlimited splits.
-    Ouputs a list containing all the substrings.
+One can select the delimiter to the substrings, by default the delimiter is a whitespace.
+One can also select the maximum splits to be applied, by default the value is -1 which means unlimited splits.
+Ouputs a list containing all the substrings.
 
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -899,10 +899,10 @@ Operator that splits the given string into substrings.
 </figure>
 
 Executes a scripted Python code.
-    The node accepts a Python Object (can even be a list or a dictionary) as input.
-    Outputs the result of the script if the 'output' variable is explicitly set in the code.
+The node accepts a Python Object (can even be a list or a dictionary) as input.
+Outputs the result of the script if the 'output' variable is explicitly set in the code.
 
-    
+
 
 #### Inputs
 | Name | Type | Default

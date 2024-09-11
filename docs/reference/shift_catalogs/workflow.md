@@ -11,7 +11,7 @@ A catalog to manage and nest Shift workflows. It includes operators to input and
 
 Operator for external input. To define external data, this operator requires the user to create out plugs for it.
 
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -23,9 +23,9 @@ Operator for external input. To define external data, this operator requires the
 	<figcaption></figcaption>
 </figure>
 
-Operator for external output. To define the data to send out, this operator requires the user to create in plugs for it.
+Operator for external output. To define the data to send out,
+this operator requires the user to create in plugs for it.
 
-    
 <i>Allows creation of custom plugs.</i>
 
 
@@ -39,7 +39,7 @@ Operator for external output. To define the data to send out, this operator requ
 
 Operator for to manage workflow variables.
 Input plugs will set variables values, while output plugs get variables values.
-    
+
 <i>Allows creation of custom plugs.</i>
 
 
@@ -53,7 +53,7 @@ Input plugs will set variables values, while output plugs get variables values.
 
 The workflow operator defines and executes an external Shift workflow.
 The operator expands its plugs dynamically to enable access to its input and output data.
-    
+
 
 #### Inputs
 | Name | Type | Default
@@ -70,7 +70,7 @@ The operator expands its plugs dynamically to enable access to its input and out
 
 The workflow operator defines and executes an external shift workflow.
 The operator expands its plugs dynamically to enable access to its input and output data.
-    
+
 
 #### Inputs
 | Name | Type | Default | Options
