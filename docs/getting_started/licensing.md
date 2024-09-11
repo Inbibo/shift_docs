@@ -1,7 +1,7 @@
 # Licensing
 
 Shift requires a successful license activation for commercial use. For non-commercial and testing purposes a trial period of 30 days can be requested.
-In this page the different licensing components of Shift will be explained in combination with the requirements and steps for activating the product.
+On this page, the different licensing components of Shift will be explained in combination with the requirements and steps for activating the product.
 
 Currently, Shift supports only one *Licensing Mode*:
 
@@ -9,8 +9,8 @@ Currently, Shift supports only one *Licensing Mode*:
 
 Shift also distinguishes between two *Licensing Types*:
 
-- **Interactive:** License type that allows the user to use Shift from the graphical interface in standalone or within another compatible software. This licensing type is intended for users that will develop workflows and interact with Shift's node-based features and interface to create their automatization processes. 
-- **Batch:** License type that allows the user to run Shift from a batch script or terminal without the ability to use the graphical interface for manipulating workflows. This licensing type is intended for users that want to run Shift from a terminal or integrate a Shift workflow execution in their custom Python script.
+- **Interactive:** License type that allows the user to use Shift from the graphical interface in standalone or within another compatible software. This licensing type is intended for users who will develop workflows and interact with Shift's node-based features and interface to create their automatization processes. 
+- **Batch:** License type that allows the user to run Shift from a batch script or terminal without the ability to use the graphical interface for manipulating workflows. This licensing type is intended for users who want to run Shift from a terminal or integrate a Shift workflow execution in their custom Python script.
 
 To be able to activate Shift it is required to purchase a `PRODUCT KEY`. Product keys can be purchased through Inbibo's official [website](https://inbibo.co.uk/shift#prices). Shift product keys have the following characteristics:
 
@@ -28,17 +28,17 @@ Whenever activating Shift for the first time, a dialog will be prompted requesti
 To activate Shift in Node-Locked Interactive mode:
 
   1. Launch Shift by clicking on the *shift.bat* file in Shift's installation folder.
-  2. A dialog will show up where to enter a valid `PRODUCT KEY` in order to enable the full license; or to continue with the 30 day trial period.
+  2. A dialog will show up where to enter a valid `PRODUCT KEY` to enable the full license; or to continue with the 30 day trial period.
 
 <figure>
       <img src="images/license_activation_dialog.png" alt="Shift License Activation Dialog">
       <figcaption><b>Figure 1</b>: Shift's product key activation window.</figcaption>
 </figure>
 
-  3. On the text box, enter the `PRODUCT KEY` associated to your Interactive Node-Locked License.
+  3. On the text box, enter the `PRODUCT KEY` associated with the acquired Interactive Node-Locked License.
   4. Click on *Activate* on the bottom left corner.
 
-If the product key is invalid or connecting with the licensing servers failed, an error will be raised indicating that Shift couldn't be activated. Otherwise, Shift will be open, meaning that the license was activated successfully.
+If the product key is invalid or connecting with the licensing servers fails, an error will be raised indicating that Shift couldn't be activated. Otherwise, Shift will be open, meaning that the license was activated successfully.
 
 <figure>
       <img src="images/license_failed_activation.png" alt="Shift Failed Activation Dialog">
@@ -71,5 +71,5 @@ Trial licenses are intended for testing and non-commercial purposes. To use Shif
 
 
 > [!NOTE]
-> This activation mode requires access to the internet.
+> - This activation mode requires access to the internet.
 
