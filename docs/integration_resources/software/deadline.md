@@ -11,7 +11,8 @@ This guide explains how to set up the Shift plugin for Deadline. The setup proce
 
 - Access to the Deadline repository.
 - Administrative rights to create directories and modify settings in the Deadline Monitor.
-- The Shift software installed.
+- The Shift software installed and activated.
+
 
 ## Step 1: Create the Plugin Folder
 
