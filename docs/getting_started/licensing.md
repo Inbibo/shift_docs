@@ -27,18 +27,23 @@ Whenever activating Shift for the first time, a dialog will be prompted requesti
 
 To activate Shift in Node-Locked Interactive mode:
 
-  1. Launch Shift by clicking on the shift.bat file in Shift's installation folder.
+  1. Launch Shift by clicking on the *shift.bat* file in Shift's installation folder.
   2. A dialog will show up where to enter a valid `PRODUCT KEY` in order to enable the full license; or to continue with the 30 day trial period.
 
 <figure>
       <img src="images/license_activation_dialog.png" alt="Shift License Activation Dialog">
-      <figcaption><b>Figure 1</b>: Activation Dialog.</figcaption>
+      <figcaption><b>Figure 1</b>: Shift's product key activation window.</figcaption>
 </figure>
 
   3. On the text box, enter the `PRODUCT KEY` associated to your Interactive Node-Locked License.
   4. Click on *Activate* on the bottom left corner.
 
 If the product key is invalid or connecting with the licensing servers failed, an error will be raised indicating that Shift couldn't be activated. Otherwise, Shift will be open, meaning that the license was activated successfully.
+
+<figure>
+      <img src="images/license_failed_activation.png" alt="Shift Failed Activation Dialog">
+      <figcaption><b>Figure 2</b>: Key activation error.</figcaption>
+</figure>
 
 > [!NOTE]
 > - This activation mode requires access to the internet for activating licenses.
