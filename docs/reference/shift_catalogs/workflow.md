@@ -1,6 +1,7 @@
 # workflow
 A catalog to manage and nest Shift workflows. It includes operators to input and output data, store variables and execute sub-workflows.
 
+---
 ## Input
 
 <figure style="width: 30%">
@@ -18,6 +19,7 @@ Operator for external input. To define external data, this operator requires the
 <i>Allows creation of custom plugs.</i>
 
 
+---
 ## Output
 
 <figure style="width: 30%">
@@ -36,6 +38,7 @@ Operator for external output. To define the data to send out,
 <i>Allows creation of custom plugs.</i>
 
 
+---
 ## Variable
 
 <figure style="width: 30%">
@@ -52,6 +55,7 @@ Operator for to manage workflow variables.
 <i>Allows creation of custom plugs.</i>
 
 
+---
 ## Workflow
 
 <figure style="width: 30%">
@@ -73,6 +77,7 @@ The workflow operator defines and executes an external Shift workflow.
 | --- | --- | --- |
 | file | FileIn | 
 
+---
 ## WorkflowProcess
 
 <figure style="width: 30%">

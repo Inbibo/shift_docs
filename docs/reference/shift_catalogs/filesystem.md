@@ -1,6 +1,7 @@
 # fileSystem
 A catalog to work with the OS filesystem and environment variables. It includes operators to perform file & directory creation and manipulation and more.
 
+---
 ## CopyFiles
 
 <figure style="width: 30%">
@@ -32,6 +33,7 @@ Operator to copy a given list of files to a target directory.
 | copiedFiles | List | []
 
 
+---
 ## CreateDirectory
 
 <figure style="width: 30%">
@@ -57,6 +59,7 @@ Operator to create a directory in the provided path.
 | directoryPath | Dir | 
 
 
+---
 ## CreateTempDirectory
 <span style="color: yellow"><i>Beta operator</i></span>
 
@@ -84,6 +87,7 @@ Operator to create a temporary directory in the provided path.
 | directoryPath | Dir | 
 
 
+---
 ## FilterFiles
 
 <figure style="width: 30%">
@@ -110,6 +114,7 @@ Filter a list of files using either Python regular expressions format or a shell
 | filteredFiles | List | []
 
 
+---
 ## GetCurrentDirectory
 
 <figure style="width: 30%">
@@ -133,6 +138,7 @@ Operator to get the current working directory path.
 | directoryPath | Dir | 
 
 
+---
 ## GetEnvironmentVariable
 
 <figure style="width: 30%">
@@ -156,6 +162,7 @@ Operator to get the value of the environment variable provided.
 | value | String | ""
 
 
+---
 ## GetPythonSysPath
 
 <figure style="width: 30%">
@@ -173,6 +180,7 @@ Operator to get the content stored in the sys.path variable. Returns a list of s
 | pythonSysPath | List | []
 
 
+---
 ## JoinPath
 
 <figure style="width: 30%">
@@ -196,6 +204,7 @@ Operator to join the two given paths.
 | resultPath | String | ""
 
 
+---
 ## ListDirectory
 
 <figure style="width: 30%">
@@ -220,6 +229,7 @@ Operator to list all content inside a given directory path.
 | content | List | []
 
 
+---
 ## MakeAbsolutePath
 
 <figure style="width: 30%">
@@ -244,6 +254,7 @@ Operator that gets the absolute path of the provided path.
 | absolutePath | Dir | 
 
 
+---
 ## MakeRelativePath
 
 <figure style="width: 30%">
@@ -270,6 +281,7 @@ Operator that gets the relative path of the provided path.
 | relativePath | String | ""
 
 
+---
 ## MoveFiles
 
 <figure style="width: 30%">
@@ -301,6 +313,7 @@ Operator to move a given list of files to a target directory.
 | movedFilepaths | List | []
 
 
+---
 ## ReadFile
 
 <figure style="width: 30%">
@@ -327,6 +340,7 @@ Operator to read the content from a given file.
 | fileContent | String | ""
 
 
+---
 ## ReadFileLines
 
 <figure style="width: 30%">
@@ -354,6 +368,7 @@ Operator used to read the content from a given file line by line.
 | fileLines | List | []
 
 
+---
 ## RemoveDirectory
 
 <figure style="width: 30%">
@@ -372,6 +387,7 @@ Operator to remove the given directory. By default, if the directory is not empt
 | directoryPath | Dir | 
 | removeContent | Bool | False
 
+---
 ## RenameFiles
 
 <figure style="width: 30%">
@@ -399,6 +415,7 @@ Operator to rename a given list of filepaths with the new names provided by the 
 | outFiles | List | []
 
 
+---
 ## SetCurrentDirectory
 
 <figure style="width: 30%">
@@ -423,6 +440,7 @@ Operator to set the current working directory to the path specified.
 | currentDirectory | Dir | 
 
 
+---
 ## SetEnvironmentVariable
 
 <figure style="width: 30%">
@@ -441,6 +459,7 @@ Operator to set the value of an environment variable.
 | name | String | ""
 | value | String | ""
 
+---
 ## SetFileExtension
 
 <figure style="width: 30%">
@@ -466,6 +485,7 @@ Operator to set an extension to a given filename.
 | newFilepath | String | ""
 
 
+---
 ## SplitFileExtension
 
 <figure style="width: 30%">
@@ -489,6 +509,7 @@ Operator to split a given filename into the root filename and the extension.
 | extension | String | ""
 
 
+---
 ## SplitFilePath
 
 <figure style="width: 30%">
@@ -512,6 +533,7 @@ Operator that splits the given filepath in two parts: directory contains the las
 | basename | String | ""
 
 
+---
 ## WriteFile
 
 <figure style="width: 30%">
@@ -540,6 +562,7 @@ Operator to write the given content to the provided file.
 | writtenFile | FileOut | 
 
 
+---
 ## WriteFileLines
 
 <figure style="width: 30%">

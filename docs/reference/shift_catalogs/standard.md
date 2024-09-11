@@ -1,6 +1,7 @@
 # standard
-A catalog to work with standard Python operations. It provides logic to perform loop iterations and create scriptable Python nodes. It also includes operators to read/write JSON files, operate with lists, strings, dictionaries and more.
+A catalog to work with standard Python operations. It provides logic to perform loop iterations and create scriptable Python nodes. It also includes operators to read/write JSON files, operate with lists, strings, dictionaries, regular expressions and more.
 
+---
 ## ConditionEquals
 <span style="color: yellow"><i>Beta operator</i></span>
 
@@ -28,6 +29,7 @@ Compares two input objects.
 | false | Bool | False
 
 
+---
 ## Dict
 
 <figure style="width: 30%">
@@ -48,6 +50,7 @@ This operator implements a dict object in Python.
 | dict | Dict | {}
 
 
+---
 ## DictGet
 
 <figure style="width: 30%">
@@ -67,6 +70,7 @@ Get values from dictionary given a series of user-defined output plugs as keys.
 | --- | --- | --- |
 | dict | Dict | {}
 
+---
 ## DictKeys
 
 <figure style="width: 30%">
@@ -90,6 +94,7 @@ Retrieves the list of keys from a dictionary
 | keys | List | []
 
 
+---
 ## DictSet
 
 <figure style="width: 30%">
@@ -116,6 +121,7 @@ Sets dictionary values by keys defined by the user as input plugs.
 | dict | Dict | {}
 
 
+---
 ## DictSetKey
 
 <figure style="width: 30%">
@@ -141,6 +147,7 @@ Sets dictionary value of a key defined by the user.
 | dict | Dict | {}
 
 
+---
 ## Iterator
 
 <figure style="width: 30%">
@@ -149,23 +156,24 @@ Sets dictionary value of a key defined by the user.
 </figure>
 
 Implements a for loop in Shift.
-    This works by generating multiple execution stack, each using a value from a list as inputs.
-    Each execution stack uses one value from the list as if it was effectively iterating over the input values list.
-    Outputs the iterated value from the input list.
+    This works by generating multiple execution stack, each using a value from an iterable as inputs.
+    Each execution stack uses one value from the iterable as if it was effectively iterating over the input values.
+    Outputs the iterated value from the input iterable.
 
     
 
 #### Inputs
 | Name | Type | Default
 | --- | --- | --- |
-| inValues | List | []
+| inValues | Instance | None
 
 #### Outputs
 | Name | Type | Default |
 | --- | --- | --- |
-| outValue | Object | None
+| outValue | Instance | None
 
 
+---
 ## IteratorEnd
 
 <figure style="width: 30%">
@@ -181,6 +189,7 @@ Defined the end of a for loop in Shift.
 <i>Allows creation of custom plugs.</i>
 
 
+---
 ## JsonRead
 
 <figure style="width: 30%">
@@ -205,6 +214,7 @@ Reads data from a JSON file. Optionally one can define its encoding, by default 
 | data | Dict | {}
 
 
+---
 ## JsonStringRead
 
 <figure style="width: 30%">
@@ -228,6 +238,7 @@ Reads data from a JSON string and deserializes it to a Python object.
 | content | Object | None
 
 
+---
 ## JsonWrite
 
 <figure style="width: 30%">
@@ -258,6 +269,7 @@ Writes a Python Dictionary to a JSON file.
 | filepath | String | ""
 
 
+---
 ## JsonWriteString
 
 <figure style="width: 30%">
@@ -281,6 +293,7 @@ Reads data from a Python Dictionary and serializes it to a JSON string.
 | jsonString | String | ""
 
 
+---
 ## List
 
 <figure style="width: 30%">
@@ -301,6 +314,7 @@ This operator implements a list of Python objects.
 | list | List | []
 
 
+---
 ## ListAccumulator
 
 <figure style="width: 30%">
@@ -327,6 +341,7 @@ Operator to accumulate an element to a List (based on ListAppend but using kInst
 | outList | List | []
 
 
+---
 ## ListAppend
 
 <figure style="width: 30%">
@@ -353,6 +368,7 @@ Operator to append an element to a List.
 | outList | List | []
 
 
+---
 ## ListExtend
 
 <figure style="width: 30%">
@@ -380,6 +396,7 @@ Extends an input list adding another list to it.
 | outList | List | []
 
 
+---
 ## ListGet
 
 <figure style="width: 30%">
@@ -395,15 +412,16 @@ Retrieves the list's element at a given index.
 #### Inputs
 | Name | Type | Default
 | --- | --- | --- |
-| list | List | []
+| list | Instance | None
 | index | Int | 0
 
 #### Outputs
 | Name | Type | Default |
 | --- | --- | --- |
-| outValue | Object | None
+| outValue | Instance | None
 
 
+---
 ## ListInsert
 
 <figure style="width: 30%">
@@ -425,6 +443,7 @@ Operator that inserts an item into the given list at the given index.
 | index | Int | 0
 | outList | List | []
 
+---
 ## ListLength
 
 <figure style="width: 30%">
@@ -449,6 +468,7 @@ Gets the length of the provided list.
 | length | Int | 0
 
 
+---
 ## ListPop
 
 <figure style="width: 30%">
@@ -476,6 +496,7 @@ Pops the item placed in the provided index from the provided list.
 | item | Object | None
 
 
+---
 ## ListRemove
 
 <figure style="width: 30%">
@@ -504,6 +525,7 @@ Removes an item from the provided list.
 | outList | List | []
 
 
+---
 ## ListReverse
 
 <figure style="width: 30%">
@@ -528,6 +550,7 @@ Reverse the items of a list and output the reversed list.
 | outList | List | []
 
 
+---
 ## ListSort
 
 <figure style="width: 30%">
@@ -555,6 +578,7 @@ Sorts the items in the given list.
 | outList | List | []
 
 
+---
 ## Print
 
 <figure style="width: 30%">
@@ -579,6 +603,7 @@ Operator for printing out messages.
 | output | String | ""
 
 
+---
 ## PythonScript
 
 <figure style="width: 30%">
@@ -605,6 +630,140 @@ Executes a scripted Python code.
 | output | Object | None
 
 
+---
+## RegexCompile
+<span style="color: yellow"><i>Beta operator</i></span>
+
+<figure style="width: 30%">
+	<img src="images/RegexCompile.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Operator to compile a regex expression.
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| expression | String | ""
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| pattern | Instance | None
+
+
+---
+## RegexMatch
+<span style="color: yellow"><i>Beta operator</i></span>
+
+<figure style="width: 30%">
+	<img src="images/RegexMatch.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Operator to find a match given a regular expression pattern.
+    The pattern input can be a compiled pattern or an expression in string format.
+    The value input is the string in which the match has to be found.
+    The match output plug stores the match object returned by Regex or None if the pattern is not found.
+    The found output plug is a boolean signaling whether the search was successful or not
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| pattern | Instance | None
+| value | String | ""
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| match | Instance | None
+| found | Bool | False
+
+
+---
+## RegexMatchGroups
+<span style="color: yellow"><i>Beta operator</i></span>
+
+<figure style="width: 30%">
+	<img src="images/RegexMatchGroups.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Operator to get all the groups from a Match object.
+    Set the createPlugs input to True to create one plug for each group found in the match object automatically.
+
+    
+<i>Allows creation of custom plugs.</i>
+
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| match | Instance | None
+| createPlugs | Bool | False
+
+---
+## RegexSearch
+<span style="color: yellow"><i>Beta operator</i></span>
+
+<figure style="width: 30%">
+	<img src="images/RegexSearch.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Operator to perform a search using a regular expression pattern.
+    The pattern input can be a compiled pattern or an expression in string format.
+    The value input is the string in which the search have to be executed.
+    The match output plug stores the match object returned by Regex or None if the pattern is not found.
+    The found output plug is a boolean signaling whether the search was successful or not
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| pattern | Instance | None
+| value | String | ""
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| match | Instance | None
+| found | Bool | False
+
+
+---
+## RegexSubstitute
+<span style="color: yellow"><i>Beta operator</i></span>
+
+<figure style="width: 30%">
+	<img src="images/RegexSubstitute.png" alt="Node UI">
+	<figcaption></figcaption>
+</figure>
+
+Operator to substitute pattern matches in the value string with a given replace string.
+    The replace input is the value to replace for each match with the given pattern.
+    The count plug controls the number of matches to substitute. The default value of 0 will substitute all matches.
+
+    
+
+#### Inputs
+| Name | Type | Default
+| --- | --- | --- |
+| pattern | Instance | None
+| value | String | ""
+| replace | String | ""
+| count | Int | 0
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| newValue | Instance | None
+
+
+---
 ## Sleep
 
 <figure style="width: 30%">
@@ -621,6 +780,7 @@ Operator that puts the current thread execution to sleep for a given number of s
 | --- | --- | --- |
 | seconds | Float | 0.0
 
+---
 ## StringConcatenate
 
 <figure style="width: 30%">
@@ -651,6 +811,7 @@ Operator to concatenate the provided strings.
 | outString | String | ""
 
 
+---
 ## StringFormat
 
 <figure style="width: 30%">
@@ -677,6 +838,7 @@ Formats the given template string by using the arguments provided.
 | outString | String | ""
 
 
+---
 ## StringLength
 
 <figure style="width: 30%">
@@ -699,6 +861,7 @@ Returns the length of the string passed in.
 | length | Int | 0
 
 
+---
 ## StringSplit
 
 <figure style="width: 30%">
@@ -726,6 +889,7 @@ Operator that splits the given string into substrings.
 | substrings | List | []
 
 
+---
 ## PythonExecute
 <span style="color: red"><i>Deprecated operator</i></span>
 
