@@ -46,7 +46,7 @@ If the product key is invalid or connecting with the licensing servers failed, a
 
 ### Batch
 
-Whenever activating Shift for the first time in batch mode, a product key has to be registered previously. Activating batch mode requires the use of an executable that eases the activation process of the product.
+To activate a Shift Batch license it is required to execute the provided Python script and enter the acquired product key. 
 
 To activate Shift in Node-Locked Batch mode: 
 
