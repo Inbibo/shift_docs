@@ -1,6 +1,7 @@
 # Deadline
 
-Shift integration in Deadline is in the works. The Shift plugin for Deadline is currently only available on Windows and supports execution of Shift workflows in batch mode or within Maya.
+Shift integration in Deadline is in the works. The Shift plugin for Deadline is currently only available on Windows and supports the execution of Shift workflows in batch mode or within Maya.
+
 
 # Shift Plugin for Deadline Renderfarm
 
