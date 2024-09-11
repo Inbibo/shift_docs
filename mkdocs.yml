@@ -120,9 +120,10 @@ nav:
       - reference/catalogs.md
       - Shift Catalogs:
         - Constants:            reference/shift_catalogs/constants.md
-        - Standard:             reference/shift_catalogs/standard.md  
-        - Workflow:             reference/shift_catalogs/workflow.md
+        - Standard:             reference/shift_catalogs/standard.md
         - FileSystem:           reference/shift_catalogs/filesystem.md
+        - Workflow:             reference/shift_catalogs/workflow.md
+        - CreativeSoftware:     reference/shift_catalogs/creativesoftware.md
     - Plugins:                  reference/plugins.md
     - Notes:                    reference/notes.md
     - Logger:                   reference/logger.md
