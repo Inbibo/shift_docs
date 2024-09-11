@@ -123,7 +123,6 @@ nav:
         - Standard:             reference/shift_catalogs/standard.md  
         - Workflow:             reference/shift_catalogs/workflow.md
         - FileSystem:           reference/shift_catalogs/filesystem.md
-        - Regex:                reference/shift_catalogs/regex.md
     - Plugins:                  reference/plugins.md
     - Notes:                    reference/notes.md
     - Logger:                   reference/logger.md

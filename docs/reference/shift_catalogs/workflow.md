@@ -10,10 +10,6 @@ A catalog to manage and nest Shift workflows. It includes operators to input and
 </figure>
 
 Operator for external input. To define external data, this operator requires the user to create out plugs for it.
-     
-
-    @param code str: code name of the operator.
-    @param parent shift.core.workflow.SWorkflow: the workflow owning the operator.
 
     
 <i>Allows creation of custom plugs.</i>
@@ -27,12 +23,7 @@ Operator for external input. To define external data, this operator requires the
 	<figcaption></figcaption>
 </figure>
 
-Operator for external output. To define the data to send out,
-    this operator requires the user to create in plugs for it.
-     
-
-    @param code str: code name of the operator.
-    @param parent shift.core.workflow.SWorkflow: the workflow owning the operator.
+Operator for external output. To define the data to send out, this operator requires the user to create in plugs for it.
 
     
 <i>Allows creation of custom plugs.</i>
@@ -47,10 +38,7 @@ Operator for external output. To define the data to send out,
 </figure>
 
 Operator for to manage workflow variables.
-    Input plugs will set variables values, while output plugs get variables values.
-     
-    @param code str: code name of the operator.
-    @param parent shift.core.workflow.SWorkflow: the workflow owning the operator.
+Input plugs will set variables values, while output plugs get variables values.
     
 <i>Allows creation of custom plugs.</i>
 
@@ -64,12 +52,7 @@ Operator for to manage workflow variables.
 </figure>
 
 The workflow operator defines and executes an external Shift workflow.
-    The operator expands its plugs dynamically to enable access to its input and output data.
-     
-    
-    @param code str: code name of the operator.
-    @param parent shift.core.workflow.SWorkflow: the workflow owning the operator.
-
+The operator expands its plugs dynamically to enable access to its input and output data.
     
 
 #### Inputs
@@ -86,12 +69,7 @@ The workflow operator defines and executes an external Shift workflow.
 </figure>
 
 The workflow operator defines and executes an external shift workflow.
-    The operator expands its plugs dynamically to enable access to its input and output data.
-     
-
-    @param code str: code name of the operator.
-    @param parent shift.core.workflow.SWorkflow: the workflow owning the operator.
-
+The operator expands its plugs dynamically to enable access to its input and output data.
     
 
 #### Inputs
