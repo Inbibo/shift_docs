@@ -264,7 +264,7 @@ Optionally one can specify the base directory to the absolute path, by default i
 
 Operator that gets the relative path of the provided path.
 Optionally one can specify the base directory to the relative path, by default it is relative to the current working directory.
-The provided path has to be an absolute path, if not then it will raise an error.
+The provided path has to be absolute, if not then it will raise an error.
 The path and the base directory have to belong to the same mounted disk in the system.
 
 
@@ -322,7 +322,7 @@ If the overwrite option is on, the moving process will overwrite the existing fi
 </figure>
 
 Operator to read the content from a given file.
-Optionally the reading mode can be modified. By default it is on reading mode.
+Optionally the reading mode can be modified. By default, it is in reading mode.
 The default encoding is utf-8, this can be updated by changing the encoding option.
 
 
@@ -517,7 +517,7 @@ Operator to split a given filename into the root filename and the extension.
 	<figcaption></figcaption>
 </figure>
 
-Operator that splits the given filepath in two parts: directory contains the last pathname component and basename contains everything leading up to that.
+Operator that splits the given filepath into two parts: directory contains the last pathname component and basename contains everything leading up to that.
 
 
 
@@ -543,7 +543,7 @@ Operator that splits the given filepath in two parts: directory contains the las
 
 Operator to write the given content to the provided file.
 Optionally one can turn on the createFile if the provided file does not exist. Otherwise it will raise an error.
-Optionally the writing mode can be modified. By default it is on writing mode(w).
+Optionally the writing mode can be modified. By default it is in writing mode(w).
 
 
 

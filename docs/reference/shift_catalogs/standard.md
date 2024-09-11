@@ -37,10 +37,10 @@ Outputs two Boolean values, one (truePlug) set to True if the two values are equ
 	<figcaption></figcaption>
 </figure>
 
-This operator implements a dict object in Python.
+This operator implements a dictionary object in Python.
 The operator does not have any input.
-To modify the content of the dict other operators are used.
-Outputs an empty dict.
+To modify the content of the dictionary other operators are used.
+Outputs an empty dictionary.
 
 
 
@@ -58,7 +58,7 @@ Outputs an empty dict.
 	<figcaption></figcaption>
 </figure>
 
-Get values from dictionary given a series of user-defined output plugs as keys.
+Get values from the dictionary given a series of user-defined output plugs as keys.
 Outputs the value assigned to the specified key (output plug) from the dictionary.
 
 
@@ -79,7 +79,7 @@ Outputs the value assigned to the specified key (output plug) from the dictionar
 </figure>
 
 Retrieves the list of keys from a dictionary
-Outputs the list of dictionary's keys.
+Outputs the list of the dictionary's keys.
 
 
 
@@ -156,8 +156,8 @@ Outputs the dictionary after the new value is set to the provided key.
 </figure>
 
 Implements a for loop in Shift.
-This works by generating multiple execution stack, each using a value from an iterable as inputs.
-Each execution stack uses one value from the iterable as if it was effectively iterating over the input values.
+This works by generating multiple execution stacks, each using a value from an iterable as inputs.
+Each execution stack uses one value from the iterable as if it were effectively iterating over the input values.
 Outputs the iterated value from the input iterable.
 
 
@@ -248,7 +248,7 @@ Outputs the Python object.
 
 Writes a Python Dictionary to a JSON file.
 Optionally one can select the encoding for the write mode. By default it is utf-8.
-Optionally one can also select the createFile option, if the file does not exist this will create it. Otherwise it will raise an error.
+Optionally one can also select the createFile option, if the file does not exist this will create it. Otherwise, it will raise an error.
 The write mode can be selected between Overwrite or Extend.
 Outputs the filepath for the JSON file.
 
@@ -791,7 +791,7 @@ Operator that puts the current thread execution to sleep for a given number of s
 Operator to concatenate the provided strings.
 The operator provides the user with two standard string plugs to concatenate.
 If the operator needs to concatenate more than 2 strings, custom string plugs can be added as needed.
-Optionally the resulting string can have a separator between each provided string. By default it is an emtpy string.
+Optionally the resulting string can have a separator between each provided string. By default, it is an empty string.
 Outputs the resulting string.
 
 
@@ -820,7 +820,7 @@ Outputs the resulting string.
 </figure>
 
 Formats the given template string by using the arguments provided.
-Two types of arguments can be specified, positional (list) or named (dict).
+Two types of arguments can be specified, positional (list) or named (dictionary).
 Outputs the formatted string.
 
 
@@ -872,7 +872,7 @@ Returns the length of the string passed in.
 Operator that splits the given string into substrings.
 One can select the delimiter to the substrings, by default the delimiter is a whitespace.
 One can also select the maximum splits to be applied, by default the value is -1 which means unlimited splits.
-Ouputs a list containing all the substrings.
+Outputs a list containing all the substrings.
 
 
 
