@@ -43,11 +43,10 @@ Plugs define the input and output data of the nodes. Data values can be set thro
 | *Code* | Defines a Python code block. This type is used whenever custom scripting is required in a node. A plug of this type displays as an embedded text editor in the inspector. |`String`|
 | *Color* | Defines a color in RGBA. Interacting with a plug of this type opens a color picker dialog.|`List`|
 | *Dict* | Defines a dictionary value.|`Dict`|
-| *Dir* | Defines a directory path. Interacting with a plug of this type opens a directory browser dialog.|`String`|
+| *Dir* | Defines a directory path. Interacting with a plug of this type in the inspector opens a directory browser dialog.|`String`|
 | *Enumerator* | Defines a list of selectable values. It is not possible to create custom Enumerator plugs in a node.|`String`|
-| *FileIn* | Defines an input file. This type is used for open and import operations. Interacting with a plug of this type  in the inspector opens a file browser dialog to select an existing file.|`String`|
-
-| *FileOut* | Defines an output file. This type is used for save and export operations. Interacting with a plug of this type opens a file browser dialog, although it is possible to enter a non-existent file. Selecting an existing file will override the file after the workflow executes. |`String`|
+| *FileIn* | Defines an input file. This type is used for open and import operations. Interacting with a plug of this type in the inspector opens a file browser dialog to select an existing file.|`String`|
+| *FileOut* | Defines an output file. This type is used for save and export operations. Interacting with a plug of this type in the inspector opens a file browser dialog.  If an existing file is selected, it will be replaced after the workflow executes. Alternatively, a non-existent file can be entered to create a new file. |`String`|
 | *Float* | Defines a float value.|`Float`|
 | *Instance* | Defines an object instance. These plugs can be differentiated by their dotted outline.|`Any`|
 | *Int* | Defines a integer value.|`Int`|
