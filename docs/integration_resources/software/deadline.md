@@ -53,7 +53,7 @@ To set environment variables for Shift while running on Deadline, two options ar
 
 ### Option 2: Use a Custom PreLoad Script
 
-A custom Python file can be created to set up environment variables, utilizing the following environment variable:
+A custom Python file can be created to set up environment variables, using the following environment variables:
 
 1. Create a Python file that configures the desired environment variables.
 2. Set the `SHIFT_DEADLINE_PLUGIN_PRELOAD_PATH` environment variable to point to the custom Python file.
