@@ -1,7 +1,7 @@
 # Workflow Authoring
 
 This page is dedicated to explain the most basic steps for creating a Shift workflow. 
-When launching Shift, an new empty board is opened where nodes and connections can be added to start building the workflow.
+When launching Shift, a new empty board is opened where nodes and connections can be added to start building the workflow.
 
 ## Creating a Node
 
@@ -29,7 +29,7 @@ To establish a connection between [plugs](terminology#plug) from different nodes
 Certain nodes in Shift allow the creation of new plugs. To create a new plug, `Right-Click` on the node to open its context menu and select the "*Create New Plug*" option if available. This will open the "*Add Plug*" dialog, which contains all the information fields required to create a custom plug. These are:
 
 - **Name**: The name of the plug. This must be unique among the plugs of the same direction in the same node. For example, if an input plug named *value* already exists in the node, no other input plug can have that name. Allowed plug names follow the same restrictions as variable names in Python.
-- **Type**: The type of the plug. This will determine which data type values are compatible with the plug. More details about plug types are provided [here](../../reference/nodes/#plugs).
+- **Type**: The type of the plug. This will determine which data type values are compatible with the plug. More details about plug types are provided [here](../../reference/nodes#plugs).
 - **Value**: The initial value of the plug on creation.
 - **Default**: The default value of the plug. This is the value the plug will be set to when an invalid value is given or the node errors. If no default value is defined in the dialog, the default value will become the initial value of the plug.
 - **Direction**: The direction of the plug. These can be:
