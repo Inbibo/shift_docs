@@ -17,13 +17,13 @@ The *PythonScript* node allows for any type of custom plugs too. Custom input pl
 
 ### Outputs
 
-- **Output**: This plug of type [Object](../nodes#plugs) outputs the result of the logic executed by the *PythonScript*. To set the result of to this plug, simply equal to `output` (the plug's name) the value to output.
+- **Output**: This plug of type [Object](../nodes#plugs) outputs the result of the logic executed by the *PythonScript*.  Assign the value to output to a variable named `output` (the plug's name).
 
 If outputting several values is needed, new output plugs of any type, including Instance plugs, can be added to the node. All custom outputs can be used the same way as the default output plug to return any data from the Python script execution.
 
 <figure style="width:80%;" markdown>
     <img src="images/sum_python_script.png" alt="Sum Python Script">
-    <figcaption><b>Figure 2</b>: Custom plugs in a python script nodes. Blue indicates input plugs, red, output plugs. </figcaption>
+    <figcaption><b>Figure 2</b>: Custom plugs in a Python script nodes. The blue underline indicates input plugs, and the red, output plugs. </figcaption>
 </figure>
 
 >[!NOTE]
