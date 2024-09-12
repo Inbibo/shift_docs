@@ -4,13 +4,11 @@ Catalogs are libraries of operators that define and extend Shift's capabilities,
 
 Shift comes with six native catalogs that contain the necessary nodes to start building a workflow:
 
-- **Constants catalog**: Provides operators to work with standard Python objects, such as booleans or strings.
-
-- **Standard catalog**: Provides operators to work with standard Python operations. It provides logic to perform [loop iterations](nodes/iterator.md) and create [scriptable Python nodes](nodes/python_script.md). It also includes operators to read/write JSON files, operate with lists, strings, dictionaries and more.
-- **FileSystem catalog**: Provides operators to work with the OS filesystem and environment variables. It includes operators to perform file & directory creation and manipulation and more.
-- **Regex catalog**: Provides operators to work with regular expressions and functions.
-- **CreativeSoftware catalog**: Provides operators to work with Digital Content Creation software. It includes operators for scene management, geometry handling, node graph manipulation and more, across popular DCC tools like Maya, Houdini, Blender, and Nuke.
-- **Workflow catalog**: Provides operators to manage and nest Shift workflows. It includes operators to input and output data, store [variables](nodes/variable.md) and execute [sub-workflows](nodes/workflow.md).
+- [**Constants catalog**](shift_catalogs/constants.md): Provides operators to work with standard Python objects, such as booleans or strings.
+- [**Standard catalog**](shift_catalogs/standard.md): Provides operators to work with standard Python operations. It provides logic to perform [loop iterations](nodes/iterator.md) and create [scriptable Python nodes](nodes/python_script.md). It also includes operators to read/write JSON files, operate with lists, strings, dictionaries and more.
+- [**FileSystem catalog**](shift_catalogs/filesystem.md): Provides operators to work with the OS filesystem and environment variables. It includes operators to perform file & directory creation and manipulation and more.
+- [**Workflow catalog**](shift_catalogs/workflow.md): Provides operators to manage and nest Shift workflows. It includes operators to input and output data, store [variables](nodes/variable.md) and execute [sub-workflows](nodes/workflow.md).
+- [**CreativeSoftware catalog**](shift_catalogs/creativesoftware.md): Provides operators to work with Digital Content Creation software. It includes operators for scene management, geometry handling, node graph manipulation and more, across popular DCC tools like Maya, Houdini, Blender, and Nuke.
 
 >[!NOTE]
 > Shift also comes with a native catalog for Deadline. For more information about Shift's integration in Deadline and how to use this catalog, please refer to the [Deadline Integration](../integration_resources/software/deadline.md) documentation.
