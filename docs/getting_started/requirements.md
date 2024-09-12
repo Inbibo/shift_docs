@@ -2,7 +2,7 @@
 
 ## Software
 
-- Python: 3.7 to 3.11
+- Python: 3.7 to 3.10
 
 ## External Dependencies
 
