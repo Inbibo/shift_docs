@@ -10,6 +10,11 @@ Shift has developed a specialized catalog and utility plugins for using the USD 
 
 ## Catalogs
 
+Shift comes with a total of three catalogs to manipulate USD data:
+
+- [**sUsd**](susd.md): A catalog for managing USD information, featuring operators for stages, prims, attributes, layers, variants, and more. This is the most comprehensive catalog for working with USD within Shift.
+- [**sUsdTypes**](susdtypes.md): A catalog for managing USD type objects, specially from the *Gf* library from USD. This catalog is currently in beta, and more operators will be added in the future.
+- [**sMayaUsd**](smayausd.md): A catalog that integrates operators that are compatible with MayaUSD. They are only available in Maya.       
 
 ## Plugins
 
