@@ -139,7 +139,11 @@ nav:
       - Resolve:                  integration_resources/software/resolve.md
       - Deadline:                 integration_resources/software/deadline.md
     - Other Resources:
-      - USD:                      integration_resources/resources/usd.md
+      - USD:                      
+        - Usd:                    integration_resources/resources/USD/usd.md
+        - sUsd:                   integration_resources/resources/USD/susd.md
+        - sUsdTypes:              integration_resources/resources/USD/susdtypes.md
+        - sMayaUsd:               integration_resources/resources/USD/smayausd.md
       - Ftrack:                   integration_resources/resources/ftrack.md
   - Release Notes:
     - Release Notes:            release_notes.md
