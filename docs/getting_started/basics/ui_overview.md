@@ -46,7 +46,7 @@ At the very top of the application we find Shift's menu bar. This menu has all t
 ||||
 |*About Shift*|*Help*|Opens an informative window about Shift.||
 
-Additional menus from the ones listed are plugin menus, which allow to extend Shift's functionalities and utility widgets. Please, refer to this [page](../../reference/plugins.md) for more information.
+Additional menus from the ones listed are plugin menus, which allow to extend Shift's functionalities and utility widgets. Please, refer to this [page](../../reference/plugins) for more information.
 ## Toolbar
 
 The toolbar consists of a list of buttons with the most used and relevant actions for Shift.
@@ -88,7 +88,7 @@ Several Shift boards can be opened to work on different tasks at the same time; 
 
 ## Dockable Widgets
 All other widgets in the Shift Window are utility widgets used to interact with the workflow and the application. These widgets are dockable widgets, which means that they can be resized and rearranged throughout the Shift window to satisfy personal layout tastes.
-New dockable widgets can also be added through [plugins](../../reference/plugins.md); these additional widgets can be added and removed from the UI when needed.
+New dockable widgets can also be added through [plugins](../../reference/plugins); these additional widgets can be added and removed from the UI when needed.
 
 Shift standalone comes with three native and indispensable widgets:
 
@@ -118,7 +118,7 @@ The logger displays all the log messages generated while working on Shift. This 
       <figcaption><b>Figure 4</b>: Shift's logger showing an error.</figcaption>
 </figure>
 
-More information about the logger and custom configuration can be found [here](../../reference/logger.md).
+More information about the logger and custom configuration can be found [here](../../reference/logger).
 
 ### The Nodes List
 The nodes list displays all the available nodes ordered alphabetically. This list can be filtered by name or by catalog to facilitate looking for the desired operator. By **double-clicking** on the operator's name, the corresponding node will be created in the Shift board.
