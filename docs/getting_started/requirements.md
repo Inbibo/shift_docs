@@ -6,8 +6,23 @@
 
 ## External Dependencies
 
-- QtPy: 1.9
-- PySide2: 5.15
+> [!NOTE = Shift Mode]
+> === Interactive
+> 
+> - QtPy: 1.9
+> - PySide2: 5.15
+>
+> To use USD functionalities:
+>
+> - USD: 22.11 or higher
+> - PyOpenGl: 3.1.5 or higher
+> - Numpy: 1.21.6 or higher
+>
+>  === Batch
+> To use USD functionalities:
+>
+> - USD: 22.11 or higher
+> 
 
 ## System Requirements
 

@@ -6,7 +6,9 @@ Shift has developed a specialized catalog and utility plugins for using the USD 
 | **Dependency**                                           | **Version**    |
 | -------------------------------------------------------- | -------------- |
 | [Python](https://www.python.org/download/releases/3.0/)  | 3.7 to 3.11    |
-| [USD](https://pypi.org/project/usd-core/)                | 22.11 or higher |
+| [USD](https://pypi.org/project/usd-core/)                | 22.11 or higher  |
+| [PyOpenGl](https://pypi.org/project/PyOpenGL/)           | 3.1.5 or higher  |
+| [Numpy](https://numpy.org/news/#releases)                | 1.21.6 or higher |
 
 ## Catalogs
 
