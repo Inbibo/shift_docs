@@ -9,6 +9,8 @@
 > [!NOTE = Shift Mode]
 > === Interactive
 > 
+> To use Shift's application:
+>
 > - QtPy: 1.9
 > - PySide2: 5.15
 >
