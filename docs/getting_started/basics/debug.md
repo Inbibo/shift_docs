@@ -24,7 +24,7 @@ To learn more about the Logger's messages and configuration, please refer to thi
 
 ## Control Workflow Execution
 
-Shift provides many ways of executing workflows in a modular way. For instance, the graph can be executed step by step with the [*Execute Next*](../execute/#execute-next) feature, or execute specific nodes via the [*Execute Selected*](../execute/#execute-selected) feature. These options grant a more precise control over the workflow's execution and enable gradual inspection of the nodes' results during the full graph execution.
+Shift provides many ways of executing workflows in a modular way. For instance, the graph can be executed step by step with the [*Execute Next*](execute#execute-next) feature, or execute specific nodes via the [*Execute Selected*](execute#execute-selected) feature. These options grant a more precise control over the workflow's execution and enable gradual inspection of the nodes' results during the full graph execution.
 
 
 ### Breakpoints

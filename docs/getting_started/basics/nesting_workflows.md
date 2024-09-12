@@ -10,7 +10,7 @@ To create a reusable workflow, the input and output of the workflow must be spec
       <figcaption><b>Figure 1</b>: Input and output nodes of a workflow.</figcaption>
 </figure>
 
-The plugs from these nodes will act as data pathways, linking information set externally in the workflow to the current workflow and viceversa.
+The plugs from these nodes will act as data pathways, linking information set externally in the workflow to the current workflow and vice-versa.
 
 ## Workflow Node
 
@@ -25,4 +25,4 @@ To learn more about the `Workflow` node functionalities, please refer to the [`W
 
 ### Workflows on External Processes
 
-When using the `Workflow` node, the execution of the workflow happens on the same Python process Shift is running in. However, it is also possible to execute a workflow in an external process running in a different Python interpreter. To do so, please refer to the [`Workflow Process`](../../nodes/workflow_process.md) documentation.
+When using the `Workflow` node, the execution of the workflow happens on the same Python process Shift is running in. However, it is also possible to execute a workflow in an external process running in a different Python interpreter. To do so, please refer to the [Workflow Process](../../nodes/workflow#workflowprocess-node) documentation.
