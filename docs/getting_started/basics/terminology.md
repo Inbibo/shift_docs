@@ -4,7 +4,7 @@ This page assembles a list of definitions for some of Shift's main concepts.
 
 ## Workflow
 
-A workflow is a directed acyclic graph (DAG) that builds the casual relationship between the execution of its nodes. A workflow is composed of interconnected nodes and defines the global execution logic of the automation process.
+A workflow is a directed acyclic graph (DAG) that builds the causal relationship between the execution of its nodes. A workflow is composed of interconnected nodes and defines the global execution logic of the automation process.
 
 ## Node
 
@@ -32,7 +32,7 @@ The inspector is the UI widget through which the name, inputs, and output values
 
 ## Operator
 
-An operator is the logical counterpart of a node and performs a specific process given a set of input data, if required. From a programming perspective, an operator can be seen as a function that takes some input data and evaluates it to produce some output data.
+An operator is the logical counterpart of a node and performs a specific process given a set of input data if required. From a programming perspective, an operator can be seen as a function that takes some input data and evaluates it to produce some output data.
 
 ## Catalog
 
