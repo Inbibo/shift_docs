@@ -7,7 +7,7 @@
 #### Core
 
 - Shift's workflow execution engine.
-- Shift's User Interface : An interface to interact with Shift and create workflows.
+- Shift's User Interface: An interface to interact with Shift and create workflows.
 - In-built catalogs:
     - Constants catalog.
     - Standard catalog.
@@ -31,12 +31,5 @@
     - Nuke: *nshift.py*.
 - USD resources:
     - In-built catalogs: sUsd, sUsdTypes, sMayaUsd.
-    - In-built plugins: Usd Outliner, Usd Viewer.
+    - In-built plugins: USD Outliner, USD Viewer.
     - Workflow examples to replicate for Pixar's USD tutorials.
-
-
-### Known Limitations
-
-#### Integrations & Resources
-
-- USD Viewer does not currently work in Houdini.
