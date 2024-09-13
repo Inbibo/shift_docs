@@ -23,7 +23,7 @@ In Shift it is possible to launch the execution of a workflow via an application
 
 ## Catalogs
 
-Shift provides some catalogs with operators specific to work within Houdini. Most of these nodes are found in the *CreativeSofware* catalog. 
+Shift provides some catalogs with operators specific to work within Houdini. Most of these nodes are found in the [CreativeSoftware](../../reference/shift_catalogs/creativesoftware) catalog. 
 
 <!-- ### Examples
 This section is reserved to an example video of how to use Shift in Houdini.

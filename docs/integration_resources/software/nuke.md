@@ -79,7 +79,7 @@ The variable can be set in any environment to be able to execute Shift Workflows
 
 ## Catalogs
 
-Shift provides some catalogs with operators specific to work within Nuke. Most of these nodes are found in the *CreativeSofware* catalog. 
+Shift provides some catalogs with operators specific to work within Nuke. Most of these nodes are found in the [CreativeSoftware](../../reference/shift_catalogs/creativesoftware) catalog. 
 
 
 <!-- ### Examples

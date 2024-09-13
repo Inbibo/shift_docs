@@ -18,7 +18,7 @@ Custom catalogs are written in Python and include a global variable called `cata
 
 
 >[!NOTE]
-> The *Operators* list from the `catalog` is a list of lists containing two elements. The first one corresponds to the operator class, and the second one is a list of compatible hosts for the operator. If no host is specified, the node will be usable in any context. For instance, if the second element is `["maya", "houdini"]` the operator will be only available for those DCC's. Refer to [Integrations & Resources](../../integration_resources/integrations_resources.md) for more information.
+> The *Operators* list from the `catalog` is a list of lists containing two elements. The first one corresponds to the operator class, and the second one is a list of compatible hosts for the operator. If no host is specified, the node will be usable in any context. For instance, if the second element is `["maya", "houdini"]` the operator will be only available for those DCC's.
 
 There are two ways of adding a custom catalog to Shift:
 
@@ -40,8 +40,7 @@ from shift.core.constants import SType
 from shift.core.constants import SDirection
 
 class MyOperator(SOperator):
-    """ The docstring provided for the SOperator class will be use as the operator's description when inspecting a node's information. 
-    It is recommended to write a detailed description of the operator's behavior alongside the required inputs and outputs here.
+    """ Operator's description.
   
     """
     def __init__(self, code, parent=None):
@@ -87,6 +86,9 @@ The `SOperator` constructor method takes care of initializing the plug objects a
 - A value, which will correspond to the value the plug is initialized with.
 - A type, which will define the behaviour of the plug when translating the provided inputs to a Python object. Check the `SType` class in Shift's API for more information.
 - A direction which can be either `SDirection.kIn` or `SDirection.kOut`.
+
+>[!NOTE]
+>The docstring provided for the `SOperator` class will be use as the operator's description when inspecting a node's information. It is recommended to write a detailed description of the operator's behavior alongside the required inputs and outputs.
 
 The **execute** method takes care of defining the list of steps to be performed when the execution of the operator is issued inside Shift. In the example above, the execute method picks up the values of the two input plugs and multiplies them together. Finally, it stores the result in the output plug.
 
