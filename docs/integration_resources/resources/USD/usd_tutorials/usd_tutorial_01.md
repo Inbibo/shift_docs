@@ -5,7 +5,7 @@
 
 [< Main USD Tutorials Page](../usd#tutorials)
 <span style="float:right;">
-[Inspecting and Authoring Properties >](usd_tutorial_02.md)
+[Inspecting and Authoring Properties >](usd_tutorial_02)
 </span>
 
 </p>
@@ -95,7 +95,7 @@ The workflow corresponding to this tutorial can be found in the following path i
 
 [< Main USD Tutorials Page](../usd#tutorials)
 <span style="float:right;">
-[Inspecting and Authoring Properties >](usd_tutorial_02.md)
+[Inspecting and Authoring Properties >](usd_tutorial_02)
 </span>
 
 </p>

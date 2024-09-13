@@ -18,7 +18,7 @@ Custom catalogs are written in Python and include a global variable called `cata
 
 
 >[!NOTE]
-> The *Operators* list from the `catalog` is a list of lists containing two elements. The first one corresponds to the operator class, and the second one is a list of compatible hosts for the operator. If no host is specified, the node will be usable in any context. For instance, if the second element is `["maya", "houdini"]` the operator will be only available for those DCC's. Refer to [Integrations & Resources](../../integration_resources/integrations_resources.md) for more information.
+> The *Operators* list from the `catalog` is a list of lists containing two elements. The first one corresponds to the operator class, and the second one is a list of compatible hosts for the operator. If no host is specified, the node will be usable in any context. For instance, if the second element is `["maya", "houdini"]` the operator will be only available for those DCC's. Refer to [Integrations & Resources](../../integration_resources/integrations_resources) for more information.
 
 There are two ways of adding a custom catalog to Shift:
 

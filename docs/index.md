@@ -21,9 +21,9 @@ With Shift you can:
 
 ## Start to Shift
 
-- [Installation](getting_started/installation.md)
-- [Licensing](getting_started/licensing.md)
-- [Requirements](getting_started/requirements.md)
-- [Shift Basics](getting_started/basics/ui_overview.md)
-- [Developer Guide](reference/developer_guide/api.md)
-- [Integrations & Resources](integration_resources/integrations_resources.md)
+- [Installation](getting_started/installation)
+- [Licensing](getting_started/licensing)
+- [Requirements](getting_started/requirements)
+- [Shift Basics](getting_started/basics/ui_overview)
+- [Developer Guide](reference/developer_guide/api)
+- [Integrations & Resources](integration_resources/integrations_resources)

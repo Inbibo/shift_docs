@@ -21,7 +21,7 @@ The `Workflow` node allows to embed the execution of a workflow inside another w
       <figcaption><b>Figure 2</b>: Nesting and executing a workflow in a Workflow node.</figcaption>
 </figure>
 
-To learn more about the `Workflow` node functionalities, please refer to the [`Workflow`](../../nodes/workflow.md) documentation.
+To learn more about the `Workflow` node functionalities, please refer to the [`Workflow`](../../nodes/workflow) documentation.
 
 ### Workflows on External Processes
 

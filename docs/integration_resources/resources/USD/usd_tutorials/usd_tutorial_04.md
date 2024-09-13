@@ -3,9 +3,9 @@
 
 <p style="text-align:left;">
 
-[< Referencing Layers](usd_tutorial_03.md)
+[< Referencing Layers](usd_tutorial_03)
 <span style="float:right;">
-[Traversing a Stage >](usd_tutorial_05.md)
+[Traversing a Stage >](usd_tutorial_05)
 </span>
 
 </p>
@@ -99,9 +99,9 @@ The workflow corresponding to this tutorial can be found in the following path i
 
 <p style="text-align:left;">
 
-[< Referencing Layers](usd_tutorial_03.md)
+[< Referencing Layers](usd_tutorial_03)
 <span style="float:right;">
-[Traversing a Stage >](usd_tutorial_05.md)
+[Traversing a Stage >](usd_tutorial_05)
 </span>
 
 </p>
