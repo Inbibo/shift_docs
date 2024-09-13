@@ -8,8 +8,8 @@ Shift provides a `hshift` utility script to properly bind the Shift UI to Houdin
     import shift
 exception:
     import sys
-    sys.path.append("<path_to_the_shift_installation_folder>")
-    sys.path.append("<path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages")
+    sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
+    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
 
 from shift.tools import hshift
 hshift.show()

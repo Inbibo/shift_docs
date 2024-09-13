@@ -25,8 +25,8 @@ In the *init.py* file, it is necessary to configure the requirements for Shift t
     import shift
 exception:
     import sys
-    sys.path.append("<path_to_the_shift_installation_folder>")
-    sys.path.append("<path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages")
+    sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
+    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
 </code></pre>
 
 >[!NOTE]
