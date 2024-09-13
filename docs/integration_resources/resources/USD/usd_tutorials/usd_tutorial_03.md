@@ -210,7 +210,7 @@ The *USD viewer* tool shipped with USD is used to visualise and inspect the stag
 
 ### Workflow Resources
 
-The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_03_referencing_layers/tutorial_03.sft`.
+The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_03_referencing_layers/tutorial_03.sft`
 
 ---
 

@@ -93,7 +93,7 @@ The USD file used in this tutorial `Sphere.usd` can be found in the following pa
 
 ### Workflow Resources
 
-The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_04_converting_layer_formats/tutorial_04.sft`.
+The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_04_converting_layer_formats/tutorial_04.sft`
 
 ---
 
