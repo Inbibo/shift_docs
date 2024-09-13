@@ -46,7 +46,7 @@ At the very top of the application we find Shift's menu bar. This menu has all t
 ||||
 |*About Shift*|*Help*|Opens an informative window about Shift.||
 
-Additional menus from the ones listed are plugin menus, which allow to extend Shift's functionalities and utility widgets. Please, refer to this [page](../../reference/plugins.md) for more information.
+Additional menus from the ones listed are plugin menus, which allow to extend Shift's functionalities and utility widgets. Please, refer to the [Plugins page](../../reference/plugins.md) for more information.
 ## Toolbar
 
 The toolbar consists of a list of buttons with the most used and relevant actions for Shift.
@@ -122,3 +122,8 @@ More information about the logger and custom configuration can be found [here](.
 
 ### The Nodes List
 The nodes list displays all the available nodes ordered alphabetically. This list can be filtered by name or by catalog to facilitate looking for the desired operator. By **double-clicking** on the operator's name, the corresponding node will be created in the Shift board.
+
+<figure>
+      <img src="images/nodes_list.png" alt="Nodes List">
+      <figcaption><b>Figure 4</b>: Shift's nodes list.</figcaption>
+</figure>
