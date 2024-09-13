@@ -3,7 +3,7 @@
 
 <p style="text-align:left;">
 
-[< Traversing a Stage](usd_tutorial_05.md)
+[< Traversing a Stage](usd_tutorial_05)
 <span style="float:right;">
 [Main USD Tutorials Page >](../usd#tutorials)
 </span>
@@ -14,7 +14,7 @@
 
 ## Authoring Variants
 
-This tutorial focuses on creating and authoring a variant set using the *HelloWorld* layer from the [Inspecting and Authoring Properties](usd_tutorial_02.md) tutorial, using the operators from Shift_USD catalog.
+This tutorial focuses on creating and authoring a variant set using the *HelloWorld* layer from the [Inspecting and Authoring Properties](usd_tutorial_02) tutorial, using the operators from Shift_USD catalog.
 
 The USD file `HelloWorld.usda` can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_02_authoring_properties/result/`.
 
@@ -115,7 +115,7 @@ The USD file `HelloWorld.usda` can be found in the following path in the Shift i
     <figcaption><b>Figure 13</b>: Added the 'GreenVariantSelect' node to the board connected to the 'GreenVariantAdd' node.</figcaption>
 </figure>
 
-14. Follow the steps done in the section [Creating a variant workflow](usd_tutorial_06.md#creating-a-variant-workflow) and add a new *UsdVariantWorkflow* node and rename it to *RedVariantDCSet*. Set the path to the workflow created in the [Creating a variant workflow](usd_tutorial_06.md#creating-a-variant-workflow) section as the value for the **file** input plug of the node, which should be named `set_variant_display_color.sft`. Once the file is properly set, the node will be automatically updated to show the inputs and outputs from the nested workflow. Then, connect the **variantSet** output plug from the *GreenVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from the *WorldGet* node to the **prim** input plug of the new node. Set `red` as the value for the **variant** input plug and `[1,0,0]` as the value of the **color** input plug. The board should look like the following:
+14. Follow the steps done in the section [Creating a variant workflow](usd_tutorial_06#creating-a-variant-workflow) and add a new *UsdVariantWorkflow* node and rename it to *RedVariantDCSet*. Set the path to the workflow created in the [Creating a variant workflow](usd_tutorial_06#creating-a-variant-workflow) section as the value for the **file** input plug of the node, which should be named `set_variant_display_color.sft`. Once the file is properly set, the node will be automatically updated to show the inputs and outputs from the nested workflow. Then, connect the **variantSet** output plug from the *GreenVariantSelect* node to the **variantSet** input plug of the new node, also, connect the **prim** output plug from the *WorldGet* node to the **prim** input plug of the new node. Set `red` as the value for the **variant** input plug and `[1,0,0]` as the value of the **color** input plug. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_06/step_14_t06.png" alt="Added the 'RedVariantDCSet' node to the board connected to the 'WorldGet' and 'GreenVariantSelect' node.">
@@ -207,7 +207,7 @@ The workflows corresponding to this tutorial can be found in the following path 
 
 <p style="text-align:left;">
 
-[< Traversing a Stage](usd_tutorial_05.md)
+[< Traversing a Stage](usd_tutorial_05)
 <span style="float:right;">
 [Main USD Tutorials Page >](../usd#tutorials)
 </span>

@@ -14,9 +14,9 @@ Shift has developed a specialized catalog and utility plugins for using the USD 
 
 Shift comes with a total of three catalogs to manipulate USD data:
 
-- [**sUsd**](susd.md): A catalog for managing USD information, featuring operators for stages, prims, attributes, layers, variants, and more. This is the most comprehensive catalog for working with USD within Shift.
-- [**sUsdTypes**](susdtypes.md): A catalog for managing USD type objects, specially from the *Gf* library from USD. This catalog is currently in beta, and more operators will be added in the future.
-- [**sMayaUsd**](smayausd.md): A catalog that integrates operators that are compatible with MayaUSD. They are only available in Maya.       
+- [**sUsd**](susd): A catalog for managing USD information, featuring operators for stages, prims, attributes, layers, variants, and more. This is the most comprehensive catalog for working with USD within Shift.
+- [**sUsdTypes**](susdtypes): A catalog for managing USD type objects, specially from the *Gf* library from USD. This catalog is currently in beta, and more operators will be added in the future.
+- [**sMayaUsd**](smayausd): A catalog that integrates operators that are compatible with MayaUSD. They are only available in Maya.       
 
 ## Plugins
 
@@ -55,9 +55,9 @@ This section is reserved to an example video of how to use USD resources.
 
 To start learning how to use the operators implemented in the Shift_USD catalog, a series of tutorials are provided to grasp the fundamentals of the basic operators. The following tutorials are based on Pixar's tutorials from the [OpenUSD](https://openusd.org/release/tut_usd_tutorials.html) project webpage:
 
-1. [Creating a Simple USD Stage](usd_tutorials/usd_tutorial_01.md)
-2. [Inspecting and Authoring Properties](usd_tutorials/usd_tutorial_02.md)
-3. [Referencing Layers](usd_tutorials/usd_tutorial_03.md)
-4. [Converting Between Layer Formats](usd_tutorials/usd_tutorial_04.md)
-5. [Traversing a Stage](usd_tutorials/usd_tutorial_05.md)
-6. [Authoring Variants](usd_tutorials/usd_tutorial_06.md)
+1. [Creating a Simple USD Stage](usd_tutorials/usd_tutorial_01)
+2. [Inspecting and Authoring Properties](usd_tutorials/usd_tutorial_02)
+3. [Referencing Layers](usd_tutorials/usd_tutorial_03)
+4. [Converting Between Layer Formats](usd_tutorials/usd_tutorial_04)
+5. [Traversing a Stage](usd_tutorials/usd_tutorial_05)
+6. [Authoring Variants](usd_tutorials/usd_tutorial_06)

@@ -3,9 +3,9 @@
 
 <p style="text-align:left;">
 
-[< Creating a Simple USD Stage](usd_tutorial_01.md)
+[< Creating a Simple USD Stage](usd_tutorial_01)
 <span style="float:right;">
-[Referencing Layers >](usd_tutorial_03.md)
+[Referencing Layers >](usd_tutorial_03)
 </span>
 
 </p>
@@ -14,7 +14,7 @@
 
 ## Inspecting and Authoring Properties
 
-This tutorial focuses on inspecting the properties containing geometric data of the prims created in the tutorial [Creating a Simple USD Stage](usd_tutorial_01.md), using the operators from the Shift_USD catalog.
+This tutorial focuses on inspecting the properties containing geometric data of the prims created in the tutorial [Creating a Simple USD Stage](usd_tutorial_01), using the operators from the Shift_USD catalog.
 
 The USD file `HelloWorld.usda` can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_01_creating_first_stage/result/`.
 
@@ -143,7 +143,7 @@ The USD file `HelloWorld.usda` can be found in the following path in the Shift i
     <figcaption><b>Figure 17</b>: Added the 'WorldDisplayColorSet' node to the board connected to the 'WorldSphereGet' node.</figcaption>
 </figure>
 
-18. To define the workflow execution order it is necessary to connect some [trigger](../../../reference/nodes.md#node-interface) plugs. Connect the **out-trigger** output plugs from nodes *HelloPropertyNamesGet*, *WorldPropertyNamesGet*, *RadiusValueSet* and *ExtentValueSet* to the **in-trigger** input plug of the *WorldDisplayColorSet* node. Doing this, the *WorldDisplayColorSet* node will be executed once the other nodes are done. The board should look like the following:
+18. To define the workflow execution order it is necessary to connect some [trigger](../../../reference/nodes#node-interface) plugs. Connect the **out-trigger** output plugs from nodes *HelloPropertyNamesGet*, *WorldPropertyNamesGet*, *RadiusValueSet* and *ExtentValueSet* to the **in-trigger** input plug of the *WorldDisplayColorSet* node. Doing this, the *WorldDisplayColorSet* node will be executed once the other nodes are done. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_18_t02.gif" alt="Added the trigger connections to 'WorldDisplayColorSet' node.">
@@ -195,9 +195,9 @@ The workflow corresponding to this tutorial can be found in the following path i
 
 <p style="text-align:left;">
 
-[< Creating a Simple USD Stage](usd_tutorial_01.md)
+[< Creating a Simple USD Stage](usd_tutorial_01)
 <span style="float:right;">
-[Referencing Layers >](usd_tutorial_03.md)
+[Referencing Layers >](usd_tutorial_03)
 </span>
 
 </p>
