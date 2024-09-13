@@ -58,12 +58,14 @@ The first step to add the plugin to the Shift UI is to create a *json* file cont
   "Operators List": {
     "menu": "Tools",
     "path": "./operatorsList.py",
-    "class": "OperatorsList"
+    "class": "OperatorsList",
+    "allowMultiple": false
   },
   "Variables Browser": {
     "menu": "Tools",
     "path": "./variablesBrowser.py",
-    "class": "VariablesBrowser"
+    "class": "VariablesBrowser",
+    "allowMultiple": false
   }
 }
 </code></pre>
@@ -71,9 +73,10 @@ The first step to add the plugin to the Shift UI is to create a *json* file cont
 
 Each plugin main entry name will define the name displayed by the plugin menu entry in the top bar menu. Then for each plugin entry will need:
 
-- The name of the top menu entry that the plugin should be added to.
-- The absolute or relative path to the Python file containing the plugin class.
-- The name of the plugin class to be imported.
+- **Menu**: The name of the top menu entry that the plugin should be added to.
+- **Path**: The absolute or relative path to the Python file containing the plugin class.
+- **Class**: The name of the plugin class to be imported.
+- **AllowMultiple**: If only one instance of the plugin can be opened (true) or if it can be opened multiple times (false). If this entry is not defined in the *json* then, by default, multiple instances of the plugin can be opened.
 
 Shift allows users to add their custom plugins even to native menus. If a new menu name is requested, it will be added to the UI automatically.
 
