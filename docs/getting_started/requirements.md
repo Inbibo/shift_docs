@@ -11,19 +11,19 @@
 > 
 > To use Shift's application:
 >
-> - QtPy: 1.9
-> - PySide2: 5.15
+> - [QtPy](https://pypi.org/project/QtPy/): 1.9
+> - [PySide2](https://pypi.org/project/PySide2/): 5.15
 >
 > To use USD functionalities:
 >
-> - USD: 22.11 or higher
-> - PyOpenGl: 3.1.5 or higher
-> - Numpy: 1.21.6 or higher
+> - [USD](https://pypi.org/project/usd-core/): 22.11 or higher
+> - [PyOpenGL](https://pypi.org/project/PyOpenGL/): 3.1.5 or higher
+> - [Numpy](https://numpy.org/): 1.21.6 or higher
 >
 >  === Batch
 > To use USD functionalities:
 >
-> - USD: 22.11 or higher
+> - [USD](https://pypi.org/project/usd-core/): 22.11 or higher
 > 
 
 ## System Requirements
