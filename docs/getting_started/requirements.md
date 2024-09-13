@@ -28,7 +28,7 @@
 
 ## System Requirements
 
-- **OS**: Microsoft *Windows 10* or higher, *Linux CentOS 7* and *Rocky Linux 9*
-- **CPU**: 64-bit Intel or AMD multi-core processor
-- **RAM**: 256MB suggested
-- **Storage**: at least 500MB of free disk space.
+- **OS**: Microsoft *Windows 10* or higher.
+- **CPU**: 64-bit Intel or AMD multi-core processor.
+- **RAM**: 256MB suggested.
+- **Storage**: at least 1.5GB of free disk space.

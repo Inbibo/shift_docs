@@ -21,9 +21,12 @@ To install Shift and open it through a *menu.py* entry within Nuke, it is requir
 In the *init.py* file, it is necessary to configure the requirements for Shift to work in Nuke batch and interactive modes. To achieve this, it is only required to add the Shift installation path to the **PATH** environment variable.
 
 
-<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">import sys
-sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
-sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">try:
+    import shift
+exception:
+    import sys
+    sys.path.append("<path_to_the_shift_installation_folder>")
+    sys.path.append("<path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages")
 </code></pre>
 
 >[!NOTE]
