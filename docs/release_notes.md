@@ -17,6 +17,11 @@
 - In-built plugins:
     - Nodes Outliner plugin.
     - Variables plugin.
+- Workflow examples for starters.
+    - float_sum.sft
+    - analyse_path.sft
+    - backup_files_from_dir.sft
+    - get_image_sequence_frame_list.sft
 
 #### Integrations & Resources
 
@@ -27,6 +32,7 @@
 - USD resources:
     - In-built catalogs: sUsd, sUsdTypes, sMayaUsd.
     - In-built plugins: Usd Outliner, Usd Viewer.
+    - Workflow examples to replicate for Pixar's USD tutorials.
 
 
 ### Known Limitations

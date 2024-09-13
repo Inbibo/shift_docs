@@ -17,13 +17,13 @@ Apart from the official requirements, the `PYTHONHOME` environment is required t
 
 To use the Python interpreter provided with Shift, set up the variable in this way:
 
-**PYTHONHOME** : <path_to_your_shift_folder&gt/shift/thirdparty/python
+**PYTHONHOME** : <path_to_your_shift_folder>/shift/thirdparty/python
 
 To source Shift in Davinci Resolve the directories of Shift must also be added to the PATH environment variable. The paths to the directories must be set before opening Resolve or in the script that will launch Shift.
 
 
-- **PATH** : <path_to_the_shift_installation_folder&gt
-- **PATH** : <path_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages
+- **PATH** : <path_to_the_shift_installation_folder>
+- **PATH** : <path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages
 
 
 ## Shift Menu
