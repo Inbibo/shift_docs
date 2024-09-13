@@ -34,9 +34,9 @@ All messages caught by the Logger are recorded in log files. Shift uses a rotati
 > 
 > `C:\Users\<username>\AppData\Local\Temp`
 >
->  === Linux
+<!-- >  === Linux
 >
-> `/tmp`
+> `/tmp` -->
 
 ## Configuring the Logger
 

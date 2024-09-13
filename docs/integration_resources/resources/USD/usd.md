@@ -22,9 +22,9 @@ Shift comes with a total of three catalogs to manipulate USD data:
 
 Shift comes equipped with two primary plugins for interacting with USD (Universal Scene Description) files. The plugins can be found in the *Usd* section in the top menu bar.
 
-- USD Viewer: This plugin provides a viewport for visualizing USD stages, allowing users to inspect and manipulate 3D scene data in real-time.
+- **USD Viewer**: This plugin provides a viewport for visualizing USD stages, allowing users to inspect and manipulate 3D scene data in real-time.
 
-- USD Outliner: This plugin works alongside the USD Viewer to display the hierarchical structure of USD stages, offering a tree-based interface for navigating and selecting prims (scene elements). The outliner is tightly integrated with the workflow, enabling advanced interaction with USD nodes.
+- **USD Outliner**: This plugin works alongside the USD Viewer to display the hierarchical structure of USD stages, offering a tree-based interface for navigating and selecting prims (scene elements). The outliner is tightly integrated with the workflow, enabling advanced interaction with USD nodes.
 
 These two plugins together allow users to efficiently visualize, explore, and interact with USD-based workflows, making Shift a powerful tool for managing complex 3D scenes and assets.
 

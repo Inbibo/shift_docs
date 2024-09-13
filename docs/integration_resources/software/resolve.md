@@ -37,9 +37,9 @@ To add a new entry for the Shift menu in Resolve, it is required to add a Python
 >  - All users: %PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts
 >  - Specific user: %APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts
 >
-> === Linux:
+<!-- > === Linux:
 >  - All users: /opt/resolve/Fusion/Scripts  (or /home/resolve/Fusion/Scripts/ depending on installation)
->  - Specific user: $HOME/.local/share/DaVinciResolve/Fusion/Scripts
+>  - Specific user: $HOME/.local/share/DaVinciResolve/Fusion/Scripts -->
 
 To add Shift as a menu option, it is required to create a Python Script inside a workspace folder, `Edit` for example. The Python file name will be used as the menu name, soo name the file `Shift`.
 
