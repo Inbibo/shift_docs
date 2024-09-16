@@ -1,3 +1,0 @@
-# Terminology
-
-To Be Defined

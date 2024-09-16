@@ -1,5 +1,35 @@
 # Release Notes
 
-## 1.0.0
+## Version 1.0.0
 
-To Be Defined
+### Added
+
+#### Core
+
+- Shift's workflow execution engine.
+- Shift's User Interface: An interface to interact with Shift and create workflows.
+- In-built catalogs:
+    - Constants catalog.
+    - Standard catalog.
+    - FileSystem catalog.
+    - Workflow catalog.
+    - CreativeSoftware catalog.
+- In-built plugins:
+    - Nodes Outliner plugin.
+    - Variables plugin.
+- Workflow examples for starters.
+    - float_sum.sft
+    - analyse_path.sft
+    - backup_files_from_dir.sft
+    - get_image_sequence_frame_list.sft
+
+#### Integrations & Resources
+
+- Scripts to bind Shift interface to a DCC for:
+    - Maya: *mshift.py*.
+    - Houdini: *hshift.py*.
+    - Nuke: *nshift.py*.
+- USD resources:
+    - In-built catalogs: sUsd, sUsdTypes, sMayaUsd.
+    - In-built plugins: USD Outliner, USD Viewer.
+    - Workflow examples to replicate for Pixar's USD tutorials.
