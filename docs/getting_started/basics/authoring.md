@@ -65,4 +65,4 @@ To remove a plug, `Right-Click` on the plug and select the "*Remove Plug*" optio
 
 ## Removing a Connection
 
-To remove a connection between two plugs, `Right-Click` on the connection to select it and press the `Delete` key.
+To remove a connection between two plugs, `Left-Click` on the connection to select it and press the `Delete` key.

@@ -111,7 +111,7 @@ The base files for the example, `HelloWorld.usda` and `RefExample.usda`, can be 
 
 ### Workflow Resources
 
-The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_05_traversing_stage/tutorial_05.sft`.
+The workflow corresponding to this tutorial can be found in the following path in the Shift installation folder: `<path_to_the_shift_installation_folder>/shift/examples/USD/tutorials/tutorial_05_traversing_stage/tutorial_05.sft`
 
 ---
 

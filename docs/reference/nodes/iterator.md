@@ -16,11 +16,11 @@ This node forces the execution of the subgraph composed by the nodes following t
 
 ### Inputs
 
-- **inValues** : This plug of type [Object](../nodes#plugs) expects an iterable Python object, such as lists, dictionaries, sets or tuples. The number of elements of the iterable object will determine the number of loops the *Iterator* node will execute.
+- **inValues** : This plug of type [Instance](../nodes#plugs) expects an iterable Python object, such as lists, dictionaries, sets or tuples. The number of elements of the iterable object will determine the number of loops the *Iterator* node will execute.
 
 ### Outputs
 
-- **outValue**: This plug of type [Object](../nodes#plugs) will output one value of the input iterable object corresponding to the current iteration. This means that the output of this plug will change dynamically for each loop the iteration Node executes. 
+- **outValue**: This plug of type [Instance](../nodes#plugs) will output one value of the input iterable object corresponding to the current iteration. This means that the output of this plug will change dynamically for each loop the iteration Node executes. 
 
 
 ## IteratorEnd Node
@@ -47,6 +47,9 @@ The *ListAccumulator* node allows to accumulate the result of each iteration of 
 - **inList**: This plug of type [Instance](../nodes#plugs) expects the list where the values will be accumulated into.
 
 Custom plugs should be added to the *ListAccumulator* plug to define which elements should be accumulated in the list. There is no limit of custom input plugs that can be added. The elements will be appended in the same order they were created in the node. 
+
+>[!NOTE]
+> It is highly recommended to use the *ListAccumulator* node in conjunction of a *List* node that provides an empty list. The output plug of the *List* node should be connected to the *inList* input plug from the *ListAccumulator*. This way, the *ListAccumulator* will properly be reset when the workflow graph is cleared.  
 
 ### Outputs
 

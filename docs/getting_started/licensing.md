@@ -65,7 +65,7 @@ To activate Shift in Node-Locked Batch mode:
 
 Shift allows the user to use the product for **30 days** in Node-Locked Interactive mode. This means that the trial can be used using the graphical interface for one single machine at a time. 
 
-The trial period does not require any input from the user. Simply click *Continue* in the Shift activation dialog to start using the application. The trial period is registered automatically the first time that Shift is launched with internet access.
+ In order to start your 30 days trial period, the computer running Shift will need to be connected to the internet. The trial period does not require any input from the user. Simply click *Continue* in the Shift activation dialog to start using the application.
 
 Trial licenses are intended for testing and non-commercial purposes. To use Shift for commercial purposes a `PRODUCT KEY` must be purchased through Inbibo's official [website](https://inbibo.co.uk/shift#prices) and activated. See the Shift [End User License Agreement](https://inbibo.co.uk/shift-eula) for details.
 

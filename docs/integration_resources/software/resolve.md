@@ -22,8 +22,8 @@ To use the Python interpreter provided with Shift, set up the variable in this w
 To source Shift in Davinci Resolve the directories of Shift must also be added to the PATH environment variable. The paths to the directories must be set before opening Resolve or in the script that will launch Shift.
 
 
-**PATH** : <path_to_the_shift_installation_folder>
-**PATH** : <path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages
+- **PATH** : <path_to_the_shift_installation_folder>
+- **PATH** : <path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages
 
 
 ## Shift Menu
@@ -37,9 +37,9 @@ To add a new entry for the Shift menu in Resolve, it is required to add a Python
 >  - All users: %PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts
 >  - Specific user: %APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts
 >
-> === Linux:
+<!-- > === Linux:
 >  - All users: /opt/resolve/Fusion/Scripts  (or /home/resolve/Fusion/Scripts/ depending on installation)
->  - Specific user: $HOME/.local/share/DaVinciResolve/Fusion/Scripts
+>  - Specific user: $HOME/.local/share/DaVinciResolve/Fusion/Scripts -->
 
 To add Shift as a menu option, it is required to create a Python Script inside a workspace folder, `Edit` for example. The Python file name will be used as the menu name, soo name the file `Shift`.
 
@@ -48,9 +48,12 @@ For a Windows local user, the result path for the file will be this one:
 
 Inside the file, add the following code:
 
-<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">import sys
-sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
-sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">try:
+    import shift
+exception:
+    import sys
+    sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
+    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
 
 
 from shift.tools import shiftui

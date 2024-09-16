@@ -11,6 +11,9 @@ Shift comes with six native catalogs that contain the necessary nodes to start b
 - [**CreativeSoftware catalog**](shift_catalogs/creativesoftware): Provides operators to work with Digital Content Creation software. It includes operators for scene management, geometry handling, node graph manipulation and more, across popular DCC tools like Maya, Houdini, Blender, and Nuke.
 
 >[!NOTE]
+> Shift is fully integrated with USD and provides in-built catalogs and plugins. For more information about USD integration in Shift, please refer to the [USD](../integration_resources/resources/usd) documentation.
+
+>[!NOTE]
 > Shift also comes with a native catalog for Deadline. For more information about Shift's integration in Deadline and how to use this catalog, please refer to the [Deadline Integration](../integration_resources/software/deadline) documentation.
 
 ### Custom Catalogs
