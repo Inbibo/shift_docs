@@ -23,7 +23,7 @@ In the *init.py* file, it is necessary to configure the requirements for Shift t
 
 <pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">try:
     import shift
-exception:
+except:
     import sys
     sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
     sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
