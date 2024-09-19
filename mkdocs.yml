@@ -97,12 +97,11 @@ nav:
   - Installation: installation.md
   - Licensing: licensing.md
   - Requirements: requirements.md
-  - Release Notes: release_notes.md
+  - Release Notes: documentation/maya/1.0.0/index.md
   - Documentation:
     - documentation/index.md
     - Maya:
       - 1.0.0: 
-        - documentation/maya/1.0.0/index.md
         - UI Overview         : documentation/maya/1.0.0/ui_overview.md
         - A simple Setup      : documentation/maya/1.0.0/simple_setup.md
     - Houdini:
