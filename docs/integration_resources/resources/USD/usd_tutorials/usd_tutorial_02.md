@@ -143,7 +143,7 @@ The USD file `HelloWorld.usda` can be found in the following path in the Shift i
     <figcaption><b>Figure 17</b>: Added the 'WorldDisplayColorSet' node to the board connected to the 'WorldSphereGet' node.</figcaption>
 </figure>
 
-18. To define the workflow execution order it is necessary to connect some [trigger](../../../reference/nodes#node-interface) plugs. Connect the **out-trigger** output plugs from nodes *HelloPropertyNamesGet*, *WorldPropertyNamesGet*, *RadiusValueSet* and *ExtentValueSet* to the **in-trigger** input plug of the *WorldDisplayColorSet* node. Doing this, the *WorldDisplayColorSet* node will be executed once the other nodes are done. The board should look like the following:
+18. To define the workflow execution order it is necessary to connect some [trigger](../../../reference/nodes/nodes#node-interface) plugs. Connect the **out-trigger** output plugs from nodes *HelloPropertyNamesGet*, *WorldPropertyNamesGet*, *RadiusValueSet* and *ExtentValueSet* to the **in-trigger** input plug of the *WorldDisplayColorSet* node. Doing this, the *WorldDisplayColorSet* node will be executed once the other nodes are done. The board should look like the following:
 
 <figure>
     <img src="images/usd_tutorial_02/step_18_t02.gif" alt="Added the trigger connections to 'WorldDisplayColorSet' node.">
