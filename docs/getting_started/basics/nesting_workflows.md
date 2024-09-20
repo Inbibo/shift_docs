@@ -21,8 +21,8 @@ The `Workflow` node allows to embed the execution of a workflow inside another w
       <figcaption><b>Figure 2</b>: Nesting and executing a workflow in a Workflow node.</figcaption>
 </figure>
 
-To learn more about the `Workflow` node functionalities, please refer to the [`Workflow`](../../nodes/workflow) documentation.
+To learn more about the `Workflow` node functionalities, please refer to the [`Workflow`](../../reference/nodes/workflow) documentation.
 
 ### Workflows on External Processes
 
-When using the `Workflow` node, the execution of the workflow happens on the same Python process Shift is running in. However, it is also possible to execute a workflow in an external process running in a different Python interpreter. To do so, please refer to the [Workflow Process](../../nodes/workflow#workflowprocess-node) documentation.
+When using the `Workflow` node, the execution of the workflow happens on the same Python process Shift is running in. However, it is also possible to execute a workflow in an external process running in a different Python interpreter. To do so, please refer to the [Workflow Process](../../reference/nodes/workflow#workflowprocess-node) documentation.

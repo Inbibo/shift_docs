@@ -23,7 +23,7 @@ In Shift it is possible to launch the execution of a workflow via an application
 
 ## Catalogs
 
-Shift provides some catalogs with operators specific to work within Maya. Most of these nodes are found in the [CreativeSoftware](../../reference/shift_catalogs/creativesoftware) catalog. Additionally, Shift also comes with a specific USD catalog for [MayaUSD](../resources/USD/smayausd).
+Shift provides some catalogs with operators specific to work within Maya. Most of these nodes are found in the [CreativeSoftware](../../reference/catalogs/shift_catalogs/creativesoftware) catalog. Additionally, Shift also comes with a specific USD catalog for [MayaUSD](../resources/USD/smayausd).
 
 <!-- ### Examples
 This section is reserved to an example video of how to use Shift in Maya.

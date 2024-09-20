@@ -23,7 +23,7 @@ When double-clicking on a *Workflow* node, the referenced workflow will be opene
 
 ### Inputs
 
-- **File**: This plug of type [FileIn](../nodes#plugs) is used to reference the workflow file (*.sft* extension) that will be executed by the node. When the `file` plug content is set, the node will automatically update by creating the input and output plugs corresponding to the sourced workflow inputs and outputs.
+- **File**: This plug of type [FileIn](/nodes#plugs) is used to reference the workflow file (*.sft* extension) that will be executed by the node. When the `file` plug content is set, the node will automatically update by creating the input and output plugs corresponding to the sourced workflow inputs and outputs.
 
 ## WorkflowProcess Node
 
@@ -45,8 +45,8 @@ The available Python interpreters to run the external workflow with will depend 
 > **SHIFT_PROCESS_MAYA** : *"<MAYA INSTALLATION FOLDER>/bin/mayapy.exe"*
 
 ### Inputs
-- **File**: This plug of type [FileIn](../nodes#plugs) is used to reference the workflow file (*.sft* extension) that will be executed by the node. When the `file` plug content is set, the node will automatically update by creating the input and output plugs corresponding to the sourced workflow inputs and outputs.
-- **DCC**: This plug of type [Enum](../nodes#plugs) determines the Python interpreter to be used for the execution of the referenced workflow.
+- **File**: This plug of type [FileIn](/nodes#plugs) is used to reference the workflow file (*.sft* extension) that will be executed by the node. When the `file` plug content is set, the node will automatically update by creating the input and output plugs corresponding to the sourced workflow inputs and outputs.
+- **DCC**: This plug of type [Enum](/nodes#plugs) determines the Python interpreter to be used for the execution of the referenced workflow.
 
 >[!NOTE]
 > It is possible to define a "Workflow Workspace" by setting the path to a directory in the `SHIFT_PATH_WORKFLOWS` environment variable. All workflows placed in the folders specified in the environment variable will use a relative filepaths when referenced in a *Workflow* or *WorkflowProcess* node. 

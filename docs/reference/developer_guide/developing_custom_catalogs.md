@@ -22,7 +22,7 @@ Custom catalogs are written in Python and include a global variable called `cata
 
 There are two ways of adding a custom catalog to Shift:
 
-- **As a User Catalog**: Use the [Catalog Manager](../catalogs#the-catalog-manager) to source the catalog file and add it to Shift. This catalog is saved in the user preferences.
+- **As a User Catalog**: Use the [Catalog Manager](../catalogs/catalogs#the-catalog-manager) to source the catalog file and add it to Shift. This catalog is saved in the user preferences.
 - **As an Environment Catalog**: Add the **path to the directory** containing the catalog file to the `SHIFT_CATALOG_PATH` environment variable. All files in this path containing a `catalog` object will be identified as custom catalogs and loaded by Shift.
 
 >[!WARNING]

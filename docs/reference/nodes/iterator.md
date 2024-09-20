@@ -16,11 +16,11 @@ This node forces the execution of the subgraph composed by the nodes following t
 
 ### Inputs
 
-- **inValues** : This plug of type [Instance](../nodes#plugs) expects an iterable Python object, such as lists, dictionaries, sets or tuples. The number of elements of the iterable object will determine the number of loops the *Iterator* node will execute.
+- **inValues** : This plug of type [Instance](nodes#plugs) expects an iterable Python object, such as lists, dictionaries, sets or tuples. The number of elements of the iterable object will determine the number of loops the *Iterator* node will execute.
 
 ### Outputs
 
-- **outValue**: This plug of type [Instance](../nodes#plugs) will output one value of the input iterable object corresponding to the current iteration. This means that the output of this plug will change dynamically for each loop the iteration Node executes. 
+- **outValue**: This plug of type [Instance](nodes#plugs) will output one value of the input iterable object corresponding to the current iteration. This means that the output of this plug will change dynamically for each loop the iteration Node executes. 
 
 
 ## IteratorEnd Node
@@ -44,7 +44,7 @@ The *ListAccumulator* node allows to accumulate the result of each iteration of 
 
 ### Inputs
 
-- **inList**: This plug of type [Instance](../nodes#plugs) expects the list where the values will be accumulated into.
+- **inList**: This plug of type [Instance](nodes#plugs) expects the list where the values will be accumulated into.
 
 Custom plugs should be added to the *ListAccumulator* plug to define which elements should be accumulated in the list. There is no limit of custom input plugs that can be added. The elements will be appended in the same order they were created in the node. 
 
@@ -53,7 +53,7 @@ Custom plugs should be added to the *ListAccumulator* plug to define which eleme
 
 ### Outputs
 
-- **outList**: This plug of type [List](../nodes#plugs) will output a copy of the list with the new appended values.
+- **outList**: This plug of type [List](nodes#plugs) will output a copy of the list with the new appended values.
 
 <!-- ### Examples
 TODO: #62

@@ -11,13 +11,13 @@ External Python libraries can be imported to enhance the capabilities of the *Py
 
 ### Inputs
 
-- **Script**: This plug of type [Code](../nodes#plugs) defines the logic of the *PythonScript* node. On the [Inspector](../../getting_started/basics/ui_overview#the-inspector), this plug provides a script editor for Python to write the block of code to be executed.
+- **Script**: This plug of type [Code](nodes#plugs) defines the logic of the *PythonScript* node. On the [Inspector](../../getting_started/basics/ui_overview#the-inspector), this plug provides a script editor for Python to write the block of code to be executed.
 
 The *PythonScript* node allows for any type of custom plugs too. Custom input plugs can receive data from other nodes that can be imported into the code by just using the plug name as a variable.
 
 ### Outputs
 
-- **Output**: This plug of type [Object](../nodes#plugs) outputs the result of the logic executed by the *PythonScript*.  Assign the value to output to a variable named `output` (the plug's name).
+- **Output**: This plug of type [Object](nodes#plugs) outputs the result of the logic executed by the *PythonScript*.  Assign the value to output to a variable named `output` (the plug's name).
 
 If outputting several values is needed, new output plugs of any type, including Instance plugs, can be added to the node. All custom outputs can be used the same way as the default output plug to return any data from the Python script execution.
 
