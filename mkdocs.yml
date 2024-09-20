@@ -92,18 +92,13 @@ copyright: |
 
 # Page tree
 nav:
-  - Introduction: index.md
-  - Terminology: terminology.md
-  - Installation: installation.md
-  - Licensing: licensing.md
-  - Requirements: requirements.md
-  - Release Notes: documentation/maya/1.0.0/index.md
-  - Documentation:
-    - documentation/index.md
-    - Maya:
-      - 1.0.0: 
-        - UI Overview         : documentation/maya/1.0.0/ui_overview.md
-        - A simple Setup      : documentation/maya/1.0.0/simple_setup.md
-    - Houdini:
-      - 1.0.0: 
-        - documentation/houdini/1.0.0/index.md
+  - index.md
+  - terminology.md
+  - installation.md
+  - licensing.md
+  - requirements.md
+  - documentation/maya/1.0.0/index.md
+  - documentation/index.md
+  - documentation/maya/1.0.0/ui_overview.md
+  - documentation/maya/1.0.0/simple_setup.md
+  - documentation/houdini/1.0.0/index.md
