@@ -19,7 +19,7 @@ At the very top of the application we find Shift's menu bar. This menu has all t
 |*Open Recent*|*File*|Lists the most recent workflows to open.||
 |*Save Workflow*|*File*|Saves the current workflow.|`Ctrl+S`|
 |*Save Workflow As*|*File*|Saves the current workflow with a new name.|`Ctrl+Shift+S`|
-|*Catalog Manager*|*File*|Opens the [Catalog Manager](../../reference/catalogs#the-catalog-manager).|`P`|
+|*Catalog Manager*|*File*|Opens the [Catalog Manager](../../reference/catalogs/catalogs#the-catalog-manager).|`P`|
 ||||
 |*Undo*|*Edit*|Undoes the last action performed on the board.|`Ctrl+Z`|
 |*Redo*|*Edit*|Redoes the last undo performed on the board.|`Ctrl+Y`|
