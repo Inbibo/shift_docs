@@ -7,11 +7,11 @@ Shift comes with six native catalogs that contain the necessary nodes to start b
 - [**Constants catalog**](shift_catalogs/constants): Provides operators to work with standard Python objects, such as booleans or strings.
 - [**Standard catalog**](shift_catalogs/standard): Provides operators to work with standard Python operations. It provides logic to perform [loop iterations](../nodes/iterator) and create [scriptable Python nodes](../nodes/python_script). It also includes operators to read/write JSON files, operate with lists, strings, dictionaries and more.
 - [**FileSystem catalog**](shift_catalogs/filesystem): Provides operators to work with the OS filesystem and environment variables. It includes operators to perform file & directory creation and manipulation and more.
-- [**Workflow catalog**](shift_catalogs/workflow): Provides operators to manage and nest Shift workflows. It includes operators to input and output data, store [variables](nodes/variable) and execute [sub-workflows](../nodes/workflow).
+- [**Workflow catalog**](shift_catalogs/workflow): Provides operators to manage and nest Shift workflows. It includes operators to input and output data, store [variables](../nodes/variable) and execute [sub-workflows](../nodes/workflow).
 - [**CreativeSoftware catalog**](shift_catalogs/creativesoftware): Provides operators to work with Digital Content Creation software. It includes operators for scene management, geometry handling, node graph manipulation and more, across popular DCC tools like Maya, Houdini, Blender, and Nuke.
 
 >[!NOTE]
-> Shift is fully integrated with USD and provides in-built catalogs and plugins. For more information about USD integration in Shift, please refer to the [USD](../../integration_resources/resources/usd) documentation.
+> Shift is fully integrated with USD and provides in-built catalogs and plugins. For more information about USD integration in Shift, please refer to the [USD](../../integration_resources/resources/USD/usd) documentation.
 
 >[!NOTE]
 > Shift also comes with a native catalog for Deadline. For more information about Shift's integration in Deadline and how to use this catalog, please refer to the [Deadline Integration](../../integration_resources/software/deadline) documentation.

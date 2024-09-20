@@ -16,8 +16,8 @@ The *ConditionalEquals* node allows to compare if two values are equal. Dependin
 - **value2**: This plug of type Object is used as one of the values to compare.
 
 ### Outputs
-- **true**: This plug of type [Bool](../nodes#plugs) indicates if the compared values are equal. If that is the case (the value of this plug is `True`), the nodes connected to this plug will be executed.
-- **false**: This plug of type [Bool](../nodes#plugs) indicates if the compared values are not equal. If that is the case (the value of this plug is `True`), the nodes connected to this plug will be executed.
+- **true**: This plug of type [Bool](nodes#plugs) indicates if the compared values are equal. If that is the case (the value of this plug is `True`), the nodes connected to this plug will be executed.
+- **false**: This plug of type [Bool](nodes#plugs) indicates if the compared values are not equal. If that is the case (the value of this plug is `True`), the nodes connected to this plug will be executed.
 
 In this example, we are comparing two `True` boolean values. The result of the ConditionalEquals evaluation is **true**, therefore, the branch connected to the *true* plug will be evaluated.
 <figure style="width:80%;" markdown>
