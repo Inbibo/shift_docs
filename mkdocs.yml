@@ -131,7 +131,7 @@ nav:
       - Developing Plugins:     reference/developer_guide/developing_custom_plugins.md
       - Shift Python API:       reference/developer_guide/api.md
   - Integrations & Resources:
-    - integration_resources/integrations_resources.md
+    - Integrations & Resources:   integration_resources/integrations_resources.md
     - Software Platforms:
       - Maya:                     integration_resources/software/maya.md
       - Houdini:                  integration_resources/software/houdini.md
