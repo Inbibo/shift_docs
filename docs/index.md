@@ -76,17 +76,24 @@ My text ![UI](images/ui.png){style="width:4%"} .
 
 ## Code blocks
 
-<pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">
-myCode
-  </code>
-</pre>
-
-<code style="white-space: pre; padding: 10px; box-sizing: border-box; display: block;">
-myCode
-</code>
-
-<pre style="margin: 15px 0">
-    <code style="white-space: pre; padding: 10px; box-sizing: border-box;">from shift.core import files
+The following code has been formatted by using the HTML tags "pre" and "code" and by using custom styling on the code.
+<pre>
+    <code style="margin: 15px 0; white-space: pre; padding: 10px; box-sizing: border-box;">from shift.core import files
 workflow, catalog_manifest = files.openBatchWorkflow("&ltpath_to_your_workflow_file&gt")</code>
 </pre>
+Text line after code to inspect margins.
+
+
+The following code has been formatted by using three /` as it is done in markdown
+```
+from shift.core import files
+workflow, catalog_manifest = files.openBatchWorkflow("&ltpath_to_your_workflow_file&gt")</code>
+```
+Text line after code to inspect margins.
+
+The following code has been formatted using  `**```**`
+**```**
+from shift.core import files
+workflow, catalog_manifest = files.openBatchWorkflow("&ltpath_to_your_workflow_file&gt")</code>
+**```**
+Text line after code to inspect margins.
