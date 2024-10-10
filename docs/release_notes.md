@@ -15,6 +15,7 @@
 
 **Standard Catalog (Version 1.0.1)**
 - Fixed the ListInsert node output plug to be initialized in the right plug direction. *Shift-1174*
+
 **Workflow Catalog (Version 1.0.1)**
 - Fixed the WorkflowProcess node so that it can be created even if no Python process environment variable is set up. *Shift-1188*
 
