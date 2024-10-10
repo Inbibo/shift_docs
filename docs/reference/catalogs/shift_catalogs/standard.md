@@ -441,6 +441,10 @@ Outputs the updated list.
 | inList | List | []
 | item | Object | None
 | index | Int | 0
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
 | outList | List | []
 
 ---
