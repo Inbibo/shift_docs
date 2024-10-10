@@ -13,14 +13,14 @@
 
 #### Catalogs
 
-##### Standard Catalog (Version 1.0.1)
+**Standard Catalog (Version 1.0.1)**
 - Fixed the ListInsert node output plug to be initialized in the right plug direction. *Shift-1174*
-##### Workflow Catalog (Version 1.0.1)
+**Workflow Catalog (Version 1.0.1)**
 - Fixed the WorkflowProcess node so that it can be created even if no Python process environment variable is set up. *Shift-1188*
 
 #### Integrations & Resources
 
-- Fixed the USD Viewer Plugin so that it does not pop up errors form OpenGL framebuffer when the plugin window is detached from Shift. *Shift_USD-225*
+- Fixed the USD Viewer Plugin to avoid the OpenGL framebuffer errors when the plugin window is detached from Shift. *Shift_USD-225*
 
 ---
 ## Version 1.0.0
