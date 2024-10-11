@@ -2,6 +2,12 @@
 
 ## Version 1.0.1
 
+### Improvements 
+
+#### Core
+
+- Improved compatibility of Pyarmor with third-party libraries.
+
 ### Bug Fixes
 
 #### Core
