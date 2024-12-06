@@ -14,50 +14,42 @@ nshift.show()
 
 ## Shift installation in Nuke
 
-To install Shift and open it through a *menu.py* entry within Nuke, it is required to set up Shift in the user *init.py* and **menu.py*.py* Python files from Nuke. Shift can be added to the user *init.py* and *menu.py* files from Nuke's preference folder (*<home directory>/.nuke*) or to a custom *init.py* and *menu.py* files inside a custom folder structure. If the directory where these files are stored is a path sourced by Nuke, they will be automatically executed on startup.
+To install Shift and open it through a menu entry within Nuke, it is required to set up Shift in the environment or in the user *init.py* Python files from Nuke. Shift can be added to the user *init.py* file from Nuke's preference folder (*<home directory>/.nuke*) or to a custom *init.py* file inside a custom folder structure. If the directory where these files are stored is a path sourced by Nuke, they will be automatically executed on startup.
 
-### Init File
+### Init File/Environment requirements
 
-In the *init.py* file, it is necessary to configure the requirements for Shift to work in Nuke batch and interactive modes. To achieve this, it is only required to add the Shift installation path to the **PATH** environment variable.
+You can add these requirements to your environment before opening Nuke:
 
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">
+PATH=&#37PATH&#37;"&ltpath_to_the_shift_installation_folder&gt"
+PATH=&#37PATH&#37;"&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages"
+NUKE_PATH="&ltpath_to_the_shift_installation_folder&gt/shift/plugins/nuke/startup";&#37NUKE_PATH&#37
 
-<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">try:
+</code></pre>
+
+Or you can add them to the *init.py* file to make Shift to work in Nuke batch and interactive modes. To achieve this, it is only required to add the Shift installation path to the **PATH** environment variable.
+
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">
+import nuke
+
+try:
     import shift
 except:
     import sys
     sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
     sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
+
+nuke.pluginAddPath("&ltpath_to_the_shift_installation_folder&gt/shift/plugins/nuke/startup")
 </code></pre>
 
 >[!NOTE]
 > If the paths are added at the system level or before opening Nuke, then this configuration step will not be required.
 
-### Menu File
+## Shift in Nuke
 
-In the *menu.py*.py file it is required to configure the Shift *menu.py* and toolbar entries in the Nuke UI.
+When the requirements are added you will Shift a Shift menu entry in the toolbar and top menu inside Nuke.
 
-<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">import os
-import nuke
-
-try:
-    import shift
-    shiftPath = os.path.dirname(shift.__file__)  # Get the directory location of Shift
-    # Build the path to the shift_icon for the toolbar
-    iconPath = os.path.join(shiftPath, "icons", "shift_icon_window.png")
-    shiftCode = "from shift.tools import nshift;nshift.show()"
-    # Create the toolbar entry
-    menubar = nuke.*menu.py*("Nodes")
-    shiftM = menubar.addMenu("Shift", icon=iconPath)
-    shiftM.addCommand("Shift UI", shiftCode, '')
-    # Create a *menu.py* entry
-    menubar = nuke.*menu.py*("Nuke")
-    shiftM = menubar.addMenu("Shift")
-    shiftM.addCommand("Shift UI", shiftCode, '')
-except Exception as e:
-    pass  # Skip the Error raise to avoid Nuke failing at opening if setting up the *menu.py* does not work on startup.
-</code></pre>
-
-This code, placed in a *menu.py* file and executed by Nuke, will create a Shift toolbar entry (Figure 1) and a Shift *menu.py* entry (Figure 2) when Nuke is initialized.
+This entry will contain the access to open the Shift UI and to create a ShiftWorkflow Node.
 
 <figure>
       <img src="images/nuke_shift_toolbar.png" alt="Shift Toolbar">
