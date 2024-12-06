@@ -21,9 +21,9 @@ To install Shift and open it through a menu entry within Nuke, it is required to
 You can add these requirements to your environment before opening Nuke:
 
 <pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">
-PATH=&#37PATH&#37;"&ltpath_to_the_shift_installation_folder&gt"
-PATH=&#37PATH&#37;"&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages"
-NUKE_PATH="&ltpath_to_the_shift_installation_folder&gt/shift/plugins/nuke/startup";&#37NUKE_PATH&#37
+PATH=&#37;PATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt"
+PATH=&#37;PATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages"
+NUKE_PATH="&ltpath_to_the_shift_installation_folder&gt/shift/plugins/nuke/startup"&semi;&#37;NUKE_PATH&#37;
 
 </code></pre>
 
@@ -53,12 +53,67 @@ This entry will contain the access to open the Shift UI and to create a ShiftWor
 
 <figure>
       <img src="images/nuke_shift_toolbar.png" alt="Shift Toolbar">
-      <figcaption><b>Figure 1</b>: Shift *menu.py* entry in the Nuke Nodes Toolbar.</figcaption>
+      <figcaption><b>Figure 1</b>: Shift tools in Nuke nodes menu.</figcaption>
 </figure>
 
 <figure>
-      <img src="images/nuke_shift_menu.png" alt="Shift *menu.py*">
-      <figcaption><b>Figure 2</b>: Shift *menu.py* on Nuke's top *menu.py* bar.</figcaption>
+      <img src="images/nuke_shift_menu.png" alt="Shift menu">
+      <figcaption><b>Figure 2</b>: Shift UI on Nuke's top menu bar.</figcaption>
+</figure>
+
+you will be able to create ShiftWorkflow nodes usign the tab key in the node graph too.
+
+<figure>
+      <img src="images/nuke_shift_search_node.png" alt="Creating ShiftWorkflow node.">
+      <figcaption><b>Figure 3</b>: Create ShiftWorkflow nodes in node graph window.</figcaption>
+</figure>
+
+## ShiftWorkflow Node
+
+The Shift plugin for Nuke includes a node to execute Shift workflow's in the Nuke's node graph.
+
+In the Shiftworkflow node you can select you Shift workflow to load it in the node and automatically generate the required input and output knobs and inputs. (If auto plugs option is checked.)
+
+<figure>
+      <img src="images/nuke_shift_node_propierties.png" alt="ShiftWorkflow propierties.">
+      <figcaption><b>Figure 3</b>: Main Propierties tab of ShiftWorkflow node.</figcaption>
+</figure>
+
+You can use relative paths if you use the **SHIFT_PATH_WORKFLOWS** env variable.
+
+### Plugs <--> Knobs/Inputs
+
+This is the correlation of Shift Plugs to Nuke knobs or inputs.
+
+| SPlug Type   | SPlug Code     | Nuke Type                                 | Knob Type                                                    | Note                                                                                                |
+|:-------------|:---------------|:------------------------------------------|:-------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
+| *Bool*       | -              | Knob                                      | Boolean_Knob                                                 |                                                                                                     |
+| *Color*      | -              | Knob                                      | AColor_Knob                                                  |                                                                                                     |
+| *Dict*       | -              | Knob                                      | EvalString_Knob                                              | Require custom implementation                                                                       |
+| *Dir*        | -              | Knob                                      | File_Knob                                                    |                                                                                                     |
+| *Enumerator* | -              | Knob                                      | Enumeration_Knob                                             |                                                                                                     |
+| *FileIn*     | -              | Knob                                      | File_Knob                                                    |                                                                                                     |
+| *FileOut*    | -              | Knob                                      | File_Knob                                                    |                                                                                                     |
+| *Float*      | -              | Knob                                      | Double_Knob                                                  |                                                                                                     |
+| *Instance*   | image*         | Input<br/>Knob<br/>Knob                   | - <br/>Channel_Knob <br/>File_Knob                           | Provides the input image like a single image. (Current Frame)                                       |
+| *Instance*   | imageSequence* | Input<br/>Knob<br/>Knob<br/>Knob<br/>Knob | - <br/>Channel_Knob <br/>File_Knob<br/>Int_Knob<br/>Int_Knob | Provides the input image like a image sequence rendering the full frame range provided in the knob. |
+| *Instance*   | -              | Knob                                      | EvalString_Knob                                              | Require custom implementation                                                                       |
+| *Int*        | -              | Knob                                      | Int_Knob                                                     |                                                                                                     |
+| *List*       | points*        | Input                                     | -                                                            | Requires to connect a Tracker node to get the points from.                                          |
+| *List*       | -              | Knob                                      | EvalString_Knob                                              | Require custom implementation                                                                       |
+| *Object*     | -              | Knob                                      | EvalString_Knob                                              | Require custom implementation                                                                       |
+| *String*     | -              | Knob                                      | EvalString_Knob                                              |                                                                                                     |
+
+### Node config
+
+The node config have 3 options:
+- autoClean: Removes automatically all the temporal renders done for the input when the executiong ends.
+- backupOutputImage: Copy the output image in 
+- imageType: Can be PIL or np.array. This knob specifies the image instance type to use to provide and read from the input and output from the workflow. If the workflow expects or return a difference type it may not work.
+
+<figure>
+      <img src="images/nuke_shift_node_propierties_mode.png" alt="Image Mode.">
+      <figcaption><b>Figure 3</b>: Node config tab.</figcaption>
 </figure>
 
 ## Python Interpreter Setup
