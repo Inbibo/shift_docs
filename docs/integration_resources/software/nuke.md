@@ -72,9 +72,10 @@ You can create ShiftWorkflow nodes by using the tab key in the node graph as wel
 
 ## ShiftWorkflow Node
 
-The Shift plugin for Nuke includes a node to execute Shift workflow's in the Nuke's node graph.
+The Shift plugin for Nuke includes a node to execute a Shift workflow within Nuke's node graph.
 
-In the Shiftworkflow node you can select you Shift workflow to load it in the node and automatically generate the required input and output knobs and inputs. (If auto plugs option is checked.)
+In the Shiftworkflow node, a Shift workflow can be selected to load it into the node. This will automatically generate the required input and output knobs and connections, if the auto plugs option is enabled.
+
 
 <figure>
       <img src="images/nuke_shift_node_propierties.png" alt="ShiftWorkflow propierties.">
