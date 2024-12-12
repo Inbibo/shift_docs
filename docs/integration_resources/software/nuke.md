@@ -101,11 +101,12 @@ This is the correlation of Shift Plugs to Nuke knobs or inputs.
 | *Instance*   | images*        | Output<br/>Knob<br/>Knob                         | - <br/>File_Knob                                             | Provides the input image like a single image. (Current Frame)                                       |
 | *Instance*   | imageSequence* | Input/Output<br/>Knob<br/>Knob<br/>Knob<br/>Knob | - <br/>Channel_Knob <br/>File_Knob<br/>Int_Knob<br/>Int_Knob | Provides the input image like an image sequence rendering the full frame range provided in the knob. |
 
-| *Instance*   | -              | Knob                                             | EvalString_Knob                                              | Require custom implementation                                                                       |
+| *Instance*   | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                       |
 | *Int*        | -              | Knob                                             | Int_Knob                                                     |                                                                                                     |
 | *List*       | points*        | Input                                            | -                                                            | Requires to connect a Tracker node to get the points from.                                          |
-| *List*       | -              | Knob                                             | EvalString_Knob                                              | Require custom implementation                                                                       |
-| *Object*     | -              | Knob                                             | EvalString_Knob                                              | Require custom implementation                                                                       |
+| *List*       | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                       |
+| *Object*     | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                       |
+
 | *String*     | -              | Knob                                             | EvalString_Knob                                              |                                                                                                     |
 
 ### Node config
