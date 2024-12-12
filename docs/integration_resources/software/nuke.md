@@ -110,10 +110,10 @@ This is the correlation of Shift Plugs to Nuke knobs or inputs.
 
 ### Node config
 
-The node config have 3 options:
-- autoClean: Removes automatically all the temporal renders done for the input when the executiong ends.
-- backupOutputImage: Copy the output image in 
-- imageType: Can be PIL or np.array. This knob specifies the image instance type to use to provide and read from the input and output from the workflow. If the workflow expects or return a difference type it may not work.
+The node configuration has three options:
+- autoClean: Automatically removes all temporary renders created for the input once the execution ends.
+- backupOutputImage:  Copies the output image.
+- imageType: Specifies the format used to write and read the inputs and outputs for the workflow.  The instance types can be either PIL or np.array.  If the workflow expects or returns a different type, it may not work correctly.
 
 <figure>
       <img src="images/nuke_shift_node_propierties_mode.png" alt="Image Mode.">
