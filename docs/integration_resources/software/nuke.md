@@ -110,7 +110,8 @@ This is the correlation of Shift Plugs to Nuke knobs or inputs.
 
 | *String*     | -              | Knob                                             | EvalString_Knob                                              |                                                                                                     |
 
-### Node config
+### Node Config
+
 
 The node configuration has three options:
 - autoClean: Automatically removes all temporary renders created for the input once the execution ends.
