@@ -47,7 +47,8 @@ nuke.pluginAddPath("&ltpath_to_the_shift_installation_folder&gt/shift/plugins/nu
 
 ## Shift in Nuke
 
-When the requirements are added you will Shift a Shift menu entry in the toolbar and top menu inside Nuke.
+When requirements are added, a Shift menu entry will appear in both the toolbar and top menu in Nuke.
+
 
 This entry will contain the access to open the Shift UI and to create a ShiftWorkflow Node.
 
