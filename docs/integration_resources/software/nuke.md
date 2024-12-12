@@ -85,7 +85,10 @@ You can use relative paths if you use the **SHIFT_PATH_WORKFLOWS** env variable.
 
 ### Shift Plugs to Nuke Knobs/Inputs
 
+When initialized with a Shift workflow, the node will parse through the Input and Output nodes plugs and automatically populate a set of Nuke knobs in the node UI.
+
 The following table shows the correspondance between Shift Plugs and Nuke knobs or inputs.
+
 
 
 | SPlug Type   | SPlug Code     | Nuke Type                                        | Knob Type                                                    | Note                                                                                                                                                                                                                                                      |
