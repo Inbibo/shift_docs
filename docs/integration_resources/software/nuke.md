@@ -139,10 +139,10 @@ The node configuration has three options:
 The ShiftWorkflow node manages the input and output images internally. For input images, a Write node is connected to the image Input, for output images a Read node is created to load the image back in Nuke.
 By default the correlation of colorspaces and image types is the following:
 
-| Image Type    | Default Colorspace | Data Type | File Type |
-|:--------------|:-------------------|:----------|:----------|
-| PIL.Image     | sRGB               | 8 bit     | png       |
-| Numpy.Array   | Linear (Raw)       | 32 float  | exr       |
+| Image Type    | Default Colorspace | Data Type    | File Type   |
+|:--------------|:-------------------|:-------------|:------------|
+| PIL.Image     | sRGB               | 8-bit uint   | png         |
+| Numpy.Array   | Linear (Raw)       | 32-bit float | exr         |
 
 The colorspace of the input or the output image can be changed in the internal Write nodes and Read nodes of the ShiftWorkflow node if desired.
 You can also perform conversions inside your Shift workflow to pass from one colorspace to other.
