@@ -85,7 +85,8 @@ You can use relative paths if you use the **SHIFT_PATH_WORKFLOWS** env variable.
 
 ### Plugs <--> Knobs/Inputs
 
-This is the correlation of Shift Plugs to Nuke knobs or inputs.
+The following table shows the correspondance between Shift Plugs and Nuke knobs or inputs.
+
 
 | SPlug Type   | SPlug Code     | Nuke Type                                        | Knob Type                                                    | Note                                                                                                |
 |:-------------|:---------------|:-------------------------------------------------|:-------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
