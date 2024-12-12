@@ -29,8 +29,8 @@ NUKE_PATH="&ltpath_to_the_shift_installation_folder&gt/shift/plugins/nuke/startu
 
 Or you can add them to the *init.py* file to make Shift to work in Nuke batch and interactive modes. To achieve this, it is only required to add the Shift installation path to the **PATH** environment variable.
 
-<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">
-import nuke
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">import nuke
+
 
 try:
     import shift
