@@ -120,7 +120,8 @@ The following table shows the correspondance between Shift Plugs and Nuke knobs 
 *Image Plugs*
 
 The Image plugs represented like inputs or outputs have a file knob where the user can define the path where the image have to be saved.
-For input images, they will be saved temporally. For output images they will be saved, but override if the workflow is executed again.
+Input images will be saved as temporary files for them to be loaded in Python. Output images will be saved to the designated path, however successive executions will overwrite them on disk if the path is not changed.
+
 
 ### Node Config
 
