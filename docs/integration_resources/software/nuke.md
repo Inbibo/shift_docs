@@ -62,7 +62,8 @@ This entry will contain the access to open the Shift UI and to create a ShiftWor
       <figcaption><b>Figure 2</b>: Shift UI on Nuke's top menu bar.</figcaption>
 </figure>
 
-you will be able to create ShiftWorkflow nodes usign the tab key in the node graph too.
+You can create ShiftWorkflow nodes by using the tab key in the node graph as well.
+
 
 <figure>
       <img src="images/nuke_shift_search_node.png" alt="Creating ShiftWorkflow node.">
