@@ -20,8 +20,8 @@ To install Shift and open it through a menu entry within Nuke, it is required to
 
 You can add these requirements to your environment before opening Nuke:
 
-<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">PATH=&#37;PATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt"
-PATH=&#37;PATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages"
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">PYTHONPATH=&#37;PYTHONPATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt"
+PYTHONPATH=&#37;PYTHONPATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages"
 NUKE_PATH="&ltpath_to_the_shift_installation_folder&gt/shift/plugins/nuke/startup"&semi;&#37;NUKE_PATH&#37;
 </code></pre>
 
@@ -83,46 +83,64 @@ In the Shiftworkflow node, a Shift workflow can be selected to load it into the 
 
 You can use relative paths if you use the **SHIFT_PATH_WORKFLOWS** env variable.
 
-### Plugs <--> Knobs/Inputs
+### Shift Plugs to Nuke Knobs/Inputs
 
 The following table shows the correspondance between Shift Plugs and Nuke knobs or inputs.
 
 
-| SPlug Type   | SPlug Code     | Nuke Type                                        | Knob Type                                                    | Note                                                                                                |
-|:-------------|:---------------|:-------------------------------------------------|:-------------------------------------------------------------|:----------------------------------------------------------------------------------------------------|
-| *Bool*       | -              | Knob                                             | Boolean_Knob                                                 |                                                                                                     |
-| *Color*      | -              | Knob                                             | AColor_Knob                                                  |                                                                                                     |
-| *Dict*       | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                       |
+| SPlug Type   | SPlug Code     | Nuke Type                                        | Knob Type                                                    | Note                                                                                                                                                                                                                                                      |
+|:-------------|:---------------|:-------------------------------------------------|:-------------------------------------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *Bool*       | -              | Knob                                             | Boolean_Knob                                                 |                                                                                                                                                                                                                                                           |
+| *Color*      | -              | Knob                                             | AColor_Knob                                                  |                                                                                                                                                                                                                                                           |
+| *Dict*       | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                                                                                                                                                                            |
+| *Dir*        | -              | Knob                                             | File_Knob                                                    |                                                                                                                                                                                                                                                           |
+| *Enumerator* | -              | Knob                                             | Enumeration_Knob                                             |                                                                                                                                                                                                                                                           |
+| *FileIn*     | -              | Knob                                             | File_Knob                                                    |                                                                                                                                                                                                                                                           |
+| *FileOut*    | -              | Knob                                             | File_Knob                                                    |                                                                                                                                                                                                                                                           |
+| *Float*      | -              | Knob                                             | Double_Knob                                                  |                                                                                                                                                                                                                                                           |
+| *Instance*   | image*         | Input/Output<br/>Knob<br/>Knob                   | - <br/>Channel_Knob <br/>File_Knob                           | Provides the input image like a single image. (Current Frame)                                                                                                                                                                                             |
+| *Instance*   | images*        | Output<br/>Knob<br/>Knob                         | - <br/>File_Knob<br/>Float_Knob(Switch selector)             | For output plugs returns a list of single images that might not be related between them. The user will be able to select which one to display with a Switch.                                                                                              |
+| *Instance*   | imageSequence* | Input/Output<br/>Knob<br/>Knob<br/>Knob<br/>Knob | - <br/>Channel_Knob <br/>File_Knob<br/>Int_Knob<br/>Int_Knob | Provides the input image like an image sequence rendering the full frame range provided in the knob.                                                                                                                                                      |
+| *Instance*   | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                                                                                                                                                                            |
+| *Int*        | -              | Knob                                             | Int_Knob                                                     |                                                                                                                                                                                                                                                           |
+| *List*       | points*        | Input<br/>Knob                                   | - <br/>Bool_knob                                             | Requires to connect a Tracker node to get the points from. A Knob to active auto inversion of Y coordinate is added. This inversion is useful to make the point coordinates match the image instances coordinates with the (0, 0) at the top left corner. |
+| *List*       | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                                                                                                                                                                            |
+| *Object*     | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                                                                                                                                                                            |
+| *String*     | -              | Knob                                             | EvalString_Knob                                              |                                                                                                                                                                                                                                                           |
 
-| *Dir*        | -              | Knob                                             | File_Knob                                                    |                                                                                                     |
-| *Enumerator* | -              | Knob                                             | Enumeration_Knob                                             |                                                                                                     |
-| *FileIn*     | -              | Knob                                             | File_Knob                                                    |                                                                                                     |
-| *FileOut*    | -              | Knob                                             | File_Knob                                                    |                                                                                                     |
-| *Float*      | -              | Knob                                             | Double_Knob                                                  |                                                                                                     |
-| *Instance*   | image*         | Input/Output<br/>Knob<br/>Knob                   | - <br/>Channel_Knob <br/>File_Knob                           | Provides the input image like a single image. (Current Frame)                                       |
-| *Instance*   | images*        | Output<br/>Knob<br/>Knob                         | - <br/>File_Knob                                             | Provides the input image like a single image. (Current Frame)                                       |
-| *Instance*   | imageSequence* | Input/Output<br/>Knob<br/>Knob<br/>Knob<br/>Knob | - <br/>Channel_Knob <br/>File_Knob<br/>Int_Knob<br/>Int_Knob | Provides the input image like an image sequence rendering the full frame range provided in the knob. |
+>[!NOTE]
+> * The Plugs to Knobs relations with a SPlug Code required means that the name of the plug need to start by that name, but can be longer. For example you can have more than 1 image with Shift Plug: "image1", "image2",...
 
-| *Instance*   | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                       |
-| *Int*        | -              | Knob                                             | Int_Knob                                                     |                                                                                                     |
-| *List*       | points*        | Input                                            | -                                                            | Requires to connect a Tracker node to get the points from.                                          |
-| *List*       | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                       |
-| *Object*     | -              | Knob                                             | EvalString_Knob                                              | Requires custom implementation                                                                       |
 
-| *String*     | -              | Knob                                             | EvalString_Knob                                              |                                                                                                     |
+*Image Plugs*
+
+The Image plugs represented like inputs or outputs have a file knob where the user can define the path where the image have to be saved.
+For input images, they will be saved temporally. For output images they will be saved, but override if the workflow is executed again.
 
 ### Node Config
 
-
 The node configuration has three options:
 - autoClean: Automatically removes all temporary renders created for the input once the execution ends.
-- backupOutputImage:  Copies the output image.
+- backupOutputImage: Makes a backup copy the output image.
 - imageType: Specifies the format used to write and read the inputs and outputs for the workflow.  The instance types can be either PIL or np.array.  If the workflow expects or returns a different type, it may not work correctly.
 
 <figure>
       <img src="images/nuke_shift_node_propierties_mode.png" alt="Image Mode.">
       <figcaption><b>Figure 3</b>: Node config tab.</figcaption>
 </figure>
+
+### Image Colorspace
+
+The ShiftWorkflow node manage the input and output images internally. For input images, a write node is connected to the image input, for output images a Read node is created to load the image back in Nuke.
+By default the correlation of colorspaces and image types is the following:
+
+| Image Type    | Default Colorspace | Data Type | File Type |
+|:--------------|:-------------------|:----------|:----------|
+| PIL.Image     | sRGB               | 8 bit     | png       |
+| Numpy.Array   | Linear (Raw)       | 32 float  | exr       |
+
+The colorspace of the input or the output image could be changed in the internal write nodes and Read nodes of the ShiftWorkflow node if desired.
+You can also make color conversions inside your Shift workflow to convert from one colorspace to others.
 
 ## Python Interpreter Setup
 In Shift it is possible to launch the execution of a workflow via an application's Python interpreter with the [WorkflowProcess](../../reference/nodes/workflow#workflowProcess-node) node. To achieve this for Nuke, set the path to its Python interpreter the following environment variables:
