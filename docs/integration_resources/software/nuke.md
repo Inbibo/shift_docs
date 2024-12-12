@@ -115,7 +115,7 @@ The following table shows the correspondance between Shift Plugs and Nuke knobs 
 | *String*     | -              | Knob                                             | EvalString_Knob                                              |                                                                                                                                                                                                                                                           |
 
 >[!NOTE]
-> &#42; The conversion for certain Shift Plugs to Nuke Knobs will change depending on the Plug naming protocol. Specifically the shiftWorkflow node plugin for Nuke will identify as "special", plugs that start with the word defined in the `SPlug Code` section of the table above, e.g. "image1", "image2",... or "imageSequenceOriginal", "imageSequenceMasked",...
+> \* The conversion for certain Shift Plugs to Nuke Knobs will change depending on the Plug naming protocol. Specifically the shiftWorkflow node plugin for Nuke will identify as "special", plugs that start with the word defined in the `SPlug Code` section of the table above, e.g. "image1", "image2",... or "imageSequenceOriginal", "imageSequenceMasked",...
 
 
 
