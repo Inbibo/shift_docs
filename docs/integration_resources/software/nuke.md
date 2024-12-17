@@ -16,7 +16,8 @@ nshift.show()
 
 To install Shift and open it through a menu entry within Nuke, it is required to set up Shift in the environment or in the user *init.py* Python files from Nuke. Shift can be added to the user *init.py* file from Nuke's preference folder (*<home directory>/.nuke*) or to a custom *init.py* file inside a custom folder structure. If the directory where these files are stored is a path sourced by Nuke, they will be automatically executed on startup.
 
-### Init File/Environment requirements
+### Init File and Environment requirements
+
 
 You can add these requirements to your environment before opening Nuke:
 
