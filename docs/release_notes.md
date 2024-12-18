@@ -1,5 +1,67 @@
 # Release Notes
 
+## Version 1.1.0
+
+### Added
+
+#### Core
+
+- Workflow execution on a dedicated thread. This allows users to inspect and author different workflows while executing.
+- `SHIFT_SINGLE_THREADED` environment variable to switch the threaded execution behaviour.
+- Workflow execution progress bar in the Shift UI.
+- Board styling for higlighting the execution status of the workflow.
+- Ability to request the interruption of an executing workflow with the "Clear Execution" button. The button will now clear the workflow only if pressed while no execution is running on the current board.
+- Ability to rename a node by double clicking on its name with the left mouse button.
+
+#### Integration & Resources
+
+- Nuke: Menu file to setup Shift tools inside Nuke.
+- Nuke (Beta): "ShiftWorkflow" Nuke node to execute Shift workflow inside the Nuke node graph.
+
+#### API
+
+- Added `shift.utils.dcc_threading` module containing utilities to handle threaded execution in DCC context
+- Added `shift.utils.decorators` module with `mainThread` decorator for SOperator.execute methods to force execution on main thred in Maya and Nuke
+- Added `disableEditing` method to `ParameterWidget` class to enable/disable editing capabilities of the Inspector widgets.
+
+### Improvements
+
+#### Core
+
+- Set Focus Execution to `False` by default. The global execution status is now tracked on the progress bar. *Shift-1218*
+
+#### Catalogs
+
+**Standard Catalog (Version 1.1.0)**
+- Added `mainThread` boolean plug to PythonScript node to force execution on main thread in DCC context. This is needed to use DCC Python API calls for Maya or Nuke in the node's script. *Shift-1218*
+
+**CreativeSoftware Catalog (Version 1.1.0)**
+- This catalog's nodes have been made compatible with threaded execution feature in Maya. *Shift-1218*
+- Added output plug to OBJImport node. *Shift-1226*
+
+**sMayaUSD Catalog (Version 1.1.0)**
+- This catalog's nodes have been made compatible with threaded execution feature in Maya. *Shift_USD-228*
+
+### Bug Fixes
+
+#### Core
+
+- Fixed a bug that would break thirdparty dependencies when unloading and reloading a catalog. *Shift-1233*
+- Fixed a bug that would prevent the user to run WorkflowProcess nodes with a Trial version of Shift. *Shift-1221*
+- Fixed a bug that would allow users to accumulate multiple connections between the same trigger plugs. *Shift-1089*
+
+#### Catalogs
+
+**Workflow Catalog (Version 1.1.0)**
+- Fixed a bug that would prevent the sub-workflow operators to be reset when clicking the "Clear Execution" button. *Shift-1219*
+
+### Known Limitations
+
+#### Integration & Resources
+
+- Nuke: Shift interactive sessions might raise pickle errors when saving preventing the operation to be performed if the interactive instance is opened while a workflow is being run in batch mode (e.g. using the ShiftWorkflow node) in the same Python session.
+
+---
 ## Version 1.0.1
 
 ### Improvements 
