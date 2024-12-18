@@ -70,7 +70,7 @@ You can create ShiftWorkflow nodes by using the tab key in the node graph as wel
       <figcaption><b>Figure 3</b>: Create ShiftWorkflow nodes in node graph window.</figcaption>
 </figure>
 
-## ShiftWorkflow Node
+## ShiftWorkflow Node (Beta)
 
 The Shift plugin for Nuke includes a node to execute a Shift workflow within Nuke's node graph.
 
@@ -115,9 +115,6 @@ The following table shows the correspondance between Shift Plugs and Nuke knobs 
 >[!NOTE]
 > \* The conversion for certain Shift Plugs to Nuke Knobs will change depending on the Plug naming protocol. Specifically the shiftWorkflow node plugin for Nuke will identify as "special", plugs that start with the word defined in the `SPlug Code` section of the table above, e.g. "image1", "image2",... or "imageSequenceOriginal", "imageSequenceMasked",...
 
-
-
-
 *Image Plugs*
 
 The Image plugs represented like inputs or outputs have a file knob where the user can define the path where the image have to be saved.
@@ -148,6 +145,10 @@ By default the correlation of colorspaces and image types is the following:
 
 The colorspace of the input or the output image can be changed in the internal Write nodes and Read nodes of the ShiftWorkflow node if desired.
 You can also perform conversions inside your Shift workflow to pass from one colorspace to other.
+
+
+>[!WARNING]
+> \* This Nuke node is currently in *Beta*. Please, take into account that tests are still being perform on this tool and that its behavior may change in the future. If you experience any issues, please contact us at shift.support@inbibo.co.uk .
 
 
 ## Python Interpreter Setup
