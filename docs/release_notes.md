@@ -21,7 +21,7 @@
 #### API
 
 - Added `shift.utils.dcc_threading` module containing utilities to handle threaded execution in DCC context.
-- Added `shift.utils.decorators` module with `mainThread` decorator for SOperator.execute methods to force execution on main thred in Maya and Nuke.
+- Added `shift.utils.decorators` module with `mainThread` decorator for SOperator.execute methods to force execution on main thread in Maya and Nuke.
 - Added `disableEditing` method to `ParameterWidget` class to enable/disable editing capabilities of the Inspector widgets.
 
 ### Improvements
