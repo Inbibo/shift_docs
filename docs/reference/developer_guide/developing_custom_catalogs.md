@@ -96,7 +96,7 @@ Please refer to the Shift API documentation to know more about which plug types 
 
 ## Forcing Operators to Run on the Main Thread
 
-As mentioned in the [Execution Details](../../getting_started/basics/execute#executing-specific-nodes-on-the-main-thread) certain contexts require specific Python functions to be called from the main thread. This is the case when running `maya.cmds` or `nuke` calls.
+Certain contexts and applications require specific Python functions to be called from the main thread.  Ignoring this requirement can cause unexpected behaviours or crashes. This is the case, for instance, when running `maya.cmds` or `nuke` calls.
 The Shift API offers two quick solutions that can be used to overcome this problem for Maya and Nuke. These solutions allow to force running only the required operator or callable in the main thread.
 
 ### Python Decorator
