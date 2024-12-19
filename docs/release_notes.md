@@ -6,12 +6,12 @@
 
 #### Core
 
-- Workflow execution on a dedicated thread. This allows users to inspect and author different workflows while executing.
-- `SHIFT_SINGLE_THREADED` environment variable to switch the threaded execution behaviour.
-- Workflow execution progress bar in the Shift UI.
-- Board styling for higlighting the execution status of the workflow.
-- Ability to request the interruption of an executing workflow with the "Clear Execution" button. The button will now clear the workflow only if pressed while no execution is running on the current board.
-- Ability to rename a node by double clicking on its name with the left mouse button.
+- Shift workflows now run on a dedicated thread, enabling users to inspect and author other workflows and interact with the UI while there is an ongoing execution.
+- An environment variable, `SHIFT_SINGLE_THREADED`, has been added to enable or disable threaded execution.
+- Added a workflow execution progress bar in the Shift UI.
+- Shift's board will now highlight the borders of executing boards to provide a visual cue of the execution status of a workflow.
+- Added the functionality to request the interruption of an executing workflow to the "Clear Execution" button. The button will now clear the workflow only if pressed while no execution is running on the current board.
+- Added a new way to rename a node by double-clicking on its name with the left mouse button.
 
 #### Integration & Resources
 
