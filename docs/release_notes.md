@@ -28,7 +28,7 @@
 
 #### Core
 
-- Set Focus Execution to `False` by default. The global execution status is now tracked on the progress bar. *Shift-1218*
+- Set "Focus Execution" option to `False` by default. The global execution status is now tracked on the progress bar. 
 
 #### Catalogs
 
