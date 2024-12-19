@@ -15,8 +15,9 @@
 
 #### Integration & Resources
 
-- Nuke: Menu file to setup Shift tools inside Nuke.
-- Nuke (Beta): "ShiftWorkflow" Nuke node to execute Shift workflow inside the Nuke node graph.
+**Nuke**
+- Added a Menu file to set up Shift tools inside Nuke.
+- (Beta) Included a new "ShiftWorkflow" Nuke node to execute Shift workflow inside the Nuke node graph. This node is in beta, meaning that its behaviour might change in the future.
 
 #### API
 
