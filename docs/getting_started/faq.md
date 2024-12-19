@@ -13,7 +13,7 @@ The progress bar in the node will indicate the percentage of the subworkflow tha
 If you are using our in-built nodes you can trust that their behaviour will be consistent across the supported versions of Python. If your workflow uses Python Script nodes or custom nodes made by others, then the compatibility will be as good as the compatibility between those two versions of Python is.
 
 ## How do I change the name of a node?
-To change the name of the node you have to select the node and then edit the name property from the properties inspector.
+To change the name of the node you have to double-click on the node's name. This will pop up a dialog where you can set the new name. Alternatively, you can select the node and then edit the name property from the properties inspector.
 
 ## I have created a Workflow Process node, but the list of available interpreters is empty. What should I do?
 The Workflow Process node relies on a series of environment variables that provide the name to use for the interpreter and the path to the executable of the Python interpreter to be used. For more information, please refer to [this page](../reference/nodes/workflow#workflowprocess-node).
