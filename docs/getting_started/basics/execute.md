@@ -68,7 +68,7 @@ An interruption of the currently executing workflow can be requested by clicking
       <figcaption><b>Figure 6</b>: Stopping the execution of a workflow.</figcaption>
 </figure>
 
-The interruption will take effect once the execution of the operator that was running when the button was clicked ends. This behaviour allows Shift to safely kill the execution thread.
+The interruption will take effect once the execution of the operator that was running when the button was clicked ends. This behaviour ensures that Shift can safely kill the execution thread.
 
 ### Managing Threaded Execution Behaviour
 
