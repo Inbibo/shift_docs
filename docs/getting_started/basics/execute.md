@@ -61,7 +61,7 @@ By default Shift will run the execution of the workflow on a dedicated thread. T
 
 ### Stopping a Running Execution
 
-When threaded execution is enabled, the user is free to interact with the Shift UI. An interruption of the currently executing workflow can be requested by clicking on the *Clear Execution* button. While a board is executing, this button will force the execution to stop without clearing the execution progress.
+An interruption of the currently executing workflow can be requested by clicking on the *Clear Execution* button. While a board is executing, this button will force the execution to stop without clearing the execution progress.
 
 <figure>
       <img src="images/stopping_execution.gif" alt="Stopping the Execution">
