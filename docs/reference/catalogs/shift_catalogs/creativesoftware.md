@@ -358,6 +358,7 @@ Works for Maya, Houdini, and Nuke.
 Imports geometric data from an OBJ file to the DCC.
 The importRoot plug specifies the parent to which the new object will be appended.
 The namespace plug will create the object under the specified namespace in Maya.
+Outputs the path to the object nodes loaded.
 
 Works for Maya & Houdini.
 
@@ -369,6 +370,11 @@ Works for Maya & Houdini.
 | filepath | FileIn | 
 | importRoot | String | ""
 | namespace | String | ""
+
+#### Outputs
+| Name | Type | Default |
+| --- | --- | --- |
+| objectNodes | Object | None
 
 ---
 ## ParentObjects
