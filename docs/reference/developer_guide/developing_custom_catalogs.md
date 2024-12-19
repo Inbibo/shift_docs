@@ -101,8 +101,7 @@ The Shift API offers two quick solutions that can be used to overcome this probl
 
 ### Python Decorator
 
-The `shift.utils.decorators` module contains the `mainThread` decorator which you can import in your custom catalog.
-This decorator can wrap the `execute` method of an operator and dynamically force the execution logic to run on the main thread if the Shift session is running in Maya or Nuke. Here is an exemple on how to use it:
+The `shift.utils.decorators` module contains the `mainThread` decorator, which can be imported into a custom catalog. This decorator can wrap the `execute` method of an operator and dynamically force the execution logic to run on the main thread if the Shift session is running in Maya or Nuke. Here is an example on how to use it:
 
 <pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">from shift.core.workflow import SOperator
 from shift.core.workflow import SPlug
