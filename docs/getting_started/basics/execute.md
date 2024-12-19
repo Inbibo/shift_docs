@@ -84,7 +84,7 @@ The threaded execution feature can be activated or deactivated from the *Single 
 
 ### Actions Limited While Executing
 
-The user is allowed to perform most interactions with the Shift UI while a workflow is executing. This includes inspecting the nodes, authoring other boards and using plugins. However, the following actions are limited:
+The user can perform most interactions within the Shift UI while a workflow is executing. This includes inspecting the nodes, authoring other boards and using plugins. However, the following actions are limited:
 
 - The user can not launch executions of other workflows. Only one workflow at a time can be executed.
 - The user can not author the executing workflow. This includes not being able to: edit plug values, create plugs, create nodes or creating connections.
