@@ -93,3 +93,122 @@ The `SOperator` constructor method takes care of initializing the plug objects a
 The **execute** method takes care of defining the list of steps to be performed when the execution of the operator is issued inside Shift. In the example above, the execute method picks up the values of the two input plugs and multiplies them together. Finally, it stores the result in the output plug.
 
 Please refer to the Shift API documentation to know more about which plug types are present in Shift, and which additional methods the `SPlug` and `SOperator` classes offer.
+
+## Forcing Operators to Run on the Main Thread
+
+As mentioned in the [Execution Details](../../getting_started/basics/execute#executing-specific-nodes-on-the-main-thread) certain contexts require specific Python functions to be called from the main thread. This is the case when running `maya.cmds` or `nuke` calls.
+The Shift API offers two quick solutions that can be used to overcome this problem for Maya and Nuke. These solutions allow to force running only the required operator or callable in the main thread.
+
+### Python Decorator
+
+The `shift.utils.decorators` module contains the `mainThread` decorator which you can import in your custom catalog.
+This decorator can wrap the `execute` method of an operator and dynamically force the execution logic to run on the main thread if the Shift session is running in Maya or Nuke. Here is an exemple on how to use it:
+
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">from shift.core.workflow import SOperator
+from shift.core.workflow import SPlug
+from shift.core.constants import SType
+from shift.core.constants import SDirection
+
+from shift.utils.decorators import mainThread
+
+class MyOperator(SOperator):
+    """ Operator's description.
+  
+    """
+    def __init__(self, code, parent=None):
+
+        super(self.__class__, self).__init__(code, parent)
+
+        inPlug1 = SPlug(code="input1",
+                      value=0,
+                      type=SType.kInt,
+                      direction=SDirection.kIn,
+                      parent=self)
+
+        inPlug2 = SPlug(code="input2",
+                      value=0,
+                      type=SType.kInt,
+                      direction=SDirection.kIn,
+                      parent=self)
+
+        outPlug = SPlug(code="output",
+                      value=0,
+                      type=SType.kInt,
+                      direction=SDirection.kOut,
+                      parent=self)
+
+        self.addPlug(inPlug1)
+        self.addPlug(inPlug2)
+        self.addPlug(outPlug)
+
+    @mainThread
+    def execute(self, force=False):
+
+        input1 = self.getPlug("input1", SDirection.kIn).value()
+        input2 = self.getPlug("input2", SDirection.kOut).value()
+
+        [...my dcc code..]
+
+        self.getPlug("output").setValue(output)
+        super(self.__class__, self).execute(force)
+</code></pre>
+
+### Wrapper Function
+
+If performance is a must, only a specific callable can be wrapped with the same logic. This can be done using the function `executeInMainDCCThread` from the `shift.utils.dcc_threading` module. Here is an example of the syntax to use:
+
+<pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">from shift.core.workflow import SOperator
+from shift.core.workflow import SPlug
+from shift.core.constants import SType
+from shift.core.constants import SDirection
+
+from shift.utils.dcc_threading import executeInMainDCCThread
+
+
+def my_dcc_logic(input1, input2, custom_modifier=True):
+
+    [...my dcc code...]
+
+    return output
+
+
+class MyOperator(SOperator):
+    """ Operator's description.
+  
+    """
+    def __init__(self, code, parent=None):
+
+        super(self.__class__, self).__init__(code, parent)
+
+        inPlug1 = SPlug(code="input1",
+                      value=0,
+                      type=SType.kInt,
+                      direction=SDirection.kIn,
+                      parent=self)
+
+        inPlug2 = SPlug(code="input2",
+                      value=0,
+                      type=SType.kInt,
+                      direction=SDirection.kIn,
+                      parent=self)
+
+        outPlug = SPlug(code="output",
+                      value=0,
+                      type=SType.kInt,
+                      direction=SDirection.kOut,
+                      parent=self)
+
+        self.addPlug(inPlug1)
+        self.addPlug(inPlug2)
+        self.addPlug(outPlug)
+
+    def execute(self, force=False):
+
+        input1 = self.getPlug("input1", SDirection.kIn).value()
+        input2 = self.getPlug("input2", SDirection.kOut).value()
+
+        output = executeInMainDCCThread(my_dcc_logic, (input1, input2), {'custom_modifier': False})
+
+        self.getPlug("output").setValue(output)
+        super(self.__class__, self).execute(force)
+</code></pre>

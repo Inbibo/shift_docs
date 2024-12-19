@@ -618,6 +618,8 @@ Outputs the same message that was printed.
 Executes a scripted Python code.
 The node accepts any custom object as input.
 Outputs the result of the script if the 'output' variable is explicitly set in the code.
+The mainThread plug forces the execution of the script in the main thread in DCC context,
+it has no effect outside of DCCs.
 
 
 <i>Allows creation of custom plugs.</i>
@@ -627,6 +629,7 @@ Outputs the result of the script if the 'output' variable is explicitly set in t
 | Name | Type | Default
 | --- | --- | --- |
 | script | Code | None
+| mainThread | Bool | False
 
 #### Outputs
 | Name | Type | Default |
