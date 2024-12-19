@@ -70,7 +70,7 @@ You can create ShiftWorkflow nodes by using the tab key in the node graph as wel
       <figcaption><b>Figure 3</b>: Create ShiftWorkflow nodes in node graph window.</figcaption>
 </figure>
 
-## ShiftWorkflow Node
+## ShiftWorkflow Node (Beta)
 
 The Shift plugin for Nuke includes a node to execute a Shift workflow within Nuke's node graph.
 
@@ -88,7 +88,7 @@ You can use relative paths if you use the **SHIFT_PATH_WORKFLOWS** env variable.
 
 When initialized with a Shift workflow, the node will parse through the Input and Output nodes plugs and automatically populate a set of Nuke knobs in the node UI.
 
-The following table shows the correspondance between Shift Plugs and Nuke knobs or inputs.
+The following table shows the correspondence between Shift Plugs and Nuke knobs or inputs.
 
 
 
@@ -113,14 +113,11 @@ The following table shows the correspondance between Shift Plugs and Nuke knobs 
 | *String*     | -              | Knob                                             | EvalString_Knob                                              |                                                                                                                                                                                                                                                           |
 
 >[!NOTE]
-> \* The conversion for certain Shift Plugs to Nuke Knobs will change depending on the Plug naming protocol. Specifically the shiftWorkflow node plugin for Nuke will identify as "special", plugs that start with the word defined in the `SPlug Code` section of the table above, e.g. "image1", "image2",... or "imageSequenceOriginal", "imageSequenceMasked",...
-
-
-
+> The conversion for certain Shift Plugs to Nuke Knobs will change depending on the Plug naming protocol. Specifically, the shiftWorkflow node plugin for Nuke will identify as "special", plugs that start with the word defined in the `SPlug Code` section of the table above, e.g. "image1", "image2",... or "imageSequenceOriginal", "imageSequenceMasked",...
 
 *Image Plugs*
 
-The Image plugs represented like inputs or outputs have a file knob where the user can define the path where the image have to be saved.
+The Image plugs represented like inputs or outputs have a file knob where the user can define the path where the image has to be saved.
 Input images will be saved as temporary files for them to be loaded in Python. Output images will be saved to the designated path, however successive executions will overwrite them on disk if the path is not changed.
 
 
@@ -128,7 +125,7 @@ Input images will be saved as temporary files for them to be loaded in Python. O
 
 The node configuration has three options:
 - autoClean: Automatically removes all temporary renders created for the input once the execution ends.
-- backupOutputImage: Makes a backup copy the output image.
+- backupOutputImage: Makes a backup copy of the output image.
 - imageType: Specifies the format used to write and read the inputs and outputs for the workflow.  The instance types can be either PIL or np.array.  If the workflow expects or returns a different type, it may not work correctly.
 
 <figure>
@@ -150,8 +147,12 @@ The colorspace of the input or the output image can be changed in the internal W
 You can also perform conversions inside your Shift workflow to pass from one colorspace to other.
 
 
+>[!WARNING]
+> This Nuke node is currently in *Beta*. Please, take into account that tests are still being performed on this tool and that its behavior may change in the future. If you experience any issues, please contact us at shift.support@inbibo.co.uk .
+
+
 ## Python Interpreter Setup
-In Shift it is possible to launch the execution of a workflow via an application's Python interpreter with the [WorkflowProcess](../../reference/nodes/workflow#workflowProcess-node) node. To achieve this for Nuke, set the path to its Python interpreter the following environment variables:
+In Shift, it is possible to launch the execution of a workflow via an application's Python interpreter with the [WorkflowProcess](../../reference/nodes/workflow#workflowProcess-node) node. To achieve this for Nuke, set the path to its Python interpreter the following environment variables:
 
 **SHIFT_PROCESS_NUKE** : path to Nuke's Python interpreter (*python*).
 
