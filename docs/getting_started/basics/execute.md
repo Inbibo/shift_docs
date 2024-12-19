@@ -51,20 +51,20 @@ The "Clear Execution" action will set all the nodes in the workflow to dirty. Al
 The "Live Execution" action allows to trigger the execution of the whole workflow whenever a change to any node is done. While the "Live Execution" is turned on, the other execution buttons are disabled. To re-enable all the execution buttons, turn Live Execution off.
 
 <figure>
-      <img src="images/stopping_execution.gif" alt="Live Execution">
+      <img src="images/live_execution.gif" alt="Live Execution">
       <figcaption><b>Figure 5</b>: Executing workflow in live execution mode.</figcaption>
 </figure>
 
 ## Threaded Execution
 
-By default Shift will run the execution of the workflow on a dedicated thread. This allows the user to freely inspect the board contextually to its execution. Additionally, for long executing workflows, the user is free to author and inspect any board other than the executing one.
+By default Shift will run the execution of the workflow on a dedicated thread. This allows the user to freely inspect the board that is currently executing. Additionally, for long executing workflows, the user is free to author and inspect any board other than the executing one.
 
 ### Stopping a Running Execution
 
 When threaded execution is enabled, the user is free to interact with the Shift UI. An interruption of the currently executing workflow can be requested by clicking on the *Clear Execution* button. While a board is executing, this button will force the execution to stop without clearing the execution progress.
 
 <figure>
-      <img src="images/live_execution.gif" alt="Stopping the Execution">
+      <img src="images/stopping_execution.gif" alt="Stopping the Execution">
       <figcaption><b>Figure 6</b>: Stopping the execution of a workflow.</figcaption>
 </figure>
 
@@ -95,6 +95,3 @@ The user is allowed to perform most interactions with the Shift UI while a workf
 ### Executing Specific Nodes on the Main Thread
 
 Certain Python functions are required to be called from the main thread. This is the case for some DCCs like Maya or Nuke. Ignoring this requirement can cause unexpected behaviours or crashes. Please check out the [Forcing Operators to Run on the Main Thread](../../reference/developer_guide/developing_custom_catalogs#forcing-operators-to-run-on-the-main-thread) section of the *Developer Guide* for more information on the advanced options available to force the execution of nodes in the main thread.
-
->[!NOTE]
->These solutions are employed in the *Creative Software* catalog and *PythonScript* node. When executing DCC specific nodes in Maya or Nuke, the Shift UI is expected to momentarly freeze until the execution of the node finishes.
