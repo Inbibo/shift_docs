@@ -59,7 +59,8 @@
 
 #### Integration & Resources
 
-- Nuke: Shift interactive sessions might raise pickle errors when saving preventing the operation to be performed if the interactive instance is opened while a workflow is being run in batch mode (e.g. using the ShiftWorkflow node) in the same Python session.
+**Nuke**
+- Shift interactive sessions may raise pickle errors when attempting to save a workflow if the interactive session is opened while a Shift workflow is being executed in batch mode (for example, using the "ShiftWorkflow" Nuke node) within the same Python session. This can prevent the saving process from completing successfully.
 
 ---
 ## Version 1.0.1
