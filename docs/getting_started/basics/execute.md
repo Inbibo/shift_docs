@@ -87,7 +87,7 @@ The threaded execution feature can be activated or deactivated from the *Single 
 The user can perform most interactions within the Shift UI while a workflow is executing. This includes inspecting the nodes, authoring other boards and using plugins. However, the following actions are limited:
 
 - The user can not launch executions of other workflows. Only one workflow at a time can be executed.
-- The user can not author the executing workflow. This includes not being able to: edit plug values, create plugs, create nodes or creating connections.
+- The user can not author the executing workflow. This includes not being able to: edit plug values, create plugs, create nodes or create connections.
 - The user can not save the executing workflow. In order to save the workflow file the execution must finish or be interrupted.
 - The user can not save workflows that are loaded and being executed inside *Workflow* nodes in another board.
 - The user can not paste nodes copied from an executing workflow. The user must wait for the execution to finish before pasting.
