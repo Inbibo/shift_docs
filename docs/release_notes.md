@@ -40,7 +40,7 @@
 - Added output plug to OBJImport node. *Shift-1226*
 
 **sMayaUSD Catalog (Version 1.1.0)**
-- This catalog's nodes have been made compatible with threaded execution feature in Maya. *Shift_USD-228*
+- This catalog's nodes have been made compatible with the new threaded execution mode of Shift. *Shift_USD-228*
 
 ### Bug Fixes
 
