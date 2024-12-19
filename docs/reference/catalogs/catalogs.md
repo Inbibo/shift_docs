@@ -45,7 +45,10 @@ To load or unload a catalog, simply indicate in the checkbox at the left of the 
 > It is not possible to have two catalogs with the same name loaded simultaneously. Attempting to do so will require one of them to be unloaded. 
 > For instance, if there is an **Environment** catalog named *MyCatalog* and a **User** catalog also named *MyCatalog*, only one of these can be loaded at a time.
 
-### Add a Catalogs
+>[!WARNING]
+> Unloading a catalog will only unload the modules where the catalog operators are defined, it will not unload third party modules that were imported during the loading of the catalog.
+
+### Add a Catalog
 
 To add a catalog click on the `Add Catalog` button at the top right corner of the Catalog Manager. This will prompt a file browser to search and select the catalog to add to Shift. Once the catalog file is found, click on `Open` in the browser. The new catalog will be added as a **User** catalog to the list and will be, by default, set to loaded in Shift. Finally, make sure to click on `Save Changes` to commit the latest addition. 
 
