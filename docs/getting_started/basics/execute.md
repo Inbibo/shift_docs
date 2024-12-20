@@ -73,7 +73,7 @@ The interruption will take effect once the execution of the operator that was ru
 
 ### Managing Threaded Execution Behaviour
 
-The threaded execution feature can be activated or deactivated from the *Single Thread* toggle in *Execute* menu in the top bar.
+The threaded execution feature can be activated or deactivated from the *Single Thread* toggle in *Execute* menu in the top bar. Please be aware that disabling this feature will cause the workflow to run in the same Python thread as the Shift UI, resulting in Shift freezing until the execution is complete.
 
 <figure>
       <img src="images/disabling_threaded_execution.gif" alt="Disabling Threaded Execution">
