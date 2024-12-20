@@ -7,6 +7,7 @@
 #### Core
 
 - Shift workflows now run on a dedicated thread, enabling users to inspect and author other workflows and interact with the UI while there is an ongoing execution.
+- A new *Single Thread* toggle action has been added to the *Execute* top bar menu to switch the threaded execution behaviour.
 - An environment variable, `SHIFT_SINGLE_THREADED`, has been added to enable or disable threaded execution.
 - Added a workflow execution progress bar in the Shift UI.
 - Shift's board will now highlight the borders of executing boards to provide a visual cue of the execution status of a workflow.
