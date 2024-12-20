@@ -37,6 +37,7 @@ At the very top of the application we find Shift's menu bar. This menu has all t
 |*Execute Next*|*Execute*|Executes the next node in the workflow.|`>`|
 |*Clear Execution*|*Execute*|Clears the executed status from all the nodes in the workflow.|`<`|
 |*Stop On Error*|*Execute*|Defines if the workflow execution should stop when encountering an error or not.||
+|*Single Thread*|*Execute*|Defines if the workflow execution should be run on the same thread or not.||
 ||||
 |*Frame All*|*View*|Frames all the nodes present in the board.|`A`|
 |*Frame Selected*|*View*|Frames the selected nodes.|`F`|
@@ -85,6 +86,7 @@ The following controls are available for the board:
 |*Rectangular Selection*|`Left-Click and Drag`|
 
 Several Shift boards can be opened to work on different tasks at the same time; each will be displayed as a separate tab.
+Right under the board, a low-profile progress will show up when executing a workflow showing its execution progress status.
 
 ## Dockable Widgets
 All other widgets in the Shift Window are utility widgets used to interact with the workflow and the application. These widgets are dockable widgets, which means that they can be resized and rearranged throughout the Shift window to satisfy personal layout tastes.
