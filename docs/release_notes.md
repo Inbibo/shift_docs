@@ -64,7 +64,7 @@
 **Nuke**
 - Shift interactive sessions may raise pickle errors when attempting to save a workflow if the interactive session is opened while a Shift workflow is being executed in batch mode (for example, using the "ShiftWorkflow" Nuke node) within the same Python session. This can prevent the saving process from completing successfully.
 
----
+
 ## Version 1.0.1
 
 ### Improvements 
@@ -94,7 +94,7 @@
 
 - Fixed the USD Viewer Plugin to avoid the OpenGL framebuffer errors when the plugin window is detached from Shift. *Shift_USD-225*
 
----
+
 ## Version 1.0.0
 
 ### Added
