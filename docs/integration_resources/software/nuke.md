@@ -23,7 +23,7 @@ You can add these requirements to your environment before opening Nuke:
 
 <pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">PYTHONPATH=&#37;PYTHONPATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt"
 PYTHONPATH=&#37;PYTHONPATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages"
-NUKE_PATH="&ltpath_to_the_shift_installation_folder&gt/shift/plugins/nuke/startup"&semi;&#37;NUKE_PATH&#37;
+NUKE_PATH="&ltpath_to_the_shift_installation_folder&gt/shift/NukeTools/startup"&semi;&#37;NUKE_PATH&#37;
 </code></pre>
 
 Or you can add them to the *init.py* file to source Shift in Nuke batch and interactive modes. To achieve this, it is only required to add the Shift installation path to the Python `sys.path`.
@@ -39,7 +39,7 @@ except:
     sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
     sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
 
-nuke.pluginAddPath("&ltpath_to_the_shift_installation_folder&gt/shift/plugins/nuke/startup")
+nuke.pluginAddPath("&ltpath_to_the_shift_installation_folder&gt/shift/NukeTools/startup")
 </code></pre>
 
 >[!NOTE]
