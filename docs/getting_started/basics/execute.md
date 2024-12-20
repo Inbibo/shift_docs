@@ -39,6 +39,7 @@ The "Execute Next" action will compute the next dirty node present in the workfl
 ### ![Clear Execution Button](images/clear_all_default.svg){style="width:5%"} Clear Execution
 
 The "Clear Execution" action will set all the nodes in the workflow to dirty. All **connected** inputs and output values will be cleared to their default values. This forces Shift to recompute all nodes the next time the workflow has to be executed.
+If a workflow is executing when this button is clicked, the execution will be interrupted.
 
 <figure>
       <img src="images/clear_execution.gif" alt="Clear execution">

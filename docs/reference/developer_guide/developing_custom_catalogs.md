@@ -154,7 +154,7 @@ class MyOperator(SOperator):
 
 ### Wrapper Function
 
-If performance is a must, only a specific callable can be wrapped with the same logic. This can be done using the function `executeInMainDCCThread` from the `shift.utils.dcc_threading` module. Here is an example of the syntax to use:
+If performance is a must, only a specific callable can be wrapped with the same logic as the execute method decorator. This can be done using the function `executeInMainDCCThread` from the `shift.utils.dcc_threading` module. Here is an example of the syntax to use:
 
 <pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">from shift.core.workflow import SOperator
 from shift.core.workflow import SPlug
