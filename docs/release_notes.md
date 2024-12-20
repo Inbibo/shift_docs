@@ -38,7 +38,7 @@
 - Added `mainThread` boolean plug to PythonScript node to force execution on main thread in DCC context. This is needed to use DCC Python API calls for Maya or Nuke in the node's script. *Shift-1218*
 
 **CreativeSoftware Catalog (Version 1.1.0)**
-- This catalog's nodes have been made compatible with threaded execution feature in Maya. *Shift-1218*
+- This catalog's nodes have been made compatible with the new threaded execution feature. *Shift-1218*
 - Added output plug to OBJImport node. *Shift-1226*
 
 **sMayaUSD Catalog (Version 1.1.0)**
