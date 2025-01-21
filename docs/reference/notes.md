@@ -7,4 +7,4 @@ Shift allows to add notes to the board. To add one, simply press `N` while the m
       <figcaption><b>Figure 1</b>: A note being added to the Shift board.</figcaption>
 </figure>
 
-Notes can be dragged around the board and edited by double-clicking on the text box.
+Notes can be dragged around the board and edited by double-clicking on the text box. To resize the note, simply drag the note's corners. Additionally, the note color can be changed by right-clicking on the note. This will open a color dialog where the user can select a new color.
