@@ -123,7 +123,7 @@ nav:
         - Workflow:             reference/catalogs/shift_catalogs/workflow.md
         - CreativeSoftware:     reference/catalogs/shift_catalogs/creativesoftware.md
     - Plugins:                  reference/plugins.md
-    - Notes:                    reference/notes.md
+    - Notes & Groups:           reference/notes.md
     - Logger:                   reference/logger.md
     - Environment Variables:     reference/environment.md
     - Developer Guide:        
