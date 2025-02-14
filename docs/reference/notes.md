@@ -13,7 +13,7 @@ Additionally, the note color can be changed by right-clicking on the note, as we
 # Groups
 
 Shift groups are graphic objects that help organize other items throughout the board. With Shift groups, all nodes, notes, and other groups within its area can be boxed, labeled and moved together.
-To create a node, simply do `Ctrl + G`. If there are items selected in the board, the group will be created enclosing those elements. 
+To create a node, simply do `Ctrl + G`. If there are items selected on the board, the group will be created enclosing those elements. 
 
 <figure>
       <img src="images/group.gif" alt="Group">
@@ -25,10 +25,10 @@ Additionally, all items of the group can be selected by clicking on the "*Select
 
 ### Create Subworkflows
 
-The "*Create Subworkflow*" option of the context menu allows to convert a group into a new workflow. When used, it automatically copies the group content into another board and generates the necessary connections, inputs, and outputs. Then it replaces the original group with a [`Workflow`](../../reference/nodes/workflow) node that links to the newly created workflow. This encapsulates the group's content in a new subworkflow, allowing to simplify complex workflows and better organize the Shift board. 
+The "*Create Subworkflow*" option of the context menu allows converting a group into a new workflow. When used, it automatically copies the group content into another board and generates the necessary connections, inputs, and outputs. Then it replaces the original group with a [`Workflow`](../../reference/nodes/workflow) node that links to the newly created workflow. This encapsulates the group's content in a new subworkflow, allowing it to simplify complex workflows and better organize the Shift board. 
 
 The name of the new workflow will be the group's name. 
-The default location of the new workflow will be the same one as the location of the workflow the original group is. Before generating the workflow, this location can be changed if needed. If the workflow were the group is has not been ever saved, a location must be defined before create a subworkflow. 
+The default location of the new workflow will be the same one as the location of the workflow where the original group is. Before generating the workflow, this location can be changed if needed. If the workflow were the group has not been ever saved, a location must be defined before creating the subworkflow. 
 
 <figure>
       <img src="images/createSubworkflow.gif" alt="Group">
