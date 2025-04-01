@@ -86,7 +86,8 @@ You can use relative paths if you use the **SHIFT_PATH_WORKFLOWS** environment v
 
 ### External Dependencies
 
-In order to use the ShiftWorkflow node for Nuke, the following Python modules are needed:
+In order to work with image data using the ShiftWorkflow node for Nuke, the following Python modules are needed:
+
 
 > [!NOTE = Dependencies]
 >
