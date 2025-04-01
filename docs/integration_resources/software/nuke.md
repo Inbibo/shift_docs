@@ -82,7 +82,17 @@ In the Shiftworkflow node, a Shift workflow can be selected to load it into the 
       <figcaption><b>Figure 3</b>: Main Propierties tab of ShiftWorkflow node.</figcaption>
 </figure>
 
-You can use relative paths if you use the **SHIFT_PATH_WORKFLOWS** env variable.
+You can use relative paths if you use the **SHIFT_PATH_WORKFLOWS** environment variable.
+
+### External Dependencies
+
+In order to use the ShiftWorkflow node for Nuke, the following Python modules are needed:
+
+> [!NOTE = Dependencies]
+>
+> - [OpenCV](https://pypi.org/project/opencv-python/): 4.7.0 or higher
+> - [Pillow](https://pypi.org/project/pillow/): 10.2.0 or higher
+>
 
 ### Shift Plugs to Nuke Knobs/Inputs
 
