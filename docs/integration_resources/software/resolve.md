@@ -23,7 +23,7 @@ To source Shift in Davinci Resolve the directories of Shift must also be added t
 
 
 - **PATH** : <path_to_the_shift_installation_folder>
-- **PATH** : <path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages
+- **PATH** : <path_to_the_shift_installation_folder>/shift/thirdparty/python/pip_packages/3.&ltminor_version_of_the_nuke_interpreter&gt
 
 
 ## Shift Menu
