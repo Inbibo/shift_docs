@@ -53,7 +53,7 @@ Inside the file, add the following code:
 except:
     import sys
     sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
-    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/pip_packages/{0}.{1}".format(sys.version_info[0], sys.version_info[1])")
+    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
 
 
 from shift.tools import shiftui
