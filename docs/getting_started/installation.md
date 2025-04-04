@@ -2,7 +2,7 @@
 
 ## Windows
 
-To install Shift in Windows, download the *.zip* distribution file for windows from the [website](https://www.inbibo.co.uk/shift). Shift distribution packages come with a built-in Python interpreter, along with all necessary third-party libraries to use Shift and its native catalogs.
+To install Shift in Windows, download the *.zip* distribution file for Windows from the [website](https://www.inbibo.co.uk/shift). Shift distribution packages come with a built-in Python interpreter, along with all necessary third-party libraries to use Shift and its native catalogs.
 
 After downloading the package:
 
