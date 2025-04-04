@@ -1,8 +1,10 @@
 # Requirements
 
+Shift distributions ship with a packaged Python (version 3.10) interpreter. In order to run it using a different interpreter, the following requirements must be satisfied:
+
 ## Software
 
-- Python: 3.7 to 3.10
+- Python: 3.7, 3.9 or 3.10
 
 ## External Dependencies
 

@@ -4,6 +4,9 @@ Shift is able to run workflows without the need for a UI interface. This is call
 
 ## Terminal Command
 
+> [!NOTE]
+> This command is only available in Windows, please refer to the following section to run batch executions in Linux using the Shift Python API.
+
 The Batch execution of a Shift workflow can be launched using the `shift_batch_lite` command located in the Shift installation root folder. Here is an example of the command syntax:
 
 > [!NOTE = Example Command]

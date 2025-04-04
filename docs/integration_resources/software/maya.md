@@ -9,7 +9,7 @@ Shift provides a `mshift` utility script to properly bind the Shift UI to Maya. 
 except:
     import sys
     sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
-    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
+    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/pip_packages/{0}.{1}".format(sys.version_info[0], sys.version_info[1]))
 
 from shift.tools import mshift
 mshift.show()
