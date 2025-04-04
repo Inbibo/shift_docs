@@ -23,7 +23,7 @@ To source Shift in Davinci Resolve the directories of Shift must also be added t
 
 
 - **PATH** : <path_to_the_shift_installation_folder>
-- **PATH** : <path_to_the_shift_installation_folder>/shift/thirdparty/python/pip_packages/3.&ltminor_version_of_the_nuke_interpreter&gt
+- **PATH** : <path_to_the_shift_installation_folder>/shift/thirdparty/python/Lib/site-packages
 
 
 ## Shift Menu
@@ -37,9 +37,9 @@ To add a new entry for the Shift menu in Resolve, it is required to add a Python
 >  - All users: %PROGRAMDATA%\Blackmagic Design\DaVinci Resolve\Fusion\Scripts
 >  - Specific user: %APPDATA%\Blackmagic Design\DaVinci Resolve\Support\Fusion\Scripts
 >
-<!-- > === Linux:
+> === Linux:
 >  - All users: /opt/resolve/Fusion/Scripts  (or /home/resolve/Fusion/Scripts/ depending on installation)
->  - Specific user: $HOME/.local/share/DaVinciResolve/Fusion/Scripts -->
+>  - Specific user: $HOME/.local/share/DaVinciResolve/Fusion/Scripts
 
 To add Shift as a menu option, it is required to create a Python Script inside a workspace folder, `Edit` for example. The Python file name will be used as the menu name, soo name the file `Shift`.
 
@@ -53,7 +53,7 @@ Inside the file, add the following code:
 except:
     import sys
     sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
-    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
+    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/pip_packages/{0}.{1}".format(sys.version_info[0], sys.version_info[1])")
 
 
 from shift.tools import shiftui
