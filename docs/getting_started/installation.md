@@ -12,7 +12,7 @@ After downloading the package:
 
 ## Linux
 
-To install Shift in Linux, download the *.tar.gz* distribution file for linux from the [website](https://www.inbibo.co.uk/shift). Shift distribution packages come with a built-in Python interpreter, along with all necessary third-party libraries to use Shift and its native catalogs.
+To install Shift in Linux, download the *.tar.gz* distribution file for Linux from the [website](https://www.inbibo.co.uk/shift). Shift distribution packages come with a built-in Python interpreter, along with all necessary third-party libraries to use Shift and its native catalogs.
 
 After downloading the package:
 
