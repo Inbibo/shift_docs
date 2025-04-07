@@ -24,3 +24,23 @@ The *Variables Browser* allows users to parse the workflow variables currently s
       <figcaption><b>Figure 2</b>: Variables Browser Plugin</figcaption>
 
 </figure>
+
+### The Image Viewer
+
+The *Image Viewer* allows users to visualize image data within Shift. When opened, the plugin will look for image data in the output plugs of the selected nodes that follow a special naming convention:
+
+- A plug whose name starts with `images`: Will expect a Python list containing a sequence of images and display them with a slider for parsing the frames.
+- A plug whose name starts with `image`: Will expect a single image object and display it.
+
+The zoom can be changed using the mouse wheel. The plugin also allows for panning the image using the `Left-Click and Drag` or `Middle-Click and Drag` mouse actions.
+
+<figure>
+      <img src="images/image_viewer_plugin.gif" alt="UI">
+      <figcaption><b>Figure 3</b>: Image Viewer Plugin</figcaption>
+
+</figure>
+
+As shown in *Figure 3* above, the plugin will display the pixel coordinates and RGB values of the hovered pixel in a Tool Tip message.
+
+> [!NOTE]
+> The plugin uses the `numpy` Python library to process the image data, so any Python object that can be converted to a numpy array should display correctly (e.g. pillow objects).
