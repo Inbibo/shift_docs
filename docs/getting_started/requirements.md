@@ -30,7 +30,9 @@ Shift distributions ship with a packaged Python (version 3.10) interpreter. In o
 
 ## System Requirements
 
-- **OS**: Microsoft *Windows 10* or higher.
+- **OS**: Microsoft *Windows 10* (64-bit) or higher, *Linux CentOS 7+* (64-bit)\*, *Linux Rocky 9+* (64-bit)\*
 - **CPU**: 64-bit Intel or AMD multi-core processor.
 - **RAM**: 256MB suggested.
 - **Storage**: at least 1.5GB of free disk space.
+
+\* Shift was tested and working on other Linux distributions, however they are not officially supported.
