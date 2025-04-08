@@ -28,6 +28,15 @@ Shift comes equipped with two primary plugins for interacting with USD (Universa
 
 These two plugins together allow users to efficiently visualize, explore, and interact with USD-based workflows, making Shift a powerful tool for managing complex 3D scenes and assets.
 
+### USD Outliner
+
+The USD Outliner plugin displays the hierarchy of USD stages sourced from specific nodes (UsdStageOpen & UsdStageNew) in the active board workflow. It provides a tree view of the USD scene, allowing users to explore, select, and interact with USD prims. Selecting a prim in the outliner works in conjunction with the USD Viewer plugin for hierarchical navigation. Double-clicking a prim creates a UsdPrimGet operator linked to the selected prim for further manipulation. For more information on working with USD stages, refer to the section on [USD Catalogs](#catalogs).
+
+<figure>
+      <img src="images/usd_outliner_plugin.gif" alt="UI">
+      <figcaption>USD Outliner Plugin</figcaption>
+</figure>
+
 ### USD Viewer
 
 The USD Viewer plugin allows users to visualize and interact with USD stages sourced from specific nodes (UsdStageOpen & UsdStageNew) in the active board workflow. It integrates seamlessly with Shift's interface and works in conjunction with the USD Outliner plugin for hierarchical navigation. Users can double-click on USD prims in the viewer to create a new UsdPrimGet operator connected to the selected prim. When the USD Outliner is open, prim selections between the viewer and outliner are synchronized. For more details on how to manipulate USD stages and prims, refer to the section on [USD Catalogs](#catalogs).
@@ -37,14 +46,31 @@ The USD Viewer plugin allows users to visualize and interact with USD stages sou
       <figcaption>USD Viewer Plugin</figcaption>
 </figure>
 
-### USD Outliner
+The plugin integrates some other features.
 
-The USD Outliner plugin displays the hierarchy of USD stages sourced from specific nodes (UsdStageOpen & UsdStageNew) in the active board workflow. It provides a tree view of the USD scene, allowing users to explore, select, and interact with USD prims. Selecting a prim in the outliner works in conjunction with the USD Viewer plugin for hierarchical navigation. Double-clicking a prim creates a UsdPrimGet operator linked to the selected prim for further manipulation. For more information on working with USD stages, refer to the section on [USD Catalogs](#catalogs).
+#### Playback Animated Stages
+
+When the opened stage contains authored Time Code ranges, the plugin will automatically display them in the timeline widget in the bottom and a *Play* button will appear. This allows users to scrub the stage animation manually or directly playback the entire animation. The plugin will playback at the FPS rate authored in the stage file or default at 24 FPS if no valid authoring is found.
 
 <figure>
-      <img src="images/usd_outliner_plugin.gif" alt="UI">
-      <figcaption>USD Outliner Plugin</figcaption>
+      <img src="images/usd_viewer_timeline.gif" alt="UI">
+      <figcaption>USD Viewer Plugin Timeline Playback</figcaption>
 </figure>
+
+#### Grab Viewport AOV
+
+Any stage viewport can be linked to a `UsdViewportGrab` node. This linking allows users to send the information from the current Usd Viewer buffer to the Shift workflow as an image.
+
+<figure>
+      <img src="images/usd_viewer_viewport_grab.gif" alt="UI">
+      <figcaption>USD Viewer Plugin Viewport Grab</figcaption>
+</figure>
+
+As shown in the figure above, new nodes can be linked using the *Link* menu in the plugin menu bar. When the viewer is linked, the menu name will switch from *Link* to *Linked*. The linked nodes will receive new viewport snapshots whenever the user: pans, zooms or manually changes the current frame.
+The `UsdViewportGrab` node allows to select the desired aov or aspect ratio for the snapshot.
+
+>[!NOTE]
+> Linking the viewer to a node will cause a slight computational overhead to send the information to the workflow. This might cause a decrease in the smoothness of the interaction with the viewer. However, the linking status updates can be temporarly disabled by deselecting the *Active* option in the *Link* menu.
 
 <!-- 
 ### Examples
