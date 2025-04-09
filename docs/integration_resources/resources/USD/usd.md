@@ -72,7 +72,8 @@ The `UsdViewportGrab` node allows selecting the desired AOV or aspect ratio for 
 
 
 >[!NOTE]
-> Linking the viewer to a node will cause a slight computational overhead to send the information to the workflow. This might cause a decrease in the smoothness of the interaction with the viewer. However, the linking status updates can be temporarly disabled by deselecting the *Active* option in the *Link* menu.
+> Linking the viewer to a node will cause a slight computational overhead to send the information to the workflow. This might cause a decrease in the smoothness of the interaction with the viewer. However, the linking status updates can be temporarily disabled by deselecting the *Active* option in the *Link* menu.
+
 
 <!-- 
 ### Examples
