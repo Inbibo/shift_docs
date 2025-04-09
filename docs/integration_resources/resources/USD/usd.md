@@ -50,7 +50,7 @@ The plugin integrates some other features.
 
 #### Playback Animated Stages
 
-When the opened stage contains authored Time Code ranges, the plugin will automatically display them in the timeline widget in the bottom and a *Play* button will appear. This allows users to scrub the stage animation manually or directly playback the entire animation. The plugin will playback at the FPS rate authored in the stage file or default at 24 FPS if no valid authoring is found.
+If the opened stage contains authored Time Code ranges, the plugin will automatically display them in the timeline widget at the bottom and a *Play* button will appear. This allows users to scrub the stage animation manually or to directly playback the entire animation. The plugin will playback at the FPS rate authored in the stage file or default at 24 FPS if no valid authoring is found.
 
 <figure>
       <img src="images/usd_viewer_timeline.gif" alt="UI">
