@@ -68,7 +68,8 @@ Any stage viewport can be linked to a `UsdViewportGrab` node. This linking allow
 
 As shown in the figure above, new UsdViewportGrab nodes can be linked using the *Link* menu in the plugin menu bar. When the viewer is linked, the menu name will switch from *Link* to *Linked*. Linked nodes will receive new viewport snapshots whenever the user pans, zooms or manually changes the current frame.
 
-The `UsdViewportGrab` node allows to select the desired aov or aspect ratio for the snapshot.
+The `UsdViewportGrab` node allows selecting the desired AOV or aspect ratio for the snapshot.
+
 
 >[!NOTE]
 > Linking the viewer to a node will cause a slight computational overhead to send the information to the workflow. This might cause a decrease in the smoothness of the interaction with the viewer. However, the linking status updates can be temporarly disabled by deselecting the *Active* option in the *Link* menu.
