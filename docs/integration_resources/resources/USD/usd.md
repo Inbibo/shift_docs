@@ -58,7 +58,7 @@ If the opened stage contains authored Time Code ranges, the plugin will automati
 
 #### Grab Viewport AOV
 
-Any stage viewport can be linked to a `UsdViewportGrab` node. This linking allows users to send the information from the current Usd Viewer buffer to the Shift workflow as an image.
+Any stage viewport can be linked to a [`UsdViewportGrab`](susdviewer) node. This linking allows users to send the information from the current Usd Viewer buffer to the Shift workflow as an image.
 
 <figure>
       <img src="images/usd_viewer_viewport_grab.gif" alt="UI">
