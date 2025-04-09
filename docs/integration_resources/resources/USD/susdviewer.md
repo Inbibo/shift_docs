@@ -9,8 +9,8 @@ A catalog to interact with the Usd Viewer plugin for Shift.
 	<figcaption></figcaption>
 </figure>
 
-Node used to grab a snapshot of the current Usd Viewer plugn viewport.
-    It allows the selection of the AOV to grab and an aspect ratio to fit to the grabbed image.
+Node used to grab a snapshot of the current Usd Viewer plugin viewport.
+    It allows the selection of the AOV to grab and an aspect ratio to fit the grabbed image to.
     The node must be linked to a Usd Viewer plugin instance.
     
     
