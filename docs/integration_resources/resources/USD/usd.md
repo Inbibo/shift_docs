@@ -46,7 +46,6 @@ The USD Viewer plugin allows users to visualize and interact with USD stages sou
       <figcaption>USD Viewer Plugin</figcaption>
 </figure>
 
-The plugin integrates some other features.
 
 #### Playback Animated Stages
 
