@@ -6,7 +6,7 @@ Shift provides a `nshift` utility script to properly bind the Shift UI to Nuke. 
 
 <pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">import sys
 sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
-sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
+sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/pip_packages/{0}.{1}".format(sys.version_info[0], sys.version_info[1]))
 
 from shift.tools import nshift
 nshift.show()
@@ -22,7 +22,7 @@ To install Shift and open it through a menu entry within Nuke, it is required to
 You can add these requirements to your environment before opening Nuke:
 
 <pre><code style="white-space: pre; margin: 20px 0; padding: 10px; box-sizing: border-box;">PYTHONPATH=&#37;PYTHONPATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt"
-PYTHONPATH=&#37;PYTHONPATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages"
+PYTHONPATH=&#37;PYTHONPATH&#37;&semi;"&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/pip_packages/3.&ltminor_version_of_the_nuke_interpreter&gt"
 NUKE_PATH="&ltpath_to_the_shift_installation_folder&gt/shift/NukeTools/startup"&semi;&#37;NUKE_PATH&#37;
 </code></pre>
 
@@ -37,7 +37,7 @@ try:
 except:
     import sys
     sys.path.append("&ltpath_to_the_shift_installation_folder&gt")
-    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/python/Lib/site-packages")
+    sys.path.append("&ltpath_to_the_shift_installation_folder&gt/shift/thirdparty/pip_packages/{0}.{1}".format(sys.version_info[0], sys.version_info[1]))
 
 nuke.pluginAddPath("&ltpath_to_the_shift_installation_folder&gt/shift/NukeTools/startup")
 </code></pre>

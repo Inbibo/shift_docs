@@ -1,5 +1,36 @@
 # Release Notes
 
+## Version 1.1.1
+
+### Added
+
+#### Core
+- Linux Shift distributable version.
+- Multipython Shift distributable version compatible with Python 3.7, 3.9 and 3.10.
+
+### Improvements
+
+#### Catalogs
+**sUSD Catalog (Version 1.0.0)**
+- Changed raise to warning log message on file checks to allow URI use.
+
+**sMayaUSD Catalog (Version 1.1.0)**
+- Changed raise to warning log message on file checks to allow URI use.
+
+### Bug Fixes
+
+#### Core
+- Fixed the Plug Removal logic from the plug context menu so that it correctly removes the connections associated with the plug from the workflow. *Shift-1277*
+- Fixed the duplication and pasting logic so that graphic items keep their relative position and are not affected by the cursor movement during the pasting process. *Shift-1255*
+- Fixed logger messages so content enclosed by < and > characters do not disappear due to the HTML formatting of the message. *Shift-1280*
+- Fixed the logger message handling so it is thread-safe. *Shift-1285*
+- Fixed file paths formatting across Shift so that it is compatible with Windows and Linux. *Shift-1297*
+
+#### Catalogs
+**Workflow Catalog (Version 1.1.0)**
+- Fixed the reset workflow logic of Workflow nodes, so that they are safely cleared and do not raise errors. *Shift-1290*
+- Fixed the WorkflowSubprocess node so that it correctly catches errors when no file is set. *Shift-1293*
+
 ## Version 1.1.0
 
 ### Added
