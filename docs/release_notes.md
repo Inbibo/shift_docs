@@ -1,5 +1,37 @@
 # Release Notes
 
+## Version 1.2.0
+
+## Added
+
+### Core
+- Added Shift's [Image Plugin]((reference/plugins#the-image-viewer)) that allows to display image data of selected notes. 
+- Added [Shift Groups](/reference/notes#groups) to group graphic items together. Shift groups comes with features like selecting all graphic items, moving all graphic items and creating subworkflows. 
+- Added an option to create a workflow out of the content of a Shift group. This will generate a new workflow file and replace the content of the workflow with a Workflow node pointing to the new workflow file. 
+- Added an option to change the color of a note.
+- Added a tooltip to connections to show the connected plugs.
+
+#### Integration & Resources
+
+**USD**
+- Added support for animated stages in the USD viewer plugin.
+- Added a new node named [UsdViewportGrab](/integration_resources/resources/USD/susdviewer) that allows to stream the USD viewer render to this node and output a snapshot of the viewer. 
+- Added the logic to link and unlink the USD viewer to *UsdViewportGrab* nodes.
+
+## Improvements
+
+### Core
+- Notes have now colors and allow resizing by dragging their edges and corners. 
+- Refactored graphic items methods from Shift so that the previous selection is preserved after removing an item. 
+- Node names are retained when copying and pasting a node.
+
+### Bug Fixes
+
+#### Integration & Resources
+
+**USD**
+- Fixed the USD plugins' tabs so they are closed when their corresponding USD stage node is deleted. *Shift_USD-215*
+
 ## Version 1.1.1
 
 ### Added
