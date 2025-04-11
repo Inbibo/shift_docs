@@ -5,8 +5,8 @@
 ### Added
 
 #### Core
-- Added Shift's [Image Plugin]((reference/plugins#the-image-viewer)) that allows to display image data of selected notes. 
-- Added [Shift Groups](/reference/notes#groups) to group board items together. Shift groups come with features like selecting and moving grouped items and creating subworkflows. 
+- Added Shift's [Image Plugin]((../reference/plugins#the-image-viewer)) that allows to display image data of selected notes. 
+- Added [Shift Groups](../reference/notes#groups) to group board items together. Shift groups come with features like selecting and moving grouped items and creating subworkflows. 
 
 - Added an option to create a subworkflow from a Shift group. This will generate a new workflow file and replace the group content with a Workflow node pointing to the new workflow file. 
 
@@ -18,7 +18,7 @@
 
 **USD**
 - Added support for animated stages in the USD viewer plugin.
-- Added a new node named [UsdViewportGrab](/integration_resources/resources/USD/susdviewer) that allows to grab snapshots of the current viewport AOV buffers to use in the workflow. 
+- Added a new node named [UsdViewportGrab](../integration_resources/resources/USD/susdviewer) that allows to grab snapshots of the current viewport AOV buffers to use in the workflow. 
 
 - Added the logic to link and unlink the USD viewer tabs to *UsdViewportGrab* nodes.
 
