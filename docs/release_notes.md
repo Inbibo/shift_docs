@@ -6,26 +6,35 @@
 
 ### Core
 - Added Shift's [Image Plugin]((reference/plugins#the-image-viewer)) that allows to display image data of selected notes. 
-- Added [Shift Groups](/reference/notes#groups) to group graphic items together. Shift groups comes with features like selecting all graphic items, moving all graphic items and creating subworkflows. 
-- Added an option to create a workflow out of the content of a Shift group. This will generate a new workflow file and replace the content of the workflow with a Workflow node pointing to the new workflow file. 
+- Added [Shift Groups](/reference/notes#groups) to group board items together. Shift groups come with features like selecting and moving grouped items and creating subworkflows. 
+
+- Added an option to create a subworkflow from a Shift group. This will generate a new workflow file and replace the group content with a Workflow node pointing to the new workflow file. 
+
 - Added an option to change the color of a note.
-- Added a tooltip to connections to show the connected plugs.
+- Added a tooltip to connections to inspect the connected plugs.
+
 
 #### Integration & Resources
 
 **USD**
 - Added support for animated stages in the USD viewer plugin.
-- Added a new node named [UsdViewportGrab](/integration_resources/resources/USD/susdviewer) that allows to stream the USD viewer render to this node and output a snapshot of the viewer. 
-- Added the logic to link and unlink the USD viewer to *UsdViewportGrab* nodes.
+- Added a new node named [UsdViewportGrab](/integration_resources/resources/USD/susdviewer) that allows to grab snapshots of the current viewport AOV buffers to use in the workflow. 
+
+- Added the logic to link and unlink the USD viewer tabs to *UsdViewportGrab* nodes.
+
 
 ## Improvements
 
 ### Core
-- Notes have now colors and allow resizing by dragging their edges and corners. 
-- Refactored graphic items methods from Shift so that the previous selection is preserved after removing an item. 
+- Notes now have colors and allow resizing by dragging their edges and corners. 
+
 - Node names are retained when copying and pasting a node.
 
 ### Bug Fixes
+
+#### Core
+
+- Fixed issue that would not preserve the previous selection after removing an item. *Shift-1262*
 
 #### Integration & Resources
 
