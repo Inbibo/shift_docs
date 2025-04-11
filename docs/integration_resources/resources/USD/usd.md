@@ -69,9 +69,8 @@ As shown in the figure above, new UsdViewportGrab nodes can be linked using the 
 
 The `UsdViewportGrab` node allows selecting the desired AOV or aspect ratio for the snapshot.
 
-
 >[!NOTE]
-> Linking the viewer to a node will cause a slight computational overhead to send the information to the workflow. This might cause a decrease in the smoothness of the interaction with the viewer. However, the linking status updates can be temporarily disabled by deselecting the *Active* option in the *Link* menu.
+> Linking the viewer to a node will cause a slight computational overhead to send the information to the workflow. This might cause a decrease in the smoothness of the interaction with the viewer. However, the linking status updates can be temporarily disabled by deselecting the *Active* option in the *Link* menu. While the stage is in [playback status](#playback-animated-stages) the linking status updates will be paused automatically.
 
 
 <!-- 
