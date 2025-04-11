@@ -2,9 +2,9 @@
 
 ## Version 1.2.0
 
-## Added
+### Added
 
-### Core
+#### Core
 - Added Shift's [Image Plugin]((reference/plugins#the-image-viewer)) that allows to display image data of selected notes. 
 - Added [Shift Groups](/reference/notes#groups) to group board items together. Shift groups come with features like selecting and moving grouped items and creating subworkflows. 
 
@@ -23,9 +23,9 @@
 - Added the logic to link and unlink the USD viewer tabs to *UsdViewportGrab* nodes.
 
 
-## Improvements
+### Improvements
 
-### Core
+#### Core
 - Notes now have colors and allow resizing by dragging their edges and corners. 
 
 - Node names are retained when copying and pasting a node.
