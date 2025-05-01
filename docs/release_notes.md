@@ -1,5 +1,20 @@
 # Release Notes
 
+## Version 1.2.1
+
+## Improvements
+### Core
+- Improved the casting to kList plugs so that huge memory peaks are decreased (avoiding potential crashes) *Shift-1289*
+- Improved the logic to create a connection from the Shift API. *Shift-1309*
+
+## BugFixes
+### Core
+- Fixed the truncation in the inspector plug widgets for lists, dictionaries, and iterable objects and instances. *Shift-1288*
+- Fixed the deletion logic so that connections that are not connected to the selection to delete are also deleted. *Shift-1265*
+- Fixed the inspector so that the tab that is selected remains so after the execution of a workflow. *Shift-1214* 
+- Fixed the trigger of the editingFinished for inspector plugs so it is only emitted when the value has changed. *Shift-1319*
+
+
 ## Version 1.1.1
 
 ### Added
