@@ -1,5 +1,24 @@
 # Release Notes
 
+## Version 1.2.1
+
+## Improvements
+### Core
+- Improved the casting to kList plugs so that huge memory peaks are decreased (avoiding potential crashes) *Shift-1289*
+- Added public method to create a connection using the Shift API. *Shift-1309*
+
+
+## BugFixes
+### Core
+- Fixed the truncation in the inspector plug widgets for lists, dictionaries, and iterable objects and instances. *Shift-1288*
+- Fixed the board items deletion logic so that all the selected connections are deleted. *Shift-1265*
+
+- Fixed the inspector so that the selected tab is retained after the execution of a workflow. *Shift-1214* 
+
+- Fixed bug emitting plug edits two times instead of one when using the Inspector parameter widget due to Qt bug with the editingFinished signal. *Shift-1313*
+
+
+
 ## Version 1.1.1
 
 ### Added
